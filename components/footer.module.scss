@@ -1,0 +1,23 @@
+@import '../pages/styles';
+
+
+.footer{
+    box-sizing: border-box;
+    min-height: 10em;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 3em;
+    padding-left: 6em;
+    color: $primary-color;
+border-top: 2px solid $primary-color;
+    a {color: $primary-color}         
+a:visited {color: $primary-color;} 
+a:hover {color: $primary-color;}   
+a:active {color: $primary-color;} 
+
+    div{
+margin: 1em;
+padding: 1em;
+        background-color: transparent;
+    }
+}

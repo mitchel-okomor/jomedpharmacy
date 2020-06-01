@@ -1,0 +1,21 @@
+$primary-color: #12A63E;
+$layout-color: rgba(250, 243, 243, 0.986);
+$accent-color:#A61412;
+$secondary-color:#C121CC;
+$page-padding: 2em;
+$div-background: rgba(243, 239, 239, 0.959) ;
+
+
+html,body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding:0;
+  background-color: $layout-color;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: white;
+}

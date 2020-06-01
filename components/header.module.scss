@@ -1,0 +1,77 @@
+@import '../pages/styles.scss';
+
+.header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+padding-left: 5em;
+    min-height: 9em;
+    margin-bottom: 1em;
+    background-color:$primary-color;
+color:$layout-color;
+}
+
+    .header{
+
+    .logo{
+          h1{
+        margin-top: .5em;
+        color: $layout-color;
+    }
+
+    p{
+        font-size: 1em;
+        color: $layout-color
+    }
+    }
+
+
+    .activity{
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;  
+       width: 20em; 
+       border-radius: 6px;
+           padding: 10px;
+           font-size: larger;
+    img{
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .cart{
+        display: flex;
+        align-items: center;
+        a{
+            padding-left: 10px;
+        }
+    }
+    .user{
+        display: flex;
+        align-items: center; 
+        a{
+            padding-left: 10px;
+        }
+    }
+    }
+    .search{
+        margin: 2em;
+        form{
+            display: flex;
+            color: $layout-color;
+            input{
+                height: 3em;
+                width: 23em;
+                font-size: 1em;
+                border-radius: 10px 0px 0px 10px;
+            }
+            button{
+                height: 3.5em;
+                width: 7em;
+                background-color: grey;
+                color: $layout-color;
+
+            }
+        }
+    }
+}
