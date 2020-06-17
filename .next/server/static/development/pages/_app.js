@@ -329,45 +329,14 @@ const Footer = () => {
       lineNumber: 45,
       columnNumber: 13
     }
-  }, "Stay in Touch"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
+  }, "Stay in Touch"), __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48,
-      columnNumber: 17
+      columnNumber: 14
     }
-  }, "Company Information"), __jsx("br", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 17
-    }
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 17
-    }
-  }, "Terms and Conditions"), __jsx("br", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 17
-    }
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 17
-    }
-  }, " Privacy policy"))));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -755,6 +724,7 @@ const Navigation = () => {
       columnNumber: 13
     }
   }), __jsx("li", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -763,18 +733,51 @@ const Navigation = () => {
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/products",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 17
-    }
-  }, " Products")), __jsx("li", {
-    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropbtn,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13,
+      columnNumber: 13
+    }
+  }, " Products  "), __jsx("div", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown_content,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    href: "#",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 7
+    }
+  }, "Antibiotics"), __jsx("a", {
+    href: "#",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 7
+    }
+  }, "Haematinics"), __jsx("a", {
+    href: "#",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 7
+    }
+  }, "Suppliments"))), __jsx("li", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -783,7 +786,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 21,
       columnNumber: 13
     }
   }, " Services  "), __jsx("div", {
@@ -791,38 +794,38 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 22,
       columnNumber: 13
     }
-  }, __jsx("a", {
-    href: "#",
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/bpc",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 23,
       columnNumber: 7
     }
-  }, "Link 1"), __jsx("a", {
-    href: "#",
+  }, "Blood Pressure Check"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/bgt",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 24,
       columnNumber: 7
     }
-  }, "Link 2"), __jsx("a", {
-    href: "#",
+  }, "Blood Glucose Test"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/wmc",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 25,
       columnNumber: 7
     }
-  }, "Link 3"))), __jsx("li", {
+  }, "Weigth Management Care"))), __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 28,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -830,14 +833,14 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 29,
       columnNumber: 17
     }
   }, " Locations")), __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 31,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -845,7 +848,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 32,
       columnNumber: 17
     }
   }, "  About"))));

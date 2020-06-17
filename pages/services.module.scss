@@ -1,0 +1,27 @@
+@import "./styles.scss";
+
+.services{
+    text-align: center;
+    margin: auto;
+    padding: $page-padding;
+    box-sizing: border-box;
+
+  
+   
+
+    h1{
+        display: flex;
+      color: $primary-color;
+     
+border-radius: 2em;
+padding: 1em;
+    }
+
+    div{
+        padding: 1em;
+        border: 1px solid $primary-color;
+        border-radius: 1.5em;
+        background-color: $div-background;
+        margin-top: 3em;
+    }
+}

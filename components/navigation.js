@@ -9,13 +9,20 @@ import Link from 'next/link';
             <li>
               
             </li>
-            <li><Link href="/products"> Products</Link></li>
+            <li className={css.dropdown}>
+            <Link href="/products" className={css.dropbtn}> Products  </Link>
+            <div className={css.dropdown_content}>
+      <a href="#">Antibiotics</a>
+      <a href="#">Haematinics</a>
+      <a href="#">Suppliments</a>
+    </div>
+                </li>
             <li className={css.dropdown}>
             <Link href="/services" className={css.dropbtn}> Services  </Link>
             <div className={css.dropdown_content}>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <Link href="/bpc">Blood Pressure Check</Link>
+      <Link href="/bgt">Blood Glucose Test</Link>
+      <Link href="/wmc">Weigth Management Care</Link>
     </div>
                 </li>
                 <li>

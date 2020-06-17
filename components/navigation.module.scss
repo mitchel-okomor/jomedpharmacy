@@ -5,35 +5,48 @@ $nav-font-size:1.5em;
 
 .nav{
     box-sizing: border-box;
-background-color: $layout-color;
-color: $primary-color;
+background-color: $primary-color;
+color: $layout-color;
 height: 50px;
 width: 100%;
 display: block;
 padding-right: 2em;
 padding-left: 2em;
 border-bottom: 1px solid $primary-color;
-a {color: $primary-color}         
-a:visited {color: $primary-color;} 
-a:hover {color: $primary-color;}   
-a:active {color: $primary-color;} 
+a {color: $layout-color;
+border-radius: 4px;
+}         
+a:visited {color: $layout-color;} 
+a:hover {color: white;
+background-color: $primary-color;
+}   
+a:active {color: $primary-color;
+color:white;} 
 }
 
 .nav{
 
     a{
-        color: $primary-color;
+        color: $layout-color;
 
     }
 div{
    float:left;
   margin-left: 1em;
+  margin-top: 0.3em;
   font-size: 1.7em;
   font-weight: bolder;
  
   a{
      text-decoration: none;  
+     color: white;
+
   }
+  div:hover{
+    color: white;
+background-color: $primary-color;
+  }
+
 }
 
    ul{
@@ -47,16 +60,33 @@ div{
     li{ 
        width: fit-content;
        font-size: $nav-font-size;
+       border-radius: 4px;
+       margin-top: 0.3em;
+
         
        a{
         display: inline-block;
         margin: 0.2em 0.5em 0.5em 0.5em;
         text-decoration: none;
-        
-    }
+        color: white;
 
     }
 
+    a:hover{
+      color: white;
+  background-color: $primary-color;
+    }
+
+    }
+    li:hover{
+      color: white;
+background-color: $primary-color;
+    }
+li:active{
+    color: white;
+background-color: $primary-color;
+  
+}
         
 .dropbtn {
     display: inline-block;
@@ -64,6 +94,7 @@ div{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
   }
   
  .dropdown:hover .dropbtn {
@@ -74,6 +105,9 @@ div{
     display: inline-block;
     margin:0;
     padding:0;
+    width: fit-content;
+    margin-top: 0.3em;
+
   }
   
   .dropdown_content {
@@ -82,7 +116,7 @@ div{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: 160px;
+    width: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }

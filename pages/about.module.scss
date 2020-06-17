@@ -1,6 +1,8 @@
 @import "./styles.scss";
 
 .about{
+    text-align: center;
+    margin: auto;
     padding: $page-padding;
     box-sizing: border-box;
 
@@ -14,7 +16,7 @@
         color:white;
        font-size: 3em;
        height:0;
-        width:100%;
+        width:fit-content;
         border-radius: 2em;
        
     }

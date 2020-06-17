@@ -45,11 +45,7 @@ const Footer = () =>{
             <h3>
                 Stay in Touch
                 </h3>
-                <Link href="">Company Information</Link>
-                <br />
-                <Link href="">Terms and Conditions</Link>
-                <br />
-                <Link href=""> Privacy policy</Link>
+             <div></div> 
               </div>
 
              </div>  
