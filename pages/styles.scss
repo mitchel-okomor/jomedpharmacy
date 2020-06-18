@@ -15,7 +15,9 @@ html,body {
 }
 a{
   text-decoration: none;
+  color: $layout-color;
 }
-a:visited{
-  color: white;
-}
+a:visited {color: $layout-color;} 
+a:hover {color: white;
+background-color: $primary-color;
+}  

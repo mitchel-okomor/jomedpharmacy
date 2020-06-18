@@ -541,7 +541,7 @@ const Header = () => {
       columnNumber: 42
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
+    href: "/account",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,

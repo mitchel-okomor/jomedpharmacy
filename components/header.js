@@ -17,7 +17,7 @@ const Header = () => {
 </div>
 
             <div className={css.activity}>
-              <div className={css.user}> <img src="/user.png" /><Link href="">Login/Signup</Link> </div>               
+              <div className={css.user}> <img src="/user.png" /><Link href="/account">Login/Signup</Link> </div>               
                 <div className={css.cart}><img src="/cart.png"/><Link href="">Cart</Link>  </div>
                 </div>
             

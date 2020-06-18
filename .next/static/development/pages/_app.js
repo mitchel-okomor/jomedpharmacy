@@ -421,7 +421,7 @@ var Header = function Header() {
       columnNumber: 42
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
+    href: "/account",
     __self: _this,
     __source: {
       fileName: _jsxFileName,

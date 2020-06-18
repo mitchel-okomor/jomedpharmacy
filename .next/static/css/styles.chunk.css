@@ -6,10 +6,15 @@ html, body {
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: rgba(250, 243, 243, 0.986); }
 
 a:visited {
-  color: white; }
+  color: rgba(250, 243, 243, 0.986); }
+
+a:hover {
+  color: white;
+  background-color: #12A63E; }
 
 html, body {
   font-family: Helvetica, Arial, sans-serif;
@@ -19,10 +24,15 @@ html, body {
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: rgba(250, 243, 243, 0.986); }
 
 a:visited {
-  color: white; }
+  color: rgba(250, 243, 243, 0.986); }
+
+a:hover {
+  color: white;
+  background-color: #12A63E; }
 
 .header___1iSmJ {
   box-sizing: border-box;
@@ -92,10 +102,15 @@ html, body {
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: rgba(250, 243, 243, 0.986); }
 
 a:visited {
-  color: white; }
+  color: rgba(250, 243, 243, 0.986); }
+
+a:hover {
+  color: white;
+  background-color: #12A63E; }
 
 .nav___1kSwy {
   box-sizing: border-box;
@@ -205,10 +220,15 @@ html, body {
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: rgba(250, 243, 243, 0.986); }
 
 a:visited {
-  color: white; }
+  color: rgba(250, 243, 243, 0.986); }
+
+a:hover {
+  color: white;
+  background-color: #12A63E; }
 
 .footer___uzAl_ {
   box-sizing: border-box;
@@ -240,10 +260,15 @@ html, body {
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: rgba(250, 243, 243, 0.986); }
 
 a:visited {
-  color: white; }
+  color: rgba(250, 243, 243, 0.986); }
+
+a:hover {
+  color: white;
+  background-color: #12A63E; }
 
 .main___2CXzs {
   box-sizing: border-box;
@@ -285,6 +310,7 @@ a:visited {
     border: solid 2px #12A63E;
     border-radius: 2em;
     padding: 3em; }
+
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
