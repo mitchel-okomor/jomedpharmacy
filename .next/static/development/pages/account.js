@@ -229,13 +229,38 @@ var Account = function Account(props) {
       lineNumber: 27,
       columnNumber: 3
     }
+  }), __jsx("label", {
+    "for": "password",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 3
+    }
+  }, "password:"), __jsx("input", {
+    type: "password",
+    id: "password",
+    name: "passweord",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 3
+    }
+  }), __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 3
+    }
   }), __jsx("input", {
     type: "submit",
     value: "Submit",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 31,
       columnNumber: 3
     }
   }))), __jsx("form", {
@@ -243,60 +268,35 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 34,
       columnNumber: 1
     }
   }, __jsx("fieldset", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 35,
       columnNumber: 2
     }
   }, __jsx("legend", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 3
-    }
-  }, "Create Account:"), __jsx("label", {
-    "for": "fname",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 3
-    }
-  }, "First name:"), __jsx("input", {
-    type: "text",
-    id: "fname",
-    name: "fname",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 3
-    }
-  }), __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 36,
       columnNumber: 3
     }
-  }), __jsx("label", {
-    "for": "lname",
+  }, "Login:"), __jsx("label", {
+    "for": "email",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37,
       columnNumber: 3
     }
-  }, "Last name:"), __jsx("input", {
-    type: "text",
-    id: "lname",
-    name: "lname",
+  }, "Email:"), __jsx("input", {
+    type: "email",
+    id: "email",
+    name: "email",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -311,78 +311,21 @@ var Account = function Account(props) {
       columnNumber: 3
     }
   }), __jsx("label", {
-    "for": "email",
+    "for": "password",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40,
       columnNumber: 3
     }
-  }, "Email:"), __jsx("input", {
-    type: "email",
-    id: "email",
-    name: "email",
+  }, "password:"), __jsx("input", {
+    type: "password",
+    id: "password",
+    name: "passweord",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41,
-      columnNumber: 3
-    }
-  }), __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 3
-    }
-  }), __jsx("label", {
-    "for": "number",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 3
-    }
-  }, "phone number:"), __jsx("input", {
-    type: "number",
-    id: "number",
-    name: "number",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 3
-    }
-  }), __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 3
-    }
-  }), __jsx("label", {
-    "for": "number",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 3
-    }
-  }, "phone number:"), __jsx("input", {
-    type: "number",
-    id: "number",
-    name: "number",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 3
-    }
-  }), __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
       columnNumber: 3
     }
   }), __jsx("input", {
@@ -391,7 +334,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 42,
       columnNumber: 3
     }
   })))));
@@ -401,7 +344,7 @@ var Account = function Account(props) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 5:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true ***!
   \********************************************************************************************************************************************************************************/
@@ -424,5 +367,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=account.js.map
