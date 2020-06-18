@@ -129,6 +129,7 @@ const Account = props => {
       columnNumber: 1
     }
   }, "Account"), __jsx("div", {
+    className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.form,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -461,7 +462,11 @@ const Account = props => {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+module.exports = {
+	"account": "account___3xtWf",
+	"heading": "heading___V7y3g",
+	"form": "form___14s8b"
+};
 
 /***/ }),
 

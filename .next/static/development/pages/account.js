@@ -75,6 +75,7 @@ var Account = function Account(props) {
       columnNumber: 1
     }
   }, "Account"), __jsx("div", {
+    className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.form,
     __self: _this,
     __source: {
       fileName: _jsxFileName,

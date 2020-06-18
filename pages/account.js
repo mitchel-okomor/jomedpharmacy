@@ -6,7 +6,7 @@ const Account = (props)=>{
         <div className={css.account}>
 <h1 className={css.heading}>Account</h1>
 
-<div>
+<div className={css.form}>
 <form className={css.signup}>
  <fieldset>
   <legend>Create Account:</legend>
