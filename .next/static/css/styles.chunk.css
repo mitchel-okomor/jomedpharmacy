@@ -16,6 +16,16 @@ a:hover {
   color: white;
   background-color: #12A63E; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 html, body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
@@ -33,6 +43,16 @@ a:visited {
 a:hover {
   color: white;
   background-color: #12A63E; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
 
 .header___1iSmJ {
   box-sizing: border-box;
@@ -111,6 +131,16 @@ a:visited {
 a:hover {
   color: white;
   background-color: #12A63E; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
 
 .nav___1kSwy {
   box-sizing: border-box;
@@ -230,6 +260,16 @@ a:hover {
   color: white;
   background-color: #12A63E; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 .footer___uzAl_ {
   box-sizing: border-box;
   min-height: 10em;
@@ -270,6 +310,85 @@ a:hover {
   color: white;
   background-color: #12A63E; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.main___2CXzs {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 2em;
+  min-height: 100em;
+  background: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto; }
+  .main___2CXzs .intro___1q6R9 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%; }
+    .main___2CXzs .intro___1q6R9 div {
+      background-color: rgba(0, 0, 0, 0.2);
+      opacity: 0.7;
+      font-size: 2em;
+      width: 100%;
+      min-height: 17em;
+      color: white; }
+  .main___2CXzs .cards___1MJLF {
+    margin: 3em;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 3em;
+    min-height: 18em; }
+    .main___2CXzs .cards___1MJLF div {
+      margin-top: 4em;
+      height: 18em;
+      border: solid 2px #12A63E;
+      border-radius: 2em;
+      padding: 3em; }
+  .main___2CXzs .third___xubTV {
+    margin-top: 4em;
+    box-sizing: border-box;
+    height: 18em;
+    border: solid 2px #12A63E;
+    border-radius: 2em;
+    padding: 3em; }
+
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(250, 243, 243, 0.986);
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: rgba(250, 243, 243, 0.986); }
+
+a:visited {
+  color: rgba(250, 243, 243, 0.986); }
+
+a:hover {
+  color: white;
+  background-color: #12A63E; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 .account___3xtWf {
   margin: 2em; }
   .account___3xtWf .heading___V7y3g {
@@ -278,8 +397,33 @@ a:hover {
   .account___3xtWf .form___14s8b {
     display: flex; }
   .account___3xtWf form {
+    font-size: large;
     width: 40%;
     margin: 3em; }
+    .account___3xtWf form fieldset {
+      padding-top: 40px;
+      border: medium solid #12A63E;
+      border-radius: 15px; }
+      .account___3xtWf form fieldset legend {
+        border-radius: 5px; }
+      .account___3xtWf form fieldset input {
+        height: 40px;
+        width: 400px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        border: 2px solid rgba(250, 243, 243, 0.986);
+        border-radius: 7px; }
+      .account___3xtWf form fieldset label {
+        margin-left: 30px; }
+      .account___3xtWf form fieldset button {
+        height: 50px;
+        width: 400px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        color: white;
+        background-color: #12A63E;
+        border: 2px solid rgba(250, 243, 243, 0.986);
+        border-radius: 7px; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

@@ -112,10 +112,19 @@ var Account = function Account(props) {
       lineNumber: 13,
       columnNumber: 3
     }
-  }, "First name:"), __jsx("input", {
+  }, "First name:"), " ", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 42
+    }
+  }), __jsx("input", {
     type: "text",
     id: "fname",
     name: "fname",
+    placeholder: "First Name",
+    required: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -137,10 +146,19 @@ var Account = function Account(props) {
       lineNumber: 16,
       columnNumber: 3
     }
-  }, "Last name:"), __jsx("input", {
+  }, "Last name:"), " ", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 41
+    }
+  }), __jsx("input", {
     type: "text",
     id: "lname",
     name: "lname",
+    placeholder: "Last Name",
+    required: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -162,10 +180,19 @@ var Account = function Account(props) {
       lineNumber: 19,
       columnNumber: 3
     }
-  }, "Email:"), __jsx("input", {
+  }, "Email:"), " ", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 37
+    }
+  }), __jsx("input", {
     type: "email",
     id: "email",
     name: "email",
+    placeholder: "johndoe@gmail.com",
+    required: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -187,10 +214,19 @@ var Account = function Account(props) {
       lineNumber: 22,
       columnNumber: 3
     }
-  }, "phone number:"), __jsx("input", {
+  }, "phone number:"), " ", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 45
+    }
+  }), __jsx("input", {
     type: "number",
     id: "number",
     name: "number",
+    placeholder: "+2348090213567",
+    required: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -212,10 +248,19 @@ var Account = function Account(props) {
       lineNumber: 25,
       columnNumber: 3
     }
-  }, "phone number:"), __jsx("input", {
+  }, "phone number:"), " ", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 45
+    }
+  }), __jsx("input", {
     type: "number",
     id: "number",
     name: "number",
+    placeholder: "4, johnson Street, balogun, Lagos",
+    required: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -237,10 +282,18 @@ var Account = function Account(props) {
       lineNumber: 28,
       columnNumber: 3
     }
-  }, "password:"), __jsx("input", {
+  }, "password:"), " ", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 43
+    }
+  }), __jsx("input", {
     type: "password",
     id: "password",
     name: "passweord",
+    required: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -254,16 +307,14 @@ var Account = function Account(props) {
       lineNumber: 30,
       columnNumber: 3
     }
-  }), __jsx("input", {
-    type: "submit",
-    value: "Submit",
+  }), __jsx("button", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31,
       columnNumber: 3
     }
-  }))), __jsx("form", {
+  }, "Submit"))), __jsx("form", {
     className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.login,
     __self: _this,
     __source: {
@@ -293,7 +344,14 @@ var Account = function Account(props) {
       lineNumber: 37,
       columnNumber: 3
     }
-  }, "Email:"), __jsx("input", {
+  }, "Email:"), " ", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 37
+    }
+  }), __jsx("input", {
     type: "email",
     id: "email",
     name: "email",
@@ -318,7 +376,14 @@ var Account = function Account(props) {
       lineNumber: 40,
       columnNumber: 3
     }
-  }, "password:"), __jsx("input", {
+  }, "password:"), " ", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 43
+    }
+  }), __jsx("input", {
     type: "password",
     id: "password",
     name: "passweord",
@@ -328,23 +393,21 @@ var Account = function Account(props) {
       lineNumber: 41,
       columnNumber: 3
     }
-  }), __jsx("input", {
-    type: "submit",
-    value: "Submit",
+  }), __jsx("button", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42,
       columnNumber: 3
     }
-  })))));
+  }, "Submit")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Account);
 
 /***/ }),
 
-/***/ 5:
+/***/ 7:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true ***!
   \********************************************************************************************************************************************************************************/
@@ -367,5 +430,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[7,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=account.js.map

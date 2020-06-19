@@ -10,36 +10,36 @@ const Account = (props)=>{
 <form className={css.signup}>
  <fieldset>
   <legend>Create Account:</legend>
-  <label for="fname">First name:</label>
-  < input type="text" id="fname" name="fname" />
+  <label for="fname">First name:</label> <br />
+  < input type="text" id="fname" name="fname" placeholder="First Name" required/>
   <br />
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname" />
+  <label for="lname">Last name:</label> <br />
+  <input type="text" id="lname" name="lname" placeholder="Last Name" required/>
   <br />
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" />  
+  <label for="email">Email:</label> <br />
+  <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required/>  
   <br />
-  <label for="number">phone number:</label>
-  <input type="number" id="number" name="number" />
+  <label for="number">phone number:</label> <br/>
+  <input type="number" id="number" name="number" placeholder="+2348090213567" required/>
   <br />
-  <label for="number">phone number:</label>
-  <input type="number" id="number" name="number" />
+  <label for="number">phone number:</label> <br />
+  <input type="number" id="number" name="number" placeholder="4, johnson Street, balogun, Lagos" required />
   <br />
-  <label for="password">password:</label>
-  <input type="password" id="password" name="passweord" />  
+  <label for="password">password:</label> <br />
+  <input type="password" id="password" name="passweord" required/>  
   <br />
-  <input type="submit" value="Submit" />
+  <button>Submit</button>
  </fieldset>
 </form>
 <form className={css.login}>
  <fieldset>
   <legend>Login:</legend>
-  <label for="email">Email:</label>
+  <label for="email">Email:</label> <br />
   <input type="email" id="email" name="email" />  
   <br />
-  <label for="password">password:</label>
+  <label for="password">password:</label> <br />
   <input type="password" id="password" name="passweord" />  
-  <input type="submit" value="Submit" />
+  <button>Submit</button>
  </fieldset>
 </form>
 </div>
