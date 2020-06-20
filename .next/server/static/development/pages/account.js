@@ -120,403 +120,411 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+const initialState = {
+  fname: '',
+  lname: '',
+  email: '',
+  number: '',
+  address: '',
+  password: ''
+};
+
+const reducer = (state, {
+  field,
+  value
+}) => {
+  return _objectSpread({}, state, {
+    [field]: value
+  });
+};
 
 const Account = props => {
-  const initialState = {
-    fname: '',
-    lname: '',
-    emai: '',
-    number: '',
-    address: '',
-    password: ''
-  };
+  const {
+    0: state,
+    1: dispatch
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useReducer"])(reducer, initialState);
 
-  const reducer = (state, {
-    field,
-    value
-  }) => {
-    return _objectSpread({}, state, {
-      [field]: value
+  const handleChange = e => {
+    dispatch({
+      field: e.target.name,
+      value: e.target.value
     });
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(user);
+    console.log(state);
   };
 
-  const user = () => {
-    const [state, dispatch] = useReducer(reducer, initialState);
-
-    const handleChange = e => {
-      setUser({
-        field: e.target.name,
-        value: e.target.value
-      });
-    };
-
-    return __jsx("div", {
-      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.account,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 9
-      }
-    }, __jsx("h1", {
-      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.heading,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 1
-      }
-    }, "Account"), __jsx("div", {
-      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.form,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38,
-        columnNumber: 1
-      }
-    }, __jsx("form", {
-      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.signup,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39,
-        columnNumber: 1
-      }
-    }, __jsx("fieldset", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40,
-        columnNumber: 2
-      }
-    }, __jsx("legend", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41,
-        columnNumber: 3
-      }
-    }, "Create Account:"), __jsx("label", {
-      for: "fname",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42,
-        columnNumber: 3
-      }
-    }, "First name:"), " ", __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42,
-        columnNumber: 42
-      }
-    }), __jsx("input", {
-      type: "text",
-      id: "fname",
-      name: "fname",
-      value: user.fname,
-      placeholder: "First Name",
-      required: true,
-      onChange: handleChange,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 3
-      }
-    }), __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 3
-      }
-    }), __jsx("label", {
-      for: "lname",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45,
-        columnNumber: 3
-      }
-    }, "Last name:"), " ", __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45,
-        columnNumber: 41
-      }
-    }), __jsx("input", {
-      type: "text",
-      id: "lname",
-      name: "lname",
-      value: user.lname,
-      placeholder: "Last Name",
-      required: true,
-      onChange: handleChange,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46,
-        columnNumber: 3
-      }
-    }), __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47,
-        columnNumber: 3
-      }
-    }), __jsx("label", {
-      for: "email",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48,
-        columnNumber: 3
-      }
-    }, "Email:"), " ", __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48,
-        columnNumber: 37
-      }
-    }), __jsx("input", {
-      type: "email",
-      id: "email",
-      name: "email",
-      value: user.email,
-      placeholder: "johndoe@gmail.com",
-      required: true,
-      onChange: handleChange,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 3
-      }
-    }), __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50,
-        columnNumber: 3
-      }
-    }), __jsx("label", {
-      for: "number",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 3
-      }
-    }, "phone number:"), " ", __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 45
-      }
-    }), __jsx("input", {
-      type: "number",
-      id: "number",
-      name: "number",
-      value: user.number,
-      placeholder: "+2348090213567",
-      required: true,
-      onChange: handleChange,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52,
-        columnNumber: 3
-      }
-    }), __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 53,
-        columnNumber: 3
-      }
-    }), __jsx("label", {
-      for: "address",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54,
-        columnNumber: 3
-      }
-    }, "address:"), " ", __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54,
-        columnNumber: 41
-      }
-    }), __jsx("input", {
-      type: "text",
-      id: "address",
-      name: "address",
-      value: user.address,
-      placeholder: "4, johnson Street, balogun, Lagos",
-      required: true,
-      onChange: handleChange,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55,
-        columnNumber: 3
-      }
-    }), __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 56,
-        columnNumber: 3
-      }
-    }), __jsx("label", {
-      for: "password",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57,
-        columnNumber: 3
-      }
-    }, "password:"), " ", __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57,
-        columnNumber: 43
-      }
-    }), __jsx("input", {
-      type: "password",
-      id: "password",
-      name: "password",
-      value: user.password,
-      required: true,
-      onChange: handleChange,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58,
-        columnNumber: 3
-      }
-    }), __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59,
-        columnNumber: 3
-      }
-    }), __jsx("button", {
-      onClick: handleSubmit,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 60,
-        columnNumber: 3
-      }
-    }, "Submit"))), __jsx("form", {
-      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.login,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 63,
-        columnNumber: 1
-      }
-    }, __jsx("fieldset", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 64,
-        columnNumber: 2
-      }
-    }, __jsx("legend", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65,
-        columnNumber: 3
-      }
-    }, "Login:"), __jsx("label", {
-      for: "email",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 66,
-        columnNumber: 3
-      }
-    }, "Email:"), " ", __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 66,
-        columnNumber: 37
-      }
-    }), __jsx("input", {
-      type: "email",
-      id: "email",
-      name: "email",
-      value: user.email,
-      onChange: handleChange,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 67,
-        columnNumber: 3
-      }
-    }), __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68,
-        columnNumber: 3
-      }
-    }), __jsx("label", {
-      for: "password",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 69,
-        columnNumber: 3
-      }
-    }, "password:"), " ", __jsx("br", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 69,
-        columnNumber: 43
-      }
-    }), __jsx("input", {
-      type: "password",
-      id: "password",
-      name: "password",
-      value: user.password,
-      onChange: handleChange,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 70,
-        columnNumber: 3
-      }
-    }), __jsx("button", {
-      onClick: handleSubmit,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 71,
-        columnNumber: 3
-      }
-    }, "Submit")))));
-  };
+  const {
+    fname,
+    lname,
+    email,
+    number,
+    address,
+    password
+  } = state;
+  return __jsx("div", {
+    className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.account,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 9
+    }
+  }, __jsx("h1", {
+    className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.heading,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 1
+    }
+  }, "Account"), __jsx("div", {
+    className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.form,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 1
+    }
+  }, __jsx("form", {
+    className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.signup,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 1
+    }
+  }, __jsx("fieldset", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 2
+    }
+  }, __jsx("legend", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 3
+    }
+  }, "Create Account:"), __jsx("label", {
+    for: "fname",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 3
+    }
+  }, "First name:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 42
+    }
+  }), __jsx("input", {
+    type: "text",
+    id: "fname",
+    name: "fname",
+    value: fname,
+    placeholder: "First Name",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 3
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 3
+    }
+  }), __jsx("label", {
+    for: "lname",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 3
+    }
+  }, "Last name:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 41
+    }
+  }), __jsx("input", {
+    type: "text",
+    id: "lname",
+    name: "lname",
+    value: lname,
+    placeholder: "Last Name",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 3
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 3
+    }
+  }), __jsx("label", {
+    for: "email",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 3
+    }
+  }, "Email:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 37
+    }
+  }), __jsx("input", {
+    type: "email",
+    id: "email",
+    name: "email",
+    value: email,
+    placeholder: "johndoe@gmail.com",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 3
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 3
+    }
+  }), __jsx("label", {
+    for: "number",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 3
+    }
+  }, "phone number:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 45
+    }
+  }), __jsx("input", {
+    type: "number",
+    id: "number",
+    name: "number",
+    value: number,
+    placeholder: "+2348090213567",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 3
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 3
+    }
+  }), __jsx("label", {
+    for: "address",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 3
+    }
+  }, "address:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 41
+    }
+  }), __jsx("input", {
+    type: "text",
+    id: "address",
+    name: "address",
+    value: address,
+    placeholder: "4, johnson Street, balogun, Lagos",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 3
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 3
+    }
+  }), __jsx("label", {
+    for: "password",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 3
+    }
+  }, "password:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 43
+    }
+  }), __jsx("input", {
+    type: "password",
+    id: "password",
+    name: "password",
+    value: password,
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 3
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 3
+    }
+  }), __jsx("button", {
+    onClick: handleSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 3
+    }
+  }, "Submit"))), __jsx("form", {
+    className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.login,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 1
+    }
+  }, __jsx("fieldset", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 2
+    }
+  }, __jsx("legend", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 3
+    }
+  }, "Login:"), __jsx("label", {
+    for: "email",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 3
+    }
+  }, "Email:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 37
+    }
+  }), __jsx("input", {
+    type: "email",
+    id: "email",
+    name: "email",
+    value: email,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67,
+      columnNumber: 3
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68,
+      columnNumber: 3
+    }
+  }), __jsx("label", {
+    for: "password",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 3
+    }
+  }, "password:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 43
+    }
+  }), __jsx("input", {
+    type: "password",
+    id: "password",
+    name: "password",
+    value: password,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 3
+    }
+  }), __jsx("button", {
+    onClick: handleSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 3
+    }
+  }, "Submit")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Account);
