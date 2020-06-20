@@ -105,29 +105,6 @@ const Account = (props) => {
             <button onClick={handleSubmit}>Submit</button>
           </fieldset>
         </form>
-        <form className={css.login}>
-          <fieldset>
-            <legend>Login:</legend>
-            <label for="email">Email:</label> <br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={handleChange}
-            />
-            <br />
-            <label for="password">password:</label> <br />
-            <input
-              type="password"
-              id="password"
-              name="password"
-              value={password}
-              onChange={handleChange}
-            />
-            <button onClick={handleSubmit}>Submit</button>
-          </fieldset>
-        </form>
       </div>
     </div>
   );
