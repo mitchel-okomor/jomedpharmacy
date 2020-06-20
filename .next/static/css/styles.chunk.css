@@ -356,5 +356,65 @@ input[type=number] {
         border: 2px solid rgba(250, 243, 243, 0.986);
         border-radius: 7px; }
 
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(250, 243, 243, 0.986);
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: rgba(250, 243, 243, 0.986); }
+
+a:visited {
+  color: rgba(250, 243, 243, 0.986); }
+
+a:hover {
+  color: white;
+  background-color: #12A63E; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.form___3s8kc {
+  display: flex; }
+
+form {
+  font-size: large;
+  width: 40%;
+  margin: 3em; }
+  form fieldset {
+    padding-top: 40px;
+    border: medium solid #12A63E;
+    border-radius: 15px; }
+    form fieldset legend {
+      border-radius: 5px; }
+    form fieldset input {
+      height: 40px;
+      width: 400px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      border: 2px solid rgba(250, 243, 243, 0.986);
+      border-radius: 7px; }
+    form fieldset label {
+      margin-left: 30px; }
+    form fieldset button {
+      height: 50px;
+      width: 400px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      color: white;
+      background-color: #12A63E;
+      border: 2px solid rgba(250, 243, 243, 0.986);
+      border-radius: 7px; }
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/
