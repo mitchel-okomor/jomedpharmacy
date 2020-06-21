@@ -1,5 +1,5 @@
 import React, { useState, useReducer } from "react";
-import css from "./account.module.scss";
+import css from './signup.module.scss';
 import axios from "axios";
 
 const initialState = {
@@ -16,7 +16,7 @@ const reducer = (state, { field, value }) => {
   return { ...state, [field]: value };
 };
 
-const Account = (props) => {
+const Signup = (props) => {
     //use reducer hook to dispatch change action
   const [state, dispatch] = useReducer(reducer, initialState);
   const handleChange = (e) => {
@@ -30,10 +30,6 @@ const Account = (props) => {
   };
   const { fname, lname, email, number, address, password } = state;
   return (
-    <div className={css.account}>
-      <h1 className={css.heading}>Account</h1>
-
-      <div className={css.form}>
         <form className={css.signup}>
           <fieldset>
             <legend>Create Account:</legend>
@@ -105,9 +101,7 @@ const Account = (props) => {
             <button onClick={handleSubmit}>Submit</button>
           </fieldset>
         </form>
-      </div>
-    </div>
   );
 };
 
-export default Account;
+export default Signup;
