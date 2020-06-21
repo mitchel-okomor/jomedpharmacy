@@ -715,69 +715,147 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\account.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
-
-
-const initialState = {
-  fname: "",
-  lname: "",
-  email: "",
-  number: "",
-  address: "",
-  password: ""
-}; //handle state changes with reducer
-
-const reducer = (state, {
-  field,
-  value
-}) => {
-  return _objectSpread({}, state, {
-    [field]: value
-  });
-};
 
 const Account = props => {
-  //use reducer hook to dispatch change action
   const {
-    0: state,
-    1: dispatch
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useReducer"])(reducer, initialState);
+    0: user,
+    1: setUser
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([{}]);
 
-  const handleChange = e => {
-    dispatch({
-      field: e.target.name,
-      value: e.target.value
-    });
-  }; //submit form data to backend server
+  const fetchUser = async () => {
+    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("http://localhost:4000/user/16");
 
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log(state);
+    if (res.status == 200) {
+      return res.data;
+    }
   };
 
   const {
-    fname,
-    lname,
+    name,
     email,
     number,
-    address,
-    password
-  } = state;
+    address
+  } = user;
+
+  if (user.name) {
+    return __jsx("div", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 6
+      }
+    }, __jsx("h2", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 8
+      }
+    }, "User Profile"), __jsx("table", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 8
+      }
+    }, __jsx("tr", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 10
+      }
+    }, "  ", __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 16
+      }
+    }, "name"), " ", __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 30
+      }
+    }, name)), __jsx("tr", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 10
+      }
+    }, "  ", __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 16
+      }
+    }, "name"), " ", __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 30
+      }
+    }, email)), __jsx("tr", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 10
+      }
+    }, "  ", __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 16
+      }
+    }, "name"), " ", __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 30
+      }
+    }, number)), __jsx("tr", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 10
+      }
+    }, "  ", __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 16
+      }
+    }, "name"), " ", __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 30
+      }
+    }, address))));
+  }
+
   return __jsx("div", {
     className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.account,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 37,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -785,7 +863,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 38,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -793,21 +871,21 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 40,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 41,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 42,
       columnNumber: 7
     }
   })));
