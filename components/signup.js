@@ -1,19 +1,21 @@
 import React, { useState, useReducer } from "react";
 import css from './signup.module.scss';
 import axios from "axios";
+import Loading from './loading';
 
 const initialState = {
-  fname: "",
+      fname: "",
   lname: "",
   email: "",
   number: "",
   address: "",
   password: "",
+loading: false
 };
 
 //handle state changes with reducer
 const reducer = (state, { field, value }) => {
-  return { ...state, [field]: value };
+return { ...state, [field]: value  };
 };
 
 const Signup = (props) => {
@@ -24,11 +26,32 @@ const Signup = (props) => {
   };
 
   //submit form data to backend server
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(state);
+  const handleSubmit =async (e) => {
+        e.preventDefault();
+        dispatch({field:"loading", value:true});
+        console.log(state.loading);
+const url = 'http://localhost:4000/customer';
+  console.log(state);
+  try{
+  const response = await axios.post(url, state);
+  if(response.status==200){
+   console.log(response);
+dispatch({field:"loading", value:false}); 
+  }
+}
+  catch(error){
+    console.log(error);
+  }
+  
   };
-  const { fname, lname, email, number, address, password } = state;
+
+
+
+
+  const { fname, lname, email, number, address, password, loading} = state;
+  if(loading){
+return <Loading />
+    }
   return (
         <form className={css.signup}>
           <fieldset>

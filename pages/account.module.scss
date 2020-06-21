@@ -10,11 +10,12 @@ text-align: center;
 
 .form{
 display: flex;
+flex-basis: 40%;
 }
 form{
 
     font-size: large;
-    width: 60%;
+    width: 50%;
     margin: 4em;
   fieldset{
       padding-top: 40px;

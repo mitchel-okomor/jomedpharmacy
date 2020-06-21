@@ -93,6 +93,54 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/loading.js":
+/*!*******************************!*\
+  !*** ./components/loading.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _loading_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loading.module.scss */ "./components/loading.module.scss");
+/* harmony import */ var _loading_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_loading_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\loading.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Loading = props => {
+  return __jsx("div", {
+    className: _loading_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.loader,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 10
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Loading);
+
+/***/ }),
+
+/***/ "./components/loading.module.scss":
+/*!****************************************!*\
+  !*** ./components/loading.module.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"loader": "loader___303lL",
+	"spin": "spin___aGIZ0"
+};
+
+/***/ }),
+
 /***/ "./components/login.js":
 /*!*****************************!*\
   !*** ./components/login.js ***!
@@ -189,7 +237,7 @@ const Login = props => {
       columnNumber: 13
     }
   }, "Login:"), __jsx("label", {
-    for: "email",
+    for: "email-address",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -201,11 +249,11 @@ const Login = props => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34,
-      columnNumber: 47
+      columnNumber: 55
     }
   }), __jsx("input", {
     type: "email",
-    id: "email",
+    id: "email-address",
     name: "email",
     value: email,
     onChange: handleChange,
@@ -223,7 +271,7 @@ const Login = props => {
       columnNumber: 13
     }
   }), __jsx("label", {
-    for: "password",
+    for: "login-password",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -235,11 +283,11 @@ const Login = props => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43,
-      columnNumber: 53
+      columnNumber: 59
     }
   }), __jsx("input", {
     type: "password",
-    id: "password",
+    id: "login-password",
     name: "password",
     value: password,
     onChange: handleChange,
@@ -290,6 +338,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _signup_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_signup_module_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _loading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loading */ "./components/loading.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\signup.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -302,13 +351,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 const initialState = {
   fname: "",
   lname: "",
   email: "",
   number: "",
   address: "",
-  password: ""
+  password: "",
+  loading: false
 }; //handle state changes with reducer
 
 const reducer = (state, {
@@ -335,9 +386,29 @@ const Signup = props => {
   }; //submit form data to backend server
 
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
+    dispatch({
+      field: "loading",
+      value: true
+    });
+    console.log(state.loading);
+    const url = 'http://localhost:4000/customer';
     console.log(state);
+
+    try {
+      const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(url, state);
+
+      if (response.status == 200) {
+        console.log(response);
+        dispatch({
+          field: "loading",
+          value: false
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const {
@@ -346,28 +417,41 @@ const Signup = props => {
     email,
     number,
     address,
-    password
+    password,
+    loading
   } = state;
+
+  if (loading) {
+    return __jsx(_loading__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53,
+        columnNumber: 8
+      }
+    });
+  }
+
   return __jsx("form", {
     className: _signup_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.signup,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 56,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 57,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 58,
       columnNumber: 13
     }
   }, "Create Account:"), __jsx("label", {
@@ -375,14 +459,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 59,
       columnNumber: 13
     }
   }, "First name:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 59,
       columnNumber: 52
     }
   }), __jsx("input", {
@@ -396,14 +480,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 60,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 69,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -411,14 +495,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 70,
       columnNumber: 13
     }
   }, "Last name:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 70,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -432,14 +516,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 71,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 80,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -447,14 +531,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 81,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 81,
       columnNumber: 47
     }
   }), __jsx("input", {
@@ -468,14 +552,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 82,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 91,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -483,14 +567,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 92,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 92,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -504,14 +588,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 93,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 102,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -519,14 +603,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 103,
       columnNumber: 13
     }
   }, "address:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 103,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -540,14 +624,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 104,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 113,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -555,14 +639,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 114,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 114,
       columnNumber: 53
     }
   }), __jsx("input", {
@@ -575,14 +659,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 115,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 123,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -590,7 +674,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
+      lineNumber: 124,
       columnNumber: 13
     }
   }, "Submit")));

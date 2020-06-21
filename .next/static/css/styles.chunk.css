@@ -395,10 +395,11 @@ input[type=number] {
     margin: auto;
     text-align: center; }
   .account___3xtWf .form___14s8b {
-    display: flex; }
+    display: flex;
+    flex-basis: 40%; }
   .account___3xtWf form {
     font-size: large;
-    width: 60%;
+    width: 50%;
     margin: 4em; }
     .account___3xtWf form fieldset {
       padding-top: 40px;
@@ -480,6 +481,31 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield; }
+
+.loader___303lL {
+  text-align: center;
+  margin: auto;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin___aGIZ0 1s linear infinite;
+  /* Safari */
+  animation: spin___aGIZ0 1s linear infinite; }
+
+/* Safari */
+@-webkit-keyframes spin___aGIZ0 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin___aGIZ0 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
