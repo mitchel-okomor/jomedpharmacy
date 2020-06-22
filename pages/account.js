@@ -12,12 +12,13 @@ const [user, setUser] = useState([{}]);
 
  
 
-  const fetchUser = async()=>{
+  useEffect(async()=>{
  const res = await axios.get("http://localhost:4000/user/16");
 if(res.status == 200){
+  console.log(res.data);
   return res.data;
 }
-  }
+  }, []);
 
   const { name, email, number, address } = user;
  if(user.name){

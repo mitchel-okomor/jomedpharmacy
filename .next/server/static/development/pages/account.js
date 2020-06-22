@@ -725,15 +725,14 @@ const Account = props => {
     0: user,
     1: setUser
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([{}]);
-
-  const fetchUser = async () => {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(async () => {
     const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("http://localhost:4000/user/16");
 
     if (res.status == 200) {
+      console.log(res.data);
       return res.data;
     }
-  };
-
+  }, []);
   const {
     name,
     email,
@@ -746,105 +745,105 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 6
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 8
       }
     }, "User Profile"), __jsx("table", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 8
       }
     }, __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 16
       }
     }, "name"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 30
       }
     }, name)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 16
       }
     }, "name"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 30
       }
     }, email)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 16
       }
     }, "name"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 30
       }
     }, number)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 16
       }
     }, "name"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 30
       }
     }, address))));
@@ -855,7 +854,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 38,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -863,7 +862,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 39,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -871,21 +870,21 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 41,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 42,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 43,
       columnNumber: 7
     }
   })));

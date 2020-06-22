@@ -3445,9 +3445,9 @@ var Account = function Account(props) {
       user = _useState[0],
       setUser = _useState[1];
 
-  var fetchUser = function fetchUser() {
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function _callee() {
     var res;
-    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetchUser$(_context) {
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
@@ -3458,20 +3458,20 @@ var Account = function Account(props) {
             res = _context.sent;
 
             if (!(res.status == 200)) {
-              _context.next = 5;
+              _context.next = 6;
               break;
             }
 
+            console.log(res.data);
             return _context.abrupt("return", res.data);
 
-          case 5:
+          case 6:
           case "end":
             return _context.stop();
         }
       }
     }, null, null, null, Promise);
-  };
-
+  }, []);
   var name = user.name,
       email = user.email,
       number = user.number,
@@ -3482,105 +3482,105 @@ var Account = function Account(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 6
       }
     }, __jsx("h2", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 8
       }
     }, "User Profile"), __jsx("table", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 8
       }
     }, __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 16
       }
     }, "name"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 30
       }
     }, name)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 16
       }
     }, "name"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 30
       }
     }, email)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 16
       }
     }, "name"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 30
       }
     }, number)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 16
       }
     }, "name"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 30
       }
     }, address))));
@@ -3591,7 +3591,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 38,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -3599,7 +3599,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 39,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -3607,21 +3607,21 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 41,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 42,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 43,
       columnNumber: 7
     }
   })));
