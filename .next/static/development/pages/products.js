@@ -90,7 +90,23 @@ var Product = function Product(props) {
       lineNumber: 12,
       columnNumber: 19
     }
-  }, "View Item \u2192")))));
+  }, "View Item \u2192")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/products/[id]",
+    as: "/products/".concat(props.product.add),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 15
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 19
+    }
+  }, "Add To Cart \u2192")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Product);
@@ -152,22 +168,6 @@ var ProductList = /*#__PURE__*/function (_Component) {
           lineNumber: 10,
           columnNumber: 9
         }
-      }, __jsx("div", {
-        className: "container mt-4",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11,
-          columnNumber: 11
-        }
-      }, __jsx("div", {
-        className: "row",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12,
-          columnNumber: 13
-        }
       }, this.props.products.map(function (item) {
         return __jsx(_Product__WEBPACK_IMPORTED_MODULE_6__["default"], {
           key: item.id,
@@ -175,11 +175,11 @@ var ProductList = /*#__PURE__*/function (_Component) {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 13,
+            lineNumber: 11,
             columnNumber: 41
           }
         });
-      }))));
+      }));
     }
   }]);
 
@@ -4775,12 +4775,11 @@ Products.getInitialProps = function _callee() {
 
         case 5:
           data = _context.sent;
-          console.log(data);
           return _context.abrupt("return", {
             products: data.data
           });
 
-        case 8:
+        case 7:
         case "end":
           return _context.stop();
       }
@@ -4792,7 +4791,7 @@ Products.getInitialProps = function _callee() {
 
 /***/ }),
 
-/***/ 12:
+/***/ 6:
 /*!**********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fproducts&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Cproducts.js&hotRouterUpdates=true ***!
   \**********************************************************************************************************************************************************************************/
@@ -4815,5 +4814,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[12,"static/runtime/webpack.js","styles"]]]);
+},[[6,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=products.js.map

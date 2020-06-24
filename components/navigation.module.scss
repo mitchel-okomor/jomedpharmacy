@@ -11,11 +11,10 @@ width: 100%;
 display: block;
 padding-right: 2em;
 padding-left: 2em;
-border-bottom: 1px solid $primary-color;
-a {color: $layout-color;
+a {color: $primary-color;
 border-radius: 4px;
 }         
-a:visited {color: $layout-color;} 
+a:visited {color: $primary-color;} 
 a:hover {color: white;
 background-color: $primary-color;
 }   

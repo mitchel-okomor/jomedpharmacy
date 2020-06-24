@@ -11,6 +11,9 @@ const Product = (props) => {
               <Link href="/products/[id]" as={`/products/${props.product.id}`}>
                   <a>View Item &rarr;</a>
               </Link>
+              <Link href="/products/[id]" as={`/products/${props.product.add}`}>
+                  <a>Add To Cart &rarr;</a>
+              </Link>
             </div>
           </div>
       </div>

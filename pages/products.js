@@ -19,7 +19,6 @@ return(
 Products.getInitialProps = async function() {
     const res = await fetch('http://localhost:4000/products');
     const data = await res.json();
-    console.log(data);
     return {
       products: data.data
     };

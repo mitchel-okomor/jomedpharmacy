@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -203,7 +203,23 @@ const Product = props => {
       lineNumber: 12,
       columnNumber: 19
     }
-  }, "View Item \u2192")))));
+  }, "View Item \u2192")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/products/[id]",
+    as: `/products/${props.product.add}`,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 15
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 19
+    }
+  }, "Add To Cart \u2192")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Product);
@@ -240,32 +256,16 @@ class ProductList extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 10,
         columnNumber: 9
       }
-    }, __jsx("div", {
-      className: "container mt-4",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11,
-        columnNumber: 11
-      }
-    }, __jsx("div", {
-      className: "row",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12,
-        columnNumber: 13
-      }
     }, this.props.products.map(item => __jsx(_Product__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: item.id,
       product: item,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13,
+        lineNumber: 11,
         columnNumber: 41
       }
-    })))));
+    })));
   }
 
 }
@@ -2011,7 +2011,6 @@ const Products = props => {
 Products.getInitialProps = async function () {
   const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://localhost:4000/products');
   const data = await res.json();
-  console.log(data);
   return {
     products: data.data
   };
@@ -2034,7 +2033,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/products.js ***!
   \*********************************/
