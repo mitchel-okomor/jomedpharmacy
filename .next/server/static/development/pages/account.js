@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -710,8 +710,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_account_module_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/login */ "./components/login.js");
 /* harmony import */ var _components_signup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/signup */ "./components/signup.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\account.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -724,14 +724,17 @@ const Account = props => {
   const {
     0: user,
     1: setUser
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([{}]);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(async () => {
-    const res = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("http://localhost:4000/user/16");
-
-    if (res.status == 200) {
-      console.log(res.data);
-      return res.data;
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    async function fetchData() {
+      const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('http://localhost:4000/customer/16');
+      const data = await res.json();
+      const user = data.data;
+      console.log(data.data);
+      setUser(user);
     }
+
+    fetchData();
   }, []);
   const {
     name,
@@ -739,114 +742,123 @@ const Account = props => {
     number,
     address
   } = user;
+  console.log(user);
 
-  if (user.name) {
+  if (name !== undefined) {
     return __jsx("div", {
+      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.account,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 32,
         columnNumber: 6
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 33,
         columnNumber: 8
       }
     }, "User Profile"), __jsx("table", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 34,
         columnNumber: 8
       }
     }, __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 35,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 35,
         columnNumber: 16
       }
-    }, "name"), " ", __jsx("td", {
+    }, "Name:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 30
+        lineNumber: 35,
+        columnNumber: 31
       }
     }, name)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 36,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 36,
         columnNumber: 16
       }
-    }, "name"), " ", __jsx("td", {
+    }, "Email:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 30
+        lineNumber: 36,
+        columnNumber: 32
       }
     }, email)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 37,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 37,
         columnNumber: 16
       }
-    }, "name"), " ", __jsx("td", {
+    }, "Phone Number:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 30
+        lineNumber: 37,
+        columnNumber: 39
       }
     }, number)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 38,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 38,
         columnNumber: 16
       }
-    }, "name"), " ", __jsx("td", {
+    }, "Billing Address:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 30
+        lineNumber: 38,
+        columnNumber: 42
       }
-    }, address))));
+    }, address))), __jsx("button", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 8
+      }
+    }, "Edit"));
   }
 
   return __jsx("div", {
@@ -854,7 +866,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 46,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -862,7 +874,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 47,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -870,21 +882,21 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 48,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 49,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 50,
       columnNumber: 7
     }
   })));
@@ -909,7 +921,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!********************************!*\
   !*** multi ./pages/account.js ***!
   \********************************/
@@ -929,6 +941,17 @@ module.exports = __webpack_require__(/*! C:\Users\User PC\workspace\jomed\jomed-
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
+
+/***/ }),
+
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 

@@ -2437,6 +2437,18 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/build/polyfills/fetch/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/build/polyfills/fetch/index.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* globals self */var fetch=self.fetch.bind(self);module.exports=fetch;module.exports.default=module.exports;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true!./":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true ***!
@@ -3426,8 +3438,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _account_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_account_module_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/login */ "./components/login.js");
 /* harmony import */ var _components_signup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/signup */ "./components/signup.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
 
 
 var _this = undefined,
@@ -3441,149 +3453,162 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var Account = function Account(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([{}]),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
       user = _useState[0],
       setUser = _useState[1];
 
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function _callee() {
-    var res;
-    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            _context.next = 2;
-            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_5___default.a.get("http://localhost:4000/user/16"));
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    function fetchData() {
+      var res, data, user;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetchData$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()('http://localhost:4000/customer/16'));
 
-          case 2:
-            res = _context.sent;
+            case 2:
+              res = _context.sent;
+              _context.next = 5;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
-            if (!(res.status == 200)) {
-              _context.next = 6;
-              break;
-            }
+            case 5:
+              data = _context.sent;
+              user = data.data;
+              console.log(data.data);
+              setUser(user);
 
-            console.log(res.data);
-            return _context.abrupt("return", res.data);
-
-          case 6:
-          case "end":
-            return _context.stop();
+            case 9:
+            case "end":
+              return _context.stop();
+          }
         }
-      }
-    }, null, null, null, Promise);
+      }, null, null, null, Promise);
+    }
+
+    fetchData();
   }, []);
   var name = user.name,
       email = user.email,
       number = user.number,
       address = user.address;
+  console.log(user);
 
-  if (user.name) {
+  if (name !== undefined) {
     return __jsx("div", {
+      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.account,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 32,
         columnNumber: 6
       }
     }, __jsx("h2", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 33,
         columnNumber: 8
       }
     }, "User Profile"), __jsx("table", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 34,
         columnNumber: 8
       }
     }, __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 35,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 35,
         columnNumber: 16
       }
-    }, "name"), " ", __jsx("td", {
+    }, "Name:"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 30
+        lineNumber: 35,
+        columnNumber: 31
       }
     }, name)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 36,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 36,
         columnNumber: 16
       }
-    }, "name"), " ", __jsx("td", {
+    }, "Email:"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 30
+        lineNumber: 36,
+        columnNumber: 32
       }
     }, email)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 37,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 37,
         columnNumber: 16
       }
-    }, "name"), " ", __jsx("td", {
+    }, "Phone Number:"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 30
+        lineNumber: 37,
+        columnNumber: 39
       }
     }, number)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 38,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 38,
         columnNumber: 16
       }
-    }, "name"), " ", __jsx("td", {
+    }, "Billing Address:"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 30
+        lineNumber: 38,
+        columnNumber: 42
       }
-    }, address))));
+    }, address))), __jsx("button", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 8
+      }
+    }, "Edit"));
   }
 
   return __jsx("div", {
@@ -3591,7 +3616,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 46,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -3599,7 +3624,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 47,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -3607,21 +3632,21 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 48,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 49,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 50,
       columnNumber: 7
     }
   })));
@@ -3631,7 +3656,7 @@ var Account = function Account(props) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 7:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true ***!
   \********************************************************************************************************************************************************************************/
@@ -3654,5 +3679,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
+},[[7,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=account.js.map

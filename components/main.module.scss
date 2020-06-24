@@ -8,6 +8,8 @@
     background: url('/background.jpg');
     background-repeat: no-repeat;
     background-size: auto;
+    background-attachment: fixed;
+
 
 
 
@@ -18,8 +20,7 @@ justify-content: center;
 margin: auto;
 width: 100%;
 div{
-background-color: rgba(0, 0, 0, 0.2);
-opacity: 0.7;
+background-color: rgba(0, 0, 0, 0.5);
 font-size: 2em;
 width: 100%;
 min-height: 17em;
