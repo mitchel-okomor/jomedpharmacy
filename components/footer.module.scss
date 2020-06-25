@@ -8,13 +8,17 @@
     grid-template-columns: 20% 20% 20% 20%;
     grid-column-gap: 3em;
     padding-left: 6em;
-    color: $primary-color;
-border-top: 2px solid $primary-color;
+    color: white;
+    background-color: $primary-color;
 
 
     div{
 margin: 1em;
 padding: 1em;
         background-color: transparent;
+
+        a{
+            color:white;
+        }
     }
 }

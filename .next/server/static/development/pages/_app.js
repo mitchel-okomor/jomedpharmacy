@@ -115,6 +115,23 @@ module.exports = require("next/dist/next-server/lib/utils.js");
 
 /***/ }),
 
+/***/ "./components/cartcontext.js":
+/*!***********************************!*\
+  !*** ./components/cartcontext.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const CartContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])();
+/* harmony default export */ __webpack_exports__["default"] = (CartContext);
+
+/***/ }),
+
 /***/ "./components/footer.js":
 /*!******************************!*\
   !*** ./components/footer.js ***!
@@ -2728,19 +2745,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./pages/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var _components_cartcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/cartcontext */ "./components/cartcontext.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
  // This default export is required in a new `pages/_app.js` file.
 
 class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
-  constructor(props) {
-    super(props);
+  constructor(...args) {
+    super(...args);
+
+    _defineProperty(this, "state", {
+      cart: [],
+      carttotal: 0
+    });
+
+    _defineProperty(this, "componentDidMount", () => {
+      //get cart items from local storage
+      const cart = JSON.parse(localStorage.getItem('cart')); //get cart total
+
+      const carttotal = JSON.parse(localStorage.getItem('total'));
+
+      if (cart) {
+        this.setState({
+          cart,
+          carttotal
+        });
+      }
+    });
+
+    _defineProperty(this, "addToCart", product => {
+      this.setState({
+        cart: [...this.state.cart, product]
+      }); //save to local storage
+
+      localStorage.setItem('cart', JSON.stringify(this.state.cart));
+    });
+
+    _defineProperty(this, "calculateTotal", price => {
+      this.setState({
+        carttotal: this.state.carttotal + price
+      });
+      localStorage.setItem('total', JSON.stringify(this.state.carttotal));
+    });
   }
 
   render() {
@@ -2752,14 +2807,14 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 47,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 48,
         columnNumber: 4
       }
     })));

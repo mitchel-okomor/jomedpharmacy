@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,34 +104,29 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./productItem.module.scss */ "./components/productItem.module.scss");
+/* harmony import */ var _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_productItem_module_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\productItem.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
 const ProductItem = props => {
   console.log("props: " + props.product);
   return __jsx("div", {
-    className: "container mt-4",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "row",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "col-sm-4",
+    className: _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.productItem,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6,
+      columnNumber: 8
+    }
+  }, __jsx("div", {
+    className: _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.image,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
       columnNumber: 10
     }
   }, __jsx("div", {
@@ -142,7 +137,7 @@ const ProductItem = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 14
     }
   }, __jsx("img", {
@@ -152,15 +147,15 @@ const ProductItem = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 16
     }
   }))), __jsx("div", {
-    className: "col-sm-4 ",
+    className: _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 11
     }
   }, __jsx("div", {
@@ -171,7 +166,7 @@ const ProductItem = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 16
     }
   }, __jsx("h5", {
@@ -179,7 +174,7 @@ const ProductItem = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 18
     }
   }, props.product.name), __jsx("h6", {
@@ -187,14 +182,14 @@ const ProductItem = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 18
     }
   }, "$ ", props.product.price), __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 18
     }
   }, props.product.description), __jsx("button", {
@@ -202,13 +197,26 @@ const ProductItem = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 18
     }
-  }, "Add To Cart")))));
+  }, "Add To Cart"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ProductItem);
+
+/***/ }),
+
+/***/ "./components/productItem.module.scss":
+/*!********************************************!*\
+  !*** ./components/productItem.module.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"productItem": "productItem___3zsw_"
+};
 
 /***/ }),
 
@@ -249,16 +257,19 @@ Productitem.getInitialProps = async function (context) {
     id
   } = context.query;
   const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://localhost:4000/product/${id}`);
-  const product = await res.json();
-  console.log(product);
-  return product.data;
+  const result = await res.json();
+  console.log(result.data);
+  const product = result.data;
+  return {
+    product
+  };
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Productitem);
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!**************************************!*\
   !*** multi ./pages/products/[id].js ***!
   \**************************************/

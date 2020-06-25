@@ -8,8 +8,9 @@ const Productitem = props => {
 Productitem.getInitialProps = async function(context) {
   const { id } = context.query;
   const res = await fetch(`http://localhost:4000/product/${id}`);
-  const product = await res.json();
-  console.log(product);
-  return product.data;
+  const result = await res.json();
+  console.log(result.data);
+  const product = result.data;
+  return {product};
 };
 export default Productitem;

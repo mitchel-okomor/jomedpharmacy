@@ -5,13 +5,15 @@ $secondary-color:#C121CC;
 $page-padding: 2em;
 $div-background: rgba(243, 239, 239, 0.959) ;
 
-
+*{
+   box-sizing: border-box;
+}
 html,body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding:0;
   background-color: $layout-color;
-  box-sizing: border-box;
+ 
 }
 a{
   text-decoration: none;
@@ -46,4 +48,9 @@ font-size: x-large;
   background-color: white;
   border: 2px solid $primary-color;
   border-radius: 7px;
+ cursor:pointer;
+}
+button:hover{
+  height: 55px;
+  width: 210px;
 }

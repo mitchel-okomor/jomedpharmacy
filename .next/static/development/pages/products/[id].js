@@ -11,36 +11,31 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./productItem.module.scss */ "./components/productItem.module.scss");
+/* harmony import */ var _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_productItem_module_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _this = undefined,
     _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\productItem.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
 var ProductItem = function ProductItem(props) {
   console.log("props: " + props.product);
   return __jsx("div", {
-    className: "container mt-4",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "row",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "col-sm-4",
+    className: _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.productItem,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6,
+      columnNumber: 8
+    }
+  }, __jsx("div", {
+    className: _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.image,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
       columnNumber: 10
     }
   }, __jsx("div", {
@@ -51,7 +46,7 @@ var ProductItem = function ProductItem(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 14
     }
   }, __jsx("img", {
@@ -61,15 +56,15 @@ var ProductItem = function ProductItem(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 16
     }
   }))), __jsx("div", {
-    className: "col-sm-4 ",
+    className: _productItem_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 11
     }
   }, __jsx("div", {
@@ -80,7 +75,7 @@ var ProductItem = function ProductItem(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 16
     }
   }, __jsx("h5", {
@@ -88,7 +83,7 @@ var ProductItem = function ProductItem(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 18
     }
   }, props.product.name), __jsx("h6", {
@@ -96,14 +91,14 @@ var ProductItem = function ProductItem(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 18
     }
   }, "$ ", props.product.price), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 18
     }
   }, props.product.description), __jsx("button", {
@@ -111,10 +106,10 @@ var ProductItem = function ProductItem(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 18
     }
-  }, "Add To Cart")))));
+  }, "Add To Cart"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ProductItem);
@@ -961,7 +956,7 @@ var Productitem = function Productitem(props) {
 };
 
 Productitem.getInitialProps = function _callee(context) {
-  var id, res, product;
+  var id, res, result, product;
   return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -976,11 +971,14 @@ Productitem.getInitialProps = function _callee(context) {
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
         case 6:
-          product = _context.sent;
-          console.log(product);
-          return _context.abrupt("return", product.data);
+          result = _context.sent;
+          console.log(result.data);
+          product = result.data;
+          return _context.abrupt("return", {
+            product: product
+          });
 
-        case 9:
+        case 10:
         case "end":
           return _context.stop();
       }
@@ -992,7 +990,7 @@ Productitem.getInitialProps = function _callee(context) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 9:
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fproducts%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Cproducts%5C%5Bid%5D.js&hotRouterUpdates=true ***!
   \********************************************************************************************************************************************************************************************************/
@@ -1015,5 +1013,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[9,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[id].js.map
