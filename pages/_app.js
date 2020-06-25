@@ -18,8 +18,8 @@ componentDidMount = () => {
   const carttotal = JSON.parse(localStorage.getItem('total'));
   if (cart) {
     this.setState({
-       cart,
-       carttotal
+       cart:cart,
+       carttotal:carttotal
     });
   }
 };
@@ -40,11 +40,38 @@ calculateTotal = (price) => {
   localStorage.setItem('total', JSON.stringify(this.state.carttotal));
 }
 
+removeFromTotal = (price) => {
+  if(this.state.carttotal >= 0){
+    this.setState({
+    carttotal: this.state.carttotal - price
+  });
+  localStorage.setItem('total', JSON.stringify(this.state.carttotal));
+  }
+  
+}
+
+removeFromCart = (id)=>{
+  let cart = this.state.cart
+  let newCart = [];
+  for(let i; i<=cart.length; i++){
+if(cart[i].id == id){
+  continue;
+}
+console.log(cart[i]);
+newCart.push(cart[i]);
+  }
+  this.setState({
+    cart:newCart
+});
+//save to local storage
+localStorage.setItem('cart', JSON.stringify(this.state.cart));
+ console.log("removeing")
+}
 
     render(){ const { Component, pageProps } = this.props
 
       return(
- <cartcontext.Provider value={{cart: this.state.cart, addToCart: this.addToCart, total: this.calculateTotal, carttotal: this.state.carttotal}}>
+ <cartcontext.Provider value={{cart: this.state.cart, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
 <Layout>
    <Component {...pageProps} /> 
 </Layout>

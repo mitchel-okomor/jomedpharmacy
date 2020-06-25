@@ -2781,8 +2781,8 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
 
       if (cart) {
         this.setState({
-          cart,
-          carttotal
+          cart: cart,
+          carttotal: carttotal
         });
       }
     });
@@ -2801,6 +2801,36 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       });
       localStorage.setItem('total', JSON.stringify(this.state.carttotal));
     });
+
+    _defineProperty(this, "removeFromTotal", price => {
+      if (this.state.carttotal >= 0) {
+        this.setState({
+          carttotal: this.state.carttotal - price
+        });
+        localStorage.setItem('total', JSON.stringify(this.state.carttotal));
+      }
+    });
+
+    _defineProperty(this, "removeFromCart", id => {
+      let cart = this.state.cart;
+      let newCart = [];
+
+      for (let i; i <= cart.length; i++) {
+        if (cart[i].id == id) {
+          continue;
+        }
+
+        console.log(cart[i]);
+        newCart.push(cart[i]);
+      }
+
+      this.setState({
+        cart: newCart
+      }); //save to local storage
+
+      localStorage.setItem('cart', JSON.stringify(this.state.cart));
+      console.log("removeing");
+    });
   }
 
   render() {
@@ -2813,26 +2843,28 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
         cart: this.state.cart,
         addToCart: this.addToCart,
         total: this.calculateTotal,
+        removeFromCart: this.removeFromCart,
+        removeFromTotal: this.removeFromTotal,
         carttotal: this.state.carttotal
       },
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 74,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48,
+        lineNumber: 75,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49,
+        lineNumber: 76,
         columnNumber: 4
       }
     }))));

@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import CartContext from './cartcontext';
 
 const ProductItem = (props) => {
-  const { addToCart, total } = useContext(CartContext);
+  const { addToCart, removeFromCart, removeFromTotal, total } = useContext(CartContext);
 
     return (
        <div className={css.productItem}>
@@ -18,6 +18,8 @@ const ProductItem = (props) => {
                  <h6 className="card-title">$ {props.product.price}</h6>
                  <p>{props.product.description}</p>
                  <button className="btn btn-large btn-primary" onClick={() => {addToCart(props.product); total(props.product.price); }}>Add to Cart
+                </button>
+                <button className="btn btn-large btn-primary" onClick={() => {removeFromCart(props.product.id); removeFromTotal(props.product.price); }}>remove
                 </button>
                </div>
          </div>

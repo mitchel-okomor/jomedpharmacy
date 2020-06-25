@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { useContext } from 'react';
+import CartContext from './cartcontext';
 
 const Product = (props) => {
+  const { addToCart, total } = useContext(CartContext);
+
  return (
       <div className="col-sm-4">
           <div className="card" style={{width: "18rem"}}>
@@ -12,7 +16,7 @@ const Product = (props) => {
                   <a>View Item &rarr;</a>
               </Link>
               <Link href="/products/[id]" as={`/products/${props.product.add}`}>
-                  <a>Add To Cart &rarr;</a>
+                  <a onClick={() => {addToCart(props.product); total(props.product.price); }}>Add To Cart &rarr;</a>
               </Link>
             </div>
           </div>

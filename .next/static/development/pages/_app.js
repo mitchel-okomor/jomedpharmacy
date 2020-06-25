@@ -6148,6 +6148,38 @@ var MyApp = /*#__PURE__*/function (_App) {
       localStorage.setItem('total', JSON.stringify(_this.state.carttotal));
     });
 
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "removeFromTotal", function (price) {
+      if (_this.state.carttotal >= 0) {
+        _this.setState({
+          carttotal: _this.state.carttotal - price
+        });
+
+        localStorage.setItem('total', JSON.stringify(_this.state.carttotal));
+      }
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "removeFromCart", function (id) {
+      var cart = _this.state.cart;
+      var newCart = [];
+
+      for (var i; i <= cart.length; i++) {
+        if (cart[i].id == id) {
+          continue;
+        }
+
+        console.log(cart[i]);
+        newCart.push(cart[i]);
+      }
+
+      _this.setState({
+        cart: newCart
+      }); //save to local storage
+
+
+      localStorage.setItem('cart', JSON.stringify(_this.state.cart));
+      console.log("removeing");
+    });
+
     return _this;
   }
 
@@ -6162,26 +6194,28 @@ var MyApp = /*#__PURE__*/function (_App) {
           cart: this.state.cart,
           addToCart: this.addToCart,
           total: this.calculateTotal,
+          removeFromCart: this.removeFromCart,
+          removeFromTotal: this.removeFromTotal,
           carttotal: this.state.carttotal
         },
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47,
+          lineNumber: 74,
           columnNumber: 2
         }
       }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48,
+          lineNumber: 75,
           columnNumber: 1
         }
       }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 76,
           columnNumber: 4
         }
       }))));
