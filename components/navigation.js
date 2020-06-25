@@ -4,10 +4,9 @@ import Link from 'next/link';
  const Navigation = () =>{
     return(
         <nav className={css.nav}>
-            <div className="home-icon"><Link href="/">Home</Link></div>
         <ul >
             <li>
-              
+            <Link href="/">Home</Link>
             </li>
             <li className={css.dropdown}>
             <Link href="/products" className={css.dropbtn}> Products  </Link>

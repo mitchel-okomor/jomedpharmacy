@@ -25,9 +25,9 @@ color:white;}
 .nav{
 
     a{
-        color: $layout-color;
-
+        color: $primary-color;
     }
+    a:visited{color:$primary-color;}
 div{
    float:left;
   margin-left: 1em;

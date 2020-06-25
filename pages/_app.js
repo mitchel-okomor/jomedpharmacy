@@ -44,9 +44,11 @@ calculateTotal = (price) => {
     render(){ const { Component, pageProps } = this.props
 
       return(
+ <cartcontext.Provider value={{cart: this.state.cart, addToCart: this.addToCart, total: this.calculateTotal, carttotal: this.state.carttotal}}>
 <Layout>
    <Component {...pageProps} /> 
 </Layout>
+</cartcontext.Provider>
   )  
     }
    

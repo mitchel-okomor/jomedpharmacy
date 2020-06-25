@@ -1,7 +1,10 @@
 import css from './header.module.scss';
 import Link from 'next/link';
+import { useContext } from 'react';
+import CartContext from './cartcontext';
 
 const Header = () => {
+  const { cart } = useContext(CartContext);
     return(
         <header className={css.header}>
             <div className={css.logo}>
@@ -18,7 +21,7 @@ const Header = () => {
 
             <div className={css.activity}>
               <div className={css.user}> <img src="/user.png" /><Link href="/account">Login/Signup</Link> </div>               
-                <div className={css.cart}><img src="/cart.png"/><Link href="">Cart</Link>  </div>
+    <div className={css.cart}><Link href="/cart"><img src="/cart.png"/></Link><span>{cart.length}</span></div>
                 </div>
             
         </header>

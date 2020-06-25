@@ -1,7 +1,10 @@
 import css from './productItem.module.scss';
+import { useContext } from 'react';
+import CartContext from './cartcontext';
 
 const ProductItem = (props) => {
-    console.log("props: " + props.product);
+  const { addToCart, total } = useContext(CartContext);
+
     return (
        <div className={css.productItem}>
          <div className={css.image}>
@@ -14,7 +17,8 @@ const ProductItem = (props) => {
                  <h5 className="card-title">{props.product.name}</h5>
                  <h6 className="card-title">$ {props.product.price}</h6>
                  <p>{props.product.description}</p>
-                 <button className="btn btn-large btn-primary">Add To Cart</button>
+                 <button className="btn btn-large btn-primary" onClick={() => {addToCart(props.product); total(props.product.price); }}>Add to Cart
+                </button>
                </div>
          </div>
        </div>

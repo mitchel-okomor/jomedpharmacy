@@ -226,7 +226,10 @@ button:hover {
     color: white; }
 
 .nav___1kSwy a {
-  color: white; }
+  color: #12A63E; }
+
+.nav___1kSwy a:visited {
+  color: #12A63E; }
 
 .nav___1kSwy div {
   float: left;
