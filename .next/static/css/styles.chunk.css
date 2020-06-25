@@ -370,96 +370,10 @@ button:hover {
     .footer___uzAl_ div a {
       color: white; }
 
-* {
-  box-sizing: border-box; }
-
-html, body {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white; }
-
-a {
-  text-decoration: none;
-  color: #12A63E; }
-
-a:visited {
-  color: #12A63E; }
-
-a:hover {
-  color: white;
-  background-color: #12A63E;
-  border-radius: 0.2em;
-  font-size: larger; }
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 50px;
-  width: 200px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  height: 55px;
-  width: 210px; }
-
-.main___2CXzs {
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 2em;
-  min-height: 100em;
-  background: url("/background.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-attachment: fixed; }
-  .main___2CXzs .intro___1q6R9 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    width: 100%; }
-    .main___2CXzs .intro___1q6R9 div {
-      background-color: rgba(0, 0, 0, 0.5);
-      font-size: 2em;
-      width: 100%;
-      min-height: 17em;
-      color: white; }
-  .main___2CXzs .cards___1MJLF {
-    margin: 3em;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 3em;
-    min-height: 18em; }
-    .main___2CXzs .cards___1MJLF div {
-      margin-top: 4em;
-      height: 18em;
-      border: solid 2px #12A63E;
-      border-radius: 2em;
-      padding: 3em; }
-  .main___2CXzs .third___xubTV {
-    margin-top: 4em;
-    box-sizing: border-box;
-    height: 18em;
-    border: solid 2px #12A63E;
-    border-radius: 2em;
-    padding: 3em; }
-
 .products___Cd1n8 {
+  margin: 2em; }
+
+.productItem___3zsw_ {
   margin: 2em; }
 
 

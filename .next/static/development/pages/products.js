@@ -4819,7 +4819,7 @@ Products.getInitialProps = function _callee() {
 
 /***/ }),
 
-/***/ 10:
+/***/ 6:
 /*!**********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fproducts&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Cproducts.js&hotRouterUpdates=true ***!
   \**********************************************************************************************************************************************************************************/
@@ -4842,5 +4842,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]);
+},[[6,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=products.js.map

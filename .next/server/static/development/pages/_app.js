@@ -2787,31 +2787,31 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       }
     });
 
-    _defineProperty(this, "addToCart", product => {
-      this.setState({
+    _defineProperty(this, "addToCart", async product => {
+      await this.setState({
         cart: [...this.state.cart, product]
       }); //save to local storage
 
       localStorage.setItem('cart', JSON.stringify(this.state.cart));
     });
 
-    _defineProperty(this, "calculateTotal", price => {
-      this.setState({
+    _defineProperty(this, "calculateTotal", async price => {
+      await this.setState({
         carttotal: this.state.carttotal + price
       });
       localStorage.setItem('total', JSON.stringify(this.state.carttotal));
     });
 
-    _defineProperty(this, "removeFromTotal", price => {
+    _defineProperty(this, "removeFromTotal", async price => {
       if (this.state.carttotal >= 0) {
-        this.setState({
+        await this.setState({
           carttotal: this.state.carttotal - price
         });
         localStorage.setItem('total', JSON.stringify(this.state.carttotal));
       }
     });
 
-    _defineProperty(this, "removeFromCart", id => {
+    _defineProperty(this, "removeFromCart", async id => {
       let cart = this.state.cart;
       let newCart = [];
 
@@ -2824,7 +2824,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
         newCart.push(cart[i]);
       }
 
-      this.setState({
+      await this.setState({
         cart: newCart
       }); //save to local storage
 
