@@ -7,6 +7,7 @@ import cartcontext from '../components/cartcontext';
 // This default export is required in a new `pages/_app.js` file.
 class MyApp extends App{
   state = {
+    customer:'',
     cart : [],
     carttotal : 0
 }
@@ -16,8 +17,16 @@ componentDidMount = () => {
   const cart = JSON.parse(localStorage.getItem('cart'));
   //get cart total
   const carttotal = JSON.parse(localStorage.getItem('total'));
+const user = async()=> {
+  const res = await fetch('http://localhost:4000/customer/16');
+  const data = await res.json();
+ const user = data.data;
+return user;
+}
+
   if (cart) {
     this.setState({
+      customer:user,
        cart:cart,
        carttotal:carttotal
     });
@@ -41,7 +50,7 @@ calculateTotal = async (price) => {
 }
 
 removeFromTotal = async (price) => {
-  if(this.state.carttotal >= 0){
+  if(this.state.carttotal >= 1){
   await  this.setState({
     carttotal: this.state.carttotal - price
   });
@@ -51,9 +60,10 @@ removeFromTotal = async (price) => {
 }
 
 removeFromCart = async (id)=>{
+  console.log("product: "+id);
   let cart = this.state.cart
   let newCart = [];
-  for(let i; i<=cart.length; i++){
+  for(let i=0; i<=cart.length; i++){
 if(cart[i].id == id){
   continue;
 }
@@ -65,11 +75,11 @@ newCart.push(cart[i]);
 });
 //save to local storage
 localStorage.setItem('cart', JSON.stringify(this.state.cart));
- console.log("removeing")
+ console.log("removing")
 }
 
 render(){ const { Component, pageProps } = this.props
-
+console.log(this.state.customer)
       return(
  <cartcontext.Provider value={{cart: this.state.cart, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
 <Layout>

@@ -6058,9 +6058,9 @@ try {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
@@ -6116,6 +6116,7 @@ var MyApp = /*#__PURE__*/function (_App) {
     _this = _super.call.apply(_super, [this].concat(args));
 
     Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
+      customer: '',
       cart: [],
       carttotal: 0
     });
@@ -6126,8 +6127,36 @@ var MyApp = /*#__PURE__*/function (_App) {
 
       var carttotal = JSON.parse(localStorage.getItem('total'));
 
+      var user = function user() {
+        var res, data, user;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.async(function user$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(fetch('http://localhost:4000/customer/16'));
+
+              case 2:
+                res = _context.sent;
+                _context.next = 5;
+                return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(res.json());
+
+              case 5:
+                data = _context.sent;
+                user = data.data;
+                return _context.abrupt("return", user);
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, null, null, null, Promise);
+      };
+
       if (cart) {
         _this.setState({
+          customer: user,
           cart: cart,
           carttotal: carttotal
         });
@@ -6135,39 +6164,18 @@ var MyApp = /*#__PURE__*/function (_App) {
     });
 
     Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "addToCart", function _callee(product) {
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.async(function _callee$(_context) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.async(function _callee$(_context2) {
         while (1) {
-          switch (_context.prev = _context.next) {
+          switch (_context2.prev = _context2.next) {
             case 0:
-              _context.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.awrap(_this.setState({
-                cart: [].concat(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_this.state.cart), [product])
+              _context2.next = 2;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(_this.setState({
+                cart: [].concat(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_this.state.cart), [product])
               }));
 
             case 2:
               //save to local storage
               localStorage.setItem('cart', JSON.stringify(_this.state.cart));
-
-            case 3:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, null, null, null, Promise);
-    });
-
-    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "calculateTotal", function _callee2(price) {
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.async(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              _context2.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.awrap(_this.setState({
-                carttotal: _this.state.carttotal + price
-              }));
-
-            case 2:
-              localStorage.setItem('total', JSON.stringify(_this.state.carttotal));
 
             case 3:
             case "end":
@@ -6177,18 +6185,39 @@ var MyApp = /*#__PURE__*/function (_App) {
       }, null, null, null, Promise);
     });
 
-    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "removeFromTotal", function _callee3(price) {
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.async(function _callee3$(_context3) {
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "calculateTotal", function _callee2(price) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.async(function _callee2$(_context3) {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
-              if (!(_this.state.carttotal >= 0)) {
-                _context3.next = 4;
+              _context3.next = 2;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(_this.setState({
+                carttotal: _this.state.carttotal + price
+              }));
+
+            case 2:
+              localStorage.setItem('total', JSON.stringify(_this.state.carttotal));
+
+            case 3:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, null, null, null, Promise);
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "removeFromTotal", function _callee3(price) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.async(function _callee3$(_context4) {
+        while (1) {
+          switch (_context4.prev = _context4.next) {
+            case 0:
+              if (!(_this.state.carttotal >= 1)) {
+                _context4.next = 4;
                 break;
               }
 
-              _context3.next = 3;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.awrap(_this.setState({
+              _context4.next = 3;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(_this.setState({
                 carttotal: _this.state.carttotal - price
               }));
 
@@ -6197,7 +6226,7 @@ var MyApp = /*#__PURE__*/function (_App) {
 
             case 4:
             case "end":
-              return _context3.stop();
+              return _context4.stop();
           }
         }
       }, null, null, null, Promise);
@@ -6205,49 +6234,51 @@ var MyApp = /*#__PURE__*/function (_App) {
 
     Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "removeFromCart", function _callee4(id) {
       var cart, newCart, i;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.async(function _callee4$(_context4) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.async(function _callee4$(_context5) {
         while (1) {
-          switch (_context4.prev = _context4.next) {
+          switch (_context5.prev = _context5.next) {
             case 0:
+              console.log("product: " + id);
               cart = _this.state.cart;
               newCart = [];
+              i = 0;
 
-            case 2:
+            case 4:
               if (!(i <= cart.length)) {
-                _context4.next = 10;
+                _context5.next = 12;
                 break;
               }
 
               if (!(cart[i].id == id)) {
-                _context4.next = 5;
+                _context5.next = 7;
                 break;
               }
 
-              return _context4.abrupt("continue", 7);
+              return _context5.abrupt("continue", 9);
 
-            case 5:
+            case 7:
               console.log(cart[i]);
               newCart.push(cart[i]);
 
-            case 7:
+            case 9:
               i++;
-              _context4.next = 2;
+              _context5.next = 4;
               break;
 
-            case 10:
-              _context4.next = 12;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.awrap(_this.setState({
+            case 12:
+              _context5.next = 14;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(_this.setState({
                 cart: newCart
               }));
 
-            case 12:
+            case 14:
               //save to local storage
               localStorage.setItem('cart', JSON.stringify(_this.state.cart));
-              console.log("removeing");
+              console.log("removing");
 
-            case 14:
+            case 16:
             case "end":
-              return _context4.stop();
+              return _context5.stop();
           }
         }
       }, null, null, null, Promise);
@@ -6262,6 +6293,7 @@ var MyApp = /*#__PURE__*/function (_App) {
       var _this$props = this.props,
           Component = _this$props.Component,
           pageProps = _this$props.pageProps;
+      console.log(this.state.customer);
       return __jsx(_components_cartcontext__WEBPACK_IMPORTED_MODULE_14__["default"].Provider, {
         value: {
           cart: this.state.cart,
@@ -6274,21 +6306,21 @@ var MyApp = /*#__PURE__*/function (_App) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74,
+          lineNumber: 84,
           columnNumber: 2
         }
       }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
+          lineNumber: 85,
           columnNumber: 1
         }
       }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76,
+          lineNumber: 86,
           columnNumber: 4
         }
       }))));

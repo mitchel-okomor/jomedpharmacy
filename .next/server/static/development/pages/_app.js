@@ -2769,6 +2769,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     super(...args);
 
     _defineProperty(this, "state", {
+      customer: '',
       cart: [],
       carttotal: 0
     });
@@ -2779,8 +2780,16 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
 
       const carttotal = JSON.parse(localStorage.getItem('total'));
 
+      const user = async () => {
+        const res = await fetch('http://localhost:4000/customer/16');
+        const data = await res.json();
+        const user = data.data;
+        return user;
+      };
+
       if (cart) {
         this.setState({
+          customer: user,
           cart: cart,
           carttotal: carttotal
         });
@@ -2803,7 +2812,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     });
 
     _defineProperty(this, "removeFromTotal", async price => {
-      if (this.state.carttotal >= 0) {
+      if (this.state.carttotal >= 1) {
         await this.setState({
           carttotal: this.state.carttotal - price
         });
@@ -2812,10 +2821,11 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     });
 
     _defineProperty(this, "removeFromCart", async id => {
+      console.log("product: " + id);
       let cart = this.state.cart;
       let newCart = [];
 
-      for (let i; i <= cart.length; i++) {
+      for (let i = 0; i <= cart.length; i++) {
         if (cart[i].id == id) {
           continue;
         }
@@ -2829,7 +2839,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       }); //save to local storage
 
       localStorage.setItem('cart', JSON.stringify(this.state.cart));
-      console.log("removeing");
+      console.log("removing");
     });
   }
 
@@ -2838,6 +2848,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       Component,
       pageProps
     } = this.props;
+    console.log(this.state.customer);
     return __jsx(_components_cartcontext__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {
       value: {
         cart: this.state.cart,
@@ -2850,21 +2861,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74,
+        lineNumber: 84,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75,
+        lineNumber: 85,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
+        lineNumber: 86,
         columnNumber: 4
       }
     }))));
