@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -742,7 +742,6 @@ const Account = props => {
     number,
     address
   } = user;
-  console.log(user);
 
   if (name !== undefined) {
     return __jsx("div", {
@@ -750,112 +749,112 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 31,
         columnNumber: 6
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 32,
         columnNumber: 8
       }
     }, "User Profile"), __jsx("table", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34,
+        lineNumber: 33,
         columnNumber: 8
       }
     }, __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 34,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 34,
         columnNumber: 16
       }
     }, "Name:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 34,
         columnNumber: 31
       }
     }, name)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 35,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 35,
         columnNumber: 16
       }
     }, "Email:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 35,
         columnNumber: 32
       }
     }, email)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 16
       }
     }, "Phone Number:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 39
       }
     }, number)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 37,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 37,
         columnNumber: 16
       }
     }, "Billing Address:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 37,
         columnNumber: 42
       }
     }, address))), __jsx("button", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41,
+        lineNumber: 40,
         columnNumber: 8
       }
     }, "Edit"));
@@ -866,7 +865,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 45,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -874,7 +873,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 46,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -882,21 +881,21 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 47,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 48,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 49,
       columnNumber: 7
     }
   })));
@@ -921,7 +920,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9:
+/***/ 5:
 /*!********************************!*\
   !*** multi ./pages/account.js ***!
   \********************************/

@@ -354,7 +354,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Header = function Header() {
   var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_cartcontext__WEBPACK_IMPORTED_MODULE_3__["default"]),
-      cart = _useContext.cart;
+      cart = _useContext.cart,
+      customer = _useContext.customer;
 
   return __jsx("header", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.header,
@@ -433,7 +434,7 @@ var Header = function Header() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 15
+      columnNumber: 5
     }
   }, " ", __jsx("img", {
     src: "/user.png",
@@ -441,7 +442,7 @@ var Header = function Header() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 42
+      columnNumber: 32
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/account",
@@ -449,9 +450,13 @@ var Header = function Header() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 65
+      columnNumber: 55
     }
-  }, "Login/Signup"), " "), __jsx("div", {
+  }, function () {
+    if (customer.name) {
+      return customer.name;
+    } else return "Login/Signup";
+  }()), " "), __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cart,
     __self: _this,
     __source: {
@@ -6293,10 +6298,10 @@ var MyApp = /*#__PURE__*/function (_App) {
       var _this$props = this.props,
           Component = _this$props.Component,
           pageProps = _this$props.pageProps;
-      console.log(this.state.customer);
       return __jsx(_components_cartcontext__WEBPACK_IMPORTED_MODULE_14__["default"].Provider, {
         value: {
           cart: this.state.cart,
+          customer: this.state.customer,
           addToCart: this.addToCart,
           total: this.calculateTotal,
           removeFromCart: this.removeFromCart,
@@ -6306,21 +6311,21 @@ var MyApp = /*#__PURE__*/function (_App) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84,
+          lineNumber: 83,
           columnNumber: 2
         }
       }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85,
+          lineNumber: 84,
           columnNumber: 1
         }
       }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86,
+          lineNumber: 85,
           columnNumber: 4
         }
       }))));

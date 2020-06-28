@@ -79,9 +79,8 @@ localStorage.setItem('cart', JSON.stringify(this.state.cart));
 }
 
 render(){ const { Component, pageProps } = this.props
-console.log(this.state.customer)
       return(
- <cartcontext.Provider value={{cart: this.state.cart, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
+ <cartcontext.Provider value={{cart: this.state.cart, customer:this.state.customer, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
 <Layout>
    <Component {...pageProps} /> 
 </Layout>

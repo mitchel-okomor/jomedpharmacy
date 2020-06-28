@@ -26,7 +26,6 @@ const [user, setUser] = useState('');
   }, []);
 
   const { name, email, number, address } = user;
- console.log(user);
   if(name !== undefined){
    return(
      <div className={css.account}>

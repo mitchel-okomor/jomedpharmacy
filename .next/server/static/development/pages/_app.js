@@ -474,7 +474,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const Header = () => {
   const {
-    cart
+    cart,
+    customer
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_cartcontext__WEBPACK_IMPORTED_MODULE_3__["default"]);
   return __jsx("header", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.header,
@@ -553,7 +554,7 @@ const Header = () => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 15
+      columnNumber: 5
     }
   }, " ", __jsx("img", {
     src: "/user.png",
@@ -561,7 +562,7 @@ const Header = () => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 42
+      columnNumber: 32
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/account",
@@ -569,9 +570,13 @@ const Header = () => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 65
+      columnNumber: 55
     }
-  }, "Login/Signup"), " "), __jsx("div", {
+  }, (() => {
+    if (customer.name) {
+      return customer.name;
+    } else return "Login/Signup";
+  })()), " "), __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cart,
     __self: undefined,
     __source: {
@@ -2848,10 +2853,10 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       Component,
       pageProps
     } = this.props;
-    console.log(this.state.customer);
     return __jsx(_components_cartcontext__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {
       value: {
         cart: this.state.cart,
+        customer: this.state.customer,
         addToCart: this.addToCart,
         total: this.calculateTotal,
         removeFromCart: this.removeFromCart,
@@ -2861,21 +2866,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84,
+        lineNumber: 83,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 84,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 85,
         columnNumber: 4
       }
     }))));
