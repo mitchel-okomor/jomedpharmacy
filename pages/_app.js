@@ -2,7 +2,11 @@ import App from 'next/app';
 import './styles.scss'
 import Layout from '../components/layout';
 import cartcontext from '../components/cartcontext';
+import fetch from 'isomorphic-unfetch';
 
+
+
+  
 
 // This default export is required in a new `pages/_app.js` file.
 class MyApp extends App{
@@ -12,26 +16,39 @@ class MyApp extends App{
     carttotal : 0
 }
 
-componentDidMount = () => {
-  //get cart items from local storage
+
+
+componentDidMount(){
+
+ (async()=>{
+     //get cart items from local storage
   const cart = JSON.parse(localStorage.getItem('cart'));
   //get cart total
   const carttotal = JSON.parse(localStorage.getItem('total'));
-const user = async()=> {
-  const res = await fetch('http://localhost:4000/customer/16');
-  const data = await res.json();
- const user = data.data;
-return user;
-}
-
+const customer =await this.fetchCustomer();
+console.log(customer);
   if (cart) {
     this.setState({
-      customer:user,
+      customer:customer,
        cart:cart,
        carttotal:carttotal
     });
   }
+  })();
+ 
 };
+
+fetchCustomer = async ()=>{
+  const customerId = JSON.parse(localStorage.getItem('customerId'));
+  
+    console.log(customerId);
+    const url = "http://localhost:4000/customer/"+customerId;
+    const res = await fetch(url);
+    const data = await res.json();
+    const customer = data.data;
+  return customer;
+
+}
 
 //add a product to cart
 addToCart = async (product) => {

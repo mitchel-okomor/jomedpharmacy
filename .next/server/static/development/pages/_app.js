@@ -477,12 +477,13 @@ const Header = () => {
     cart,
     customer
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_cartcontext__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  console.log(customer);
   return __jsx("header", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.header,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -490,21 +491,21 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 13
     }
   }, __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 15
     }
   }, "Jomed Pharmacy"), __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 13
     }
   }, "Your Health Needs at your reach")), __jsx("div", {
@@ -512,14 +513,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 1
     }
   }, __jsx("form", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 1
     }
   }, __jsx("input", {
@@ -530,14 +531,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 3
     }
   }), __jsx("button", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 3
     }
   }, "search"))), __jsx("div", {
@@ -545,7 +546,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 23,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -553,7 +554,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 24,
       columnNumber: 5
     }
   }, " ", __jsx("img", {
@@ -561,7 +562,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 24,
       columnNumber: 32
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -569,7 +570,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 24,
       columnNumber: 55
     }
   }, (() => {
@@ -581,7 +582,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 25,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -589,7 +590,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 25,
       columnNumber: 31
     }
   }, __jsx("img", {
@@ -597,14 +598,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 25,
       columnNumber: 50
     }
   })), __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 25,
       columnNumber: 79
     }
   }, " ", cart.length))));
@@ -2756,6 +2757,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
 /* harmony import */ var _components_cartcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/cartcontext */ "./components/cartcontext.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2763,6 +2766,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -2779,26 +2783,14 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       carttotal: 0
     });
 
-    _defineProperty(this, "componentDidMount", () => {
-      //get cart items from local storage
-      const cart = JSON.parse(localStorage.getItem('cart')); //get cart total
-
-      const carttotal = JSON.parse(localStorage.getItem('total'));
-
-      const user = async () => {
-        const res = await fetch('http://localhost:4000/customer/16');
-        const data = await res.json();
-        const user = data.data;
-        return user;
-      };
-
-      if (cart) {
-        this.setState({
-          customer: user,
-          cart: cart,
-          carttotal: carttotal
-        });
-      }
+    _defineProperty(this, "fetchCustomer", async () => {
+      const customerId = JSON.parse(localStorage.getItem('customerId'));
+      console.log(customerId);
+      const url = "http://localhost:4000/customer/" + customerId;
+      const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(url);
+      const data = await res.json();
+      const customer = data.data;
+      return customer;
     });
 
     _defineProperty(this, "addToCart", async product => {
@@ -2848,6 +2840,25 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     });
   }
 
+  componentDidMount() {
+    (async () => {
+      //get cart items from local storage
+      const cart = JSON.parse(localStorage.getItem('cart')); //get cart total
+
+      const carttotal = JSON.parse(localStorage.getItem('total'));
+      const customer = await this.fetchCustomer();
+      console.log(customer);
+
+      if (cart) {
+        this.setState({
+          customer: customer,
+          cart: cart,
+          carttotal: carttotal
+        });
+      }
+    })();
+  }
+
   render() {
     const {
       Component,
@@ -2866,21 +2877,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 100,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84,
+        lineNumber: 101,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 102,
         columnNumber: 4
       }
     }))));
@@ -2912,6 +2923,17 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
 
 module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_app.js");
 
+
+/***/ }),
+
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 

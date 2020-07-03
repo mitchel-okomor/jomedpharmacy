@@ -5,7 +5,8 @@ import CartContext from './cartcontext';
 
 const Header = () => {
   const { cart, customer } = useContext(CartContext);
-    return(
+  console.log(customer);  
+  return(
         <header className={css.header}>
             <div className={css.logo}>
               <h1>Jomed Pharmacy</h1> 

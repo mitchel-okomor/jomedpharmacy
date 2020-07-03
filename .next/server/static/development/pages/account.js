@@ -88,10 +88,27 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/cartcontext.js":
+/*!***********************************!*\
+  !*** ./components/cartcontext.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const CartContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])();
+/* harmony default export */ __webpack_exports__["default"] = (CartContext);
+
+/***/ }),
 
 /***/ "./components/loading.js":
 /*!*******************************!*\
@@ -761,6 +778,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_signup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/signup */ "./components/signup.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_cartcontext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/cartcontext */ "./components/cartcontext.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\account.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -769,151 +787,135 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const customerId = () => {
-  if (localStorage["customerId"]) {
-    return localStorage["customerId"];
-  }
 
-  return "";
-};
 
 const Account = props => {
+  const {
+    customer
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_cartcontext__WEBPACK_IMPORTED_MODULE_5__["default"]);
   const {
     0: user,
     1: setUser
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    //fetch customer details
-    async function fetchData() {
-      const url = 'http://localhost:4000/customer/' + customerId();
-      const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(url);
-      const data = await res.json();
-      const user = data.data;
-      console.log(data.data);
-      setUser(user);
-    }
-
-    fetchData();
-  }, []);
   const {
     name,
     email,
     number,
     address
-  } = user;
+  } = customer;
 
-  if (name !== undefined) {
+  if (customer !== undefined) {
     return __jsx("div", {
       className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.account,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
+        lineNumber: 21,
         columnNumber: 6
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 22,
         columnNumber: 8
       }
     }, "User Profile"), __jsx("table", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39,
+        lineNumber: 23,
         columnNumber: 8
       }
     }, __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 24,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 24,
         columnNumber: 16
       }
     }, "Name:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 24,
         columnNumber: 31
       }
     }, name)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41,
+        lineNumber: 25,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41,
+        lineNumber: 25,
         columnNumber: 16
       }
     }, "Email:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41,
+        lineNumber: 25,
         columnNumber: 32
       }
     }, email)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 26,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 26,
         columnNumber: 16
       }
     }, "Phone Number:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 26,
         columnNumber: 39
       }
     }, number)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 27,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 27,
         columnNumber: 16
       }
     }, "Billing Address:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 27,
         columnNumber: 42
       }
     }, address))), __jsx("button", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 30,
         columnNumber: 8
       }
     }, "Edit"));
@@ -924,7 +926,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 35,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -932,7 +934,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 36,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -940,21 +942,21 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 37,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 38,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 39,
       columnNumber: 7
     }
   })));
@@ -979,7 +981,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!********************************!*\
   !*** multi ./pages/account.js ***!
   \********************************/
