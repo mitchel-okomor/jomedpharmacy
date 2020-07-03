@@ -16,7 +16,7 @@ const [user, setUser] = useState('');
 
  
   const { name, email, number, address } = customer;
-  if(customer !== undefined){
+  if(customer){
    return(
      <div className={css.account}>
        <h2>User Profile</h2>

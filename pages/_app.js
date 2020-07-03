@@ -43,7 +43,10 @@ fetchCustomer = async ()=>{
   
     console.log(customerId);
     const url = "http://localhost:4000/customer/"+customerId;
-    const res = await fetch(url);
+    const res = await fetch(url, {
+      headers: {
+        "Authorization": localStorage.getItem('token')
+    }});
     const data = await res.json();
     const customer = data.data;
   return customer;

@@ -2787,7 +2787,11 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       const customerId = JSON.parse(localStorage.getItem('customerId'));
       console.log(customerId);
       const url = "http://localhost:4000/customer/" + customerId;
-      const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(url);
+      const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(url, {
+        headers: {
+          "Authorization": localStorage.getItem('token')
+        }
+      });
       const data = await res.json();
       const customer = data.data;
       return customer;
@@ -2877,21 +2881,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100,
+        lineNumber: 103,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101,
+        lineNumber: 104,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 102,
+        lineNumber: 105,
         columnNumber: 4
       }
     }))));

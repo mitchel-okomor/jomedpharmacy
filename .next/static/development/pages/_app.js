@@ -6152,7 +6152,11 @@ var MyApp = /*#__PURE__*/function (_App) {
               console.log(customerId);
               url = "http://localhost:4000/customer/" + customerId;
               _context.next = 5;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_15___default()(url));
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_15___default()(url, {
+                headers: {
+                  "Authorization": localStorage.getItem('token')
+                }
+              }));
 
             case 5:
               res = _context.sent;
@@ -6353,21 +6357,21 @@ var MyApp = /*#__PURE__*/function (_App) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100,
+          lineNumber: 103,
           columnNumber: 2
         }
       }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101,
+          lineNumber: 104,
           columnNumber: 1
         }
       }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102,
+          lineNumber: 105,
           columnNumber: 4
         }
       }))));

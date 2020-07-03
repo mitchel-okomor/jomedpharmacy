@@ -3553,7 +3553,7 @@ var Account = function Account(props) {
       number = customer.number,
       address = customer.address;
 
-  if (customer !== undefined) {
+  if (customer) {
     return __jsx("div", {
       className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.account,
       __self: _this,
