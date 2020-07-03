@@ -4,19 +4,25 @@ import Login from "../components/login";
 import Signup from "../components/signup";
 import fetch from 'isomorphic-unfetch';
 
+const customerId = ()=>{
+if(localStorage["customerId"]){
+  return localStorage["customerId"]
+}
+return "";
+}
 
 
 
 const Account = (props) => {
 const [user, setUser] = useState('');
 
- 
-  
-
-
   useEffect(() => {
+
+    //fetch customer details
     async function fetchData() {
-      const res = await fetch('http://localhost:4000/customer/16');
+      const url = 'http://localhost:4000/customer/' +customerId();
+
+      const res = await fetch(url);
       const data = await res.json();
      const user = data.data;
       console.log(data.data);

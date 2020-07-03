@@ -607,7 +607,7 @@ const Header = () => {
       lineNumber: 24,
       columnNumber: 79
     }
-  }, cart.length))));
+  }, " ", cart.length))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);

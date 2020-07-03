@@ -21,7 +21,7 @@ const Header = () => {
 
             <div className={css.activity}>
     <div className={css.user}> <img src="/user.png" /><Link href="/account">{(()=>{ if(customer.name){return customer.name}else return "Login/Signup"})()}</Link> </div>               
-    <div className={css.cart}><Link href="/cart"><img src="/cart.png"/></Link><span>{cart.length}</span></div>
+    <div className={css.cart}><Link href="/cart"><img src="/cart.png"/></Link><span> {cart.length}</span></div>
                 </div>
             
         </header>

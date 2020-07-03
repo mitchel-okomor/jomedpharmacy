@@ -4,8 +4,8 @@ import axios from "axios";
 import Loading from './loading';
 
 const initialState = {
-      fname: "",
-  lname: "",
+      fName: "",
+  lName: "",
   email: "",
   number: "",
   address: "",
@@ -29,18 +29,21 @@ const Signup = (props) => {
   const handleSubmit =async (e) => {
         e.preventDefault();
         dispatch({field:"loading", value:true});
-        console.log(state.loading);
 const url = 'http://localhost:4000/customer';
   console.log(state);
   try{
-  const response = await axios.post(url, state);
+  const response = await axios.post(url, state, {
+    timeout: 30000
+  });
   if(response.status==200){
    console.log(response);
+   localStorage.setItem("customerId", response);
 dispatch({field:"loading", value:false}); 
   }
 }
   catch(error){
     console.log(error);
+    dispatch({field:"loading", value:false}); 
   }
   
   };

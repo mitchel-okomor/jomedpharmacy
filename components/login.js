@@ -1,10 +1,13 @@
 import React, { useState, useReducer } from "react";
 import css from './login.module.scss';
 import axios from "axios";
+import Loading from './loading';
+
 
 const initialState = {
   email: "",
   password: "",
+  loading: false
 };
 
 //handle state changes with reducer
@@ -20,11 +23,34 @@ const Login = (props) => {
   };
 
   //submit form data to backend server
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    dispatch({field:"loading", value:true});
     console.log(state);
+    const url = 'http://localhost:4000/logincustomer';
+    console.log(state);
+    try{
+    const response = await axios.post(url, state, {
+      timeout: 30000
+    });
+    if(response.status==200){
+     localStorage.setItem("customerId", response.data.customer.id);
+     localStorage.setItem("token", response.data.info.token);
+
+     dispatch({field:"loading", value:false}); 
+    }
+  }
+    catch(error){
+      console.log(error);
+      dispatch({field:"loading", value:false}); 
+    }  
   };
-  const {email, password } = state;
+
+
+  const {email, password, loading } = state;
+  if(loading){
+    return <Loading />
+        }
   return (
 
       <div className={css.form}>
