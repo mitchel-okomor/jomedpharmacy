@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -190,7 +190,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 const initialState = {
   email: "",
   password: "",
-  loading: false
+  loading: false,
+  message: ""
 }; //handle state changes with reducer
 
 const reducer = (state, {
@@ -233,8 +234,23 @@ const Login = props => {
       });
 
       if (response.status == 200) {
+        console.log("passed: " + JSON.stringify(response.data.message));
+        dispatch({
+          field: "message",
+          value: response.data.message
+        });
         localStorage.setItem("customerId", response.data.customer.id);
         localStorage.setItem("token", response.data.info.token);
+        dispatch({
+          field: "loading",
+          value: false
+        });
+      } else {
+        console.log("failed: " + response.data.info);
+        dispatch({
+          field: "message",
+          value: response.data.message
+        });
         dispatch({
           field: "loading",
           value: false
@@ -252,7 +268,8 @@ const Login = props => {
   const {
     email,
     password,
-    loading
+    loading,
+    message
   } = state;
 
   if (loading) {
@@ -260,7 +277,7 @@ const Login = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 60,
         columnNumber: 12
       }
     });
@@ -271,7 +288,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 64,
       columnNumber: 7
     }
   }, __jsx("form", {
@@ -279,21 +296,21 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 65,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 66,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 67,
       columnNumber: 13
     }
   }, "Login:"), __jsx("label", {
@@ -301,14 +318,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 68,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 68,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -320,14 +337,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 69,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 76,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -335,14 +352,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 77,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 77,
       columnNumber: 59
     }
   }), __jsx("input", {
@@ -354,7 +371,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 78,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -362,10 +379,24 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 85,
       columnNumber: 13
     }
-  }, "Submit"))));
+  }, "Submit"), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86,
+      columnNumber: 13
+    }
+  }), __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 3
+    }
+  }, message))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Login);
@@ -478,8 +509,8 @@ const Signup = props => {
   };
 
   const {
-    fname,
-    lname,
+    fName,
+    lName,
     email,
     number,
     address,
@@ -539,7 +570,7 @@ const Signup = props => {
     type: "text",
     id: "fname",
     name: "fname",
-    value: fname,
+    value: fName,
     placeholder: "First Name",
     required: true,
     onChange: handleChange,
@@ -575,7 +606,7 @@ const Signup = props => {
     type: "text",
     id: "lname",
     name: "lname",
-    value: lname,
+    value: lName,
     placeholder: "Last Name",
     required: true,
     onChange: handleChange,
@@ -776,12 +807,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_account_module_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/login */ "./components/login.js");
 /* harmony import */ var _components_signup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/signup */ "./components/signup.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_cartcontext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/cartcontext */ "./components/cartcontext.js");
+/* harmony import */ var _components_cartcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/cartcontext */ "./components/cartcontext.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\account.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -792,17 +820,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const Account = props => {
   const {
     customer
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_cartcontext__WEBPACK_IMPORTED_MODULE_5__["default"]);
-  const {
-    0: user,
-    1: setUser
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
-  const {
-    name,
-    email,
-    number,
-    address
-  } = customer;
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_cartcontext__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
   if (customer) {
     return __jsx("div", {
@@ -810,112 +828,112 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 15,
         columnNumber: 6
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 16,
         columnNumber: 8
       }
     }, "User Profile"), __jsx("table", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 17,
         columnNumber: 8
       }
     }, __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 18,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 18,
         columnNumber: 16
       }
     }, "Name:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 18,
         columnNumber: 31
       }
-    }, name)), __jsx("tr", {
+    }, customer.name)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 19,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 19,
         columnNumber: 16
       }
     }, "Email:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 19,
         columnNumber: 32
       }
-    }, email)), __jsx("tr", {
+    }, customer.email)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 20,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 20,
         columnNumber: 16
       }
     }, "Phone Number:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 20,
         columnNumber: 39
       }
-    }, number)), __jsx("tr", {
+    }, customer.number)), __jsx("tr", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 21,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 21,
         columnNumber: 16
       }
     }, "Billing Address:"), " ", __jsx("td", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 21,
         columnNumber: 42
       }
-    }, address))), __jsx("button", {
+    }, customer.address))), __jsx("button", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 24,
         columnNumber: 8
       }
     }, "Edit"));
@@ -926,7 +944,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 29,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -934,7 +952,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 30,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -942,21 +960,21 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 31,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 32,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 33,
       columnNumber: 7
     }
   })));
@@ -981,7 +999,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!********************************!*\
   !*** multi ./pages/account.js ***!
   \********************************/
@@ -1001,17 +1019,6 @@ module.exports = __webpack_require__(/*! C:\Users\User PC\workspace\jomed\jomed-
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
-
-/***/ }),
-
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 

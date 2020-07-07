@@ -51,7 +51,7 @@ dispatch({field:"loading", value:false});
 
 
 
-  const { fname, lname, email, number, address, password, loading} = state;
+  const { fName, lName, email, number, address, password, loading} = state;
   if(loading){
 return <Loading />
     }
@@ -64,7 +64,7 @@ return <Loading />
               type="text"
               id="fname"
               name="fname"
-              value={fname}
+              value={fName}
               placeholder="First Name"
               required
               onChange={handleChange}
@@ -75,7 +75,7 @@ return <Loading />
               type="text"
               id="lname"
               name="lname"
-              value={lname}
+              value={lName}
               placeholder="Last Name"
               required
               onChange={handleChange}

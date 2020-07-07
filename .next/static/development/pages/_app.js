@@ -357,13 +357,21 @@ var Header = function Header() {
       cart = _useContext.cart,
       customer = _useContext.customer;
 
-  console.log(customer);
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      user = _useState[0],
+      setUser = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (customer === undefined) {
+      setUser("Login/Signup");
+    } else setUser(customer);
+  }), [];
   return __jsx("header", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.header,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 20,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -371,21 +379,21 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 21,
       columnNumber: 13
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 22,
       columnNumber: 15
     }
   }, "Jomed Pharmacy"), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 23,
       columnNumber: 13
     }
   }, "Your Health Needs at your reach")), __jsx("div", {
@@ -393,14 +401,14 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 25,
       columnNumber: 1
     }
   }, __jsx("form", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 26,
       columnNumber: 1
     }
   }, __jsx("input", {
@@ -411,14 +419,14 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 27,
       columnNumber: 3
     }
   }), __jsx("button", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 28,
       columnNumber: 3
     }
   }, "search"))), __jsx("div", {
@@ -426,7 +434,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 33,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -434,7 +442,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 34,
       columnNumber: 5
     }
   }, " ", __jsx("img", {
@@ -442,7 +450,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 34,
       columnNumber: 32
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -450,19 +458,22 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 34,
       columnNumber: 55
     }
-  }, function () {
-    if (customer.name) {
-      return customer.name;
-    } else return "Login/Signup";
-  }()), " "), __jsx("div", {
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 77
+    }
+  }, user))), __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cart,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 37,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -470,25 +481,32 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 37,
       columnNumber: 31
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 50
     }
   }, __jsx("img", {
     src: "/cart.png",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 50
+      lineNumber: 37,
+      columnNumber: 53
     }
-  })), __jsx("span", {
+  }), __jsx("span", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 79
+      lineNumber: 37,
+      columnNumber: 75
     }
-  }, " ", cart.length))));
+  }, " ", cart.length))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -6258,7 +6276,7 @@ var MyApp = /*#__PURE__*/function (_App) {
 
             case 4:
               if (!(i <= cart.length)) {
-                _context5.next = 12;
+                _context5.next = 11;
                 break;
               }
 
@@ -6267,29 +6285,28 @@ var MyApp = /*#__PURE__*/function (_App) {
                 break;
               }
 
-              return _context5.abrupt("continue", 9);
+              return _context5.abrupt("continue", 8);
 
             case 7:
-              console.log(cart[i]);
               newCart.push(cart[i]);
 
-            case 9:
+            case 8:
               i++;
               _context5.next = 4;
               break;
 
-            case 12:
-              _context5.next = 14;
+            case 11:
+              _context5.next = 13;
               return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(_this.setState({
                 cart: newCart
               }));
 
-            case 14:
+            case 13:
               //save to local storage
               localStorage.setItem('cart', JSON.stringify(_this.state.cart));
               console.log("removing");
 
-            case 16:
+            case 15:
             case "end":
               return _context5.stop();
           }
@@ -6357,21 +6374,21 @@ var MyApp = /*#__PURE__*/function (_App) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103,
+          lineNumber: 102,
           columnNumber: 2
         }
       }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104,
+          lineNumber: 103,
           columnNumber: 1
         }
       }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105,
+          lineNumber: 104,
           columnNumber: 4
         }
       }))));

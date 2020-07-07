@@ -87,7 +87,6 @@ removeFromCart = async (id)=>{
 if(cart[i].id == id){
   continue;
 }
-console.log(cart[i]);
 newCart.push(cart[i]);
   }
  await this.setState({

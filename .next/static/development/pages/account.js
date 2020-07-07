@@ -91,7 +91,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 var initialState = {
   email: "",
   password: "",
-  loading: false
+  loading: false,
+  message: ""
 }; //handle state changes with reducer
 
 var reducer = function reducer(state, _ref) {
@@ -138,8 +139,23 @@ var Login = function Login(props) {
             response = _context.sent;
 
             if (response.status == 200) {
+              console.log("passed: " + JSON.stringify(response.data.message));
+              dispatch({
+                field: "message",
+                value: response.data.message
+              });
               localStorage.setItem("customerId", response.data.customer.id);
               localStorage.setItem("token", response.data.info.token);
+              dispatch({
+                field: "loading",
+                value: false
+              });
+            } else {
+              console.log("failed: " + response.data.info);
+              dispatch({
+                field: "message",
+                value: response.data.message
+              });
               dispatch({
                 field: "loading",
                 value: false
@@ -168,14 +184,15 @@ var Login = function Login(props) {
 
   var email = state.email,
       password = state.password,
-      loading = state.loading;
+      loading = state.loading,
+      message = state.message;
 
   if (loading) {
     return __jsx(_loading__WEBPACK_IMPORTED_MODULE_5__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 60,
         columnNumber: 12
       }
     });
@@ -186,7 +203,7 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 64,
       columnNumber: 7
     }
   }, __jsx("form", {
@@ -194,21 +211,21 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 65,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 66,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 67,
       columnNumber: 13
     }
   }, "Login:"), __jsx("label", {
@@ -216,14 +233,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 68,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 68,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -235,14 +252,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 69,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 76,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -250,14 +267,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 77,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 77,
       columnNumber: 59
     }
   }), __jsx("input", {
@@ -269,7 +286,7 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 78,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -277,10 +294,24 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 85,
       columnNumber: 13
     }
-  }, "Submit"))));
+  }, "Submit"), __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86,
+      columnNumber: 13
+    }
+  }), __jsx("div", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 3
+    }
+  }, message))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Login);
@@ -403,8 +434,8 @@ var Signup = function Signup(props) {
     }, null, null, [[4, 11]], Promise);
   };
 
-  var fname = state.fname,
-      lname = state.lname,
+  var fName = state.fName,
+      lName = state.lName,
       email = state.email,
       number = state.number,
       address = state.address,
@@ -463,7 +494,7 @@ var Signup = function Signup(props) {
     type: "text",
     id: "fname",
     name: "fname",
-    value: fname,
+    value: fName,
     placeholder: "First Name",
     required: true,
     onChange: handleChange,
@@ -499,7 +530,7 @@ var Signup = function Signup(props) {
     type: "text",
     id: "lname",
     name: "lname",
-    value: lname,
+    value: lName,
     placeholder: "Last Name",
     required: true,
     onChange: handleChange,
@@ -2526,18 +2557,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/polyfills/fetch/index.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/next/dist/build/polyfills/fetch/index.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* globals self */var fetch=self.fetch.bind(self);module.exports=fetch;module.exports.default=module.exports;
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true!./":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true ***!
@@ -3525,9 +3544,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_account_module_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/login */ "./components/login.js");
 /* harmony import */ var _components_signup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/signup */ "./components/signup.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_cartcontext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/cartcontext */ "./components/cartcontext.js");
+/* harmony import */ var _components_cartcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/cartcontext */ "./components/cartcontext.js");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\account.js";
 
@@ -3539,19 +3556,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
 var Account = function Account(props) {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_cartcontext__WEBPACK_IMPORTED_MODULE_5__["default"]),
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_cartcontext__WEBPACK_IMPORTED_MODULE_4__["default"]),
       customer = _useContext.customer;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
-      user = _useState[0],
-      setUser = _useState[1];
-
-  var name = customer.name,
-      email = customer.email,
-      number = customer.number,
-      address = customer.address;
 
   if (customer) {
     return __jsx("div", {
@@ -3559,112 +3566,112 @@ var Account = function Account(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 15,
         columnNumber: 6
       }
     }, __jsx("h2", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 16,
         columnNumber: 8
       }
     }, "User Profile"), __jsx("table", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 17,
         columnNumber: 8
       }
     }, __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 18,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 18,
         columnNumber: 16
       }
     }, "Name:"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 18,
         columnNumber: 31
       }
-    }, name)), __jsx("tr", {
+    }, customer.name)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 19,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 19,
         columnNumber: 16
       }
     }, "Email:"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 19,
         columnNumber: 32
       }
-    }, email)), __jsx("tr", {
+    }, customer.email)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 20,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 20,
         columnNumber: 16
       }
     }, "Phone Number:"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 20,
         columnNumber: 39
       }
-    }, number)), __jsx("tr", {
+    }, customer.number)), __jsx("tr", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 21,
         columnNumber: 10
       }
     }, "  ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 21,
         columnNumber: 16
       }
     }, "Billing Address:"), " ", __jsx("td", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 21,
         columnNumber: 42
       }
-    }, address))), __jsx("button", {
+    }, customer.address))), __jsx("button", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 24,
         columnNumber: 8
       }
     }, "Edit"));
@@ -3675,7 +3682,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 29,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -3683,7 +3690,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 30,
       columnNumber: 7
     }
   }, "Account"), __jsx("div", {
@@ -3691,21 +3698,21 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 31,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 32,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 33,
       columnNumber: 7
     }
   })));
@@ -3715,7 +3722,7 @@ var Account = function Account(props) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 8:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true ***!
   \********************************************************************************************************************************************************************************/
@@ -3738,5 +3745,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=account.js.map

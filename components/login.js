@@ -7,7 +7,8 @@ import Loading from './loading';
 const initialState = {
   email: "",
   password: "",
-  loading: false
+  loading: false,
+  message: ""
 };
 
 //handle state changes with reducer
@@ -34,10 +35,17 @@ const Login = (props) => {
       timeout: 30000
     });
     if(response.status==200){
+           console.log("passed: "+JSON.stringify(response.data.message));
+           dispatch({field:"message", value:response.data.message}); 
      localStorage.setItem("customerId", response.data.customer.id);
      localStorage.setItem("token", response.data.info.token);
-
      dispatch({field:"loading", value:false}); 
+    }
+    else{
+      console.log("failed: "+response.data.info)
+      dispatch({field:"message", value:response.data.message}); 
+      dispatch({field:"loading", value:false}); 
+
     }
   }
     catch(error){
@@ -47,7 +55,7 @@ const Login = (props) => {
   };
 
 
-  const {email, password, loading } = state;
+  const {email, password, loading, message } = state;
   if(loading){
     return <Loading />
         }
@@ -75,9 +83,12 @@ const Login = (props) => {
               onChange={handleChange}
             />
             <button onClick={handleSubmit}>Submit</button>
+            <br/>
+  <div>{message}</div>
           </fieldset>
         </form>
       </div>
+    
   );
 };
 
