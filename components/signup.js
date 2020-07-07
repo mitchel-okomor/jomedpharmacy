@@ -63,7 +63,7 @@ return <Loading />
             <input
               type="text"
               id="fname"
-              name="fname"
+              name="fName"
               value={fName}
               placeholder="First Name"
               required
@@ -74,7 +74,7 @@ return <Loading />
             <input
               type="text"
               id="lname"
-              name="lname"
+              name="lName"
               value={lName}
               placeholder="Last Name"
               required

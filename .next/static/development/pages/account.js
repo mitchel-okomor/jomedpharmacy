@@ -126,16 +126,14 @@ var Login = function Login(props) {
               field: "loading",
               value: true
             });
-            console.log(state);
             url = 'http://localhost:4000/logincustomer';
-            console.log(state);
-            _context.prev = 5;
-            _context.next = 8;
+            _context.prev = 3;
+            _context.next = 6;
             return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_4___default.a.post(url, state, {
               timeout: 30000
             }));
 
-          case 8:
+          case 6:
             response = _context.sent;
 
             if (response.status == 200) {
@@ -151,7 +149,7 @@ var Login = function Login(props) {
                 value: false
               });
             } else {
-              console.log("failed: " + response.data.info);
+              console.log("failed: " + response.data);
               dispatch({
                 field: "message",
                 value: response.data.message
@@ -162,24 +160,28 @@ var Login = function Login(props) {
               });
             }
 
-            _context.next = 16;
+            _context.next = 15;
             break;
 
-          case 12:
-            _context.prev = 12;
-            _context.t0 = _context["catch"](5);
+          case 10:
+            _context.prev = 10;
+            _context.t0 = _context["catch"](3);
             console.log(_context.t0);
+            dispatch({
+              field: "message",
+              value: "Email or Password Incorrect"
+            });
             dispatch({
               field: "loading",
               value: false
             });
 
-          case 16:
+          case 15:
           case "end":
             return _context.stop();
         }
       }
-    }, null, null, [[5, 12]], Promise);
+    }, null, null, [[3, 10]], Promise);
   };
 
   var email = state.email,
@@ -192,7 +194,7 @@ var Login = function Login(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60,
+        lineNumber: 59,
         columnNumber: 12
       }
     });
@@ -203,7 +205,7 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 63,
       columnNumber: 7
     }
   }, __jsx("form", {
@@ -211,21 +213,21 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 64,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 65,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 66,
       columnNumber: 13
     }
   }, "Login:"), __jsx("label", {
@@ -233,14 +235,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 67,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 67,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -252,14 +254,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 68,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 75,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -267,14 +269,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 76,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 76,
       columnNumber: 59
     }
   }), __jsx("input", {
@@ -286,7 +288,7 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 77,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -294,21 +296,21 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 84,
       columnNumber: 13
     }
   }, "Submit"), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 85,
       columnNumber: 13
     }
   }), __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 86,
       columnNumber: 3
     }
   }, message))));
@@ -493,7 +495,7 @@ var Signup = function Signup(props) {
   }), __jsx("input", {
     type: "text",
     id: "fname",
-    name: "fname",
+    name: "fName",
     value: fName,
     placeholder: "First Name",
     required: true,
@@ -529,7 +531,7 @@ var Signup = function Signup(props) {
   }), __jsx("input", {
     type: "text",
     id: "lname",
-    name: "lname",
+    name: "lName",
     value: lName,
     placeholder: "Last Name",
     required: true,

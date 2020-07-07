@@ -27,9 +27,7 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({field:"loading", value:true});
-    console.log(state);
     const url = 'http://localhost:4000/logincustomer';
-    console.log(state);
     try{
     const response = await axios.post(url, state, {
       timeout: 30000
@@ -42,7 +40,7 @@ const Login = (props) => {
      dispatch({field:"loading", value:false}); 
     }
     else{
-      console.log("failed: "+response.data.info)
+      console.log("failed: "+response.data)
       dispatch({field:"message", value:response.data.message}); 
       dispatch({field:"loading", value:false}); 
 
@@ -50,6 +48,7 @@ const Login = (props) => {
   }
     catch(error){
       console.log(error);
+      dispatch({field:"message", value:"Email or Password Incorrect"}); 
       dispatch({field:"loading", value:false}); 
     }  
   };

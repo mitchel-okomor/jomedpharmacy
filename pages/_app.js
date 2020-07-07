@@ -49,6 +49,7 @@ fetchCustomer = async ()=>{
     }});
     const data = await res.json();
     const customer = data.data;
+    console.log(customer);
   return customer;
 
 }
@@ -96,6 +97,8 @@ newCart.push(cart[i]);
 localStorage.setItem('cart', JSON.stringify(this.state.cart));
  console.log("removing")
 }
+
+
 
 render(){ const { Component, pageProps } = this.props
       return(

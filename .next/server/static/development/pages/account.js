@@ -224,9 +224,7 @@ const Login = props => {
       field: "loading",
       value: true
     });
-    console.log(state);
     const url = 'http://localhost:4000/logincustomer';
-    console.log(state);
 
     try {
       const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(url, state, {
@@ -246,7 +244,7 @@ const Login = props => {
           value: false
         });
       } else {
-        console.log("failed: " + response.data.info);
+        console.log("failed: " + response.data);
         dispatch({
           field: "message",
           value: response.data.message
@@ -258,6 +256,10 @@ const Login = props => {
       }
     } catch (error) {
       console.log(error);
+      dispatch({
+        field: "message",
+        value: "Email or Password Incorrect"
+      });
       dispatch({
         field: "loading",
         value: false
@@ -277,7 +279,7 @@ const Login = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60,
+        lineNumber: 59,
         columnNumber: 12
       }
     });
@@ -288,7 +290,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 63,
       columnNumber: 7
     }
   }, __jsx("form", {
@@ -296,21 +298,21 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 64,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 65,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 66,
       columnNumber: 13
     }
   }, "Login:"), __jsx("label", {
@@ -318,14 +320,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 67,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 67,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -337,14 +339,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 68,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 75,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -352,14 +354,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 76,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 76,
       columnNumber: 59
     }
   }), __jsx("input", {
@@ -371,7 +373,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 77,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -379,21 +381,21 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 84,
       columnNumber: 13
     }
   }, "Submit"), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 85,
       columnNumber: 13
     }
   }), __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 86,
       columnNumber: 3
     }
   }, message))));
@@ -569,7 +571,7 @@ const Signup = props => {
   }), __jsx("input", {
     type: "text",
     id: "fname",
-    name: "fname",
+    name: "fName",
     value: fName,
     placeholder: "First Name",
     required: true,
@@ -605,7 +607,7 @@ const Signup = props => {
   }), __jsx("input", {
     type: "text",
     id: "lname",
-    name: "lname",
+    name: "lName",
     value: lName,
     placeholder: "Last Name",
     required: true,

@@ -6,15 +6,6 @@ import CartContext from './cartcontext';
 
 const Header = () => {
   const { cart, customer } = useContext(CartContext);
-  const [user, setUser] = useState()
-
-
-useEffect(()=>{ 
-    if(customer === undefined){
-      setUser("Login/Signup") }
-      else setUser(customer)
-}   
-  ),[];
  
   return(
         <header className={css.header}>
@@ -31,7 +22,7 @@ useEffect(()=>{
 </div>
 
             <div className={css.activity}>
-    <div className={css.user}> <img src="/user.png" /><Link href="/account"><a>{user}</a>
+    <div className={css.user}> <img src="/user.png" /><Link href="/account"><a>{customer ? customer.name:"Login/Signup"}</a>
       </Link> 
       </div>               
     <div className={css.cart}><Link href="/cart"><a><img src="/cart.png"/><span> {cart.length}</span></a></Link></div>
