@@ -18,11 +18,11 @@ a:visited {color: $primary-color;}
 a:hover {color: white;
 background-color: $primary-color;
 }   
-a:active {color: $primary-color;
-color:white;} 
+
 }
 
 .nav{
+  
 
     a{
         color: $primary-color;
@@ -55,6 +55,11 @@ background-color: $primary-color;
     display: flex;
    float: right;
 
+   .active{
+    color: white;
+    background-color: $primary-color;
+  }
+
     li{ 
        width: fit-content;
        font-size: $nav-font-size;
@@ -80,11 +85,7 @@ background-color: $primary-color;
       color: white;
 background-color: $primary-color;
     }
-li:active{
-    color: white;
-background-color: $primary-color;
-  
-}
+
         
 .dropbtn {
     display: inline-block;

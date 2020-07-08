@@ -9,7 +9,7 @@ const initialState = {
   number: "",
   description: "",
 loading: false,
-chat: css.chatclosed
+chat: css.chatclosed,
 };
 
 //handle state changes with reducer
@@ -48,13 +48,11 @@ dispatch({field:"loading", value:false});
   };
 
   const toggleChat = ()=>{
-    console.log("toggle chat");
 if (state.chat === css.chatclosed){
   dispatch({field:"chat", value:css.chatopen}); 
 }
 else{
   dispatch({field:"chat", value:css.chatclosed}); 
-
 }
   }
 
@@ -69,7 +67,6 @@ return <Loading />
     <div className={css.prescription}>
     <button className={css.openbutton} onClick={toggleChat}>Chat</button>
     <div className={chat} id={css.myForm}>
-    <button className={css.openbutton} onClick={toggleChat}>Chat</button>
         <form >
           <fieldset>
             <legend>Sensd us your prescription:</legend>
@@ -119,6 +116,7 @@ return <Loading />
             <button onClick={handleSubmit}>Submit</button>
           </fieldset>
         </form>
+        <button className={css.openbutton} onClick={toggleChat}>Chat</button>
         </div>
 </div>
   );

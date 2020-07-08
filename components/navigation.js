@@ -1,14 +1,16 @@
 import css from './navigation.module.scss';
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 
  const Navigation = () =>{
+     const router = useRouter();
     return(
         <nav className={css.nav}>
         <ul >
-            <li>
-            <Link href="/">Home</Link>
+            <li className={router.pathname == "/"? "active":""}>
+            <Link href="/" >Home</Link>
             </li>
-            <li className={css.dropdown}>
+            <li className={css.dropdown} className={router.pathname == "/"? "active":""}>
             <Link href="/products" className={css.dropbtn}> Products  </Link>
             <div className={css.dropdown_content}>
       <a href="#">Antibiotics</a>
@@ -16,7 +18,7 @@ import Link from 'next/link';
       <a href="#">Suppliments</a>
     </div>
                 </li>
-            <li className={css.dropdown}>
+            <li className={css.dropdown}  className={router.pathname == "/"? "active":""}>
             <Link href="/services" className={css.dropbtn}> Services  </Link>
             <div className={css.dropdown_content}>
       <Link href="/bpc">Blood Pressure Check</Link>
@@ -24,10 +26,10 @@ import Link from 'next/link';
       <Link href="/wmc">Weigth Management Care</Link>
     </div>
                 </li>
-                <li>
+                <li className={router.pathname == "/"? "active":""}>
                 <Link href="locations"> Locations</Link> 
                 </li>
-                <li>
+                <li className={router.pathname == "/"? "active":""}>
                 <Link href="about">  About</Link>
                 </li>
             </ul>

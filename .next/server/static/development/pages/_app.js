@@ -797,33 +797,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_navigation_module_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\navigation.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 const Navigation = () => {
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_3__["useRouter"])();
   return __jsx("nav", {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.nav,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 8,
       columnNumber: 9
     }
   }, __jsx("ul", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, __jsx("li", {
+    className: router.pathname == "/" ? "active" : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -831,15 +836,16 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 13
     }
   }, "Home")), __jsx("li", {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
+    className: router.pathname == "/" ? "active" : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -848,7 +854,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 13
     }
   }, " Products  "), __jsx("div", {
@@ -856,7 +862,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -864,7 +870,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 7
     }
   }, "Antibiotics"), __jsx("a", {
@@ -872,7 +878,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 17,
       columnNumber: 7
     }
   }, "Haematinics"), __jsx("a", {
@@ -880,15 +886,16 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 18,
       columnNumber: 7
     }
   }, "Suppliments"))), __jsx("li", {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
+    className: router.pathname == "/" ? "active" : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 21,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -897,7 +904,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 22,
       columnNumber: 13
     }
   }, " Services  "), __jsx("div", {
@@ -905,7 +912,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -913,7 +920,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 24,
       columnNumber: 7
     }
   }, "Blood Pressure Check"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -921,7 +928,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 25,
       columnNumber: 7
     }
   }, "Blood Glucose Test"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -929,14 +936,15 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 26,
       columnNumber: 7
     }
   }, "Weigth Management Care"))), __jsx("li", {
+    className: router.pathname == "/" ? "active" : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -944,14 +952,15 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 30,
       columnNumber: 17
     }
   }, " Locations")), __jsx("li", {
+    className: router.pathname == "/" ? "active" : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 32,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -959,7 +968,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 33,
       columnNumber: 17
     }
   }, "  About"))));
@@ -978,6 +987,7 @@ const Navigation = () => {
 
 module.exports = {
 	"nav": "nav___1kSwy",
+	"active": "active___amG3s",
 	"dropbtn": "dropbtn___yJU84",
 	"dropdown": "dropdown___2r2lA",
 	"dropdown_content": "dropdown_content___1VBhe"
@@ -1079,8 +1089,6 @@ const Signup = props => {
   };
 
   const toggleChat = () => {
-    console.log("toggle chat");
-
     if (state.chat === _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.chatclosed) {
       dispatch({
         field: "chat",
@@ -1107,7 +1115,7 @@ const Signup = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 64,
         columnNumber: 8
       }
     });
@@ -1118,7 +1126,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 67,
       columnNumber: 5
     }
   }, __jsx("button", {
@@ -1127,7 +1135,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 68,
       columnNumber: 5
     }
   }, "Chat"), __jsx("div", {
@@ -1136,37 +1144,28 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 69,
       columnNumber: 5
     }
-  }, __jsx("button", {
-    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.openbutton,
-    onClick: toggleChat,
+  }, __jsx("form", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 5
-    }
-  }, "Chat"), __jsx("form", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 70,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 71,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 72,
       columnNumber: 13
     }
   }, "Sensd us your prescription:"), __jsx("label", {
@@ -1174,14 +1173,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 73,
       columnNumber: 13
     }
   }, "Full Name:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 73,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -1195,14 +1194,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 74,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 83,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1210,14 +1209,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 85,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 85,
       columnNumber: 47
     }
   }), __jsx("input", {
@@ -1231,14 +1230,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 86,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 95,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1246,14 +1245,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 96,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 96,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -1267,14 +1266,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 97,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 106,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1282,14 +1281,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 107,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 107,
       columnNumber: 53
     }
   }), __jsx("input", {
@@ -1301,14 +1300,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 108,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 115,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1316,10 +1315,19 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 116,
       columnNumber: 13
     }
-  }, "Submit")))));
+  }, "Submit"))), __jsx("button", {
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.openbutton,
+    onClick: toggleChat,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 9
+    }
+  }, "Chat")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Signup);
@@ -1339,8 +1347,7 @@ module.exports = {
 	"chatopen": "chatopen___yNv89",
 	"form-container": "form-container___1K6Fq",
 	"btn": "btn___31ijb",
-	"cancel": "cancel___20Iow",
-	"open-button": "open-button___3qClZ"
+	"cancel": "cancel___20Iow"
 };
 
 /***/ }),
@@ -3411,6 +3418,17 @@ module.exports = require("isomorphic-unfetch");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 

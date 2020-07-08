@@ -643,74 +643,82 @@ var Loading = function Loading(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navigation.module.scss */ "./components/navigation.module.scss");
-/* harmony import */ var _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_navigation_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navigation.module.scss */ "./components/navigation.module.scss");
+/* harmony import */ var _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_navigation_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+
+
 var _this = undefined,
     _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\navigation.js";
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
 var Navigation = function Navigation() {
+  var _jsx, _jsx2;
+
+  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
   return __jsx("nav", {
-    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.nav,
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.nav,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 8,
       columnNumber: 9
     }
   }, __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, __jsx("li", {
+    className: router.pathname == "/" ? "active" : "",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 13
     }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 13
-    }
-  }, "Home")), __jsx("li", {
-    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
       columnNumber: 13
     }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Home")), __jsx("li", (_jsx = {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropdown
+  }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "className", router.pathname == "/" ? "active" : ""), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "__self", _this), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 13,
+    columnNumber: 13
+  }), _jsx), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/products",
-    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropbtn,
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropbtn,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 13
     }
   }, " Products  "), __jsx("div", {
-    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown_content,
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropdown_content,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -718,7 +726,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 7
     }
   }, "Antibiotics"), __jsx("a", {
@@ -726,7 +734,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 17,
       columnNumber: 7
     }
   }, "Haematinics"), __jsx("a", {
@@ -734,86 +742,86 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 18,
       columnNumber: 7
     }
-  }, "Suppliments"))), __jsx("li", {
-    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 13
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Suppliments"))), __jsx("li", (_jsx2 = {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropdown
+  }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "className", router.pathname == "/" ? "active" : ""), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "__self", _this), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 21,
+    columnNumber: 13
+  }), _jsx2), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/services",
-    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropbtn,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 13
-    }
-  }, " Services  "), __jsx("div", {
-    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown_content,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 13
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/bpc",
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropbtn,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22,
-      columnNumber: 7
+      columnNumber: 13
     }
-  }, "Blood Pressure Check"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/bgt",
+  }, " Services  "), __jsx("div", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropdown_content,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
-      columnNumber: 7
+      columnNumber: 13
     }
-  }, "Blood Glucose Test"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/wmc",
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/bpc",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
       columnNumber: 7
     }
+  }, "Blood Pressure Check"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/bgt",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }
+  }, "Blood Glucose Test"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/wmc",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 7
+    }
   }, "Weigth Management Care"))), __jsx("li", {
+    className: router.pathname == "/" ? "active" : "",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 17
     }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "locations",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 17
-    }
-  }, " Locations")), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30,
       columnNumber: 17
     }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, " Locations")), __jsx("li", {
+    className: router.pathname == "/" ? "active" : "",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 17
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "about",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 33,
       columnNumber: 17
     }
   }, "  About"))));
@@ -939,8 +947,6 @@ var Signup = function Signup(props) {
   };
 
   var toggleChat = function toggleChat() {
-    console.log("toggle chat");
-
     if (state.chat === _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.chatclosed) {
       dispatch({
         field: "chat",
@@ -965,7 +971,7 @@ var Signup = function Signup(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 64,
         columnNumber: 8
       }
     });
@@ -976,7 +982,7 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 67,
       columnNumber: 5
     }
   }, __jsx("button", {
@@ -985,7 +991,7 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 68,
       columnNumber: 5
     }
   }, "Chat"), __jsx("div", {
@@ -994,37 +1000,28 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 69,
       columnNumber: 5
     }
-  }, __jsx("button", {
-    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.openbutton,
-    onClick: toggleChat,
+  }, __jsx("form", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 5
-    }
-  }, "Chat"), __jsx("form", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 70,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 71,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 72,
       columnNumber: 13
     }
   }, "Sensd us your prescription:"), __jsx("label", {
@@ -1032,14 +1029,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 73,
       columnNumber: 13
     }
   }, "Full Name:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 73,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -1053,14 +1050,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 74,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 83,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1068,14 +1065,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 85,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 85,
       columnNumber: 47
     }
   }), __jsx("input", {
@@ -1089,14 +1086,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 86,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 95,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1104,14 +1101,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 96,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 96,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -1125,14 +1122,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 97,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 106,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1140,14 +1137,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 107,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 107,
       columnNumber: 53
     }
   }), __jsx("input", {
@@ -1159,14 +1156,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 108,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 115,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1174,10 +1171,19 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 116,
       columnNumber: 13
     }
-  }, "Submit")))));
+  }, "Submit"))), __jsx("button", {
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.openbutton,
+    onClick: toggleChat,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 9
+    }
+  }, "Chat")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Signup);

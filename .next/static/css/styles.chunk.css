@@ -231,9 +231,6 @@ button:hover {
   .nav___1kSwy a:hover {
     color: white;
     background-color: #12A63E; }
-  .nav___1kSwy a:active {
-    color: #12A63E;
-    color: white; }
 
 .nav___1kSwy a {
   color: #12A63E; }
@@ -261,6 +258,9 @@ button:hover {
   list-style: none;
   display: flex;
   float: right; }
+  .nav___1kSwy ul .active___amG3s {
+    color: white;
+    background-color: #12A63E; }
   .nav___1kSwy ul li {
     width: fit-content;
     font-size: 1.5em;
@@ -275,9 +275,6 @@ button:hover {
       color: white;
       background-color: #12A63E; }
   .nav___1kSwy ul li:hover {
-    color: white;
-    background-color: #12A63E; }
-  .nav___1kSwy ul li:active {
     color: white;
     background-color: #12A63E; }
   .nav___1kSwy ul .dropbtn___yJU84 {
@@ -391,7 +388,8 @@ button:hover {
   position: fixed;
   bottom: 23px;
   right: 28px;
-  width: 200px; }
+  width: 200px;
+  z-index: 2; }
 
 /* The popup chat - hidden by default */
 .chatclosed___2VVtF {
@@ -408,7 +406,8 @@ button:hover {
   bottom: 0;
   right: 15px;
   border: 3px solid #f1f1f1;
-  z-index: 9; }
+  z-index: 9;
+  background-color: white; }
 
 /* Add styles to the form container */
 .form-container___1K6Fq {
@@ -447,7 +446,7 @@ button:hover {
   background-color: red; }
 
 /* Add some hover effects to buttons */
-.form-container___1K6Fq .btn___31ijb:hover, .open-button___3qClZ:hover {
+.form-container___1K6Fq .btn___31ijb:hover, .openbutton___1JJgq:hover {
   opacity: 1; }
 
 .loader___303lL {
@@ -563,6 +562,9 @@ button:hover {
     border: solid 2px #12A63E;
     border-radius: 2em;
     padding: 3em; }
+
+.products___Cd1n8 {
+  margin: 2em; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
