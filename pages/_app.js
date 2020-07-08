@@ -98,11 +98,22 @@ localStorage.setItem('cart', JSON.stringify(this.state.cart));
  console.log("removing")
 }
 
+//set customer to update state and context
+setCustomer = (val) =>{
+
+  console.log("SetCustomer: "+val);
+  this.setState(
+    {
+      customer: val
+    }
+  );
+}
+
 
 
 render(){ const { Component, pageProps } = this.props
       return(
- <cartcontext.Provider value={{cart: this.state.cart, customer:this.state.customer, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
+ <cartcontext.Provider value={{cart: this.state.cart, customer:this.state.customer, setCustomer:this.setCustomer, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
 <Layout>
    <Component {...pageProps} /> 
 </Layout>

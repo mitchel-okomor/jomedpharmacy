@@ -1,7 +1,8 @@
-import React, { useState, useReducer } from "react";
+import React, {useContext, useReducer } from "react";
 import css from './login.module.scss';
 import axios from "axios";
 import Loading from './loading';
+import CartContext from './cartcontext';
 
 
 const initialState = {
@@ -11,12 +12,17 @@ const initialState = {
   message: ""
 };
 
+
+
 //handle state changes with reducer
 const reducer = (state, { field, value }) => {
   return { ...state, [field]: value };
 };
 
 const Login = (props) => {
+
+  const {setCustomer } = useContext(CartContext);
+
     //use reducer hook to dispatch change action
   const [state, dispatch] = useReducer(reducer, initialState);
   const handleChange = (e) => {
@@ -37,6 +43,7 @@ const Login = (props) => {
            dispatch({field:"message", value:response.data.message}); 
      localStorage.setItem("customerId", response.data.customer.id);
      localStorage.setItem("token", response.data.info.token);
+     setCustomer(response.data.customer);
      dispatch({field:"loading", value:false}); 
     }
     else{

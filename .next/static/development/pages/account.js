@@ -72,6 +72,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _loading__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./loading */ "./components/loading.js");
+/* harmony import */ var _cartcontext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cartcontext */ "./components/cartcontext.js");
 
 
 
@@ -83,6 +84,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 
 
 
@@ -102,7 +104,10 @@ var reducer = function reducer(state, _ref) {
 };
 
 var Login = function Login(props) {
-  //use reducer hook to dispatch change action
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_cartcontext__WEBPACK_IMPORTED_MODULE_6__["default"]),
+      setCustomer = _useContext.setCustomer; //use reducer hook to dispatch change action
+
+
   var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_2__["useReducer"])(reducer, initialState),
       state = _useReducer[0],
       dispatch = _useReducer[1];
@@ -144,6 +149,7 @@ var Login = function Login(props) {
               });
               localStorage.setItem("customerId", response.data.customer.id);
               localStorage.setItem("token", response.data.info.token);
+              setCustomer(response.data.customer);
               dispatch({
                 field: "loading",
                 value: false
@@ -194,7 +200,7 @@ var Login = function Login(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59,
+        lineNumber: 66,
         columnNumber: 12
       }
     });
@@ -205,7 +211,7 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 70,
       columnNumber: 7
     }
   }, __jsx("form", {
@@ -213,21 +219,21 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 71,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 72,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 73,
       columnNumber: 13
     }
   }, "Login:"), __jsx("label", {
@@ -235,14 +241,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 74,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 74,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -254,14 +260,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 75,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 82,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -269,14 +275,14 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 83,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 83,
       columnNumber: 59
     }
   }), __jsx("input", {
@@ -288,7 +294,7 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 84,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -296,21 +302,21 @@ var Login = function Login(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 91,
       columnNumber: 13
     }
   }, "Submit"), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 92,
       columnNumber: 13
     }
   }), __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 93,
       columnNumber: 3
     }
   }, message))));

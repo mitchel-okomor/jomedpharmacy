@@ -6306,6 +6306,14 @@ var MyApp = /*#__PURE__*/function (_App) {
       }, null, null, null, Promise);
     });
 
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "setCustomer", function (val) {
+      console.log("SetCustomer: " + val);
+
+      _this.setState({
+        customer: val
+      });
+    });
+
     return _this;
   }
 
@@ -6357,6 +6365,7 @@ var MyApp = /*#__PURE__*/function (_App) {
         value: {
           cart: this.state.cart,
           customer: this.state.customer,
+          setCustomer: this.setCustomer,
           addToCart: this.addToCart,
           total: this.calculateTotal,
           removeFromCart: this.removeFromCart,
@@ -6366,21 +6375,21 @@ var MyApp = /*#__PURE__*/function (_App) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105,
+          lineNumber: 116,
           columnNumber: 2
         }
       }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106,
+          lineNumber: 117,
           columnNumber: 1
         }
       }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107,
+          lineNumber: 118,
           columnNumber: 4
         }
       }))));

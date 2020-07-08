@@ -2851,6 +2851,13 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       localStorage.setItem('cart', JSON.stringify(this.state.cart));
       console.log("removing");
     });
+
+    _defineProperty(this, "setCustomer", val => {
+      console.log("SetCustomer: " + val);
+      this.setState({
+        customer: val
+      });
+    });
   }
 
   componentDidMount() {
@@ -2881,6 +2888,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       value: {
         cart: this.state.cart,
         customer: this.state.customer,
+        setCustomer: this.setCustomer,
         addToCart: this.addToCart,
         total: this.calculateTotal,
         removeFromCart: this.removeFromCart,
@@ -2890,21 +2898,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105,
+        lineNumber: 116,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106,
+        lineNumber: 117,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 107,
+        lineNumber: 118,
         columnNumber: 4
       }
     }))));
