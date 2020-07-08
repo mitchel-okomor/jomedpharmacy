@@ -939,7 +939,7 @@ var Signup = function Signup(props) {
   };
 
   var toggleChat = function toggleChat() {
-    console.log("Inside Toggle Chat: " + state.chat);
+    console.log("toggle chat");
 
     if (state.chat === _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.chatclosed) {
       dispatch({
@@ -949,7 +949,7 @@ var Signup = function Signup(props) {
     } else {
       dispatch({
         field: "chat",
-        value: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.chatlosed
+        value: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.chatclosed
       });
     }
   };
@@ -981,7 +981,7 @@ var Signup = function Signup(props) {
     }
   }, __jsx("button", {
     className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.openbutton,
-    onclick: toggleChat,
+    onClick: toggleChat,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -997,25 +997,34 @@ var Signup = function Signup(props) {
       lineNumber: 71,
       columnNumber: 5
     }
-  }, __jsx("form", {
+  }, __jsx("button", {
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.openbutton,
+    onClick: toggleChat,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72,
+      columnNumber: 5
+    }
+  }, "Chat"), __jsx("form", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 74,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 75,
       columnNumber: 13
     }
   }, "Sensd us your prescription:"), __jsx("label", {
@@ -1023,14 +1032,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 76,
       columnNumber: 13
     }
   }, "Full Name:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 76,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -1044,14 +1053,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 77,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 86,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1059,14 +1068,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 88,
       columnNumber: 13
     }
   }, "Email:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 88,
       columnNumber: 47
     }
   }), __jsx("input", {
@@ -1080,14 +1089,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 89,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 98,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1095,14 +1104,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 99,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 99,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -1116,14 +1125,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 100,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 109,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1131,14 +1140,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 110,
       columnNumber: 13
     }
   }, "password:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 110,
       columnNumber: 53
     }
   }), __jsx("input", {
@@ -1150,14 +1159,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 111,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 118,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1165,7 +1174,7 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 13
     }
   }, "Submit")))));

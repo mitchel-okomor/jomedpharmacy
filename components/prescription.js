@@ -48,12 +48,12 @@ dispatch({field:"loading", value:false});
   };
 
   const toggleChat = ()=>{
-    console.log("Inside Toggle Chat: "+state.chat)
+    console.log("toggle chat");
 if (state.chat === css.chatclosed){
   dispatch({field:"chat", value:css.chatopen}); 
 }
 else{
-  dispatch({field:"chat", value:css.chatlosed}); 
+  dispatch({field:"chat", value:css.chatclosed}); 
 
 }
   }
@@ -67,8 +67,9 @@ return <Loading />
     }
   return (
     <div className={css.prescription}>
-    <button className={css.openbutton} onclick={toggleChat}>Chat</button>
+    <button className={css.openbutton} onClick={toggleChat}>Chat</button>
     <div className={chat} id={css.myForm}>
+    <button className={css.openbutton} onClick={toggleChat}>Chat</button>
         <form >
           <fieldset>
             <legend>Sensd us your prescription:</legend>
