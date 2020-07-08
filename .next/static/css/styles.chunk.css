@@ -105,7 +105,7 @@ button:hover {
   color: white; }
 
 .header___1iSmJ .logo___130h5 h1 {
-  margin-top: .5em;
+  margin-top: 1em;
   color: #12A63E; }
 
 .header___1iSmJ .logo___130h5 p {
@@ -116,8 +116,8 @@ button:hover {
   display: flex;
   justify-content: space-between;
   margin: 2em;
-  width: 20em;
-  height: 3em;
+  max-width: 20em;
+  height: 2.9em;
   border-radius: 6px;
   padding: 10px;
   font-size: larger;
@@ -133,7 +133,8 @@ button:hover {
       color: white; }
   .header___1iSmJ .activity___3ZQXV .user___1xItY {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-right: 2em; }
     .header___1iSmJ .activity___3ZQXV .user___1xItY a {
       padding-left: 10px;
       color: white; }
@@ -145,17 +146,26 @@ button:hover {
     display: flex;
     color: white; }
     .header___1iSmJ .search___wNumA form input {
-      height: 3em;
-      width: 23em;
+      margin: 0;
+      height: 2.9em;
+      width: 17em;
       font-size: 1em;
       border: 2px solid #12A63E;
+      border-right: 0px;
       border-radius: 10px 0px 0px 10px; }
+    .header___1iSmJ .search___wNumA form input:focus {
+      border: none;
+      background-color: whitesmoke; }
     .header___1iSmJ .search___wNumA form button {
-      height: 2.1em;
-      width: 7em;
+      margin: 0;
+      height: 2.9em;
+      width: 3em;
       border-radius: 0px 10px 10px 0px;
+      border-left: 0px;
       background-color: white;
-      color: #12A63E; }
+      color: #12A63E;
+      padding: 6px 10px;
+      font-size: 1em; }
 
 * {
   box-sizing: border-box; }
@@ -370,139 +380,75 @@ button:hover {
     .footer___uzAl_ div a {
       color: white; }
 
-* {
-  box-sizing: border-box; }
+/* Button used to open the chat form - fixed at the bottom of the page */
+.openbutton___1JJgq {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 200px; }
 
-html, body {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* The popup chat - hidden by default */
+.chatclosed___2VVtF {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9; }
+
+.chatopen___yNv89 {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9; }
+
+/* Add styles to the form container */
+.form-container___1K6Fq {
+  max-width: 300px;
+  padding: 10px;
   background-color: white; }
 
-a {
-  text-decoration: none;
-  color: #12A63E; }
+/* Full-width textarea */
+.form-container___1K6Fq textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px; }
 
-a:visited {
-  color: #12A63E; }
+/* When the textarea gets focus, do something */
+.form-container___1K6Fq textarea:focus {
+  background-color: #ddd;
+  outline: none; }
 
-a:hover {
+/* Set a style for the submit/send button */
+.form-container___1K6Fq .btn___31ijb {
+  background-color: #4CAF50;
   color: white;
-  background-color: #12A63E;
-  border-radius: 0.2em;
-  font-size: larger; }
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8; }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
+/* Add a red background color to the cancel button */
+.form-container___1K6Fq .cancel___20Iow {
+  background-color: red; }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 50px;
-  width: 200px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  height: 55px;
-  width: 210px; }
-
-.account___3xtWf {
-  margin: 2em;
-  min-height: 30em; }
-  .account___3xtWf .heading___V7y3g {
-    margin: auto;
-    text-align: center; }
-  .account___3xtWf .form___14s8b {
-    display: flex;
-    flex-basis: 40%; }
-  .account___3xtWf form {
-    font-size: large;
-    width: 50%;
-    margin: 4em; }
-    .account___3xtWf form fieldset {
-      padding-top: 40px;
-      border: medium solid #12A63E;
-      border-radius: 15px; }
-      .account___3xtWf form fieldset legend {
-        border-radius: 5px; }
-      .account___3xtWf form fieldset input {
-        height: 40px;
-        width: 400px;
-        margin-bottom: 20px;
-        margin-left: 30px;
-        border: 2px solid white;
-        border-radius: 7px; }
-      .account___3xtWf form fieldset label {
-        margin-left: 30px; }
-      .account___3xtWf form fieldset button {
-        height: 50px;
-        width: 400px;
-        margin-bottom: 20px;
-        margin-left: 30px;
-        color: white;
-        background-color: #12A63E;
-        border: 2px solid white;
-        border-radius: 7px; }
-
-* {
-  box-sizing: border-box; }
-
-html, body {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white; }
-
-a {
-  text-decoration: none;
-  color: #12A63E; }
-
-a:visited {
-  color: #12A63E; }
-
-a:hover {
-  color: white;
-  background-color: #12A63E;
-  border-radius: 0.2em;
-  font-size: larger; }
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 50px;
-  width: 200px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  height: 55px;
-  width: 210px; }
+/* Add some hover effects to buttons */
+.form-container___1K6Fq .btn___31ijb:hover, .open-button___3qClZ:hover {
+  opacity: 1; }
 
 .loader___303lL {
   text-align: center;
@@ -528,54 +474,6 @@ button:hover {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-
-* {
-  box-sizing: border-box; }
-
-html, body {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white; }
-
-a {
-  text-decoration: none;
-  color: #12A63E; }
-
-a:visited {
-  color: #12A63E; }
-
-a:hover {
-  color: white;
-  background-color: #12A63E;
-  border-radius: 0.2em;
-  font-size: larger; }
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 50px;
-  width: 200px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  height: 55px;
-  width: 210px; }
 
 * {
   box-sizing: border-box; }

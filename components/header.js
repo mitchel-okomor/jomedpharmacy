@@ -1,6 +1,6 @@
 import css from './header.module.scss';
 import Link from 'next/link';
-import { useContext, useState, useEffect } from 'react';
+import { useContext,} from 'react';
 import CartContext from './cartcontext';
 
 
@@ -16,7 +16,7 @@ const Header = () => {
 <div className={css.search}>
 <form >
   <input type="search" id="search" name="search" placeholder="Search Products & Services" />
-  <button>search</button>
+  <button><i class="fa fa-search"></i></button>
 </form>
 
 </div>

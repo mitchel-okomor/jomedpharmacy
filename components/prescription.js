@@ -8,7 +8,8 @@ const initialState = {
   email: "",
   number: "",
   description: "",
-loading: false
+loading: false,
+chat: css.chatclosed
 };
 
 //handle state changes with reducer
@@ -46,15 +47,29 @@ dispatch({field:"loading", value:false});
   
   };
 
+  const toggleChat = ()=>{
+    console.log("Inside Toggle Chat: "+state.chat)
+if (state.chat === css.chatclosed){
+  dispatch({field:"chat", value:css.chatopen}); 
+}
+else{
+  dispatch({field:"chat", value:css.chatlosed}); 
+
+}
+  }
 
 
 
-  const { name, email, number, loading} = state;
+
+  const { name, email, number, loading, chat} = state;
   if(loading){
 return <Loading />
     }
   return (
-        <form className={css.prescription}>
+    <div className={css.prescription}>
+    <button className={css.openbutton} onclick={toggleChat}>Chat</button>
+    <div className={chat} id={css.myForm}>
+        <form >
           <fieldset>
             <legend>Sensd us your prescription:</legend>
             <label for="fname">Full Name:</label> <br />
@@ -96,7 +111,6 @@ return <Loading />
               type="password"
               id="password"
               name="password"
-              value={password}
               required
               onChange={handleChange}
             />
@@ -104,6 +118,8 @@ return <Loading />
             <button onClick={handleSubmit}>Submit</button>
           </fieldset>
         </form>
+        </div>
+</div>
   );
 };
 

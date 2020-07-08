@@ -432,6 +432,15 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     columnNumber: 5
   }
 }), __jsx("link", {
+  rel: "stylesheet",
+  href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }
+}), __jsx("link", {
   rel: "icon",
   href: "favicon.jpg",
   sizes: "16x16",
@@ -439,7 +448,7 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10,
+    lineNumber: 11,
     columnNumber: 5
   }
 }));
@@ -540,7 +549,15 @@ const Header = () => {
       lineNumber: 19,
       columnNumber: 3
     }
-  }, "search"))), __jsx("div", {
+  }, __jsx("i", {
+    class: "fa fa-search",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 11
+    }
+  })))), __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.activity,
     __self: undefined,
     __source: {
@@ -657,9 +674,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ "./components/header.js");
 /* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navigation */ "./components/navigation.js");
 /* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ "./components/footer.js");
+/* harmony import */ var _prescription__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./prescription */ "./components/prescription.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -670,41 +689,96 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 5
     }
   }, __jsx(_head__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 7
     }
   }), __jsx(_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 5
     }
   }), __jsx(_navigation__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 5
     }
-  }), props.children, __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), props.children, __jsx(_prescription__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
+      columnNumber: 5
+    }
+  }), __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
       columnNumber: 5
     }
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/loading.js":
+/*!*******************************!*\
+  !*** ./components/loading.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _loading_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loading.module.scss */ "./components/loading.module.scss");
+/* harmony import */ var _loading_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_loading_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\loading.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Loading = props => {
+  return __jsx("div", {
+    className: _loading_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.loader,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 10
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Loading);
+
+/***/ }),
+
+/***/ "./components/loading.module.scss":
+/*!****************************************!*\
+  !*** ./components/loading.module.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"loader": "loader___303lL",
+	"spin": "spin___aGIZ0"
+};
 
 /***/ }),
 
@@ -907,6 +981,357 @@ module.exports = {
 	"dropbtn": "dropbtn___yJU84",
 	"dropdown": "dropdown___2r2lA",
 	"dropdown_content": "dropdown_content___1VBhe"
+};
+
+/***/ }),
+
+/***/ "./components/prescription.js":
+/*!************************************!*\
+  !*** ./components/prescription.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./prescription.module.scss */ "./components/prescription.module.scss");
+/* harmony import */ var _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_prescription_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _loading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loading */ "./components/loading.js");
+var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\prescription.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+const initialState = {
+  name: "",
+  email: "",
+  number: "",
+  description: "",
+  loading: false,
+  chat: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.chatclosed
+}; //handle state changes with reducer
+
+const reducer = (state, {
+  field,
+  value
+}) => {
+  return _objectSpread({}, state, {
+    [field]: value
+  });
+};
+
+const Signup = props => {
+  //use reducer hook to dispatch change action
+  const {
+    0: state,
+    1: dispatch
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useReducer"])(reducer, initialState);
+
+  const handleChange = e => {
+    dispatch({
+      field: e.target.name,
+      value: e.target.value
+    });
+  }; //submit form data to backend server
+
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    dispatch({
+      field: "loading",
+      value: true
+    });
+    const url = 'http://localhost:4000/prescription';
+    console.log(state);
+
+    try {
+      const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(url, state, {
+        timeout: 30000
+      });
+
+      if (response.status == 200) {
+        console.log(response);
+        localStorage.setItem("customerId", response);
+        dispatch({
+          field: "loading",
+          value: false
+        });
+      }
+    } catch (error) {
+      console.log(error);
+      dispatch({
+        field: "loading",
+        value: false
+      });
+    }
+  };
+
+  const toggleChat = () => {
+    console.log("Inside Toggle Chat: " + state.chat);
+
+    if (state.chat === _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.chatclosed) {
+      dispatch({
+        field: "chat",
+        value: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.chatopen
+      });
+    } else {
+      dispatch({
+        field: "chat",
+        value: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.chatlosed
+      });
+    }
+  };
+
+  const {
+    name,
+    email,
+    number,
+    loading,
+    chat
+  } = state;
+
+  if (loading) {
+    return __jsx(_loading__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66,
+        columnNumber: 8
+      }
+    });
+  }
+
+  return __jsx("div", {
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.prescription,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 5
+    }
+  }, __jsx("button", {
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.openbutton,
+    onclick: toggleChat,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 5
+    }
+  }, "Chat"), __jsx("div", {
+    className: chat,
+    id: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.myForm,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 5
+    }
+  }, __jsx("form", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 9
+    }
+  }, __jsx("fieldset", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 11
+    }
+  }, __jsx("legend", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 13
+    }
+  }, "Sensd us your prescription:"), __jsx("label", {
+    for: "fname",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 13
+    }
+  }, "Full Name:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 51
+    }
+  }), __jsx("input", {
+    type: "text",
+    id: "name",
+    name: "name",
+    value: name,
+    placeholder: "First Name",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76,
+      columnNumber: 13
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 13
+    }
+  }), __jsx("label", {
+    for: "email",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 13
+    }
+  }, "Email:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 47
+    }
+  }), __jsx("input", {
+    type: "email",
+    id: "email",
+    name: "email",
+    value: email,
+    placeholder: "johndoe@gmail.com",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 13
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 13
+    }
+  }), __jsx("label", {
+    for: "number",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98,
+      columnNumber: 13
+    }
+  }, "phone number:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98,
+      columnNumber: 55
+    }
+  }), __jsx("input", {
+    type: "number",
+    id: "number",
+    name: "number",
+    value: number,
+    placeholder: "+2348090213567",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99,
+      columnNumber: 13
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 13
+    }
+  }), __jsx("label", {
+    for: "password",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 13
+    }
+  }, "password:"), " ", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 53
+    }
+  }), __jsx("input", {
+    type: "password",
+    id: "password",
+    name: "password",
+    required: true,
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110,
+      columnNumber: 13
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 13
+    }
+  }), __jsx("button", {
+    onClick: handleSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 13
+    }
+  }, "Submit")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Signup);
+
+/***/ }),
+
+/***/ "./components/prescription.module.scss":
+/*!*********************************************!*\
+  !*** ./components/prescription.module.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"openbutton": "openbutton___1JJgq",
+	"chatclosed": "chatclosed___2VVtF",
+	"chatopen": "chatopen___yNv89",
+	"form-container": "form-container___1K6Fq",
+	"btn": "btn___31ijb",
+	"cancel": "cancel___20Iow",
+	"open-button": "open-button___3qClZ"
 };
 
 /***/ }),
@@ -2944,6 +3369,17 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
 
 module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_app.js");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 

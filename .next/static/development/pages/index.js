@@ -230,7 +230,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 7:
 /*!***********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Cindex.js&hotRouterUpdates=true ***!
   \***********************************************************************************************************************************************************************/
@@ -253,5 +253,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[7,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
