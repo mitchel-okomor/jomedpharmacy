@@ -1,0 +1,40 @@
+@import '../pages/styles.scss';
+
+.search{
+    margin: 2.8em;
+     outline: none;
+    form{
+        display: flex;
+        color: $layout-color;
+     
+        input{
+            margin: 0;
+            height: 2.9em;
+            width: 17em;
+            font-size: 1em;
+            border: 2px solid $primary-color;
+            border-right: 0px;
+            border-radius: 10px 0px 0px 10px;
+        }
+        input:focus{
+            border: none;
+           
+            background-color:whitesmoke;
+
+        }
+
+        button{
+            margin: 0;
+            height: 2.9em;
+            width: 3em;
+            border-radius: 0px 10px 10px 0px;
+            border-left: 0px;
+            background-color: white;
+            color: $primary-color;
+            padding: 6px 10px;
+            font-size: 1em;
+
+
+        }
+    }
+}

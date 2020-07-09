@@ -472,10 +472,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header_module_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _cartcontext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cartcontext */ "./components/cartcontext.js");
+/* harmony import */ var _search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./search */ "./components/search.js");
+/* harmony import */ var _cartcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cartcontext */ "./components/cartcontext.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -485,13 +487,13 @@ const Header = () => {
   const {
     cart,
     customer
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_cartcontext__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_cartcontext__WEBPACK_IMPORTED_MODULE_4__["default"]);
   return __jsx("header", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.header,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -499,70 +501,36 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 13
     }
   }, __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 15
     }
   }, "Jomed Pharmacy"), __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 13
     }
-  }, "Your Health Needs at your reach")), __jsx("div", {
-    className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.search,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 1
-    }
-  }, __jsx("form", {
+  }, "Your Health Needs at your reach")), __jsx(_search__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17,
       columnNumber: 1
     }
-  }, __jsx("input", {
-    type: "search",
-    id: "search",
-    name: "search",
-    placeholder: "Search Products & Services",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 3
-    }
-  }), __jsx("button", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 3
-    }
-  }, __jsx("i", {
-    class: "fa fa-search",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 11
-    }
-  })))), __jsx("div", {
+  }), __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.activity,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 19,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -570,7 +538,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 20,
       columnNumber: 5
     }
   }, " ", __jsx("img", {
@@ -578,7 +546,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 20,
       columnNumber: 32
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -586,14 +554,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 20,
       columnNumber: 55
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 20,
       columnNumber: 77
     }
   }, customer ? customer.name : "Login/Signup"))), __jsx("div", {
@@ -601,7 +569,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 23,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -609,14 +577,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 23,
       columnNumber: 31
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 23,
       columnNumber: 50
     }
   }, __jsx("img", {
@@ -624,14 +592,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 23,
       columnNumber: 53
     }
   }), __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 23,
       columnNumber: 75
     }
   }, " ", cart.length))))));
@@ -1138,7 +1106,7 @@ const Signup = props => {
       lineNumber: 68,
       columnNumber: 5
     }
-  }, "Chat"), __jsx("div", {
+  }, "prescription"), __jsx("div", {
     className: chat,
     id: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.myForm,
     __self: undefined,
@@ -1147,40 +1115,62 @@ const Signup = props => {
       lineNumber: 69,
       columnNumber: 5
     }
-  }, __jsx("form", {
+  }, __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 70,
+      columnNumber: 7
+    }
+  }), __jsx("form", {
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.formcontainer,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 72,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 73,
       columnNumber: 13
     }
-  }, "Sensd us your prescription:"), __jsx("label", {
-    for: "fname",
+  }, __jsx("b", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73,
+      columnNumber: 21
+    }
+  }, "Send us your prescription")), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 13
+    }
+  }), __jsx("label", {
+    for: "fname",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
       columnNumber: 13
     }
   }, "Full Name:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 75,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -1188,56 +1178,20 @@ const Signup = props => {
     id: "name",
     name: "name",
     value: name,
-    placeholder: "First Name",
+    placeholder: "John Okafor",
     required: true,
     onChange: handleChange,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 76,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
-      columnNumber: 13
-    }
-  }), __jsx("label", {
-    for: "email",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 85,
-      columnNumber: 13
-    }
-  }, "Email:"), " ", __jsx("br", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85,
-      columnNumber: 47
-    }
-  }), __jsx("input", {
-    type: "email",
-    id: "email",
-    name: "email",
-    value: email,
-    placeholder: "johndoe@gmail.com",
-    required: true,
-    onChange: handleChange,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86,
-      columnNumber: 13
-    }
-  }), __jsx("br", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1245,14 +1199,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 86,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 86,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -1260,9 +1214,16 @@ const Signup = props => {
     id: "number",
     name: "number",
     value: number,
-    placeholder: "+2348090213567",
+    placeholder: "08090213567",
     required: true,
     onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 13
+    }
+  }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -1273,61 +1234,70 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 98,
       columnNumber: 13
     }
   }), __jsx("label", {
-    for: "password",
+    for: "prescription",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 99,
       columnNumber: 13
     }
-  }, "password:"), " ", __jsx("br", {
+  }, "prescription details:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
-      columnNumber: 53
+      lineNumber: 99,
+      columnNumber: 69
     }
-  }), __jsx("input", {
-    type: "password",
-    id: "password",
-    name: "password",
+  }), __jsx("textarea", {
+    type: "text",
+    id: "prescription",
+    name: "prescription",
     required: true,
     onChange: handleChange,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 100,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115,
+      lineNumber: 107,
       columnNumber: 13
     }
   }), __jsx("button", {
+    type: "submit",
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.btn,
     onClick: handleSubmit,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 108,
       columnNumber: 13
     }
-  }, "Submit"))), __jsx("button", {
-    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.openbutton,
+  }, "Submit"), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 13
+    }
+  }), __jsx("button", {
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cancel,
     onClick: toggleChat,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
-      columnNumber: 9
+      lineNumber: 110,
+      columnNumber: 13
     }
-  }, "Chat")));
+  }, "close")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Signup);
@@ -1345,9 +1315,102 @@ module.exports = {
 	"openbutton": "openbutton___1JJgq",
 	"chatclosed": "chatclosed___2VVtF",
 	"chatopen": "chatopen___yNv89",
-	"form-container": "form-container___1K6Fq",
+	"formcontainer": "formcontainer___244JH",
 	"btn": "btn___31ijb",
 	"cancel": "cancel___20Iow"
+};
+
+/***/ }),
+
+/***/ "./components/search.js":
+/*!******************************!*\
+  !*** ./components/search.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _search_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./search.module.scss */ "./components/search.module.scss");
+/* harmony import */ var _search_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_search_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\search.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Search = () => {
+  const {
+    0: query,
+    1: setQuery
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+
+  const handleChange = e => {
+    setQuery(e.target.value);
+    console.log(query);
+  };
+
+  return __jsx("div", {
+    className: _search_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.search,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }, __jsx("form", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 1
+    }
+  }, __jsx("input", {
+    type: "search",
+    id: "search",
+    name: "search",
+    value: query,
+    placeholder: "Search Products & Services",
+    onChange: handleChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 3
+    }
+  }), __jsx("button", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 3
+    }
+  }, __jsx("i", {
+    class: "fa fa-search",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 11
+    }
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Search);
+
+/***/ }),
+
+/***/ "./components/search.module.scss":
+/*!***************************************!*\
+  !*** ./components/search.module.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"search": "search___3MHpT"
 };
 
 /***/ }),
@@ -3234,7 +3297,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     });
 
     _defineProperty(this, "fetchCustomer", async () => {
-      const customerId = JSON.parse(localStorage.getItem('customerId'));
+      const customerId = localStorage.getItem('customerId');
       console.log(customerId);
       const url = "http://localhost:4000/customer/" + customerId;
       const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(url, {
@@ -3339,21 +3402,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 116,
+        lineNumber: 117,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117,
+        lineNumber: 118,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118,
+        lineNumber: 119,
         columnNumber: 4
       }
     }))));

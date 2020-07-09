@@ -1,26 +1,23 @@
+@import '../pages/styles.scss';
+
+
 /* Button used to open the chat form - fixed at the bottom of the page */
 .openbutton {
     background-color:red;
     color: white;
-    padding: 16px 20px;
     border: none;
     cursor: pointer;
-    opacity: 0.8;
     position: fixed;
-    bottom: 23px;
-    right: 28px;
+    bottom: 300px;
+    right: -85px;
     width: 200px;
-    z-index: 2;
+    transform: rotate(-90deg);
+
   }
 
   /* The popup chat - hidden by default */
   .chatclosed {
     display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
   }
   
   .chatopen {
@@ -28,52 +25,90 @@
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #f1f1f1;
     z-index: 9;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 1em;
+
   }
   /* Add styles to the form container */
-  .form-container {
+  .formcontainer{
     max-width: 300px;
     padding: 10px;
-    background-color: white;
-  }
-  
-  /* Full-width textarea */
-  .form-container textarea {
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+    border-radius: 1em;
+
+
+fieldset{
+  border: none;
+
+}
+
+     /* Full-width textarea */
+ textarea {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
+    border-radius: 0.2em;
     border: none;
-    background: #f1f1f1;
+    background: #f1f1f1ed;
     resize: none;
-    min-height: 200px;
+    min-height: 10em;
   }
-  
-  /* When the textarea gets focus, do something */
-  .form-container textarea:focus {
+
+  input{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border-radius: 0.2em;
+    border: none;
+    resize: none;
+    height: 1em;
+    background: #f1f1f1ed;
+  }
+
+   /* When the textarea gets focus, do something */
+   textarea:focus {
     background-color: #ddd;
     outline: none;
   }
   
   /* Set a style for the submit/send button */
-  .form-container .btn {
-    background-color: #4CAF50;
+  .btn {
+    background-color: $primary-color;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
     margin-bottom:10px;
-    opacity: 0.8;
+    margin-left: 0;
   }
-  
+
   /* Add a red background color to the cancel button */
-  .form-container .cancel {
+  .cancel {
     background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    margin-left: 0;
   }
-  
+
+    
   /* Add some hover effects to buttons */
-  .form-container .btn:hover, .openbutton:hover {
+ .btn:hover, .openbutton:hover {
     opacity: 1;
   }
+
+  }
+  
+ 
+  
+ 
+
+  
+

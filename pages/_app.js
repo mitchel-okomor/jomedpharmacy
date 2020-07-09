@@ -23,6 +23,7 @@ componentDidMount(){
  (async()=>{
      //get cart items from local storage
   const cart = JSON.parse(localStorage.getItem('cart'));
+  
   //get cart total
   const carttotal = JSON.parse(localStorage.getItem('total'));
 const customer =await this.fetchCustomer();
@@ -39,7 +40,7 @@ console.log(customer);
 };
 
 fetchCustomer = async ()=>{
-  const customerId = JSON.parse(localStorage.getItem('customerId'));
+  const customerId = localStorage.getItem('customerId');
   
     console.log(customerId);
     const url = "http://localhost:4000/customer/"+customerId;

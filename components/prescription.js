@@ -65,30 +65,20 @@ return <Loading />
     }
   return (
     <div className={css.prescription}>
-    <button className={css.openbutton} onClick={toggleChat}>Chat</button>
+    <button className={css.openbutton} onClick={toggleChat}>prescription</button>
     <div className={chat} id={css.myForm}>
-        <form >
+      <br />
+        <form className={css.formcontainer}>
           <fieldset>
-            <legend>Sensd us your prescription:</legend>
+            <legend><b>Send us your prescription</b></legend>
+            <br />
             <label for="fname">Full Name:</label> <br />
             <input
               type="text"
               id="name"
               name="name"
               value={name}
-              placeholder="First Name"
-              required
-              onChange={handleChange}
-            />
-            <br />
-        
-            <label for="email">Email:</label> <br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              placeholder="johndoe@gmail.com"
+              placeholder="John Okafor"
               required
               onChange={handleChange}
             />
@@ -99,24 +89,27 @@ return <Loading />
               id="number"
               name="number"
               value={number}
-              placeholder="+2348090213567"
+              placeholder="08090213567"
+              required
+              onChange={handleChange}
+              
+            />
+            <br />
+            <br />
+            <label for="prescription">prescription details:</label> <br />
+            <textarea
+              type="text"
+              id="prescription"
+              name="prescription"
               required
               onChange={handleChange}
             />
             <br />
-            <label for="password">password:</label> <br />
-            <input
-              type="password"
-              id="password"
-              name="password"
-              required
-              onChange={handleChange}
-            />
+            <button type="submit" className={css.btn}  onClick={handleSubmit}>Submit</button>
             <br />
-            <button onClick={handleSubmit}>Submit</button>
+            <button  className={css.cancel} onClick={toggleChat}>close</button>
           </fieldset>
         </form>
-        <button className={css.openbutton} onClick={toggleChat}>Chat</button>
         </div>
 </div>
   );
