@@ -3326,32 +3326,25 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       localStorage.setItem('total', JSON.stringify(this.state.carttotal));
     });
 
-    _defineProperty(this, "removeFromTotal", async price => {
-      if (this.state.carttotal >= 1) {
+    _defineProperty(this, "removeFromTotal", async product => {
+      let producdToRemove = this.state.cart.filter(item => item.id === product.id);
+
+      if (this.state.carttotal >= 1 && producdToRemove) {
         await this.setState({
-          carttotal: this.state.carttotal - price
+          carttotal: this.state.carttotal - product.price
         });
         localStorage.setItem('total', JSON.stringify(this.state.carttotal));
       }
     });
 
-    _defineProperty(this, "removeFromCart", async id => {
-      console.log("product: " + id);
-      let cart = this.state.cart;
-      let newCart = [];
-
-      for (let i = 0; i <= cart.length; i++) {
-        if (cart[i].id == id) {
-          continue;
-        }
-
-        newCart.push(cart[i]);
-      }
-
+    _defineProperty(this, "removeFromCart", async product => {
+      console.log("product: " + product.id);
+      let newCart = this.state.cart.filter(item => item.id !== product.id);
       await this.setState({
         cart: newCart
       }); //save to local storage
 
+      console.log(newCart.length);
       localStorage.setItem('cart', JSON.stringify(this.state.cart));
       console.log("removing");
     });
@@ -3402,21 +3395,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117,
+        lineNumber: 113,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118,
+        lineNumber: 114,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119,
+        lineNumber: 115,
         columnNumber: 4
       }
     }))));

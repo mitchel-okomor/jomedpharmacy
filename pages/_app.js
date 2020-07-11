@@ -71,30 +71,26 @@ calculateTotal = async (price) => {
   localStorage.setItem('total', JSON.stringify(this.state.carttotal));
 }
 
-removeFromTotal = async (price) => {
-  if(this.state.carttotal >= 1){
+removeFromTotal = async (product) => {
+  let producdToRemove = this.state.cart.filter(item => item.id === product.id);
+
+  if(this.state.carttotal >= 1 && producdToRemove ){
   await  this.setState({
-    carttotal: this.state.carttotal - price
+    carttotal: this.state.carttotal - product.price
   });
   localStorage.setItem('total', JSON.stringify(this.state.carttotal));
   }
   
 }
 
-removeFromCart = async (id)=>{
-  console.log("product: "+id);
-  let cart = this.state.cart
-  let newCart = [];
-  for(let i=0; i<=cart.length; i++){
-if(cart[i].id == id){
-  continue;
-}
-newCart.push(cart[i]);
-  }
+removeFromCart = async (product)=>{
+  console.log("product: "+product.id);
+  let newCart = this.state.cart.filter(item => item.id !== product.id);
  await this.setState({
     cart:newCart
 });
 //save to local storage
+console.log(newCart.length);
 localStorage.setItem('cart', JSON.stringify(this.state.cart));
  console.log("removing")
 }

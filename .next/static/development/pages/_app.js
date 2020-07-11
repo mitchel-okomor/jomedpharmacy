@@ -8717,25 +8717,30 @@ var MyApp = /*#__PURE__*/function (_App) {
       }, null, null, null, Promise);
     });
 
-    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "removeFromTotal", function _callee4(price) {
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "removeFromTotal", function _callee4(product) {
+      var producdToRemove;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.async(function _callee4$(_context4) {
         while (1) {
           switch (_context4.prev = _context4.next) {
             case 0:
-              if (!(_this.state.carttotal >= 1)) {
-                _context4.next = 4;
+              producdToRemove = _this.state.cart.filter(function (item) {
+                return item.id === product.id;
+              });
+
+              if (!(_this.state.carttotal >= 1 && producdToRemove)) {
+                _context4.next = 5;
                 break;
               }
 
-              _context4.next = 3;
+              _context4.next = 4;
               return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(_this.setState({
-                carttotal: _this.state.carttotal - price
+                carttotal: _this.state.carttotal - product.price
               }));
 
-            case 3:
+            case 4:
               localStorage.setItem('total', JSON.stringify(_this.state.carttotal));
 
-            case 4:
+            case 5:
             case "end":
               return _context4.stop();
           }
@@ -8743,50 +8748,28 @@ var MyApp = /*#__PURE__*/function (_App) {
       }, null, null, null, Promise);
     });
 
-    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "removeFromCart", function _callee5(id) {
-      var cart, newCart, i;
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "removeFromCart", function _callee5(product) {
+      var newCart;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.async(function _callee5$(_context5) {
         while (1) {
           switch (_context5.prev = _context5.next) {
             case 0:
-              console.log("product: " + id);
-              cart = _this.state.cart;
-              newCart = [];
-              i = 0;
-
-            case 4:
-              if (!(i <= cart.length)) {
-                _context5.next = 11;
-                break;
-              }
-
-              if (!(cart[i].id == id)) {
-                _context5.next = 7;
-                break;
-              }
-
-              return _context5.abrupt("continue", 8);
-
-            case 7:
-              newCart.push(cart[i]);
-
-            case 8:
-              i++;
+              console.log("product: " + product.id);
+              newCart = _this.state.cart.filter(function (item) {
+                return item.id !== product.id;
+              });
               _context5.next = 4;
-              break;
-
-            case 11:
-              _context5.next = 13;
               return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(_this.setState({
                 cart: newCart
               }));
 
-            case 13:
+            case 4:
               //save to local storage
+              console.log(newCart.length);
               localStorage.setItem('cart', JSON.stringify(_this.state.cart));
               console.log("removing");
 
-            case 15:
+            case 7:
             case "end":
               return _context5.stop();
           }
@@ -8863,21 +8846,21 @@ var MyApp = /*#__PURE__*/function (_App) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117,
+          lineNumber: 113,
           columnNumber: 2
         }
       }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118,
+          lineNumber: 114,
           columnNumber: 1
         }
       }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119,
+          lineNumber: 115,
           columnNumber: 4
         }
       }))));

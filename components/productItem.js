@@ -19,7 +19,7 @@ const ProductItem = (props) => {
                  <p>{props.product.description}</p>
                  <button className="btn btn-large btn-primary" onClick={() => {addToCart(props.product); total(props.product.price); }}>Add to Cart
                 </button>
-                <button className="btn btn-large btn-primary" onClick={() => {removeFromCart(props.product.id); removeFromTotal(props.product.price); }}>remove
+                <button className="btn btn-large btn-primary" onClick={() => {removeFromCart(props.product); removeFromTotal(props.product); }}>remove
                 </button>
                </div>
          </div>
