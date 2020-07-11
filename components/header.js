@@ -2,11 +2,11 @@ import css from './header.module.scss';
 import Link from 'next/link';
 import Search from './search';
 import { useContext,} from 'react';
-import CartContext from './cartcontext';
+import appContext from './appcontext';
 
 
 const Header = () => {
-  const { cart, customer } = useContext(CartContext);
+  const { cart, customer } = useContext(appContext);
  
   return(
         <header className={css.header}>

@@ -2,7 +2,7 @@ import React, {useContext, useReducer } from "react";
 import css from './login.module.scss';
 import axios from "axios";
 import Loading from './loading';
-import CartContext from './cartcontext';
+import appContext from './appcontext';
 
 
 const initialState = {
@@ -21,7 +21,7 @@ const reducer = (state, { field, value }) => {
 
 const Login = (props) => {
 
-  const {setCustomer } = useContext(CartContext);
+  const {setCustomer } = useContext(appContext);
 
     //use reducer hook to dispatch change action
   const [state, dispatch] = useReducer(reducer, initialState);

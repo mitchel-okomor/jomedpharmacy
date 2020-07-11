@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { useContext } from 'react';
-import CartContext from './cartcontext';
+import appContext from './appcontext';
 
 const Product = (props) => {
-  const { addToCart, total } = useContext(CartContext);
+  const { addToCart, total } = useContext(appContext);
 
  return (
       <div className="col-sm-4">

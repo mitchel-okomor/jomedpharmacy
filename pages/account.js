@@ -3,13 +3,13 @@ import css from "./account.module.scss";
 import Login from "../components/login";
 import Signup from "../components/signup";
 import { useContext } from 'react';
-import CartContext from '../components/cartcontext';
+import appContext from '../components/appcontext';
 
 
 
 
 const Account = (props) => {
-  const {customer } = useContext(CartContext);
+  const {customer } = useContext(appContext);
   if(customer){
    return(
      <div className={css.account}>

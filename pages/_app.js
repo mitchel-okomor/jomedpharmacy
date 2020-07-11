@@ -1,7 +1,7 @@
 import App from 'next/app';
 import './styles.scss'
 import Layout from '../components/layout';
-import cartcontext from '../components/cartcontext';
+import appContext from '../components/appcontext';
 import fetch from 'isomorphic-unfetch';
 
 
@@ -110,11 +110,11 @@ setCustomer = (val) =>{
 
 render(){ const { Component, pageProps } = this.props
       return(
- <cartcontext.Provider value={{cart: this.state.cart, customer:this.state.customer, setCustomer:this.setCustomer, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
+ <appContext.Provider value={{cart: this.state.cart, customer:this.state.customer, setCustomer:this.setCustomer, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
 <Layout>
    <Component {...pageProps} /> 
 </Layout>
-</cartcontext.Provider>
+</appContext.Provider>
   )  
     }
    
