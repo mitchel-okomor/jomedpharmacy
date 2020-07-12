@@ -26,6 +26,7 @@ const Account = (props) => {
    )
  }
   return (
+
     <div className={css.account}>
       <h1 className={css.heading}>Account</h1>
       <div className={css.form}>

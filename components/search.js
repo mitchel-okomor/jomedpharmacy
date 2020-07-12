@@ -14,11 +14,11 @@ const Search = () =>{
      //submit form data to backend server
   const handleSubmit =async (e) => {
     e.preventDefault();
-    dispatch({field:"loading", value:true});
-const url = 'http://localhost:4000/search?';
-console.log(state);
+    //dispatch({field:"loading", value:true});
+const url = 'http://localhost:4000/search?value='+query;
+console.log(query);
 try{
-const response = await axios.post(url, state, {
+const response = await axios.get(url, {
 timeout: 30000
 });
 if(response.status==200){
@@ -36,8 +36,8 @@ console.log(error);
     return(
         <div className={css.search}>
 <form >
-  <input type="search" id="search" name="search" value={query} placeholder="Search Products & Services" onChange={handleChange} />
-  <button><i class="fa fa-search"></i></button>
+  <input type="text" id="search" name="search" value={query} placeholder="Search Products & Services" onChange={handleChange} />
+  <button onClick={handleSubmit}><i class="fa fa-search"></i></button>
 </form>
 
 </div>

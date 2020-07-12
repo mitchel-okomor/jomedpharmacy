@@ -1357,16 +1357,13 @@ const Search = () => {
 
 
   const handleSubmit = async e => {
-    e.preventDefault();
-    dispatch({
-      field: "loading",
-      value: true
-    });
-    const url = 'http://localhost:4000/search?';
-    console.log(state);
+    e.preventDefault(); //dispatch({field:"loading", value:true});
+
+    const url = 'http://localhost:4000/search?value=' + query;
+    console.log(query);
 
     try {
-      const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(url, state, {
+      const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(url, {
         timeout: 30000
       });
 
@@ -1394,7 +1391,7 @@ const Search = () => {
       columnNumber: 1
     }
   }, __jsx("input", {
-    type: "search",
+    type: "text",
     id: "search",
     name: "search",
     value: query,
@@ -1407,6 +1404,7 @@ const Search = () => {
       columnNumber: 3
     }
   }), __jsx("button", {
+    onClick: handleSubmit,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -1419,7 +1417,7 @@ const Search = () => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40,
-      columnNumber: 11
+      columnNumber: 34
     }
   }))));
 };

@@ -45,40 +45,37 @@ var Search = function Search() {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            e.preventDefault();
-            dispatch({
-              field: "loading",
-              value: true
-            });
-            url = 'http://localhost:4000/search?';
-            console.log(state);
-            _context.prev = 4;
-            _context.next = 7;
-            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(url, state, {
+            e.preventDefault(); //dispatch({field:"loading", value:true});
+
+            url = 'http://localhost:4000/search?value=' + query;
+            console.log(query);
+            _context.prev = 3;
+            _context.next = 6;
+            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_3___default.a.get(url, {
               timeout: 30000
             }));
 
-          case 7:
+          case 6:
             response = _context.sent;
 
             if (response.status == 200) {
               console.log(response);
             }
 
-            _context.next = 14;
+            _context.next = 13;
             break;
 
-          case 11:
-            _context.prev = 11;
-            _context.t0 = _context["catch"](4);
+          case 10:
+            _context.prev = 10;
+            _context.t0 = _context["catch"](3);
             console.log(_context.t0);
 
-          case 14:
+          case 13:
           case "end":
             return _context.stop();
         }
       }
-    }, null, null, [[4, 11]], Promise);
+    }, null, null, [[3, 10]], Promise);
   };
 
   return __jsx("div", {
@@ -97,7 +94,7 @@ var Search = function Search() {
       columnNumber: 1
     }
   }, __jsx("input", {
-    type: "search",
+    type: "text",
     id: "search",
     name: "search",
     value: query,
@@ -110,6 +107,7 @@ var Search = function Search() {
       columnNumber: 3
     }
   }), __jsx("button", {
+    onClick: handleSubmit,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -122,7 +120,7 @@ var Search = function Search() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40,
-      columnNumber: 11
+      columnNumber: 34
     }
   }))));
 };
@@ -132,4 +130,4 @@ var Search = function Search() {
 /***/ })
 
 })
-//# sourceMappingURL=_app.js.2a1d8fb7c9e7081b7823.hot-update.js.map
+//# sourceMappingURL=_app.js.d26cabd63f37a10c3dda.hot-update.js.map

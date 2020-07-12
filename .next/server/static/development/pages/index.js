@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -170,7 +170,7 @@ const Main = () => {
       lineNumber: 12,
       columnNumber: 11
     }
-  }, "Our most concern is to make sure how customers get quality and affordable health care."))), __jsx("div", {
+  }, "Our most concern is to make sure our customers get quality and affordable health care."))), __jsx("div", {
     className: _main_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cards,
     __self: undefined,
     __source: {
@@ -298,7 +298,7 @@ const Index = () => {
 
 /***/ }),
 
-/***/ 7:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

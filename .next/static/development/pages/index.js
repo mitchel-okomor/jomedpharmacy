@@ -79,7 +79,7 @@ var Main = function Main() {
       lineNumber: 12,
       columnNumber: 11
     }
-  }, "Our most concern is to make sure how customers get quality and affordable health care."))), __jsx("div", {
+  }, "Our most concern is to make sure our customers get quality and affordable health care."))), __jsx("div", {
     className: _main_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cards,
     __self: _this,
     __source: {
@@ -230,7 +230,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 16:
+/***/ 8:
 /*!***********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Cindex.js&hotRouterUpdates=true ***!
   \***********************************************************************************************************************************************************************/
@@ -253,5 +253,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[16,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

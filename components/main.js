@@ -10,7 +10,7 @@ const Main = () => {
           <br />
           <h2>A place where your health needs are met</h2>
           <p>
-            Our most concern is to make sure how customers get quality and
+            Our most concern is to make sure our customers get quality and
             affordable health care.
           </p>
         </div>
