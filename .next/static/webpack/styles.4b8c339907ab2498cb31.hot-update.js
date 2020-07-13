@@ -30,7 +30,7 @@ module.exports = {"main":"main___2CXzs","intro":"intro___1q6R9","cards":"cards__
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594576855317");
+            injectCss(link, link.href.split("?")[0] + "?unix=1594670577498");
           });
       }
     }
@@ -39,4 +39,4 @@ module.exports = {"main":"main___2CXzs","intro":"intro___1q6R9","cards":"cards__
 /***/ })
 
 })
-//# sourceMappingURL=styles.f86c76656abb84697ac1.hot-update.js.map
+//# sourceMappingURL=styles.4b8c339907ab2498cb31.hot-update.js.map

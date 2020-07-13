@@ -4,6 +4,7 @@ import axios from 'axios';
 
 const Search = () =>{
     const [query, setQuery] = useState();
+    const [searchResult, setSearchResult] = useState('');
   
     const handleChange = (e) => {
         setQuery(e.target.value);
@@ -22,8 +23,9 @@ const response = await axios.get(url, {
 timeout: 30000
 });
 if(response.status==200){
-console.log(response);
+setSearchResult(response.data.data);
 
+console.log(searchResult);
 }
 }
 catch(error){

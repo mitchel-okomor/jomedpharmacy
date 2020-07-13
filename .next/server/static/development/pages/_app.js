@@ -1349,6 +1349,10 @@ const Search = () => {
     0: query,
     1: setQuery
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+  const {
+    0: searchResult,
+    1: setSearchResult
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
 
   const handleChange = e => {
     setQuery(e.target.value);
@@ -1368,7 +1372,8 @@ const Search = () => {
       });
 
       if (response.status == 200) {
-        console.log(response);
+        setSearchResult(response.data.data);
+        console.log(searchResult);
       }
     } catch (error) {
       console.log(error);
@@ -1380,14 +1385,14 @@ const Search = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 39,
       columnNumber: 9
     }
   }, __jsx("form", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 40,
       columnNumber: 1
     }
   }, __jsx("input", {
@@ -1400,7 +1405,7 @@ const Search = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 41,
       columnNumber: 3
     }
   }), __jsx("button", {
@@ -1408,7 +1413,7 @@ const Search = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 42,
       columnNumber: 3
     }
   }, __jsx("i", {
@@ -1416,7 +1421,7 @@ const Search = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 42,
       columnNumber: 34
     }
   }))));
