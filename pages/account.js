@@ -4,6 +4,7 @@ import Login from "../components/login";
 import Signup from "../components/signup";
 import { useContext } from 'react';
 import appContext from '../components/appcontext';
+import Link from 'next/link';
 
 
 
@@ -12,16 +13,19 @@ const Account = (props) => {
   const {customer } = useContext(appContext);
   if(customer){
    return(
-     <div className={css.account}>
+     <div className={css.profile}>
        <h2>User Profile</h2>
        <table>
+         <th></th>
+         <th></th>
          <tr>  <td>Name:</td> <td>{customer.name}</td></tr>
          <tr>  <td>Email:</td> <td>{customer.email}</td></tr>
          <tr>  <td>Phone Number:</td> <td>{customer.number}</td></tr>
-         <tr>  <td>Billing Address:</td> <td>{customer.address}</td></tr>
+         <tr>  <td>Delivery Address:</td> <td>{customer.address}</td></tr>
        </table>
 
-       <button>Edit</button>
+<br />
+       <Link href="/modify"><a>Edit</a></Link> 
      </div>
    )
  }

@@ -170,68 +170,75 @@ const Main = () => {
       lineNumber: 12,
       columnNumber: 11
     }
-  }, "Our most concern is to make sure our customers get quality and affordable health care."))), __jsx("div", {
+  }, "your caring and helpful pharmaceutical outlet", __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 58
+    }
+  }), "Our most concern is to make sure our customers get quality and affordable health care."))), __jsx("div", {
     className: _main_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cards,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 19,
       columnNumber: 7
     }
   }, __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 21,
       columnNumber: 10
     }
   }, __jsx("h3", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 22,
       columnNumber: 9
     }
   }, "Welcome to"), __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 23,
       columnNumber: 1
     }
   }, "Jomed Pharmacy"), "You and your loved ones\u2019 health come first. With high-quality medications and supplies provided by skilled and experienced pharmacists, you can guarantee to live a healthy life within your budget. We look out for everyone in the community as if they are part of our family too."), __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 26,
       columnNumber: 14
     }
   }, __jsx("h2", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 27,
       columnNumber: 14
     }
   }, "Compassionate"), __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 1
     }
   }, "CARE THE"), __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 29,
       columnNumber: 1
     }
   }, "PHARMACEUTICAL WAY"), "We are the pharmacy that truly listens to your needs. Let us help you get better."), __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 32,
       columnNumber: 18
     }
   }, "section 3")), __jsx("div", {
@@ -239,7 +246,7 @@ const Main = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 10
     }
   }));

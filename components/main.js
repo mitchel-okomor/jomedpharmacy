@@ -10,6 +10,7 @@ const Main = () => {
           <br />
           <h2>A place where your health needs are met</h2>
           <p>
+            your caring and helpful pharmaceutical outlet<br />
             Our most concern is to make sure our customers get quality and
             affordable health care.
           </p>
