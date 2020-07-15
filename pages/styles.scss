@@ -26,7 +26,20 @@ a:hover {color: white;
   font-size: larger;
 }  
 
+p{
+  font-size: larger;
+}
+.pagelink{
+  color: $accent-color !important;
+  font-size: 2em;
 
+}
+  .pagelink:hover{
+    background-color: red !important;
+    color: white !important;
+    font-size: 2em;
+
+  }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

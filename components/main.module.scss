@@ -37,10 +37,12 @@ color:white;
 
     div{
         margin-top: 4em;
-        height: 18em;
         border: solid 2px $primary-color;
         border-radius: 2em;
         padding: 3em;
+        opacity: 0.9;
+        background-color: white;
+
     }
 
 }

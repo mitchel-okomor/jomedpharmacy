@@ -368,6 +368,7 @@ const Footer = () => {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"pagelink": "pagelink___2i4KL",
 	"footer": "footer___uzAl_"
 };
 
@@ -617,6 +618,7 @@ const Header = () => {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"pagelink": "pagelink___UN4XU",
 	"header": "header___1iSmJ",
 	"logo": "logo___130h5",
 	"activity": "activity___3ZQXV",
@@ -792,7 +794,7 @@ const Navigation = () => {
       columnNumber: 9
     }
   }, __jsx("li", {
-    className: router.pathname == "/" ? "active" : "",
+    className: router.pathname == "/" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.active : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -809,7 +811,7 @@ const Navigation = () => {
     }
   }, "Home")), __jsx("li", {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
-    className: router.pathname == "/" ? "active" : "",
+    className: router.pathname == "/products" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.active : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -859,7 +861,7 @@ const Navigation = () => {
     }
   }, "Suppliments"))), __jsx("li", {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown,
-    className: router.pathname == "/" ? "active" : "",
+    className: router.pathname == "/services" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.active : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -908,7 +910,7 @@ const Navigation = () => {
       columnNumber: 7
     }
   }, "Weigth Management Care"))), __jsx("li", {
-    className: router.pathname == "/" ? "active" : "",
+    className: router.pathname == "/locations" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.active : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -924,7 +926,7 @@ const Navigation = () => {
       columnNumber: 17
     }
   }, " Locations")), __jsx("li", {
-    className: router.pathname == "/" ? "active" : "",
+    className: router.pathname == "/about" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.active : "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -954,6 +956,7 @@ const Navigation = () => {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"pagelink": "pagelink____jdru",
 	"nav": "nav___1kSwy",
 	"active": "active___amG3s",
 	"dropbtn": "dropbtn___yJU84",
@@ -1312,6 +1315,7 @@ const Signup = props => {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"pagelink": "pagelink___1xFXa",
 	"openbutton": "openbutton___1JJgq",
 	"chatclosed": "chatclosed___2VVtF",
 	"chatopen": "chatopen___yNv89",
@@ -1439,6 +1443,7 @@ const Search = () => {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"pagelink": "pagelink___3KTKa",
 	"search": "search___3MHpT"
 };
 
@@ -3457,7 +3462,9 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+module.exports = {
+	"pagelink": "pagelink___35WRW"
+};
 
 /***/ }),
 

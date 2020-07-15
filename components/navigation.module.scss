@@ -19,15 +19,19 @@ a:hover {color: white;
 background-color: $primary-color;
 }   
 
+.active{
+  color: white !important;
+  background-color: $primary-color;
+}
 }
 
 .nav{
   
 
     a{
-        color: $primary-color;
+        color: inherit;
     }
-    a:visited{color:$primary-color;}
+    a:visited{color:inherit;}
 div{
    float:left;
   margin-left: 1em;
@@ -55,17 +59,14 @@ background-color: $primary-color;
     display: flex;
    float: right;
 
-   .active{
-    color: white;
-    background-color: $primary-color;
-  }
+
 
     li{ 
        width: fit-content;
        font-size: $nav-font-size;
        border-radius: 4px;
        margin-top: 0.3em;
-
+ 
         
        a{
         display: inline-block;

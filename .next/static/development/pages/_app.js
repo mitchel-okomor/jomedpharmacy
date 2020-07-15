@@ -651,7 +651,7 @@ var Navigation = function Navigation() {
       columnNumber: 9
     }
   }, __jsx("li", {
-    className: router.pathname == "/" ? "active" : "",
+    className: router.pathname == "/" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.active : "",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -668,7 +668,7 @@ var Navigation = function Navigation() {
     }
   }, "Home")), __jsx("li", (_jsx = {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropdown
-  }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "className", router.pathname == "/" ? "active" : ""), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "__self", _this), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "__source", {
+  }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "className", router.pathname == "/products" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.active : ""), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "__self", _this), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "__source", {
     fileName: _jsxFileName,
     lineNumber: 13,
     columnNumber: 13
@@ -715,7 +715,7 @@ var Navigation = function Navigation() {
     }
   }, "Suppliments"))), __jsx("li", (_jsx2 = {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropdown
-  }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "className", router.pathname == "/" ? "active" : ""), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "__self", _this), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "__source", {
+  }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "className", router.pathname == "/services" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.active : ""), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "__self", _this), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "__source", {
     fileName: _jsxFileName,
     lineNumber: 21,
     columnNumber: 13
@@ -761,7 +761,7 @@ var Navigation = function Navigation() {
       columnNumber: 7
     }
   }, "Weigth Management Care"))), __jsx("li", {
-    className: router.pathname == "/" ? "active" : "",
+    className: router.pathname == "/locations" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.active : "",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -777,7 +777,7 @@ var Navigation = function Navigation() {
       columnNumber: 17
     }
   }, " Locations")), __jsx("li", {
-    className: router.pathname == "/" ? "active" : "",
+    className: router.pathname == "/about" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.active : "",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
