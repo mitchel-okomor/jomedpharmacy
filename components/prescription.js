@@ -10,6 +10,7 @@ const initialState = {
   description: "",
 loading: false,
 chat: css.chatclosed,
+
 };
 
 //handle state changes with reducer
@@ -26,7 +27,8 @@ const Signup = (props) => {
 
   //submit form data to backend server
   const handleSubmit =async (e) => {
-        e.preventDefault();
+   e.preventDefault();
+   
         dispatch({field:"loading", value:true});
 const url = 'http://localhost:4000/prescription';
   console.log(state);
@@ -59,9 +61,14 @@ else{
 
 
 
-  const { name, email, number, loading, chat} = state;
+  const { name, description, number, loading, chat} = state;
   if(loading){
-return <Loading />
+    
+return(
+  <div className={css.prescription}>
+<Loading />
+    </div>
+) 
     }
   return (
     <div className={css.prescription}>
@@ -70,7 +77,7 @@ return <Loading />
       <br />
         <form className={css.formcontainer}>
           <fieldset>
-            <legend><b>Send us your prescription</b></legend>
+            <legend><b><h3 className={css.heading}>Send us your prescription</h3></b></legend>
             <br />
             <label for="fname">Full Name:</label> <br />
             <input
@@ -100,7 +107,8 @@ return <Loading />
             <textarea
               type="text"
               id="prescription"
-              name="prescription"
+              name="description"
+              value={description}
               required
               onChange={handleChange}
             />

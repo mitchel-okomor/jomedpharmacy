@@ -45,6 +45,14 @@ fieldset{
 
 }
 
+.heading{
+  background-color: $primary-color;
+  margin: 0;
+  padding-top: 0.5em;
+  color: white;
+  border-radius: 0.18em;
+  height: 2em;
+}
      /* Full-width textarea */
  textarea {
     width: 100%;
