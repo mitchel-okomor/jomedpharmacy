@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Product from './Product';
+import css from './productList.module.scss';
+
 
 class ProductList extends Component {
   constructor(props) {
@@ -7,7 +9,7 @@ class ProductList extends Component {
   }
   render() {
       return (
-        <div>
+        <div className={css.productlist}>
        {this.props.products.map(item => <Product key={item.id} product={item}/>)}
         </div>
       )

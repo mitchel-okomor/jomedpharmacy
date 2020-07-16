@@ -25,7 +25,8 @@ const Account = (props) => {
        </table>
 
 <br />
-       <Link href="/modify"><a>Edit</a></Link> 
+<Link href="/modify"><a>Edit</a></Link>    <span>  <button><a>Logout</a></button>       
+</span>
      </div>
    )
  }

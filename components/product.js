@@ -1,25 +1,27 @@
 import Link from "next/link";
 import { useContext } from 'react';
 import appContext from './appcontext';
+import css from './product.module.scss';
+
 
 const Product = (props) => {
   const { addToCart, total } = useContext(appContext);
 
  return (
-      <div className="col-sm-4">
+    <div className={css.product}>
+  <Link href="/products/[id]" as={`/products/${props.product.id}`}>
+       <a>       
+     
           <div className="card" style={{width: "18rem"}}>
-            <img src={props.product.image} className="card-img-top" alt="medicine"/>
+            <img src={props.product.image? props.product.image :  "/product.png"} className="card-img-top" alt="medicine"/>
             <div className="card-body">
-              <h5 className="card-title">{props.product.name}</h5>
-              <h6 className="card-title">$ {props.product.price}</h6>
-              <Link href="/products/[id]" as={`/products/${props.product.id}`}>
-                  <a>View Item &rarr;</a>
-              </Link>
-              <Link href="/products/[id]" as={`/products/${props.product.add}`}>
-                  <a onClick={() => {addToCart(props.product); total(props.product.price); }}>Add To Cart &rarr;</a>
-              </Link>
+              <b className="card-title">{props.product.name}</b><br />
+              <b className="card-title">$ {props.product.price}</b>
             </div>
-          </div>
+         
+      </div>
+      </a>
+      </Link> 
       </div>
  );
 }

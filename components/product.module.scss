@@ -1,0 +1,14 @@
+@import '../pages/styles.scss';
+
+.product{
+    padding: 1em;
+     width: 20%;
+
+ img{
+        width: 40%;
+    }
+
+    a:hover{
+        color: $primary-color;
+    }
+}

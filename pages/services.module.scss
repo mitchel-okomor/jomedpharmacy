@@ -5,6 +5,8 @@
     margin: auto;
     padding: $page-padding;
     box-sizing: border-box;
+display: grid;
+grid-template-columns: 33% 33% 33%;
 
   
    
@@ -19,9 +21,13 @@ padding: 1em;
 
     div{
         padding: 1em;
-        border: 1px solid $primary-color;
         border-radius: 1.5em;
         background-color: $div-background;
-        margin-top: 3em;
+        margin: 1.3em;
+
+        img{
+            width: 100%;
+            border-radius: 1em;
+        }
     }
 }
