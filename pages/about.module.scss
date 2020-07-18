@@ -7,18 +7,12 @@
     box-sizing: border-box;
 
     .heading{
-        box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-        background-color: $primary-color;
-        opacity: 0.9;
-        color:white;
+        color: $primary-color;
        font-size: 3em;
        height:0;
         width:fit-content;
         border-radius: 2em;
-       
+       margin-bottom: 2em;
     }
    
 
@@ -29,14 +23,13 @@
       
 width: 20%;
 border-radius: 2em;
-padding: 1em;
     }
 
     div{
-        padding: 1em;
-        border: 1px solid $primary-color;
+        padding: 0em 1em 0.5em 1em;
         border-radius: 1.5em;
-        background-color: $div-background;
+        background-color: white;
         margin-top: 3em;
-    }
+text-align: start;   
+ }
 }

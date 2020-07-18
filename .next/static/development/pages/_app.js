@@ -840,7 +840,8 @@ var initialState = {
   number: "",
   description: "",
   loading: false,
-  chat: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.chatclosed
+  chat: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.chatclosed,
+  button: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.openbutton
 }; //handle state changes with reducer
 
 var reducer = function reducer(state, _ref) {
@@ -920,10 +921,18 @@ var Signup = function Signup(props) {
         field: "chat",
         value: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.chatopen
       });
+      dispatch({
+        field: "button",
+        value: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.closebutton
+      });
     } else {
       dispatch({
         field: "chat",
         value: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.chatclosed
+      });
+      dispatch({
+        field: "button",
+        value: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.openbutton
       });
     }
   };
@@ -932,7 +941,8 @@ var Signup = function Signup(props) {
       description = state.description,
       number = state.number,
       loading = state.loading,
-      chat = state.chat;
+      chat = state.chat,
+      button = state.button;
 
   if (loading) {
     return __jsx("div", {
@@ -940,14 +950,14 @@ var Signup = function Signup(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68,
+        lineNumber: 71,
         columnNumber: 3
       }
     }, __jsx(_loading__WEBPACK_IMPORTED_MODULE_5__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69,
+        lineNumber: 72,
         columnNumber: 1
       }
     }));
@@ -958,16 +968,16 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 77,
       columnNumber: 5
     }
   }, __jsx("button", {
-    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.openbutton,
+    className: button,
     onClick: toggleChat,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 78,
       columnNumber: 5
     }
   }, "prescription"), __jsx("div", {
@@ -976,14 +986,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 79,
       columnNumber: 5
     }
   }, __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 80,
       columnNumber: 7
     }
   }), __jsx("form", {
@@ -991,28 +1001,28 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 81,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 82,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 83,
       columnNumber: 13
     }
   }, __jsx("b", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 83,
       columnNumber: 21
     }
   }, __jsx("h3", {
@@ -1020,14 +1030,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 83,
       columnNumber: 24
     }
   }, "Send us your prescription"))), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 84,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1035,14 +1045,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 85,
       columnNumber: 13
     }
   }, "Full Name:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 85,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -1056,14 +1066,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 86,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 95,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1071,14 +1081,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 96,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 96,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -1092,21 +1102,21 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 97,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104,
+      lineNumber: 107,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105,
+      lineNumber: 108,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1114,14 +1124,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 109,
       columnNumber: 13
     }
   }, "prescription details:"), " ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 109,
       columnNumber: 69
     }
   }), __jsx("textarea", {
@@ -1134,14 +1144,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 110,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115,
+      lineNumber: 118,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1151,14 +1161,14 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 119,
       columnNumber: 13
     }
   }, "Submit"), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 120,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1167,7 +1177,7 @@ var Signup = function Signup(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 121,
       columnNumber: 13
     }
   }, "close")))));

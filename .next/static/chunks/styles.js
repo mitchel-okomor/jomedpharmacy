@@ -30,7 +30,7 @@ module.exports = {"pagelink":"pagelink___2i4KL","footer":"footer___uzAl_"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916123782");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595077532431");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"pagelink":"pagelink___UN4XU","header":"header___1iSmJ","logo"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916123511");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595077531276");
           });
       }
     }
@@ -106,7 +106,7 @@ module.exports = {"loader":"loader___303lL","spin":"spin___aGIZ0"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594900971998");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595075852026");
           });
       }
     }
@@ -144,45 +144,7 @@ module.exports = {"pagelink":"pagelink___NwE0e"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916124015");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/main.module.scss":
-/*!*************************************!*\
-  !*** ./components/main.module.scss ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___3_nJX","main":"main___2CXzs","intro":"intro___1q6R9","cards":"cards___1MJLF","third":"third___xubTV"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916123947");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595078402819");
           });
       }
     }
@@ -220,7 +182,7 @@ module.exports = {"pagelink":"pagelink____jdru","nav":"nav___1kSwy","active":"ac
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916170321");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595077531484");
           });
       }
     }
@@ -236,7 +198,7 @@ module.exports = {"pagelink":"pagelink____jdru","nav":"nav___1kSwy","active":"ac
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq","chatclosed":"chatclosed___2VVtF","chatopen":"chatopen___yNv89","formcontainer":"formcontainer___244JH","heading":"heading___3qTZh","btn":"btn___31ijb","cancel":"cancel___20Iow"};;
+module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq","closebutton":"closebutton___2pbXy","chatclosed":"chatclosed___2VVtF","chatopen":"chatopen___yNv89","formcontainer":"formcontainer___244JH","heading":"heading___3qTZh","btn":"btn___31ijb","cancel":"cancel___20Iow"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -258,7 +220,7 @@ module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916123901");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595078815675");
           });
       }
     }
@@ -296,7 +258,7 @@ module.exports = {"pagelink":"pagelink___3KTKa","search":"search___3MHpT"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916123841");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595077531858");
           });
       }
     }
@@ -334,7 +296,45 @@ module.exports = {"pagelink":"pagelink___116ck"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916123981");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595078402836");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/about.module.scss":
+/*!*********************************!*\
+  !*** ./pages/about.module.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"pagelink":"pagelink___i2t-c","about":"about___ROoVA","heading":"heading___1uYDP"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1595077969843");
           });
       }
     }
@@ -372,7 +372,7 @@ module.exports = {"pagelink":"pagelink___23IcN","profile":"profile___2baMk","acc
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916124073");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595078402778");
           });
       }
     }
@@ -410,7 +410,7 @@ module.exports = {"pagelink":"pagelink___35WRW"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1594916124187");
+            injectCss(link, link.href.split("?")[0] + "?unix=1595077530707");
           });
       }
     }
