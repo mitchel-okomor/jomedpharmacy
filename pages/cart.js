@@ -30,7 +30,7 @@ const Cart = () => {
                 <div>
                   <img
                     src={item.image}
-                    alt="item"
+                    alt=""
                     width="70"
                   />
                   <br />
@@ -39,8 +39,8 @@ const Cart = () => {
                 </div>
 
               </td>
-              <td className="border-0 align-middle">
-                <strong>$ {item.price}</strong>
+              <td >
+                <strong>₦ {item.price}</strong>
               </td>
               <td>
                 {item.quantity}
@@ -50,14 +50,12 @@ const Cart = () => {
           ))}
         </tbody>
       </table>
-
-      <ul className="list-unstyled mb-4">
-        <li className="d-flex justify-content-between py-3 border-bottom">
-          <strong className="text-muted">Total</strong>
-          <h5 className="font-weight-bold">$ {carttotal}</h5>
-        </li>
-      </ul>
-      <Link href="#" >
+<br />
+     <div className={css.total}> <strong >Total: ₦{carttotal}</strong>
+</div>
+<br />
+      
+      <Link href="/checkout" >
        <a className={css.checkout}>
         Procceed to checkout
       </a>

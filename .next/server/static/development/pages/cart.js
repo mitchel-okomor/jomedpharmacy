@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1961,7 +1961,7 @@ const Cart = () => {
     }
   }, __jsx("img", {
     src: item.image,
-    alt: "item",
+    alt: "",
     width: "70",
     __self: undefined,
     __source: {
@@ -1993,7 +1993,6 @@ const Cart = () => {
       columnNumber: 1
     }
   }, " ", item.name)))), __jsx("td", {
-    className: "border-0 align-middle",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -2007,51 +2006,48 @@ const Cart = () => {
       lineNumber: 43,
       columnNumber: 17
     }
-  }, "$ ", item.price)), __jsx("td", {
+  }, "\u20A6 ", item.price)), __jsx("td", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45,
       columnNumber: 15
     }
-  }, item.quantity))))), __jsx("ul", {
-    className: "list-unstyled mb-4",
+  }, item.quantity))))), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 1
+    }
+  }), __jsx("div", {
+    className: _cart_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.total,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54,
-      columnNumber: 7
+      columnNumber: 6
     }
-  }, __jsx("li", {
-    className: "d-flex justify-content-between py-3 border-bottom",
+  }, " ", __jsx("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 9
+      lineNumber: 54,
+      columnNumber: 34
     }
-  }, __jsx("strong", {
-    className: "text-muted",
+  }, "Total: \u20A6", carttotal)), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 56,
-      columnNumber: 11
+      columnNumber: 1
     }
-  }, "Total"), __jsx("h5", {
-    className: "font-weight-bold",
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/checkout",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
-      columnNumber: 11
-    }
-  }, "$ ", carttotal))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 58,
       columnNumber: 7
     }
   }, __jsx("a", {
@@ -2059,7 +2055,7 @@ const Cart = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 59,
       columnNumber: 8
     }
   }, "Procceed to checkout")));
@@ -2079,12 +2075,14 @@ const Cart = () => {
 module.exports = {
 	"pagelink": "pagelink___3skIS",
 	"cart": "cart___2L3IN",
-	"table": "table___3GttJ"
+	"table": "table___3GttJ",
+	"checkout": "checkout___zJ0Aj",
+	"total": "total___1pZqN"
 };
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!*****************************!*\
   !*** multi ./pages/cart.js ***!
   \*****************************/

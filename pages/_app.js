@@ -57,16 +57,21 @@ fetchCustomer = async ()=>{
 
 //add a product to cart
 addToCart = async (product) => {
+
+  //check if product is in cart already and add to quantity
   if(product.quantity){
     console.log("found product");
       let productHolder = "";
    for(let i=0; i<this.state.cart.length; i++){
        if(this.state.cart[i].id == product.id ){
+
+         //copy the product from cart in the state
                productHolder = this.state.cart[i];
                console.log(this.state.cart[i]);
+               //remove the product from cart in the state
              this.state.cart.splice(i);
                console.log("cart: " + productHolder);
-              
+              //re-add the produc to state cart after incrementing the quantity
                productHolder.quantity += 1;
                await this.setState({
                  cart: [...this.state.cart, productHolder]

@@ -3452,16 +3452,20 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     });
 
     _defineProperty(this, "addToCart", async product => {
+      //check if product is in cart already and add to quantity
       if (product.quantity) {
         console.log("found product");
         let productHolder = "";
 
         for (let i = 0; i < this.state.cart.length; i++) {
           if (this.state.cart[i].id == product.id) {
+            //copy the product from cart in the state
             productHolder = this.state.cart[i];
-            console.log(this.state.cart[i]);
+            console.log(this.state.cart[i]); //remove the product from cart in the state
+
             this.state.cart.splice(i);
-            console.log("cart: " + productHolder);
+            console.log("cart: " + productHolder); //re-add the produc to state cart after incrementing the quantity
+
             productHolder.quantity += 1;
             await this.setState({
               cart: [...this.state.cart, productHolder]
@@ -3556,21 +3560,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139,
+        lineNumber: 144,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140,
+        lineNumber: 145,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141,
+        lineNumber: 146,
         columnNumber: 4
       }
     }))));

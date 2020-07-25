@@ -8859,12 +8859,14 @@ var MyApp = /*#__PURE__*/function (_App) {
                 break;
               }
 
+              //copy the product from cart in the state
               productHolder = _this.state.cart[i];
-              console.log(_this.state.cart[i]);
+              console.log(_this.state.cart[i]); //remove the product from cart in the state
 
               _this.state.cart.splice(i);
 
-              console.log("cart: " + productHolder);
+              console.log("cart: " + productHolder); //re-add the produc to state cart after incrementing the quantity
+
               productHolder.quantity += 1;
               _context2.next = 13;
               return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.awrap(_this.setState({
@@ -9053,21 +9055,21 @@ var MyApp = /*#__PURE__*/function (_App) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139,
+          lineNumber: 144,
           columnNumber: 2
         }
       }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140,
+          lineNumber: 145,
           columnNumber: 1
         }
       }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141,
+          lineNumber: 146,
           columnNumber: 4
         }
       }))));
