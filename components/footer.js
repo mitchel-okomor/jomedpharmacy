@@ -10,9 +10,9 @@ const Footer = () =>{
              <h3>
   Shopping With Us
 </h3>
-<Link href="">Brands A - Z</Link>
+<Link href="/products">Brands A - Z</Link>
 <br />
-<Link href="">Shops location</Link>
+<Link href="/locations">Shops location</Link>
 <br />
             </div>
 
@@ -41,10 +41,15 @@ const Footer = () =>{
                
             </div>
 
-            <div>
+            <div className={css.stayintouch}>
             <h3>
                 Stay in Touch
                 </h3>
+                <i className="fa fa-twitter-square" aria-hidden="true"></i>
+                <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i className="fa fa-whatsapp" aria-hidden="true"></i>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
              <div></div> 
               </div>
 

@@ -36,12 +36,11 @@ text-align: center;
 
 .form{
 display: flex;
-flex-basis: 40%;
+flex-wrap: wrap;
 }
 form{
 
     font-size: large;
-    width: 50%;
     margin: 4em;
   fieldset{
       padding-top: 40px;

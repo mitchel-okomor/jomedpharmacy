@@ -1,0 +1,37 @@
+@import "./styles.scss";
+
+
+.cart{
+  margin: 2em;
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    tbody{
+      font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+  }
+  
+  td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+}
+

@@ -87,7 +87,7 @@ const Login = (props) => {
               name="password"
               value={password}
               onChange={handleChange}
-            />
+            /> <br />
             <button onClick={handleSubmit}>Submit</button>
             <br/>
   <div>{message}</div>

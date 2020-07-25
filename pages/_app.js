@@ -57,11 +57,38 @@ fetchCustomer = async ()=>{
 
 //add a product to cart
 addToCart = async (product) => {
- await this.setState({
-      cart: [...this.state.cart, product]
-  });
-  //save to local storage
-  localStorage.setItem('cart', JSON.stringify(this.state.cart));
+  if(product.quantity){
+    console.log("found product");
+      let productHolder = "";
+   for(let i=0; i<this.state.cart.length; i++){
+       if(this.state.cart[i].id == product.id ){
+               productHolder = this.state.cart[i];
+               console.log(this.state.cart[i]);
+             this.state.cart.splice(i);
+               console.log("cart: " + productHolder);
+              
+               productHolder.quantity += 1;
+               await this.setState({
+                 cart: [...this.state.cart, productHolder]
+             });
+             //save to local storage
+             localStorage.setItem('cart', JSON.stringify(this.state.cart));
+             
+               break;
+       }
+
+      
+   
+    }
+   }
+else{
+  product.quantity = 1;
+  await this.setState({
+    cart: [...this.state.cart, product]
+});
+//save to local storage
+localStorage.setItem('cart', JSON.stringify(this.state.cart));
+}
 }
 
 calculateTotal = async (price) => {
@@ -92,7 +119,6 @@ removeFromCart = async (product)=>{
 //save to local storage
 console.log(newCart.length);
 localStorage.setItem('cart', JSON.stringify(this.state.cart));
- console.log("removing")
 }
 
 //set customer to update state and context

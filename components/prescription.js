@@ -50,6 +50,7 @@ dispatch({field:"loading", value:false});
   };
 
   const toggleChat = ()=>{
+    console.log("toggling")
 if (state.chat === css.chatclosed){
   dispatch({field:"chat", value:css.chatopen});
   dispatch({field:"button", value:css.closebutton}); 

@@ -5,6 +5,7 @@ import Signup from "../components/signup";
 import { useContext } from 'react';
 import appContext from '../components/appcontext';
 import Link from 'next/link';
+import logout from '../components/helper/logout';
 
 
 
@@ -25,7 +26,7 @@ const Account = (props) => {
        </table>
 
 <br />
-<Link href="/modify"><a>Edit</a></Link>    <span>  <button><a>Logout</a></button>       
+<Link href="/modify"><a>Edit</a></Link>    <span>  <button onClick={logout}>Logout</button>       
 </span>
      </div>
    )

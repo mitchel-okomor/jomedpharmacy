@@ -13,7 +13,7 @@ const Product = (props) => {
        <a>       
      
           <div className="card" style={{width: "18rem"}}>
-            <img src={props.product.image? props.product.image :  "/product.png"} className="card-img-top" alt="medicine"/>
+            <img src={props.product.image? props.product.image :  "/product.png"} className="card-img-top" alt=""/>
             <div className="card-body">
               <b className="card-title">{props.product.name}</b><br />
               <b className="card-title">$ {props.product.price}</b>
@@ -21,7 +21,7 @@ const Product = (props) => {
          
       </div>
       </a>
-      </Link> 
+      </Link>  
       </div>
  );
 }

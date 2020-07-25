@@ -18,7 +18,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.4em;
-  font-size: larger; }
+  font-size: 1.1em; }
 
 p {
   font-size: larger; }
@@ -78,7 +78,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.4em;
-  font-size: larger; }
+  font-size: 1.1em; }
 
 p {
   font-size: larger; }
@@ -211,7 +211,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.4em;
-  font-size: larger; }
+  font-size: 1.1em; }
 
 p {
   font-size: larger; }
@@ -299,7 +299,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.4em;
-  font-size: larger; }
+  font-size: 1.1em; }
 
 p {
   font-size: larger; }
@@ -393,8 +393,7 @@ button:hover {
       display: inline-block;
       margin: 0.4em 0.5em 0.4em 0.5em;
       text-decoration: none;
-      color: white;
-      height: 1em; }
+      color: white; }
     .nav___1kSwy ul li a:hover {
       color: white;
       background-color: #12A63E; }
@@ -457,7 +456,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.4em;
-  font-size: larger; }
+  font-size: 1.1em; }
 
 p {
   font-size: larger; }
@@ -512,6 +511,9 @@ button:hover {
     background-color: transparent; }
     .footer___uzAl_ div a {
       color: white; }
+  .footer___uzAl_ .stayintouch___3SmOG i {
+    width: 2em;
+    height: 2em; }
 
 * {
   box-sizing: border-box; }
@@ -533,7 +535,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.4em;
-  font-size: larger; }
+  font-size: 1.1em; }
 
 p {
   font-size: larger; }
@@ -617,11 +619,11 @@ button:hover {
   .formcontainer___244JH fieldset {
     border: none; }
   .formcontainer___244JH .heading___3qTZh {
-    background-color: #12A63E;
+    background-color: #0084ff;
     margin: 0;
     padding: 0.6em;
     color: white;
-    border-radius: 0.18em;
+    border-radius: 0.4em;
     height: 3em; }
   .formcontainer___244JH textarea {
     width: 100%;
@@ -639,7 +641,7 @@ button:hover {
     border-radius: 0.2em;
     border: none;
     resize: none;
-    height: 1em;
+    height: 1.5em;
     background: #f1f1f1ed; }
   .formcontainer___244JH textarea:focus {
     background-color: #ddd;
@@ -664,183 +666,6 @@ button:hover {
     margin-left: 0; }
   .formcontainer___244JH .btn___31ijb:hover, .formcontainer___244JH .openbutton___1JJgq:hover {
     opacity: 1; }
-
-* {
-  box-sizing: border-box; }
-
-html, body {
-  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5; }
-
-a {
-  text-decoration: none;
-  color: #12A63E; }
-
-a:visited {
-  color: #12A63E; }
-
-a:hover {
-  color: white;
-  background-color: #12A63E;
-  border-radius: 0.4em;
-  font-size: larger; }
-
-p {
-  font-size: larger; }
-
-.pagelink___23IcN {
-  color: #A61412 !important;
-  font-size: 2em; }
-
-.pagelink___23IcN:hover {
-  background-color: red !important;
-  color: white !important;
-  font-size: 2em; }
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 50px;
-  width: 200px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  height: 55px;
-  width: 210px; }
-
-.profile___2baMk {
-  margin: 2em;
-  min-height: 30em;
-  margin-left: 35%;
-  margin-right: 35%; }
-  .profile___2baMk h2 {
-    color: red;
-    text-align: center;
-    margin-bottom: 2em;
-    font-weight: bolder;
-    font-size: 2em;
-    padding: 0.3em;
-    height: 2em;
-    border-radius: 0.7em;
-    border: solid red 1px; }
-  .profile___2baMk table {
-    width: 100%;
-    font-size: larger; }
-
-.account___3xtWf {
-  margin: 2em;
-  min-height: 30em; }
-  .account___3xtWf .heading___V7y3g {
-    margin: auto;
-    text-align: center; }
-  .account___3xtWf .form___14s8b {
-    display: flex;
-    flex-basis: 40%; }
-  .account___3xtWf form {
-    font-size: large;
-    width: 50%;
-    margin: 4em; }
-    .account___3xtWf form fieldset {
-      padding-top: 40px;
-      border: medium solid #12A63E;
-      border-radius: 15px; }
-      .account___3xtWf form fieldset legend {
-        border-radius: 5px; }
-      .account___3xtWf form fieldset input {
-        height: 40px;
-        width: 400px;
-        margin-bottom: 20px;
-        margin-left: 30px;
-        border: 2px solid #f5f5f5;
-        border-radius: 7px; }
-      .account___3xtWf form fieldset label {
-        margin-left: 30px; }
-      .account___3xtWf form fieldset button {
-        height: 50px;
-        width: 400px;
-        margin-bottom: 20px;
-        margin-left: 30px;
-        color: white;
-        background-color: #12A63E;
-        border: 2px solid #f5f5f5;
-        border-radius: 7px; }
-
-* {
-  box-sizing: border-box; }
-
-html, body {
-  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5; }
-
-a {
-  text-decoration: none;
-  color: #12A63E; }
-
-a:visited {
-  color: #12A63E; }
-
-a:hover {
-  color: white;
-  background-color: #12A63E;
-  border-radius: 0.4em;
-  font-size: larger; }
-
-p {
-  font-size: larger; }
-
-.pagelink___NwE0e {
-  color: #A61412 !important;
-  font-size: 2em; }
-
-.pagelink___NwE0e:hover {
-  background-color: red !important;
-  color: white !important;
-  font-size: 2em; }
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 50px;
-  width: 200px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  height: 55px;
-  width: 210px; }
 
 .loader___303lL {
   text-align: center;
@@ -867,6 +692,9 @@ button:hover {
   100% {
     transform: rotate(360deg); } }
 
+.productItem___3zsw_ {
+  margin: 2em; }
+
 * {
   box-sizing: border-box; }
 
@@ -887,16 +715,16 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.4em;
-  font-size: larger; }
+  font-size: 1.1em; }
 
 p {
   font-size: larger; }
 
-.pagelink___116ck {
+.pagelink___3skIS {
   color: #A61412 !important;
   font-size: 2em; }
 
-.pagelink___116ck:hover {
+.pagelink___3skIS:hover {
   background-color: red !important;
   color: white !important;
   font-size: 2em; }
@@ -927,90 +755,29 @@ button:hover {
   height: 55px;
   width: 210px; }
 
-* {
-  box-sizing: border-box; }
-
-html, body {
-  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5; }
-
-a {
-  text-decoration: none;
-  color: #12A63E; }
-
-a:visited {
-  color: #12A63E; }
-
-a:hover {
-  color: white;
-  background-color: #12A63E;
-  border-radius: 0.4em;
-  font-size: larger; }
-
-p {
-  font-size: larger; }
-
-.pagelink___i2t-c {
-  color: #A61412 !important;
-  font-size: 2em; }
-
-.pagelink___i2t-c:hover {
-  background-color: red !important;
-  color: white !important;
-  font-size: 2em; }
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 50px;
-  width: 200px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  height: 55px;
-  width: 210px; }
-
-.about___ROoVA {
-  text-align: center;
-  margin: auto;
-  padding: 2em;
-  box-sizing: border-box; }
-  .about___ROoVA .heading___1uYDP {
-    color: #12A63E;
-    font-size: 3em;
-    height: 0;
-    width: fit-content;
-    border-radius: 2em;
-    margin-bottom: 2em; }
-  .about___ROoVA h1 {
-    display: flex;
-    justify-content: center;
-    color: #12A63E;
-    width: 20%;
-    border-radius: 2em; }
-  .about___ROoVA div {
-    padding: 0em 1em 0.5em 1em;
-    border-radius: 1.5em;
-    background-color: white;
-    margin-top: 3em;
-    text-align: start; }
+.cart___2L3IN {
+  margin: 2em; }
+  .cart___2L3IN .table___3GttJ {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%; }
+    .cart___2L3IN .table___3GttJ tbody {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%; }
+  .cart___2L3IN td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px; }
+  .cart___2L3IN th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white; }
+  .cart___2L3IN tr:nth-child(even) {
+    background-color: #dddddd; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

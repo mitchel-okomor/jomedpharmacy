@@ -39,7 +39,7 @@ console.log(error);
         <div className={css.search}>
 <form >
   <input type="text" id="search" name="search" value={query} placeholder="Search Products & Services" onChange={handleChange} />
-  <button onClick={handleSubmit}><i class="fa fa-search"></i></button>
+  <button onClick={handleSubmit}><i className="fa fa-search"></i></button>
 </form>
 
 </div>

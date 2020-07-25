@@ -1,35 +1,37 @@
 @import "./styles.scss";
 
 .about{
-    text-align: center;
-    margin: auto;
+ margin-top: 4em;
     padding: $page-padding;
     box-sizing: border-box;
 
-    .heading{
-        color: $primary-color;
-       font-size: 3em;
-       height:0;
-        width:fit-content;
-        border-radius: 2em;
-       margin-bottom: 2em;
-    }
-   
+.forms{
+    display: flex;
+}
+
+.img{
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
+}
 
     h1{
         display: flex;
         justify-content: center;
-      color: $primary-color;
-      
+      color: $primary-color;   
 width: 20%;
 border-radius: 2em;
     }
 
     div{
-        padding: 0em 1em 0.5em 1em;
+        padding: 0em 0.5em 0.5em 1em;
         border-radius: 1.5em;
         background-color: white;
         margin-top: 3em;
-text-align: start;   
+text-align: start; 
+
+h3{
+    color: rgba(0, 119, 255, 0.644);
+}
  }
 }

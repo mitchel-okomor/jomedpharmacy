@@ -184,7 +184,7 @@ const Footer = () => {
       columnNumber: 14
     }
   }, "Shopping With Us"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
+    href: "/products",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -199,7 +199,7 @@ const Footer = () => {
       columnNumber: 1
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
+    href: "/locations",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -333,6 +333,7 @@ const Footer = () => {
       columnNumber: 17
     }
   }, " Privacy policy")), __jsx("div", {
+    className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.stayintouch,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -346,11 +347,56 @@ const Footer = () => {
       lineNumber: 45,
       columnNumber: 13
     }
-  }, "Stay in Touch"), __jsx("div", {
+  }, "Stay in Touch"), __jsx("i", {
+    className: "fa fa-twitter-square",
+    "aria-hidden": "true",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48,
+      columnNumber: 17
+    }
+  }), __jsx("i", {
+    className: "fa fa-facebook-square",
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 17
+    }
+  }), __jsx("i", {
+    className: "fa fa-linkedin-square",
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 17
+    }
+  }), __jsx("i", {
+    className: "fa fa-whatsapp",
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 17
+    }
+  }), __jsx("i", {
+    className: "fa fa-instagram",
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 17
+    }
+  }), __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
       columnNumber: 14
     }
   }))));
@@ -369,7 +415,8 @@ const Footer = () => {
 
 module.exports = {
 	"pagelink": "pagelink___2i4KL",
-	"footer": "footer___uzAl_"
+	"footer": "footer___uzAl_",
+	"stayintouch": "stayintouch___3SmOG"
 };
 
 /***/ }),
@@ -629,6 +676,30 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./components/helper/chat.js":
+/*!***********************************!*\
+  !*** ./components/helper/chat.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = 'https://embed.tawk.to/5f12fe287258dc118bee7be8/default';
+  s1.charset = 'UTF-8';
+  s1.setAttribute('crossorigin', '*');
+  s0.parentNode.insertBefore(s1, s0);
+});
+;
+
+/***/ }),
+
 /***/ "./components/layout.js":
 /*!******************************!*\
   !*** ./components/layout.js ***!
@@ -645,9 +716,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navigation */ "./components/navigation.js");
 /* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ "./components/footer.js");
 /* harmony import */ var _prescription__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./prescription */ "./components/prescription.js");
+/* harmony import */ var _helper_chat__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./helper/chat */ "./components/helper/chat.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -659,42 +732,44 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 5
     }
   }, __jsx(_head__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 7
     }
   }), __jsx(_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 5
     }
   }), __jsx(_navigation__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 5
     }
   }), props.children, __jsx(_prescription__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 5
     }
-  }), __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), () => {
+    if (false) {}
+  }, __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 22,
       columnNumber: 5
     }
   }));
@@ -1061,6 +1136,8 @@ const Signup = props => {
   };
 
   const toggleChat = () => {
+    console.log("toggling");
+
     if (state.chat === _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.chatclosed) {
       dispatch({
         field: "chat",
@@ -1097,14 +1174,14 @@ const Signup = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71,
+        lineNumber: 72,
         columnNumber: 3
       }
     }, __jsx(_loading__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72,
+        lineNumber: 73,
         columnNumber: 1
       }
     }));
@@ -1115,7 +1192,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 78,
       columnNumber: 5
     }
   }, __jsx("button", {
@@ -1124,7 +1201,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 79,
       columnNumber: 5
     }
   }, "prescription"), __jsx("div", {
@@ -1133,14 +1210,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 80,
       columnNumber: 5
     }
   }, __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 81,
       columnNumber: 7
     }
   }), __jsx("form", {
@@ -1148,28 +1225,28 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 13
     }
   }, __jsx("b", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 21
     }
   }, __jsx("h3", {
@@ -1177,14 +1254,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 24
     }
   }, "Send us your prescription"))), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 85,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1192,14 +1269,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 86,
       columnNumber: 13
     }
   }, "Full Name:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 86,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -1213,14 +1290,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 87,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 96,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1228,14 +1305,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 97,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 97,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -1249,14 +1326,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 13
-    }
-  }), __jsx("br", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 98,
       columnNumber: 13
     }
   }), __jsx("br", {
@@ -1266,19 +1336,26 @@ const Signup = props => {
       lineNumber: 108,
       columnNumber: 13
     }
-  }), __jsx("label", {
-    for: "prescription",
+  }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 109,
       columnNumber: 13
     }
+  }), __jsx("label", {
+    for: "prescription",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110,
+      columnNumber: 13
+    }
   }, "prescription details:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 110,
       columnNumber: 69
     }
   }), __jsx("textarea", {
@@ -1291,14 +1368,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 111,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1308,14 +1385,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 120,
       columnNumber: 13
     }
   }, "Submit"), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120,
+      lineNumber: 121,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1324,7 +1401,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 122,
       columnNumber: 13
     }
   }, "close")))));
@@ -1450,7 +1527,7 @@ const Search = () => {
       columnNumber: 3
     }
   }, __jsx("i", {
-    class: "fa fa-search",
+    className: "fa fa-search",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3375,11 +3452,33 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     });
 
     _defineProperty(this, "addToCart", async product => {
-      await this.setState({
-        cart: [...this.state.cart, product]
-      }); //save to local storage
+      if (product.quantity) {
+        console.log("found product");
+        let productHolder = "";
 
-      localStorage.setItem('cart', JSON.stringify(this.state.cart));
+        for (let i = 0; i < this.state.cart.length; i++) {
+          if (this.state.cart[i].id == product.id) {
+            productHolder = this.state.cart[i];
+            console.log(this.state.cart[i]);
+            this.state.cart.splice(i);
+            console.log("cart: " + productHolder);
+            productHolder.quantity += 1;
+            await this.setState({
+              cart: [...this.state.cart, productHolder]
+            }); //save to local storage
+
+            localStorage.setItem('cart', JSON.stringify(this.state.cart));
+            break;
+          }
+        }
+      } else {
+        product.quantity = 1;
+        await this.setState({
+          cart: [...this.state.cart, product]
+        }); //save to local storage
+
+        localStorage.setItem('cart', JSON.stringify(this.state.cart));
+      }
     });
 
     _defineProperty(this, "calculateTotal", async price => {
@@ -3409,7 +3508,6 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
 
       console.log(newCart.length);
       localStorage.setItem('cart', JSON.stringify(this.state.cart));
-      console.log("removing");
     });
 
     _defineProperty(this, "setCustomer", val => {
@@ -3458,21 +3556,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 113,
+        lineNumber: 139,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114,
+        lineNumber: 140,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 115,
+        lineNumber: 141,
         columnNumber: 4
       }
     }))));
