@@ -434,8 +434,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _helper_chat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helper/chat */ "./components/helper/chat.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\head.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -443,7 +445,7 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5,
+    lineNumber: 7,
     columnNumber: 3
   }
 }, __jsx("meta", {
@@ -451,14 +453,14 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
+    lineNumber: 8,
     columnNumber: 5
   }
 }), __jsx("title", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 5
   }
 }, "Jomed Pharmacy"), __jsx("meta", {
@@ -467,7 +469,7 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8,
+    lineNumber: 10,
     columnNumber: 5
   }
 }), __jsx("meta", {
@@ -476,7 +478,7 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9,
+    lineNumber: 11,
     columnNumber: 5
   }
 }), __jsx("link", {
@@ -485,7 +487,7 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10,
+    lineNumber: 12,
     columnNumber: 5
   }
 }), __jsx("link", {
@@ -496,10 +498,19 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11,
+    lineNumber: 13,
     columnNumber: 5
   }
-}));
+}), __jsx("script", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14,
+    columnNumber: 4
+  }
+}, () => {
+  if (false) {}
+}, " "));
 
 /* harmony default export */ __webpack_exports__["default"] = (Head);
 
@@ -522,9 +533,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./search */ "./components/search.js");
 /* harmony import */ var _appcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./appcontext */ "./components/appcontext.js");
+/* harmony import */ var _helper_logout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helper/logout */ "./components/helper/logout.js");
+/* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./user */ "./components/user.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -536,12 +551,16 @@ const Header = () => {
     cart,
     customer
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_appcontext__WEBPACK_IMPORTED_MODULE_4__["default"]);
+  let {
+    0: userDropdown,
+    1: ToggleUserDropdown
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.hide);
   return __jsx("header", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.header,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 17,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -549,28 +568,28 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 18,
       columnNumber: 13
     }
   }, __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 19,
       columnNumber: 15
     }
   }, "Jomed Pharmacy"), __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 20,
       columnNumber: 13
     }
   }, "Your Health Needs at your reach")), __jsx(_search__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 22,
       columnNumber: 1
     }
   }), __jsx("div", {
@@ -578,46 +597,123 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 24,
       columnNumber: 13
     }
   }, __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.user,
+    onMouseEnter: () => ToggleUserDropdown(userDropdown = _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.show ? _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.hide : _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.show),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 25,
       columnNumber: 5
     }
-  }, " ", __jsx("img", {
+  }, __jsx("img", {
     src: "/user.png",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 32
+      lineNumber: 26,
+      columnNumber: 5
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/account",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 55
+      lineNumber: 26,
+      columnNumber: 28
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 77
+      lineNumber: 26,
+      columnNumber: 50
     }
-  }, customer ? customer.name : "Login/Signup"))), __jsx("div", {
+  }, customer ? customer.name : "Login/Signup")), customer ? __jsx("div", {
+    class: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown_content,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 21
+    }
+  }, __jsx("ul", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 3
+    }
+  }, __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 5
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/account",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 9
+    }
+  }, "My account"), " "), __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 5
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 9
+    }
+  }, "Personal information"), " "), __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 5
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 9
+    }
+  }, "Order history"), " "), __jsx("li", {
+    onClick: () => Object(_helper_logout__WEBPACK_IMPORTED_MODULE_5__["default"])(),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 5
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 32
+    }
+  }, "Log Out"), " "))) : ""), __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cart,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 43,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -625,32 +721,25 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 31
+      lineNumber: 44,
+      columnNumber: 7
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 50
+      lineNumber: 44,
+      columnNumber: 26
     }
   }, __jsx("img", {
     src: "/cart.png",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 53
+      lineNumber: 44,
+      columnNumber: 29
     }
-  }), __jsx("span", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 75
-    }
-  }, " ", cart.length))))));
+  }), " ")), cart.length)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -671,7 +760,7 @@ module.exports = {
 	"activity": "activity___3ZQXV",
 	"cart": "cart___3VHVa",
 	"user": "user___1xItY",
-	"search": "search___wNumA"
+	"dropdown_content": "dropdown_content___2FFzw"
 };
 
 /***/ }),
@@ -700,6 +789,24 @@ var Tawk_API = Tawk_API || {},
 
 /***/ }),
 
+/***/ "./components/helper/logout.js":
+/*!*************************************!*\
+  !*** ./components/helper/logout.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const logout = () => {
+  localStorage.removeItem("token");
+  window.location.reload();
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (logout);
+
+/***/ }),
+
 /***/ "./components/layout.js":
 /*!******************************!*\
   !*** ./components/layout.js ***!
@@ -716,11 +823,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navigation */ "./components/navigation.js");
 /* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ "./components/footer.js");
 /* harmony import */ var _prescription__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./prescription */ "./components/prescription.js");
-/* harmony import */ var _helper_chat__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./helper/chat */ "./components/helper/chat.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -732,44 +837,42 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 10,
       columnNumber: 5
     }
   }, __jsx(_head__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 11,
       columnNumber: 7
     }
   }), __jsx(_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 12,
       columnNumber: 5
     }
   }), __jsx(_navigation__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 13,
       columnNumber: 5
     }
   }), props.children, __jsx(_prescription__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 15,
       columnNumber: 5
     }
-  }), () => {
-    if (false) {}
-  }, __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 17,
       columnNumber: 5
     }
   }));
@@ -993,7 +1096,7 @@ const Navigation = () => {
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "locations",
+    href: "/locations",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -1009,7 +1112,7 @@ const Navigation = () => {
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "about",
+    href: "/about",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -1057,6 +1160,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _loading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loading */ "./components/loading.js");
+/* harmony import */ var _appcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./appcontext */ "./components/appcontext.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\prescription.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1070,7 +1174,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
+
 const initialState = {
+  customerId: "",
   name: "",
   email: "",
   number: "",
@@ -1089,8 +1196,11 @@ const reducer = (state, {
   });
 };
 
-const Signup = props => {
-  //use reducer hook to dispatch change action
+const prescription = props => {
+  const {
+    customer
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_appcontext__WEBPACK_IMPORTED_MODULE_4__["default"]); //use reducer hook to dispatch change action
+
   const {
     0: state,
     1: dispatch
@@ -1101,8 +1211,17 @@ const Signup = props => {
       field: e.target.name,
       value: e.target.value
     });
-  }; //submit form data to backend server
+  };
 
+  console.log(state.customerId); //during component mounting
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    const customerId = localStorage.getItem("customerId");
+    dispatch({
+      field: "customerId",
+      value: customerId
+    });
+  }, []); //submit form data to backend server
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -1174,14 +1293,14 @@ const Signup = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72,
+        lineNumber: 86,
         columnNumber: 3
       }
     }, __jsx(_loading__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73,
+        lineNumber: 87,
         columnNumber: 1
       }
     }));
@@ -1192,7 +1311,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 92,
       columnNumber: 5
     }
   }, __jsx("button", {
@@ -1201,7 +1320,7 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 93,
       columnNumber: 5
     }
   }, "prescription"), __jsx("div", {
@@ -1210,14 +1329,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 94,
       columnNumber: 5
     }
   }, __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 95,
       columnNumber: 7
     }
   }), __jsx("form", {
@@ -1225,28 +1344,28 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 96,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 97,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 98,
       columnNumber: 13
     }
   }, __jsx("b", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 98,
       columnNumber: 21
     }
   }, __jsx("h3", {
@@ -1254,14 +1373,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 98,
       columnNumber: 24
     }
   }, "Send us your prescription"))), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 99,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1269,35 +1388,35 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 100,
       columnNumber: 13
     }
   }, "Full Name:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 100,
       columnNumber: 51
     }
   }), __jsx("input", {
     type: "text",
     id: "name",
     name: "name",
-    value: name,
+    value: customer ? customer.name : name,
     placeholder: "John Okafor",
     required: true,
     onChange: handleChange,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 101,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 110,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1305,42 +1424,42 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 111,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 111,
       columnNumber: 55
     }
   }), __jsx("input", {
     type: "number",
     id: "number",
     name: "number",
-    value: number,
+    value: customer ? customer.number : number,
     placeholder: "08090213567",
     required: true,
     onChange: handleChange,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 112,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 122,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 123,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1348,14 +1467,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 124,
       columnNumber: 13
     }
   }, "prescription details:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 124,
       columnNumber: 69
     }
   }), __jsx("textarea", {
@@ -1368,14 +1487,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 125,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 133,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1385,14 +1504,14 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120,
+      lineNumber: 134,
       columnNumber: 13
     }
   }, "Submit"), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 135,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1401,13 +1520,13 @@ const Signup = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 136,
       columnNumber: 13
     }
   }, "close")))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Signup);
+/* harmony default export */ __webpack_exports__["default"] = (prescription);
 
 /***/ }),
 
@@ -1551,6 +1670,89 @@ const Search = () => {
 module.exports = {
 	"pagelink": "pagelink___3KTKa",
 	"search": "search___3MHpT"
+};
+
+/***/ }),
+
+/***/ "./components/user.js":
+/*!****************************!*\
+  !*** ./components/user.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _user_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user.module.scss */ "./components/user.module.scss");
+/* harmony import */ var _user_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_user_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\user.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const User = props => {
+  return __jsx("div", {
+    className: props.showHide,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 5
+    }
+  }, __jsx("ul", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 4
+    }
+  }, __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 8
+    }
+  }, "My account"), __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 8
+    }
+  }, "Order history"), __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 8
+    }
+  }, "My prescriptions"), __jsx("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 8
+    }
+  }, "Logout")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (User);
+
+/***/ }),
+
+/***/ "./components/user.module.scss":
+/*!*************************************!*\
+  !*** ./components/user.module.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"show": "show___9JMbK",
+	"hide": "hide___uVB4s"
 };
 
 /***/ }),
@@ -3520,9 +3722,26 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
         customer: val
       });
     });
+
+    _defineProperty(this, "chat", () => {
+      var Tawk_API = Tawk_API || {},
+          Tawk_LoadStart = new Date();
+
+      (function () {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5f12fe287258dc118bee7be8/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    });
   }
 
   componentDidMount() {
+    this.chat();
+
     (async () => {
       //get cart items from local storage
       const cart = JSON.parse(localStorage.getItem('cart')); //get cart total
@@ -3560,21 +3779,21 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 144,
+        lineNumber: 155,
         columnNumber: 2
       }
     }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145,
+        lineNumber: 156,
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 146,
+        lineNumber: 157,
         columnNumber: 4
       }
     }))));

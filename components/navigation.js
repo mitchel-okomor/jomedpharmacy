@@ -27,10 +27,10 @@ import {useRouter} from 'next/router';
     </div>
                 </li>
                 <li className={router.pathname == "/locations"? css.active:""}>
-                <Link href="locations"> Locations</Link> 
+                <Link href="/locations"> Locations</Link> 
                 </li>
                 <li className={router.pathname == "/about"? css.active:""}>
-                <Link href="about">  About</Link>
+                <Link href="/about">  About</Link>
                 </li>
             </ul>
 

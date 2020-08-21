@@ -41,7 +41,7 @@ const Login = (props) => {
     if(response.status==200){
            console.log("passed: "+JSON.stringify(response.data.message));
            dispatch({field:"message", value:response.data.message}); 
-     localStorage.setItem("customerId", response.data.customer.id);
+     localStorage.setItem("customerId", response.data.customer.customer_id);
      localStorage.setItem("token", response.data.info.token);
      setCustomer(response.data.customer);
      dispatch({field:"loading", value:false}); 

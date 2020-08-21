@@ -7,39 +7,113 @@
     margin-right: 35%;
 
     h2{
-        color: red;
+        background-color:red;
+        color:white;
         text-align: center;
         margin-bottom: 2em;
         font-weight: bolder;
         font-size: 2em;
         padding:0.3em ;
         height: 2em;
-        border-radius: 0.7em;
+        border-radius: 0.2em;
         border: solid red 1px;
     }
 
     table{
         width: 100%;
         font-size: larger;
+        td{
+            width: 10em;
+        }
         
+    }
+    
+    .buttons{
+        display: flex;
+        flex-direction: row;
     }
     
 }
 
-.account{
-    margin: 2em;
-    min-height: 30em;
+.container{
+   width: 100%;
 .heading{
-margin: auto;
-text-align: center;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    }
+.account{
+    min-height: 20em;
+    display: flex;
+    flex-direction: row;
+margin: 3em;
+
+.myaccount{
+    width: 25%;
+    min-height: 20em;
+    background-color:white;
+    margin: 2em;
+    border-radius: 0.5em;
+    h2{
+        margin: 0em 0em 1em 0em;
+        padding: 0.3em 0.3em 0.3em 1.2em;
+        background-color: rgba(160, 157, 157, 0.267);
+        color: rgba(0, 0, 0, 0.746);
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            margin-top: 1.5em;
+        }
+        
+    }
 }
 
+.overview{
+    width: 70%;
+    min-height: 30em;
+    background-color:white;
+    margin: 2em;
+    border-radius: 0.5em;
+  
+
+    h2{
+        margin: 0em 0em 1em 0em;
+        padding: 0.3em 0.3em 0.3em 1.2em;
+        background-color: rgba(160, 157, 157, 0.267);
+        color: rgba(0, 0, 0, 0.746);
+    }
+
+
+    .overviewdiv{
+        width: 100%;
+        min-height: 30em;
+        display: grid;
+        grid-gap: 2em;
+        padding: 1em;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto;
+
+         div{
+        background-color:whitesmoke;
+height: 12em;
+width: 20em;
+
+    }
+ 
+    }
+
+  
+}
 .form{
 display: flex;
 flex-wrap: wrap;
+flex-direction: row;
+width: 100%;
 }
 form{
-
     font-size: large;
     margin: 4em;
   fieldset{
@@ -53,7 +127,7 @@ legend{
     }
     input{
         height: 40px;
-        width: 400px;
+        width: 25em;
         margin-bottom: 20px;
         margin-left: 30px;
         border: 2px solid $layout-color;
@@ -64,8 +138,7 @@ legend{
     }
 
     button{
-        height: 50px;
-        width: 400px;
+        height: 40px;
         margin-bottom: 20px;
         margin-left: 30px;
         color: white;
@@ -79,4 +152,5 @@ legend{
 
 }
 
+}
 }

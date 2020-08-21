@@ -2,8 +2,13 @@ import React, { useState, useReducer } from "react";
 import css from './prescription.module.scss';
 import axios from "axios";
 import Loading from './loading';
+import {useEffect, useContext} from 'react';
+import appContext from './appcontext';
+
+
 
 const initialState = {
+  customerId:"",
       name: "",
   email: "",
   number: "",
@@ -18,12 +23,21 @@ const reducer = (state, { field, value }) => {
 return { ...state, [field]: value  };
 };
 
-const Signup = (props) => {
+const prescription = (props) => {
+  const {customer} = useContext(appContext);
     //use reducer hook to dispatch change action
   const [state, dispatch] = useReducer(reducer, initialState);
   const handleChange = (e) => {
     dispatch({ field: e.target.name, value: e.target.value });
   };
+  console.log(state.customerId);
+
+  //during component mounting
+  useEffect(()=>{
+const customerId = localStorage.getItem("customerId");
+dispatch({field:"customerId", value:customerId}); 
+
+  },[])
 
   //submit form data to backend server
   const handleSubmit =async (e) => {
@@ -31,7 +45,7 @@ const Signup = (props) => {
    
         dispatch({field:"loading", value:true});
 const url = 'http://localhost:4000/prescription';
-  console.log(state);
+  console.log(state);  
   try{
   const response = await axios.post(url, state, {
     timeout: 30000
@@ -88,7 +102,7 @@ return(
               type="text"
               id="name"
               name="name"
-              value={name}
+              value={customer?customer.name: name}
               placeholder="John Okafor"
               required
               onChange={handleChange}
@@ -99,7 +113,7 @@ return(
               type="number"
               id="number"
               name="number"
-              value={number}
+              value={customer?customer.number:number}
               placeholder="08090213567"
               required
               onChange={handleChange}
@@ -127,4 +141,4 @@ return(
   );
 };
 
-export default Signup;
+export default prescription;

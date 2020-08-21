@@ -1,5 +1,7 @@
 import React from 'react'
 import NextHead from 'next/head'
+import chat from './helper/chat';
+
 
  const Head = () => (
   <NextHead>
@@ -9,6 +11,12 @@ import NextHead from 'next/head'
     <meta name="description" content= "Jomed pharmacy is one of the top providers of pharmaceutical products and health care service in Agege, Lagos, Nigeria" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="icon" href="favicon.jpg" sizes="16x16" type="image/png" />
+   <script>{()=>{if (typeof window !== 'undefined') {
+  // it's safe to use window now
+  return chat();
+}}
+   } </script> 
+ 
   </NextHead>
 )
 
