@@ -492,7 +492,7 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   }
 }), __jsx("link", {
   rel: "icon",
-  href: "favicon.jpg",
+  href: "/favicon.jpg",
   sizes: "16x16",
   type: "image/png",
   __self: undefined,
@@ -501,16 +501,7 @@ const Head = () => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     lineNumber: 13,
     columnNumber: 5
   }
-}), __jsx("script", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14,
-    columnNumber: 4
-  }
-}, () => {
-  if (false) {}
-}, " "));
+}));
 
 /* harmony default export */ __webpack_exports__["default"] = (Head);
 
@@ -924,6 +915,7 @@ const Loading = props => {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"pagelink": "pagelink___2-f9Q",
 	"loader": "loader___303lL",
 	"spin": "spin___aGIZ0"
 };

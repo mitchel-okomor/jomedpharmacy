@@ -3,12 +3,13 @@ import css from "./account.module.scss";
 import Login from "../components/login";
 import Signup from "../components/signup";
 import logout from "../components/helper/logout";
-import Profile from "../components/profile";
 import { useContext } from 'react';
 import appContext from '../components/appcontext';
 import Link from 'next/link';
 import StandingOrder from "../components/standingorder";
 import StandingPrescription from "../components/standingprescription";
+import PrescriptionHistory from "../components/prescriptionhistory";
+import OrderHistory from "../components/orderhistory";
 
 
 
@@ -29,7 +30,9 @@ const Account = (props) => {
   <li><Link href="">Address Book</Link> </li>
   <li><Link href="">Personal information</Link> </li>
 </ul>
-<button onClick={()=> logout()}>Logout</button>
+<br />
+<br />
+<Link  href="" onClick={()=> logout()}><a className="logout_link">Logout</a></Link>
 </div>
 <div className={css.overview}>
 <h2><b>Account overview</b></h2>
@@ -39,11 +42,13 @@ const Account = (props) => {
 <StandingOrder />
  </div>
 <div><h2>Order history</h2>
+<OrderHistory />
 </div>
 <div><h2>Standing Prescription</h2>
 <StandingPrescription />
 </div>
 <div><h2>Prescription history</h2>
+<PrescriptionHistory />
 </div> 
 </div>
 

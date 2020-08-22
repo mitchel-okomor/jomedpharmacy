@@ -91,6 +91,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _loading__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./loading */ "./components/loading.js");
 /* harmony import */ var _appcontext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./appcontext */ "./components/appcontext.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -102,6 +104,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 
 
 
@@ -344,186 +347,283 @@ var Login = function Login(props) {
       lineNumber: 93,
       columnNumber: 3
     }
-  }, message))));
+  }, message), __jsx("div", {
+    className: _login_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.password,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94,
+      columnNumber: 3
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    href: "/forgtpassword",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94,
+      columnNumber: 33
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94,
+      columnNumber: 61
+    }
+  }, "forgot Password")), " "))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Login);
 
 /***/ }),
 
-/***/ "./components/profile.js":
-/*!*******************************!*\
-  !*** ./components/profile.js ***!
-  \*******************************/
+/***/ "./components/orderhistory.js":
+/*!************************************!*\
+  !*** ./components/orderhistory.js ***!
+  \************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _profile_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./profile.module.scss */ "./components/profile.module.scss");
-/* harmony import */ var _profile_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_profile_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _appcontext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./appcontext */ "./components/appcontext.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./orderhistory.module.scss */ "./components/orderhistory.module.scss");
+/* harmony import */ var _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\profile.js";
+    _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\orderhistory.js";
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+var OrderHistory = function OrderHistory() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      data = _useState[0],
+      setData = _useState[1];
 
-var profile = function profile() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_appcontext__WEBPACK_IMPORTED_MODULE_2__["default"]),
-      customer = _useContext.customer;
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    fetchData();
+  }, []);
+
+  var fetchData = function fetchData() {
+    var res, data;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetchData$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.next = 2;
+            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch("http://localhost:4000/orderhistory/1", {
+              method: "GET",
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            }));
+
+          case 2:
+            res = _context.sent;
+            _context.next = 5;
+            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
+
+          case 5:
+            data = _context.sent;
+            console.log(data);
+            setData(data);
+
+          case 8:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, null, null, null, Promise);
+  };
+
+  if (data.data) {
+    return __jsx("div", {
+      className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderhistory,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 5
+      }
+    }, __jsx("ul", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 9
+      }
+    }, data.data.map(function (item) {
+      return __jsx("li", {
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 22
+        }
+      }, __jsx("span", {
+        className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.product,
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 26
+        }
+      }, item.productId), __jsx("span", {
+        className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderdate,
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 79
+        }
+      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+    })));
+  }
 
   return __jsx("div", {
-    className: _profile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.profile,
+    className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderhistory,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 1
+      lineNumber: 36,
+      columnNumber: 8
     }
-  }, __jsx("h2", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 1
-    }
-  }, "User Profile"), __jsx("table", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 1
-    }
-  }, __jsx("th", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 3
-    }
-  }), __jsx("th", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 3
-    }
-  }), __jsx("tr", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 3
-    }
-  }, "  ", __jsx("td", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }, "Name:"), " ", __jsx("td", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 24
-    }
-  }, customer.name)), __jsx("tr", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 3
-    }
-  }, "  ", __jsx("td", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 9
-    }
-  }, "Email:"), " ", __jsx("td", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 25
-    }
-  }, customer.email)), __jsx("tr", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 3
-    }
-  }, "  ", __jsx("td", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }
-  }, "Phone Number:"), " ", __jsx("td", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 32
-    }
-  }, customer.number)), __jsx("tr", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 3
-    }
-  }, "  ", __jsx("td", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 9
-    }
-  }, "Delivery Address:"), " ", __jsx("td", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 36
-    }
-  }, customer.address))), __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 1
-    }
-  }), __jsx("div", {
-    className: _profile_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.buttons,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 1
-    }
-  }, __jsx("button", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 30
-    }
-  }, "Edit"), "    "));
+  }, data.message);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (profile);
+/* harmony default export */ __webpack_exports__["default"] = (OrderHistory);
+
+/***/ }),
+
+/***/ "./components/prescriptionhistory.js":
+/*!*******************************************!*\
+  !*** ./components/prescriptionhistory.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./prescriptionhistory.module.scss */ "./components/prescriptionhistory.module.scss");
+/* harmony import */ var _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\prescriptionhistory.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+var PrescriptionHistory = function PrescriptionHistory() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      data = _useState[0],
+      setData = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    fetchData();
+  }, []);
+
+  var fetchData = function fetchData() {
+    var res, data;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetchData$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.next = 2;
+            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch("http://localhost:4000/prescriptionhistory/1", {
+              method: "GET",
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            }));
+
+          case 2:
+            res = _context.sent;
+            _context.next = 5;
+            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
+
+          case 5:
+            data = _context.sent;
+            console.log(data);
+            setData(data);
+
+          case 8:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, null, null, null, Promise);
+  };
+
+  if (data.data) {
+    return __jsx("div", {
+      className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.prescriptionhistory,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 5
+      }
+    }, __jsx("ul", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 9
+      }
+    }, data.data.map(function (item) {
+      return __jsx("li", {
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 22
+        }
+      }, __jsx("span", {
+        className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.product,
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 26
+        }
+      }, item.productId), __jsx("span", {
+        className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderdate,
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 79
+        }
+      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+    })));
+  }
+
+  return __jsx("div", {
+    className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.prescriptionhistory,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 8
+    }
+  }, data.message);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PrescriptionHistory);
 
 /***/ }),
 
@@ -7535,12 +7635,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/login */ "./components/login.js");
 /* harmony import */ var _components_signup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/signup */ "./components/signup.js");
 /* harmony import */ var _components_helper_logout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/helper/logout */ "./components/helper/logout.js");
-/* harmony import */ var _components_profile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/profile */ "./components/profile.js");
-/* harmony import */ var _components_appcontext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/appcontext */ "./components/appcontext.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_standingorder__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/standingorder */ "./components/standingorder.js");
-/* harmony import */ var _components_standingprescription__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/standingprescription */ "./components/standingprescription.js");
+/* harmony import */ var _components_appcontext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/appcontext */ "./components/appcontext.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_standingorder__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/standingorder */ "./components/standingorder.js");
+/* harmony import */ var _components_standingprescription__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/standingprescription */ "./components/standingprescription.js");
+/* harmony import */ var _components_prescriptionhistory__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/prescriptionhistory */ "./components/prescriptionhistory.js");
+/* harmony import */ var _components_orderhistory__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/orderhistory */ "./components/orderhistory.js");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\account.js";
 
@@ -7557,8 +7658,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 var Account = function Account(props) {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_appcontext__WEBPACK_IMPORTED_MODULE_6__["default"]),
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_appcontext__WEBPACK_IMPORTED_MODULE_5__["default"]),
       customer = _useContext.customer;
 
   if (customer) {
@@ -7567,7 +7669,7 @@ var Account = function Account(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 5
       }
     }, __jsx("div", {
@@ -7575,7 +7677,7 @@ var Account = function Account(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 5
       }
     }, __jsx("div", {
@@ -7583,182 +7685,175 @@ var Account = function Account(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 1
       }
     }, __jsx("h2", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 1
-      }
-    }, __jsx("b", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 5
-      }
-    }, "My Account")), __jsx("ul", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23,
         columnNumber: 1
       }
+    }, __jsx("b", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 5
+      }
+    }, "My Account")), __jsx("ul", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 1
+      }
     }, __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 3
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 7
       }
     }, "Orders"), " "), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 3
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 7
       }
     }, "Order history")), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 3
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 7
       }
     }, "Prescriptions"), " "), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 3
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 7
       }
     }, "Prescription history"), " "), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 3
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 7
       }
     }, "Saved items"), " "), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 3
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 7
       }
     }, "Address Book"), " "), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 3
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 7
       }
-    }, "Personal information"), " ")), __jsx("button", {
-      onClick: function onClick() {
-        return Object(_components_helper_logout__WEBPACK_IMPORTED_MODULE_4__["default"])();
-      },
+    }, "Personal information"), " ")), __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 1
       }
-    }, "Logout")), __jsx("div", {
-      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.overview,
+    }), __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 34,
         columnNumber: 1
       }
-    }, __jsx("h2", {
+    }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      href: "",
+      onClick: function onClick() {
+        return Object(_components_helper_logout__WEBPACK_IMPORTED_MODULE_4__["default"])();
+      },
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 35,
         columnNumber: 1
       }
-    }, __jsx("b", {
+    }, __jsx("a", {
+      className: "logout_link",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 35,
-        columnNumber: 5
+        columnNumber: 40
       }
-    }, "Account overview")), __jsx("div", {
-      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.overviewdiv,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 1
-      }
-    }, __jsx("div", {
-      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.orderoverview,
+    }, "Logout"))), __jsx("div", {
+      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.overview,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 37,
-        columnNumber: 2
+        columnNumber: 1
       }
     }, __jsx("h2", {
       __self: _this,
@@ -7767,63 +7862,107 @@ var Account = function Account(props) {
         lineNumber: 38,
         columnNumber: 1
       }
-    }, "Standing Orders"), __jsx(_components_standingorder__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    }, __jsx("b", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 5
+      }
+    }, "Account overview")), __jsx("div", {
+      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.overviewdiv,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 39,
         columnNumber: 1
       }
+    }, __jsx("div", {
+      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.orderoverview,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 2
+      }
+    }, __jsx("h2", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 1
+      }
+    }, "Standing Orders"), __jsx(_components_standingorder__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 1
+      }
     })), __jsx("div", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41,
-        columnNumber: 1
-      }
-    }, __jsx("h2", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41,
-        columnNumber: 6
-      }
-    }, "Order history")), __jsx("div", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 1
-      }
-    }, __jsx("h2", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 6
-      }
-    }, "Standing Prescription"), __jsx(_components_standingprescription__WEBPACK_IMPORTED_MODULE_9__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 44,
         columnNumber: 1
       }
+    }, __jsx("h2", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 6
+      }
+    }, "Order history"), __jsx(_components_orderhistory__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 1
+      }
     })), __jsx("div", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 47,
         columnNumber: 1
       }
     }, __jsx("h2", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 47,
         columnNumber: 6
       }
-    }, "Prescription history"))))));
+    }, "Standing Prescription"), __jsx(_components_standingprescription__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48,
+        columnNumber: 1
+      }
+    })), __jsx("div", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50,
+        columnNumber: 1
+      }
+    }, __jsx("h2", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50,
+        columnNumber: 6
+      }
+    }, "Prescription history"), __jsx(_components_prescriptionhistory__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 1
+      }
+    }))))));
   }
 
   return __jsx("div", {
@@ -7831,7 +7970,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 61,
       columnNumber: 1
     }
   }, __jsx("h1", {
@@ -7839,7 +7978,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 62,
       columnNumber: 3
     }
   }, "Account"), __jsx("div", {
@@ -7847,7 +7986,7 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 63,
       columnNumber: 3
     }
   }, __jsx("div", {
@@ -7855,21 +7994,21 @@ var Account = function Account(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 64,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 65,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 66,
       columnNumber: 7
     }
   }))));
@@ -7879,7 +8018,7 @@ var Account = function Account(props) {
 
 /***/ }),
 
-/***/ 10:
+/***/ 11:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true ***!
   \********************************************************************************************************************************************************************************/
@@ -7902,5 +8041,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]);
+},[[11,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=account.js.map

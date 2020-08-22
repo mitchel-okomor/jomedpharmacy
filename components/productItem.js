@@ -9,7 +9,7 @@ const ProductItem = (props) => {
        <div className={css.productItem}>
          <div className={css.image}>
              <div className="card" style={{width: "18rem"}}>
-               <img src={props.product.image_url } className="card-img-top" alt="shirt"/>
+               <img src={props.product.image_url } className="card-img-top" alt=""/>
              </div>
          </div>
           <div className={css.item}>

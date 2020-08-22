@@ -367,7 +367,7 @@ var Head = function Head() {
     }
   }), __jsx("link", {
     rel: "icon",
-    href: "favicon.jpg",
+    href: "/favicon.jpg",
     sizes: "16x16",
     type: "image/png",
     __self: _this,
@@ -376,19 +376,7 @@ var Head = function Head() {
       lineNumber: 13,
       columnNumber: 5
     }
-  }), __jsx("script", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 4
-    }
-  }, function () {
-    if (true) {
-      // it's safe to use window now
-      return Object(_helper_chat__WEBPACK_IMPORTED_MODULE_2__["default"])();
-    }
-  }, " "));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Head);

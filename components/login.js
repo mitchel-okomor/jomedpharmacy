@@ -3,7 +3,7 @@ import css from './login.module.scss';
 import axios from "axios";
 import Loading from './loading';
 import appContext from './appcontext';
-
+import Link from 'next/link';
 
 const initialState = {
   email: "",
@@ -89,8 +89,9 @@ const Login = (props) => {
               onChange={handleChange}
             /> <br />
             <button onClick={handleSubmit}>Submit</button>
-            <br/>
+            <br/>           
   <div>{message}</div>
+  <div className={css.password}><Link href="/forgtpassword"><a>forgot Password</a></Link> </div>
           </fieldset>
         </form>
       </div>
