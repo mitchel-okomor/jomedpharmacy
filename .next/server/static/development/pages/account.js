@@ -1040,6 +1040,234 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./components/standingorder.js":
+/*!*************************************!*\
+  !*** ./components/standingorder.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./standingorder.module.scss */ "./components/standingorder.module.scss");
+/* harmony import */ var _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\standingorder.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const StandingOrder = () => {
+  const {
+    0: data,
+    1: setData
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const res = await fetch("http://localhost:4000/standingorders/1", {
+      method: "GET",
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const data = await res.json();
+    console.log(data);
+    setData(data);
+  };
+
+  if (data.data) {
+    return __jsx("div", {
+      className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.standingorder,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 5
+      }
+    }, __jsx("ul", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 9
+      }
+    }, data.data.map(item => {
+      return __jsx("li", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 22
+        }
+      }, __jsx("span", {
+        className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.product,
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 26
+        }
+      }, item.productId), __jsx("span", {
+        className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.orderdate,
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 79
+        }
+      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+    })));
+  }
+
+  return __jsx("div", {
+    className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.standingorder,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 8
+    }
+  }, data.message);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (StandingOrder);
+
+/***/ }),
+
+/***/ "./components/standingorder.module.scss":
+/*!**********************************************!*\
+  !*** ./components/standingorder.module.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"standingorder": "standingorder___3hHRV",
+	"orderdate": "orderdate___3byfj",
+	"product": "product___2QYAj"
+};
+
+/***/ }),
+
+/***/ "./components/standingprescription.js":
+/*!********************************************!*\
+  !*** ./components/standingprescription.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./standingprescription.module.scss */ "./components/standingprescription.module.scss");
+/* harmony import */ var _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\standingprescription.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const StandingPrescription = () => {
+  const {
+    0: data,
+    1: setData
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const res = await fetch("http://localhost:4000/standingprescriptions/1", {
+      method: "GET",
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const data = await res.json();
+    setData(data);
+  };
+
+  if (data.data) {
+    return __jsx("div", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 5
+      }
+    }, __jsx("ul", {
+      className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.standingprescription,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 9
+      }
+    }, data.data.map(item => {
+      return __jsx("li", {
+        key: item.prescription_id,
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 22
+        }
+      }, __jsx("span", {
+        className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.prescription,
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 53
+        }
+      }, item.d_id), " ", __jsx("span", {
+        className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.prescription_date,
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 107
+        }
+      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+    })));
+  }
+
+  return __jsx("div", {
+    className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.standingprescription,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 8
+    }
+  }, data.message);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (StandingPrescription);
+
+/***/ }),
+
+/***/ "./components/standingprescription.module.scss":
+/*!*****************************************************!*\
+  !*** ./components/standingprescription.module.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"standingprescription": "standingprescription___2_r79",
+	"prescription_date": "prescription_date___30KHy",
+	"prescription": "prescription___2tq0C"
+};
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
@@ -2750,8 +2978,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_appcontext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/appcontext */ "./components/appcontext.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_standingorder__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/standingorder */ "./components/standingorder.js");
+/* harmony import */ var _components_standingprescription__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/standingprescription */ "./components/standingprescription.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\account.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -2773,7 +3005,7 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 5
       }
     }, __jsx("div", {
@@ -2781,7 +3013,7 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 5
       }
     }, __jsx("div", {
@@ -2789,35 +3021,35 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 1
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 1
       }
     }, __jsx("b", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 5
       }
     }, "My Account")), __jsx("ul", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 23,
         columnNumber: 1
       }
     }, __jsx("li", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 24,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2825,14 +3057,14 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 24,
         columnNumber: 7
       }
     }, "Orders"), " "), __jsx("li", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2840,14 +3072,14 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 7
       }
     }, "Order history")), __jsx("li", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2855,14 +3087,14 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 7
       }
     }, "Prescriptions"), " "), __jsx("li", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2870,14 +3102,14 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 7
       }
     }, "Prescription history"), " "), __jsx("li", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2885,14 +3117,14 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 7
       }
     }, "Saved items"), " "), __jsx("li", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2900,14 +3132,14 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 7
       }
     }, "Address Book"), " "), __jsx("li", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2915,7 +3147,7 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 7
       }
     }, "Personal information"), " ")), __jsx("button", {
@@ -2923,7 +3155,7 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 1
       }
     }, "Logout")), __jsx("div", {
@@ -2931,21 +3163,21 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 34,
         columnNumber: 1
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34,
+        lineNumber: 35,
         columnNumber: 1
       }
     }, __jsx("b", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34,
+        lineNumber: 35,
         columnNumber: 5
       }
     }, "Account overview")), __jsx("div", {
@@ -2953,7 +3185,7 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 36,
         columnNumber: 1
       }
     }, __jsx("div", {
@@ -2961,56 +3193,70 @@ const Account = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 37,
         columnNumber: 2
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 1
       }
-    }, "Standing Orders")), __jsx("div", {
+    }, "Standing Orders"), __jsx(_components_standingorder__WEBPACK_IMPORTED_MODULE_8__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 39,
+        columnNumber: 1
+      }
+    })), __jsx("div", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
         columnNumber: 1
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 41,
         columnNumber: 6
       }
     }, "Order history")), __jsx("div", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 1
       }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 6
       }
-    }, "Standing Prescription")), __jsx("div", {
+    }, "Standing Prescription"), __jsx(_components_standingprescription__WEBPACK_IMPORTED_MODULE_9__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 44,
         columnNumber: 1
       }
+    })), __jsx("div", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46,
+        columnNumber: 1
+      }
     }, __jsx("h2", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 46,
         columnNumber: 6
       }
     }, "Prescription history"))))));
@@ -3021,7 +3267,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 56,
       columnNumber: 1
     }
   }, __jsx("h1", {
@@ -3029,7 +3275,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 57,
       columnNumber: 3
     }
   }, "Account"), __jsx("div", {
@@ -3037,7 +3283,7 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 58,
       columnNumber: 3
     }
   }, __jsx("div", {
@@ -3045,21 +3291,21 @@ const Account = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 59,
       columnNumber: 7
     }
   }, __jsx(_components_signup__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 60,
       columnNumber: 7
     }
   }), __jsx(_components_login__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 61,
       columnNumber: 7
     }
   }))));

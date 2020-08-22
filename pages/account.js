@@ -7,7 +7,8 @@ import Profile from "../components/profile";
 import { useContext } from 'react';
 import appContext from '../components/appcontext';
 import Link from 'next/link';
-
+import StandingOrder from "../components/standingorder";
+import StandingPrescription from "../components/standingprescription";
 
 
 
@@ -35,11 +36,12 @@ const Account = (props) => {
 <div className={css.overviewdiv}>
  <div className={css.orderoverview}>
 <h2>Standing Orders</h2>
-
+<StandingOrder />
  </div>
 <div><h2>Order history</h2>
 </div>
 <div><h2>Standing Prescription</h2>
+<StandingPrescription />
 </div>
 <div><h2>Prescription history</h2>
 </div> 

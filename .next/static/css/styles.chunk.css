@@ -1070,110 +1070,32 @@ button:hover {
     display: flex;
     flex-direction: row; }
 
-* {
-  box-sizing: border-box; }
-
-html, body {
-  font-family: "Helvetica Neue",Arial,sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5; }
-
-a {
-  text-decoration: none;
-  color: #12A63E; }
-
-a:visited {
-  color: #12A63E; }
-
-a:hover {
-  color: white;
-  background-color: #12A63E;
-  border-radius: 0.3em;
-  padding: 0.5em; }
-
-p {
-  font-size: larger; }
-
-.pagelink___3_nJX {
-  color: #A61412 !important;
-  font-size: 2em; }
-
-.pagelink___3_nJX:hover {
-  background-color: red !important;
-  color: white !important;
-  font-size: 2em; }
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 2em;
-  width: 8em;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  height: 52px;
-  width: 210px; }
-
-.main___2CXzs {
-  box-sizing: border-box;
+.standingorder___3hHRV {
   width: 100%;
-  margin-top: 2em;
-  min-height: 100em;
-  background: url("/background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed; }
-  .main___2CXzs .intro___1q6R9 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    width: 100%; }
-    .main___2CXzs .intro___1q6R9 div {
-      box-sizing: border-box;
-      background-color: rgba(0, 0, 0, 0.5);
-      font-size: 2em;
-      width: 100%;
-      height: 20em;
-      color: white;
-      padding: 1em;
-      border-top: medium solid rgba(219, 59, 59, 0.424);
-      border-bottom: medium solid rgba(219, 59, 59, 0.424); }
-  .main___2CXzs .cards___1MJLF {
-    margin: 3em;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 3em;
-    min-height: 18em; }
-    .main___2CXzs .cards___1MJLF div {
-      margin-top: 4em;
-      border-radius: 2em;
-      padding: 3em;
-      opacity: 0.9;
-      background-color: white; }
-  .main___2CXzs .third___xubTV {
-    margin-top: 4em;
-    box-sizing: border-box;
-    height: 18em;
-    border: solid 2px #12A63E;
-    border-radius: 2em;
-    padding: 3em; }
+  height: 100%; }
+  .standingorder___3hHRV ul {
+    list-style-type: none; }
+    .standingorder___3hHRV ul .orderdate___3byfj {
+      margin-left: 5em; }
+    .standingorder___3hHRV ul .product___2QYAj {
+      float: left; }
+
+.standingprescription___2_r79 {
+  width: 100%;
+  height: 100%; }
+  .standingprescription___2_r79 ul {
+    list-style-type: none; }
+    .standingprescription___2_r79 ul li {
+      display: flex;
+      flex-basis: auto auto;
+      justify-content: space-between; }
+      .standingprescription___2_r79 ul li .prescription_date___30KHy {
+        float: right;
+        width: fit-content;
+        height: fit-content;
+        background-color: red; }
+      .standingprescription___2_r79 ul li .prescription___2tq0C {
+        float: left; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
