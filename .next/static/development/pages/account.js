@@ -445,7 +445,6 @@ var OrderHistory = function OrderHistory() {
 
   if (data.data) {
     return __jsx("div", {
-      className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderhistory,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -453,6 +452,7 @@ var OrderHistory = function OrderHistory() {
         columnNumber: 5
       }
     }, __jsx("ul", {
+      className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.order_history,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -467,7 +467,7 @@ var OrderHistory = function OrderHistory() {
           lineNumber: 30,
           columnNumber: 22
         }
-      }, __jsx("span", {
+      }, __jsx("div", {
         className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.product,
         __self: _this,
         __source: {
@@ -475,20 +475,20 @@ var OrderHistory = function OrderHistory() {
           lineNumber: 30,
           columnNumber: 26
         }
-      }, item.productId), __jsx("span", {
+      }, item.productId), " ", __jsx("div", {
         className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderdate,
         __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30,
-          columnNumber: 79
+          columnNumber: 78
         }
-      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+      }, " ", item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
     })));
   }
 
   return __jsx("div", {
-    className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderhistory,
+    className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.order_history,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -570,7 +570,6 @@ var PrescriptionHistory = function PrescriptionHistory() {
 
   if (data.data) {
     return __jsx("div", {
-      className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.prescriptionhistory,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -578,6 +577,7 @@ var PrescriptionHistory = function PrescriptionHistory() {
         columnNumber: 5
       }
     }, __jsx("ul", {
+      className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.prescriptionhistory,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -592,7 +592,7 @@ var PrescriptionHistory = function PrescriptionHistory() {
           lineNumber: 30,
           columnNumber: 22
         }
-      }, __jsx("span", {
+      }, __jsx("div", {
         className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.product,
         __self: _this,
         __source: {
@@ -600,15 +600,15 @@ var PrescriptionHistory = function PrescriptionHistory() {
           lineNumber: 30,
           columnNumber: 26
         }
-      }, item.productId), __jsx("span", {
+      }, item.productId), " ", __jsx("div", {
         className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderdate,
         __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30,
-          columnNumber: 79
+          columnNumber: 78
         }
-      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+      }, " ", item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
     })));
   }
 
@@ -1058,7 +1058,7 @@ var StandingOrder = function StandingOrder() {
             return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch("http://localhost:4000/standingorders/1", {
               method: "GET",
               headers: {
-                'Content-Type': 'application/json'
+                "Content-Type": "application/json"
               }
             }));
 
@@ -1082,18 +1082,18 @@ var StandingOrder = function StandingOrder() {
 
   if (data.data) {
     return __jsx("div", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 7
+      }
+    }, __jsx("ul", {
       className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.standingorder,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 5
-      }
-    }, __jsx("ul", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 25,
         columnNumber: 9
       }
     }, data.data.map(function (item) {
@@ -1101,26 +1101,26 @@ var StandingOrder = function StandingOrder() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 22
+          lineNumber: 28,
+          columnNumber: 15
         }
-      }, __jsx("span", {
+      }, __jsx("div", {
         className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.product,
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 26
+          lineNumber: 29,
+          columnNumber: 17
         }
-      }, item.productId), __jsx("span", {
+      }, item.productId), __jsx("div", {
         className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.orderdate,
         __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30,
-          columnNumber: 79
+          columnNumber: 17
         }
-      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+      }, item.date_created.substring(0, item.date_created.indexOf("T") != -1 ? item.date_created.indexOf("T") : item.date_created.length)));
     })));
   }
 
@@ -1129,8 +1129,8 @@ var StandingOrder = function StandingOrder() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 8
+      lineNumber: 45,
+      columnNumber: 10
     }
   }, data.message);
 };
@@ -1213,7 +1213,7 @@ var StandingPrescription = function StandingPrescription() {
         columnNumber: 5
       }
     }, __jsx("ul", {
-      className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.standingprescription,
+      className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.standing_prescription,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -1229,7 +1229,7 @@ var StandingPrescription = function StandingPrescription() {
           lineNumber: 29,
           columnNumber: 22
         }
-      }, __jsx("span", {
+      }, __jsx("div", {
         className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.prescription,
         __self: _this,
         __source: {
@@ -1237,13 +1237,13 @@ var StandingPrescription = function StandingPrescription() {
           lineNumber: 29,
           columnNumber: 53
         }
-      }, item.d_id), " ", __jsx("span", {
+      }, item.d_id), " ", __jsx("div", {
         className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.prescription_date,
         __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29,
-          columnNumber: 107
+          columnNumber: 105
         }
       }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
     })));
@@ -7732,7 +7732,7 @@ var Account = function Account(props) {
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
+      href: "/orderhistory",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -7762,7 +7762,7 @@ var Account = function Account(props) {
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
+      href: "/prescriptionhistory",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -7777,58 +7777,44 @@ var Account = function Account(props) {
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
+      href: "/address",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 29,
         columnNumber: 7
       }
-    }, "Saved items"), " "), __jsx("li", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 3
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 7
-      }
     }, "Address Book"), " "), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 30,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
+      href: "/profile",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 30,
         columnNumber: 7
       }
     }, "Personal information"), " ")), __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 32,
         columnNumber: 1
       }
-    }), __jsx("br", {
+    }), __jsx("div", {
+      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.logout_link,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 34,
         columnNumber: 1
       }
-    }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       onClick: function onClick() {
         return Object(_components_helper_logout__WEBPACK_IMPORTED_MODULE_4__["default"])();
@@ -7836,18 +7822,17 @@ var Account = function Account(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 1
+        lineNumber: 34,
+        columnNumber: 34
       }
     }, __jsx("a", {
-      className: "logout_link",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 40
+        lineNumber: 34,
+        columnNumber: 73
       }
-    }, "Logout"))), __jsx("div", {
+    }, "Logout")))), __jsx("div", {
       className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.overview,
       __self: _this,
       __source: {
@@ -8018,7 +8003,7 @@ var Account = function Account(props) {
 
 /***/ }),
 
-/***/ 11:
+/***/ 8:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Faccount&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cpages%5Caccount.js&hotRouterUpdates=true ***!
   \********************************************************************************************************************************************************************************/
@@ -8041,5 +8026,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[11,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=account.js.map

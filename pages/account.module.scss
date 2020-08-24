@@ -62,7 +62,7 @@ margin: 3em;
     }
 
     ul{
-        list-style: none;
+        list-style-type: none;
 
         li{
             margin-top: 1.5em;
@@ -70,7 +70,7 @@ margin: 3em;
         
     }
     .logout_link{
-        margin: 0em 0em 1em 10em;
+        margin: 0em 0em 1em 4em;
     }
 }
 
@@ -99,12 +99,7 @@ margin: 3em;
         justify-content: space-evenly;
         grid-template-columns: auto auto;
 
-         div{
-        background-color:whitesmoke;
-height: 12em;
-width: 20em;
 
-    }
  
     }
 

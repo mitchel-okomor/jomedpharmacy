@@ -24,9 +24,9 @@ const fetchData =async ()=>{
 if(data.data){
  return(
     <div >
-        <ul className={css.standingprescription}>
+        <ul className={css.standing_prescription}>
           {data.data.map((item)=>{
-              return <li key={item.prescription_id}><span className={css.prescription}>{item.d_id}</span> <span className={css.prescription_date}>{item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T'): item.date_created.length)}</span></li>
+              return <li key={item.prescription_id}><div className={css.prescription}>{item.d_id}</div> <div className={css.prescription_date}>{item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T'): item.date_created.length)}</div></li>
           })}
         </ul>
     </div>

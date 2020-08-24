@@ -23,16 +23,16 @@ const Account = (props) => {
 <h2><b>My Account</b></h2>
 <ul>
   <li><Link href="">Orders</Link> </li>
-  <li><Link href="">Order history</Link></li>
+  <li><Link href="/orderhistory">Order history</Link></li>
   <li><Link href="">Prescriptions</Link> </li>
-  <li><Link href="">Prescription history</Link> </li>
-  <li><Link href="">Saved items</Link> </li>
-  <li><Link href="">Address Book</Link> </li>
-  <li><Link href="">Personal information</Link> </li>
+  <li><Link href="/prescriptionhistory">Prescription history</Link> </li>
+  <li><Link href="/address">Address Book</Link> </li>
+  <li><Link href="/profile">Personal information</Link> </li>
 </ul>
 <br />
-<br />
-<Link  href="" onClick={()=> logout()}><a className="logout_link">Logout</a></Link>
+
+<div className={css.logout_link}><Link  href="" onClick={()=> logout()}><a >Logout</a></Link>
+</div>
 </div>
 <div className={css.overview}>
 <h2><b>Account overview</b></h2>

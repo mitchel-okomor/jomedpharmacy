@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -541,7 +541,6 @@ const OrderHistory = () => {
 
   if (data.data) {
     return __jsx("div", {
-      className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.orderhistory,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -549,6 +548,7 @@ const OrderHistory = () => {
         columnNumber: 5
       }
     }, __jsx("ul", {
+      className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.order_history,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -563,7 +563,7 @@ const OrderHistory = () => {
           lineNumber: 30,
           columnNumber: 22
         }
-      }, __jsx("span", {
+      }, __jsx("div", {
         className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.product,
         __self: undefined,
         __source: {
@@ -571,20 +571,20 @@ const OrderHistory = () => {
           lineNumber: 30,
           columnNumber: 26
         }
-      }, item.productId), __jsx("span", {
+      }, item.productId), " ", __jsx("div", {
         className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.orderdate,
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30,
-          columnNumber: 79
+          columnNumber: 78
         }
-      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+      }, " ", item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
     })));
   }
 
   return __jsx("div", {
-    className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.orderhistory,
+    className: _orderhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.order_history,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -605,7 +605,9 @@ const OrderHistory = () => {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+module.exports = {
+	"order_history": "order_history___1OuGm"
+};
 
 /***/ }),
 
@@ -651,7 +653,6 @@ const PrescriptionHistory = () => {
 
   if (data.data) {
     return __jsx("div", {
-      className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.prescriptionhistory,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -659,6 +660,7 @@ const PrescriptionHistory = () => {
         columnNumber: 5
       }
     }, __jsx("ul", {
+      className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.prescriptionhistory,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -673,7 +675,7 @@ const PrescriptionHistory = () => {
           lineNumber: 30,
           columnNumber: 22
         }
-      }, __jsx("span", {
+      }, __jsx("div", {
         className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.product,
         __self: undefined,
         __source: {
@@ -681,15 +683,15 @@ const PrescriptionHistory = () => {
           lineNumber: 30,
           columnNumber: 26
         }
-      }, item.productId), __jsx("span", {
+      }, item.productId), " ", __jsx("div", {
         className: _prescriptionhistory_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.orderdate,
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30,
-          columnNumber: 79
+          columnNumber: 78
         }
-      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+      }, " ", item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
     })));
   }
 
@@ -715,7 +717,9 @@ const PrescriptionHistory = () => {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+module.exports = {
+	"prescription_history": "prescription_history___-_vwO"
+};
 
 /***/ }),
 
@@ -1131,7 +1135,7 @@ const StandingOrder = () => {
     const res = await fetch("http://localhost:4000/standingorders/1", {
       method: "GET",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json"
       }
     });
     const data = await res.json();
@@ -1141,18 +1145,18 @@ const StandingOrder = () => {
 
   if (data.data) {
     return __jsx("div", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 7
+      }
+    }, __jsx("ul", {
       className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.standingorder,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 5
-      }
-    }, __jsx("ul", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 25,
         columnNumber: 9
       }
     }, data.data.map(item => {
@@ -1160,26 +1164,26 @@ const StandingOrder = () => {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 22
+          lineNumber: 28,
+          columnNumber: 15
         }
-      }, __jsx("span", {
+      }, __jsx("div", {
         className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.product,
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 26
+          lineNumber: 29,
+          columnNumber: 17
         }
-      }, item.productId), __jsx("span", {
+      }, item.productId), __jsx("div", {
         className: _standingorder_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.orderdate,
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30,
-          columnNumber: 79
+          columnNumber: 17
         }
-      }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
+      }, item.date_created.substring(0, item.date_created.indexOf("T") != -1 ? item.date_created.indexOf("T") : item.date_created.length)));
     })));
   }
 
@@ -1188,8 +1192,8 @@ const StandingOrder = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 8
+      lineNumber: 45,
+      columnNumber: 10
     }
   }, data.message);
 };
@@ -1261,7 +1265,7 @@ const StandingPrescription = () => {
         columnNumber: 5
       }
     }, __jsx("ul", {
-      className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.standingprescription,
+      className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.standing_prescription,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -1277,7 +1281,7 @@ const StandingPrescription = () => {
           lineNumber: 29,
           columnNumber: 22
         }
-      }, __jsx("span", {
+      }, __jsx("div", {
         className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.prescription,
         __self: undefined,
         __source: {
@@ -1285,13 +1289,13 @@ const StandingPrescription = () => {
           lineNumber: 29,
           columnNumber: 53
         }
-      }, item.d_id), " ", __jsx("span", {
+      }, item.d_id), " ", __jsx("div", {
         className: _standingprescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.prescription_date,
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29,
-          columnNumber: 107
+          columnNumber: 105
         }
       }, item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T') : item.date_created.length)));
     })));
@@ -1320,7 +1324,7 @@ const StandingPrescription = () => {
 /***/ (function(module, exports) {
 
 module.exports = {
-	"standingprescription": "standingprescription___2_r79",
+	"standing_prescription": "standing_prescription___1aBW1",
 	"prescription_date": "prescription_date___30KHy",
 	"prescription": "prescription___2tq0C"
 };
@@ -3129,7 +3133,7 @@ const Account = props => {
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
+      href: "/orderhistory",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -3159,7 +3163,7 @@ const Account = props => {
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
+      href: "/prescriptionhistory",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -3174,75 +3178,60 @@ const Account = props => {
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
+      href: "/address",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 29,
         columnNumber: 7
       }
-    }, "Saved items"), " "), __jsx("li", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 3
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 7
-      }
     }, "Address Book"), " "), __jsx("li", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 30,
         columnNumber: 3
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      href: "",
+      href: "/profile",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 30,
         columnNumber: 7
       }
     }, "Personal information"), " ")), __jsx("br", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 32,
         columnNumber: 1
       }
-    }), __jsx("br", {
+    }), __jsx("div", {
+      className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.logout_link,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 34,
         columnNumber: 1
       }
-    }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
       href: "",
       onClick: () => Object(_components_helper_logout__WEBPACK_IMPORTED_MODULE_4__["default"])(),
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 1
+        lineNumber: 34,
+        columnNumber: 34
       }
     }, __jsx("a", {
-      className: "logout_link",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 40
+        lineNumber: 34,
+        columnNumber: 73
       }
-    }, "Logout"))), __jsx("div", {
+    }, "Logout")))), __jsx("div", {
       className: _account_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.overview,
       __self: undefined,
       __source: {
@@ -3436,7 +3425,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/account.js ***!
   \********************************/

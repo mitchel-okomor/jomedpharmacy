@@ -24,16 +24,16 @@ const fetchData =async ()=>{
 
 if(data.data){
  return(
-    <div className={css.orderhistory}>
-        <ul>
+    <div >
+        <ul className={css.order_history}>
           {data.data.map((item)=>{
-              return <li><span className={css.product}>{item.productId}</span><span className={css.orderdate}>{item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T'): item.date_created.length)}</span></li>
+              return <li><div className={css.product}>{item.productId}</div> <div className={css.orderdate}> {item.date_created.substring(0, item.date_created.indexOf('T') != -1 ? item.date_created.indexOf('T'): item.date_created.length)}</div></li>
           })}
         </ul>
     </div>
 )   
 }
-return <div className={css.orderhistory}>{data.message}</div>;
+return <div className={css.order_history}>{data.message}</div>;
 
 }
 

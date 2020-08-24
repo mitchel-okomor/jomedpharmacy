@@ -1,0 +1,30 @@
+@import '../../pages/styles';
+
+
+.footer{
+    box-sizing: border-box;
+    min-height: 10em;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 3em;
+    padding-left: 6em;
+    color: white;
+    background-color: $primary-color;
+ 
+
+    div{
+margin: 1em;
+padding: 1em;
+        background-color: transparent;
+
+        a{
+            color:white;
+        }
+    }
+    .stayintouch{
+        i{
+            width: 2em;
+            height: 2em;
+        }
+    }
+}

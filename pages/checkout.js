@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 
 
 const Checkout = () =>{
-    const {customer } = useContext(appContext);
+    const {customer, cart } = useContext(appContext);
     const router = useRouter()
 
 
@@ -17,6 +17,8 @@ if(!customer){
 
 }
     },[])
+
+    
     return(
         <div className={css.checkout}>
         checkout page  

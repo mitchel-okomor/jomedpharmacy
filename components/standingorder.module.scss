@@ -1,17 +1,18 @@
 .standingorder{
     width: 100%;
     height: 100%;
+    list-style-type: none !important;
+margin: 0em;
+padding-left: 0.5em;
 
-    ul{
-        list-style-type: none;
         .orderdate{
-           margin-left: 5em;
+           margin-right: 1em;
         }
         .product{
             float: left;
         }
 
       
-    }
+
 
 }
