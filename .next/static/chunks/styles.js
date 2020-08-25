@@ -30,7 +30,7 @@ module.exports = {"pagelink":"pagelink___3YSse","footer":"footer___1nBGW","stayi
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300754407");
+            injectCss(link, link.href.split("?")[0] + "?unix=1598359392955");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"pagelink":"pagelink___MtiHc","header":"header___207u5","logo"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300800702");
+            injectCss(link, link.href.split("?")[0] + "?unix=1598359392189");
           });
       }
     }
@@ -106,45 +106,7 @@ module.exports = {"pagelink":"pagelink___2-f9Q","loader":"loader___303lL","spin"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300753829");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/login.module.scss":
-/*!**************************************!*\
-  !*** ./components/login.module.scss ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___NwE0e","password":"password___33wZe"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300843650");
+            injectCss(link, link.href.split("?")[0] + "?unix=1598359392519");
           });
       }
     }
@@ -182,45 +144,7 @@ module.exports = {"pagelink":"pagelink____jdru","nav":"nav___1kSwy","active":"ac
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300753796");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/orderhistory.module.scss":
-/*!*********************************************!*\
-  !*** ./components/orderhistory.module.scss ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"order_history":"order_history___1OuGm"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598304503798");
+            injectCss(link, link.href.split("?")[0] + "?unix=1598359392116");
           });
       }
     }
@@ -258,7 +182,7 @@ module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300753705");
+            injectCss(link, link.href.split("?")[0] + "?unix=1598359391988");
           });
       }
     }
@@ -266,15 +190,15 @@ module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq
 
 /***/ }),
 
-/***/ "./components/prescriptionhistory.module.scss":
-/*!****************************************************!*\
-  !*** ./components/prescriptionhistory.module.scss ***!
-  \****************************************************/
+/***/ "./components/productItem.module.scss":
+/*!********************************************!*\
+  !*** ./components/productItem.module.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"prescription_history":"prescription_history___-_vwO"};;
+module.exports = {"productItem":"productItem___3zsw_"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -296,7 +220,7 @@ module.exports = {"prescription_history":"prescription_history___-_vwO"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598304785525");
+            injectCss(link, link.href.split("?")[0] + "?unix=1598370784036");
           });
       }
     }
@@ -334,159 +258,7 @@ module.exports = {"pagelink":"pagelink___3KTKa","search":"search___3MHpT"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300840220");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/signup.module.scss":
-/*!***************************************!*\
-  !*** ./components/signup.module.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___116ck"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300843633");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/standingorder.module.scss":
-/*!**********************************************!*\
-  !*** ./components/standingorder.module.scss ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"standingorder":"standingorder___3hHRV","orderdate":"orderdate___3byfj","product":"product___2QYAj"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598304233935");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/standingprescription.module.scss":
-/*!*****************************************************!*\
-  !*** ./components/standingprescription.module.scss ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"standing_prescription":"standing_prescription___1aBW1","prescription_date":"prescription_date___30KHy","prescription":"prescription___2tq0C"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598304187583");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/account.module.scss":
-/*!***********************************!*\
-  !*** ./pages/account.module.scss ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___23IcN","profile":"profile___2baMk","buttons":"buttons___35h7a","container":"container___3mFX3","heading":"heading___V7y3g","account":"account___3xtWf","myaccount":"myaccount___14c-i","logout_link":"logout_link___1z2LU","overview":"overview___1u136","overviewdiv":"overviewdiv___BnCNs","form":"form___14s8b"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598304113376");
+            injectCss(link, link.href.split("?")[0] + "?unix=1598359392539");
           });
       }
     }
@@ -524,7 +296,7 @@ module.exports = {"pagelink":"pagelink___35WRW"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1598300753459");
+            injectCss(link, link.href.split("?")[0] + "?unix=1598359391594");
           });
       }
     }
