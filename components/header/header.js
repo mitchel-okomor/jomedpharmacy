@@ -15,8 +15,7 @@ const Header = () => {
   return(
         <header className={css.header}>
             <div className={css.logo}>
-              <h1>Jomed Pharmacy</h1> 
-            <p>Your Health Needs at your reach</p>  
+          <a href="/"><img src="/jomed11.png" /> </a>     
             </div>
 <Search />
 
@@ -27,20 +26,27 @@ const Header = () => {
 
       {
         
-           customer?<div class={css.dropdown_content}>
+           customer&&!(Boolean(Number(customer.is_admin)))?<div class={css.dropdown_content}>
   <ul>
     <li><Link href="/account">My account</Link> </li>
     <li><Link href="">Personal information</Link> </li>
     <li><Link href="/orderhistory">Order history</Link> </li>
     <li onClick={()=>logout()}><Link href="">Log Out</Link> </li>
   </ul>
-  </div>: ""
+  </div>:customer&&(Boolean(Number(customer.is_admin)))? <div class={css.dropdown_content}> <ul> <li onClick={()=>logout()}><Link href="">Log Out</Link> </li></ul></div>:""
         
       }
     
-      </div>               
-    <div className={css.cart}>
-      <Link href="/cart"><a><img src="/cart.png"/> </a></Link>{cart.length}</div>
+      </div>
+      {
+        //check if user is admin
+        !customer || !(Boolean(Number(customer.is_admin)))?
+        <div className={css.cart}>
+        <Link href="/cart"><a><img src="/cart.png"/> </a></Link>{cart.length}
+        </div>: <Link href="/account"><a className={css.admin_link}>Admin Panel</a></Link> 
+
+      }               
+  
                 </div> 
             
         </header>

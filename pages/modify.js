@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from "react";
-import css from './signup.module.scss';
+import css from '../components/signup.module.scss';
 import axios from "axios";
-import Loading from './loading';
+import Loading from "../components/loading";
 
 const initialState = {
       fName: "",

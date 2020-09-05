@@ -7,7 +7,10 @@ import css from './loading.module.scss';
 const Loading = (props) => {
  
 
-  return <div className={css.loader}></div>;
+  return(
+    <div className={css.loading_container}><div className={css.loader}></div>;</div>
+  )
+   
 }
 
 

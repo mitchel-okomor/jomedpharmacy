@@ -22,23 +22,12 @@ const Footer = () =>{
                 </h3>
                 <Link href="">Help & FAQs</Link>
                 <br />
-                <Link href="">Returns & Exchanges</Link>
-                <br />
                 <Link href=""> Store survey</Link>
                 <br />
-                <Link href="">Contact Us | (+234) 80</Link>
-            </div>
+                <Link href=""> Tel: (+234) 80</Link>
+                <br/>
+                <Link href="">Email: info@jomedpharmacy.com.ng</Link>
 
-            <div>
-              <h3>
-                About Jomed Phamacy
-                </h3>
-                <Link href="">Company Information</Link>
-                <br />
-                <Link href="">Terms and Conditions</Link>
-                <br />
-                <Link href=""> Privacy policy</Link>
-               
             </div>
 
             <div className={css.stayintouch}>

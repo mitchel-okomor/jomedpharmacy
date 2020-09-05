@@ -88,6 +88,9 @@ return(
     </div>
 ) 
     }
+    else if(customer && Boolean(customer.is_admin)){
+      return "";
+    }
   return (
     <div className={css.prescription}>
     <button className={button} onClick={toggleChat}>prescription</button>

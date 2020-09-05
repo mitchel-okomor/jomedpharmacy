@@ -1,0 +1,114 @@
+.admin{
+    min-height: 25em;
+    margin: 2em;
+
+    .admin_header{
+        margin:auto;
+        text-align: center;
+        font-size: xx-large;
+    background-color: silver;
+    }
+
+
+    .add_product{
+        margin-top: 4em;
+form{
+    display: none;
+    margin-bottom: 2em;
+    padding-top: 1em;
+    background-color: rgb(95, 248, 146);
+
+    label{
+      margin-left: 1em;
+      padding-right: 0.3em;
+    }
+
+   
+}
+        input, select {
+            width: fit-content;
+            height: 2.3em;
+            padding: 0.2em 0.2em;
+            margin-right: 1em;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+     textarea{
+       min-height: 6em;
+       display: inline-block;
+       box-sizing: border-box;
+       margin-top: 2.5em;
+       padding: 0.2em 0.2em;
+       border: 1px solid #ccc;
+            border-radius: 4px;
+     }
+   
+    }
+
+    button{
+        width: fit-content;
+        height: 2.5em;
+        font-size: medium;
+        margin-top: 2.5em;
+  }
+
+  
+  button:hover{
+    width: fit-content;
+    height: fit-content;
+    font-size: medium;
+}
+    .table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+        tbody{
+          font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+     
+      
+      td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        font-size: larger;
+      }
+      th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        text-transform: uppercase;
+        background-color: black;
+        color: white;
+    
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    
+      
+
+tr{
+  height: 3em;
+}
+   
+}
+
+table {
+  counter-reset: rowNumber;
+}
+
+  table tr::before {
+    display: table-cell;
+    counter-increment: rowNumber;
+    content: counter(rowNumber) ".";
+    text-align: right;
+    border-collapse: collapse;
+  
+  }
+}

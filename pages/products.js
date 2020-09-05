@@ -16,10 +16,29 @@ if(props.products.length <1 ) {
   
 }
 return(
-    <div className={css.products}>
-                < ProductList  products= {props.products}/>
 
+    <div className={css.products}>
+
+      <h1 className={css.featured_products}>Featured products</h1>
+ <div>
+      <h2>Antibiotics</h2>
+      < ProductList  products= {props.products}/>
     </div>
+    <div>
+      <h2>Antimaleria</h2>
+    </div>
+    <div>
+      <h2>Antidiabetics</h2>
+    </div>
+    <div>
+      <h2>Haematenics</h2>
+    </div>
+    <div>
+      <h2></h2>
+    </div>
+    </div>
+
+   
 
 )
 

@@ -6,8 +6,10 @@
     padding: $page-padding;
     box-sizing: border-box;
 display: grid;
-grid-template-columns: 33% 33% 33%;
+grid-template-columns: 33% 60%;
 width: 100%;
+font-size: large;
+line-height: 1.5em;
   
    
 
@@ -28,9 +30,33 @@ padding: 1em;
 
 
         img{
-            width: 100%;
+            width: 70%;
             height: 17em;
             border-radius: 1em;
+        }
+    }
+
+    .sidebar{
+        border: 0.2em solid gray;
+        height: 29em;
+
+        ul{
+            margin: 0;
+            padding:0;
+        }
+
+        li{
+            margin-top: 0.2em;
+            padding: 0.5em;
+            font-size: large;
+            list-style-type: none;
+            background-color: rgb(14, 14, 192);
+            color: white;
+            border-radius: 0.4em;
+        }
+        li:hover{
+            background-color: red;
+            cursor: pointer;
         }
     }
 }

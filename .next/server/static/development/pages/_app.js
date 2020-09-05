@@ -250,7 +250,7 @@ const Footer = () => {
       lineNumber: 25,
       columnNumber: 17
     }
-  }, "Returns & Exchanges"), __jsx("br", {
+  }, " Store survey"), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -265,7 +265,7 @@ const Footer = () => {
       lineNumber: 27,
       columnNumber: 17
     }
-  }, " Store survey"), __jsx("br", {
+  }, " Tel: (+234) 80"), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -280,71 +280,19 @@ const Footer = () => {
       lineNumber: 29,
       columnNumber: 17
     }
-  }, "Contact Us | (+234) 80")), __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 13
-    }
-  }, __jsx("h3", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 15
-    }
-  }, "About Jomed Phamacy"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 17
-    }
-  }, "Company Information"), __jsx("br", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 17
-    }
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 17
-    }
-  }, "Terms and Conditions"), __jsx("br", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 17
-    }
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 17
-    }
-  }, " Privacy policy")), __jsx("div", {
+  }, "Email: info@jomedpharmacy.com.ng")), __jsx("div", {
     className: _footer_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.stayintouch,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 33,
       columnNumber: 13
     }
   }, __jsx("h3", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 34,
       columnNumber: 13
     }
   }, "Stay in Touch"), __jsx("i", {
@@ -353,7 +301,7 @@ const Footer = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 37,
       columnNumber: 17
     }
   }), __jsx("i", {
@@ -362,7 +310,7 @@ const Footer = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 38,
       columnNumber: 17
     }
   }), __jsx("i", {
@@ -371,7 +319,7 @@ const Footer = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 39,
       columnNumber: 17
     }
   }), __jsx("i", {
@@ -380,7 +328,7 @@ const Footer = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 40,
       columnNumber: 17
     }
   }), __jsx("i", {
@@ -389,14 +337,14 @@ const Footer = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 41,
       columnNumber: 17
     }
   }), __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 42,
       columnNumber: 14
     }
   }))));
@@ -560,25 +508,27 @@ const Header = () => {
       lineNumber: 17,
       columnNumber: 13
     }
-  }, __jsx("h1", {
+  }, __jsx("a", {
+    href: "/",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18,
-      columnNumber: 15
+      columnNumber: 11
     }
-  }, "Jomed Pharmacy"), __jsx("p", {
+  }, __jsx("img", {
+    src: "/jomed11.png",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 13
+      lineNumber: 18,
+      columnNumber: 23
     }
-  }, "Your Health Needs at your reach")), __jsx(_search__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), " ")), __jsx(_search__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 20,
       columnNumber: 1
     }
   }), __jsx("div", {
@@ -586,7 +536,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 22,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -595,7 +545,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 23,
       columnNumber: 5
     }
   }, __jsx("img", {
@@ -603,7 +553,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 5
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -611,36 +561,36 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 28
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 50
     }
-  }, customer ? customer.name : "Login/Signup")), customer ? __jsx("div", {
+  }, customer ? customer.name : "Login/Signup")), customer && !Boolean(Number(customer.is_admin)) ? __jsx("div", {
     class: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown_content,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 21
+      lineNumber: 29,
+      columnNumber: 60
     }
   }, __jsx("ul", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 30,
       columnNumber: 3
     }
   }, __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -648,14 +598,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 9
     }
   }, "My account"), " "), __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 32,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -663,14 +613,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 32,
       columnNumber: 9
     }
   }, "Personal information"), " "), __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 33,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -678,7 +628,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 33,
       columnNumber: 9
     }
   }, "Order history"), " "), __jsx("li", {
@@ -686,7 +636,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -694,41 +644,89 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 32
     }
-  }, "Log Out"), " "))) : ""), __jsx("div", {
+  }, "Log Out"), " "))) : customer && Boolean(Number(customer.is_admin)) ? __jsx("div", {
+    class: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.dropdown_content,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 58
+    }
+  }, " ", __jsx("ul", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 93
+    }
+  }, " ", __jsx("li", {
+    onClick: () => Object(_helper_logout__WEBPACK_IMPORTED_MODULE_5__["default"])(),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 98
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 125
+    }
+  }, "Log Out"), " "))) : ""), //check if user is admin
+  !customer || !Boolean(Number(customer.is_admin)) ? __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cart,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 5
+      lineNumber: 44,
+      columnNumber: 9
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/cart",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 7
+      lineNumber: 45,
+      columnNumber: 9
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 26
+      lineNumber: 45,
+      columnNumber: 28
     }
   }, __jsx("img", {
     src: "/cart.png",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 29
+      lineNumber: 45,
+      columnNumber: 31
     }
-  }), " ")), cart.length)));
+  }), " ")), cart.length) : __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/account",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.admin_link,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 39
+    }
+  }, "Admin Panel"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -749,7 +747,8 @@ module.exports = {
 	"activity": "activity___2Xw8Y",
 	"cart": "cart___1sbiW",
 	"user": "user___rnymh",
-	"dropdown_content": "dropdown_content___SGcYG"
+	"dropdown_content": "dropdown_content___SGcYG",
+	"admin_link": "admin_link___3kCBp"
 };
 
 /***/ }),
@@ -891,14 +890,22 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const Loading = props => {
   return __jsx("div", {
+    className: _loading_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.loading_container,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
     className: _loading_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.loader,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 10
+      lineNumber: 11,
+      columnNumber: 44
     }
-  });
+  }), ";");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Loading);
@@ -1294,6 +1301,8 @@ const prescription = props => {
         columnNumber: 1
       }
     }));
+  } else if (customer && Boolean(customer.is_admin)) {
+    return "";
   }
 
   return __jsx("div", {
@@ -1301,7 +1310,7 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 95,
       columnNumber: 5
     }
   }, __jsx("button", {
@@ -1310,7 +1319,7 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 96,
       columnNumber: 5
     }
   }, "prescription"), __jsx("div", {
@@ -1319,14 +1328,14 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 97,
       columnNumber: 5
     }
   }, __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 98,
       columnNumber: 7
     }
   }), __jsx("form", {
@@ -1334,28 +1343,28 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 99,
       columnNumber: 9
     }
   }, __jsx("fieldset", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 100,
       columnNumber: 11
     }
   }, __jsx("legend", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 101,
       columnNumber: 13
     }
   }, __jsx("b", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 101,
       columnNumber: 21
     }
   }, __jsx("h3", {
@@ -1363,14 +1372,14 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 101,
       columnNumber: 24
     }
   }, "Send us your prescription"))), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 102,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1378,14 +1387,14 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 103,
       columnNumber: 13
     }
   }, "Full Name:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 103,
       columnNumber: 51
     }
   }), __jsx("input", {
@@ -1399,14 +1408,14 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
+      lineNumber: 104,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 113,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1414,14 +1423,14 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 114,
       columnNumber: 13
     }
   }, "phone number:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 114,
       columnNumber: 55
     }
   }), __jsx("input", {
@@ -1435,21 +1444,21 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112,
+      lineNumber: 115,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 125,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 126,
       columnNumber: 13
     }
   }), __jsx("label", {
@@ -1457,14 +1466,14 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 127,
       columnNumber: 13
     }
   }, "prescription details:"), " ", __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 127,
       columnNumber: 69
     }
   }), __jsx("textarea", {
@@ -1477,14 +1486,14 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 128,
       columnNumber: 13
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133,
+      lineNumber: 136,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1494,14 +1503,14 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134,
+      lineNumber: 137,
       columnNumber: 13
     }
   }, "Submit"), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 138,
       columnNumber: 13
     }
   }), __jsx("button", {
@@ -1510,7 +1519,7 @@ const prescription = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136,
+      lineNumber: 139,
       columnNumber: 13
     }
   }, "close")))));
@@ -3511,19 +3520,22 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./pages/styles.scss");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var _components_appcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/appcontext */ "./components/appcontext.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./pages/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var _components_appcontext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/appcontext */ "./components/appcontext.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\pages\\_app.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -3535,7 +3547,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
  // This default export is required in a new `pages/_app.js` file.
 
-class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
+class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
   constructor(...args) {
     super(...args);
 
@@ -3549,7 +3561,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       const customerId = localStorage.getItem('customerId');
       console.log(customerId);
       const url = "http://localhost:4000/customer/" + customerId;
-      const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(url, {
+      const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()(url, {
         headers: {
           "Authorization": localStorage.getItem('token')
         }
@@ -3672,7 +3684,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       Component,
       pageProps
     } = this.props;
-    return __jsx(_components_appcontext__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {
+    return __jsx(_components_appcontext__WEBPACK_IMPORTED_MODULE_5__["default"].Provider, {
       value: {
         cart: this.state.cart,
         customer: this.state.customer,
@@ -3689,7 +3701,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 155,
         columnNumber: 2
       }
-    }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -3697,13 +3709,17 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
         columnNumber: 1
       }
     }, __jsx(Component, _extends({}, pageProps, {
+      className: "jsx-1818130120" + " " + (pageProps && pageProps.className != null && pageProps.className || ""),
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 157,
         columnNumber: 4
       }
-    }))));
+    })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+      id: "1818130120",
+      __self: this
+    }, "*,*::before,*::after{box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcVXNlciBQQ1xcd29ya3NwYWNlXFxqb21lZFxcam9tZWQtcGhhcm1hY3lcXHBhZ2VzXFxfYXBwLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQThKc0IsQUFLK0Isc0JBQ3hCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcVXNlciBQQ1xcd29ya3NwYWNlXFxqb21lZFxcam9tZWQtcGhhcm1hY3lcXHBhZ2VzXFxfYXBwLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEFwcCBmcm9tICduZXh0L2FwcCc7XHJcbmltcG9ydCAnLi9zdHlsZXMuc2NzcydcclxuaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL2xheW91dCc7XHJcbmltcG9ydCBhcHBDb250ZXh0IGZyb20gJy4uL2NvbXBvbmVudHMvYXBwY29udGV4dCc7XHJcbmltcG9ydCBmZXRjaCBmcm9tICdpc29tb3JwaGljLXVuZmV0Y2gnO1xyXG5cclxuXHJcblxyXG4gIFxyXG5cclxuLy8gVGhpcyBkZWZhdWx0IGV4cG9ydCBpcyByZXF1aXJlZCBpbiBhIG5ldyBgcGFnZXMvX2FwcC5qc2AgZmlsZS5cclxuY2xhc3MgTXlBcHAgZXh0ZW5kcyBBcHB7XHJcbiAgc3RhdGUgPSB7XHJcbiAgICBjdXN0b21lcjonJyxcclxuICAgIGNhcnQgOiBbXSxcclxuICAgIGNhcnR0b3RhbCA6IDBcclxufVxyXG5cclxuXHJcblxyXG5jb21wb25lbnREaWRNb3VudCgpe1xyXG50aGlzLmNoYXQoKTtcclxuIChhc3luYygpPT57XHJcbiAgICAgLy9nZXQgY2FydCBpdGVtcyBmcm9tIGxvY2FsIHN0b3JhZ2VcclxuICBjb25zdCBjYXJ0ID0gSlNPTi5wYXJzZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY2FydCcpKTtcclxuICBcclxuICAvL2dldCBjYXJ0IHRvdGFsXHJcbiAgY29uc3QgY2FydHRvdGFsID0gSlNPTi5wYXJzZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG90YWwnKSk7XHJcbmNvbnN0IGN1c3RvbWVyID1hd2FpdCB0aGlzLmZldGNoQ3VzdG9tZXIoKTtcclxuY29uc29sZS5sb2coY3VzdG9tZXIpO1xyXG4gIGlmIChjYXJ0KSB7XHJcbiAgICB0aGlzLnNldFN0YXRlKHtcclxuICAgICAgY3VzdG9tZXI6Y3VzdG9tZXIsXHJcbiAgICAgICBjYXJ0OmNhcnQsXHJcbiAgICAgICBjYXJ0dG90YWw6Y2FydHRvdGFsXHJcbiAgICB9KTtcclxuICB9XHJcbiAgfSkoKTtcclxuIFxyXG59O1xyXG5cclxuZmV0Y2hDdXN0b21lciA9IGFzeW5jICgpPT57XHJcbiAgY29uc3QgY3VzdG9tZXJJZCA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdjdXN0b21lcklkJyk7XHJcbiAgXHJcbiAgICBjb25zb2xlLmxvZyhjdXN0b21lcklkKTtcclxuICAgIGNvbnN0IHVybCA9IFwiaHR0cDovL2xvY2FsaG9zdDo0MDAwL2N1c3RvbWVyL1wiK2N1c3RvbWVySWQ7XHJcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCh1cmwsIHtcclxuICAgICAgaGVhZGVyczoge1xyXG4gICAgICAgIFwiQXV0aG9yaXphdGlvblwiOiBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG9rZW4nKVxyXG4gICAgfX0pO1xyXG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XHJcbiAgICBjb25zdCBjdXN0b21lciA9IGRhdGEuZGF0YTtcclxuICAgIGNvbnNvbGUubG9nKGN1c3RvbWVyKTtcclxuICByZXR1cm4gY3VzdG9tZXI7XHJcblxyXG59XHJcblxyXG4vL2FkZCBhIHByb2R1Y3QgdG8gY2FydFxyXG5hZGRUb0NhcnQgPSBhc3luYyAocHJvZHVjdCkgPT4ge1xyXG5cclxuICAvL2NoZWNrIGlmIHByb2R1Y3QgaXMgaW4gY2FydCBhbHJlYWR5IGFuZCBhZGQgdG8gcXVhbnRpdHlcclxuICBpZihwcm9kdWN0LnF1YW50aXR5KXtcclxuICAgIGNvbnNvbGUubG9nKFwiZm91bmQgcHJvZHVjdFwiKTtcclxuICAgICAgbGV0IHByb2R1Y3RIb2xkZXIgPSBcIlwiO1xyXG4gICBmb3IobGV0IGk9MDsgaTx0aGlzLnN0YXRlLmNhcnQubGVuZ3RoOyBpKyspe1xyXG4gICAgICAgaWYodGhpcy5zdGF0ZS5jYXJ0W2ldLmlkID09IHByb2R1Y3QuaWQgKXtcclxuXHJcbiAgICAgICAgIC8vY29weSB0aGUgcHJvZHVjdCBmcm9tIGNhcnQgaW4gdGhlIHN0YXRlXHJcbiAgICAgICAgICAgICAgIHByb2R1Y3RIb2xkZXIgPSB0aGlzLnN0YXRlLmNhcnRbaV07XHJcbiAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKHRoaXMuc3RhdGUuY2FydFtpXSk7XHJcbiAgICAgICAgICAgICAgIC8vcmVtb3ZlIHRoZSBwcm9kdWN0IGZyb20gY2FydCBpbiB0aGUgc3RhdGVcclxuICAgICAgICAgICAgIHRoaXMuc3RhdGUuY2FydC5zcGxpY2UoaSk7XHJcbiAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKFwiY2FydDogXCIgKyBwcm9kdWN0SG9sZGVyKTtcclxuICAgICAgICAgICAgICAvL3JlLWFkZCB0aGUgcHJvZHVjIHRvIHN0YXRlIGNhcnQgYWZ0ZXIgaW5jcmVtZW50aW5nIHRoZSBxdWFudGl0eVxyXG4gICAgICAgICAgICAgICBwcm9kdWN0SG9sZGVyLnF1YW50aXR5ICs9IDE7XHJcbiAgICAgICAgICAgICAgIGF3YWl0IHRoaXMuc2V0U3RhdGUoe1xyXG4gICAgICAgICAgICAgICAgIGNhcnQ6IFsuLi50aGlzLnN0YXRlLmNhcnQsIHByb2R1Y3RIb2xkZXJdXHJcbiAgICAgICAgICAgICB9KTtcclxuICAgICAgICAgICAgIC8vc2F2ZSB0byBsb2NhbCBzdG9yYWdlXHJcbiAgICAgICAgICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgnY2FydCcsIEpTT04uc3RyaW5naWZ5KHRoaXMuc3RhdGUuY2FydCkpO1xyXG4gICAgICAgICAgICAgXHJcbiAgICAgICAgICAgICAgIGJyZWFrO1xyXG4gICAgICAgfVxyXG5cclxuICAgICAgXHJcbiAgIFxyXG4gICAgfVxyXG4gICB9XHJcbmVsc2V7XHJcbiAgcHJvZHVjdC5xdWFudGl0eSA9IDE7XHJcbiAgYXdhaXQgdGhpcy5zZXRTdGF0ZSh7XHJcbiAgICBjYXJ0OiBbLi4udGhpcy5zdGF0ZS5jYXJ0LCBwcm9kdWN0XVxyXG59KTtcclxuLy9zYXZlIHRvIGxvY2FsIHN0b3JhZ2VcclxubG9jYWxTdG9yYWdlLnNldEl0ZW0oJ2NhcnQnLCBKU09OLnN0cmluZ2lmeSh0aGlzLnN0YXRlLmNhcnQpKTtcclxufVxyXG59XHJcblxyXG5jYWxjdWxhdGVUb3RhbCA9IGFzeW5jIChwcmljZSkgPT4ge1xyXG4gIGF3YWl0IHRoaXMuc2V0U3RhdGUoe1xyXG4gICAgY2FydHRvdGFsOiB0aGlzLnN0YXRlLmNhcnR0b3RhbCArIHByaWNlXHJcbiAgfSk7XHJcbiAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oJ3RvdGFsJywgSlNPTi5zdHJpbmdpZnkodGhpcy5zdGF0ZS5jYXJ0dG90YWwpKTtcclxufVxyXG5cclxucmVtb3ZlRnJvbVRvdGFsID0gYXN5bmMgKHByb2R1Y3QpID0+IHtcclxuICBsZXQgcHJvZHVjZFRvUmVtb3ZlID0gdGhpcy5zdGF0ZS5jYXJ0LmZpbHRlcihpdGVtID0+IGl0ZW0uaWQgPT09IHByb2R1Y3QuaWQpO1xyXG5cclxuICBpZih0aGlzLnN0YXRlLmNhcnR0b3RhbCA+PSAxICYmIHByb2R1Y2RUb1JlbW92ZSApe1xyXG4gIGF3YWl0ICB0aGlzLnNldFN0YXRlKHtcclxuICAgIGNhcnR0b3RhbDogdGhpcy5zdGF0ZS5jYXJ0dG90YWwgLSBwcm9kdWN0LnByaWNlXHJcbiAgfSk7XHJcbiAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oJ3RvdGFsJywgSlNPTi5zdHJpbmdpZnkodGhpcy5zdGF0ZS5jYXJ0dG90YWwpKTtcclxuICB9XHJcbiAgXHJcbn1cclxuXHJcbnJlbW92ZUZyb21DYXJ0ID0gYXN5bmMgKHByb2R1Y3QpPT57XHJcbiAgY29uc29sZS5sb2coXCJwcm9kdWN0OiBcIitwcm9kdWN0LmlkKTtcclxuICBsZXQgbmV3Q2FydCA9IHRoaXMuc3RhdGUuY2FydC5maWx0ZXIoaXRlbSA9PiBpdGVtLmlkICE9PSBwcm9kdWN0LmlkKTtcclxuIGF3YWl0IHRoaXMuc2V0U3RhdGUoe1xyXG4gICAgY2FydDpuZXdDYXJ0XHJcbn0pO1xyXG4vL3NhdmUgdG8gbG9jYWwgc3RvcmFnZVxyXG5jb25zb2xlLmxvZyhuZXdDYXJ0Lmxlbmd0aCk7XHJcbmxvY2FsU3RvcmFnZS5zZXRJdGVtKCdjYXJ0JywgSlNPTi5zdHJpbmdpZnkodGhpcy5zdGF0ZS5jYXJ0KSk7XHJcbn1cclxuXHJcbi8vc2V0IGN1c3RvbWVyIHRvIHVwZGF0ZSBzdGF0ZSBhbmQgY29udGV4dFxyXG5zZXRDdXN0b21lciA9ICh2YWwpID0+e1xyXG5cclxuICBjb25zb2xlLmxvZyhcIlNldEN1c3RvbWVyOiBcIit2YWwpO1xyXG4gIHRoaXMuc2V0U3RhdGUoXHJcbiAgICB7XHJcbiAgICAgIGN1c3RvbWVyOiB2YWxcclxuICAgIH1cclxuICApO1xyXG59XHJcblxyXG5jaGF0ID0gKCk9PntcclxuICB2YXIgVGF3a19BUEk9VGF3a19BUEl8fHt9LCBUYXdrX0xvYWRTdGFydD1uZXcgRGF0ZSgpO1xyXG4gIChmdW5jdGlvbigpe1xyXG4gIHZhciBzMT1kb2N1bWVudC5jcmVhdGVFbGVtZW50KFwic2NyaXB0XCIpLHMwPWRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKFwic2NyaXB0XCIpWzBdO1xyXG4gIHMxLmFzeW5jPXRydWU7XHJcbiAgczEuc3JjPSdodHRwczovL2VtYmVkLnRhd2sudG8vNWYxMmZlMjg3MjU4ZGMxMThiZWU3YmU4L2RlZmF1bHQnO1xyXG4gIHMxLmNoYXJzZXQ9J1VURi04JztcclxuICBzMS5zZXRBdHRyaWJ1dGUoJ2Nyb3Nzb3JpZ2luJywnKicpO1xyXG4gIHMwLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKHMxLHMwKTtcclxuICB9KSgpO1xyXG59XHJcblxyXG5cclxucmVuZGVyKCl7IGNvbnN0IHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfSA9IHRoaXMucHJvcHNcclxuICAgICAgcmV0dXJuKFxyXG4gPGFwcENvbnRleHQuUHJvdmlkZXIgdmFsdWU9e3tjYXJ0OiB0aGlzLnN0YXRlLmNhcnQsIGN1c3RvbWVyOnRoaXMuc3RhdGUuY3VzdG9tZXIsIHNldEN1c3RvbWVyOnRoaXMuc2V0Q3VzdG9tZXIsIGFkZFRvQ2FydDogdGhpcy5hZGRUb0NhcnQsIHRvdGFsOiB0aGlzLmNhbGN1bGF0ZVRvdGFsLCByZW1vdmVGcm9tQ2FydDogdGhpcy5yZW1vdmVGcm9tQ2FydCwgcmVtb3ZlRnJvbVRvdGFsOiB0aGlzLnJlbW92ZUZyb21Ub3RhbCwgY2FydHRvdGFsOiB0aGlzLnN0YXRlLmNhcnR0b3RhbH19PlxyXG48TGF5b3V0PlxyXG4gICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+IFxyXG5cclxuICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcclxuICAgICAgKixcclxuICAgICAgKjo6YmVmb3JlLFxyXG4gICAgICAqOjphZnRlciB7XHJcbiAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgICAgfVxyXG4gICAgYH08L3N0eWxlPlxyXG48L0xheW91dD5cclxuPC9hcHBDb250ZXh0LlByb3ZpZGVyPlxyXG4gICkgIFxyXG4gICAgfVxyXG5cclxuXHJcbiAgIFxyXG59XHJcblxyXG5cclxuZXhwb3J0IGRlZmF1bHQgTXlBcHA7Il19 */\n/*@ sourceURL=C:\\\\Users\\\\User PC\\\\workspace\\\\jomed\\\\jomed-pharmacy\\\\pages\\\\_app.js */")));
   }
 
 }
@@ -3822,6 +3838,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "styled-jsx/style":
+/*!***********************************!*\
+  !*** external "styled-jsx/style" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
 
 /***/ }),
 

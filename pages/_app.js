@@ -155,10 +155,20 @@ render(){ const { Component, pageProps } = this.props
  <appContext.Provider value={{cart: this.state.cart, customer:this.state.customer, setCustomer:this.setCustomer, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
 <Layout>
    <Component {...pageProps} /> 
+
+   <style jsx global>{`
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+    `}</style>
 </Layout>
 </appContext.Provider>
   )  
     }
+
+
    
 }
 

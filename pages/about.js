@@ -23,7 +23,7 @@ Here at our pharmacy, we treat our customers like family. We would gladly assist
  <h1>Values</h1>   
    <h3>Integrity</h3>
    <p>Our promise is our most vital asset – our word is our bond. We honor our commitments to our different stakeholders against adversity We act with honesty and integrity, not compromising the truth</p>
-   <h3>People Focus A people</h3>
+   <h3>People Focused on people</h3>
 
 <p>centric company that promotes teamwork & development Choosing the best people for our work, employing the best available practices, and always challenging ourselves to improve through innovation, strategic planning, collaboration, and teamwork
 </p>

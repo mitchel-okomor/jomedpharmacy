@@ -19,7 +19,7 @@ const reducer = (state, { field, value }) => {
   return { ...state, [field]: value };
 };
 
-const Login = (props) => {
+const Login = () => {
 
   const {setCustomer } = useContext(appContext);
 
@@ -71,27 +71,28 @@ const Login = (props) => {
         <form className={css.login}>
           <fieldset>
             <legend>Login:</legend>
-            <label for="email-address">Email:</label> <br />
+            <label for="email">Email:</label> <br />
             <input
               type="email"
-              id="email-address"
+              id="email"
               name="email"
               value={email}
               onChange={handleChange}
             />
             <br />
-            <label for="login-password">password:</label> <br />
+            <label for="password">password:</label> <br />
             <input
               type="password"
-              id="login-password"
+              id="password"
               name="password"
               value={password}
               onChange={handleChange}
             /> <br />
             <button onClick={handleSubmit}>Submit</button>
             <br/>           
-  <div>{message}</div>
-  <div className={css.password}><Link href="/forgtpassword"><a>forgot Password</a></Link> </div>
+  <div className={css.message}>{message}</div>
+
+  <div className={css.password}><Link href="/resetpassword"><a>forgot Password</a></Link> </div>
           </fieldset>
         </form>
       </div>

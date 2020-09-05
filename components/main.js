@@ -54,6 +54,18 @@ const Main = () => {
                  </div>
          </div>
          <div className={css.third}>
+<div>
+ <h2>What makes our services the best?</h2>
+ <p>We lend you a hand in choosing the the better and best options for your health needs. we also make ourselves well recognised throug our:</p>
+ <ul>
+   <li>Friendly and courteous staffs</li>
+   <li>Prompt and efficient customer service</li>
+   <li>Experienced and knowlegdeable pharmacist</li>
+ </ul>
+</div>
+<div>
+  second
+</div>
 
          </div>
     </main>

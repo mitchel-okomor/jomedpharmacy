@@ -13,11 +13,13 @@ const Product = ({product}) => {
   <Link href="/products/[id]" as={`/products/${product.product_id}`}>
        <a>       
      
-          <div className="card" style={{width: "18rem"}}>
+          <div className={css.card} style={{width: "18rem"}}>
             <img src={product.image? product.image :  "/product.png"} className="card-img-top" alt=""/>
             <div className="card-body">
-              <b className="card-title">{product.name}</b><br />
-              <b className="card-title">$ {product.price}</b>
+              <b className={css.title}>{product.name}</b><br />
+              <b className={css.title}>$ {product.price}</b>
+              <br />
+              <button>View item</button>
             </div>
          
       </div>

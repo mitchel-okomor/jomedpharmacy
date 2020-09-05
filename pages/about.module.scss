@@ -12,26 +12,32 @@
 .img{
     text-align: center;
     margin: auto;
-    background-color: transparent;
+    background-color:rgba(3, 34, 2, 0.787);
+    width: 100%;
 }
 
     h1{
         display: flex;
-        justify-content: center;
-      color: $primary-color;   
-width: 20%;
+      color: rgba(3, 34, 2, 0.787);   
+width: 50%;
 border-radius: 2em;
+font-size: 2em;
+padding-left: 2em;
+padding-top:1em;
     }
 
     div{
         padding: 0em 0.5em 0.5em 1em;
         border-radius: 1.5em;
-        background-color: white;
         margin-top: 3em;
+        margin-left: 5em;
 text-align: start; 
+width: 70%;
 
 h3{
-    color: rgba(0, 119, 255, 0.644);
+    color: rgba(3, 34, 2, 0.527);
+    font-size: x-large;;
+
 }
  }
 }
