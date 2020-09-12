@@ -41,3 +41,35 @@ h3{
 }
  }
 }
+
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+ img{
+     width: 100%;
+ }
+
+ .about{
+    margin-top: 1em;
+       padding: $page-padding;
+       box-sizing: border-box;
+
+       div{
+        padding: 0em 0.2em 0.2em 0.5em;
+        border-radius: 1.5em;
+        margin-top: 3em;
+        margin-left: 0.3em;
+text-align: start; 
+width: 100%;
+}
+
+h1{
+    padding-top: 0.3em;
+    width: 100%;
+    padding: 0.2em;
+}
+
+ }
+
+
+
+}

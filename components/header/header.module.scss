@@ -120,4 +120,11 @@ font-weight:600;
 
 
   
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+ 
+    .header{
+        display: none;
+    }
+}
  

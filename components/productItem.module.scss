@@ -49,9 +49,15 @@ border-radius: 0.3em;
     .remove:hover{
         color: red;
         border: 2px solid red;
+        width: fit-content;
+        height: 2em;
+
     }
     .add:hover{
         color:blue;
         border: 2px solid blue;
+        width: fit-content;
+        height: 2em;
+
     }
 }

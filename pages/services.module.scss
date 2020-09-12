@@ -31,7 +31,7 @@ padding: 1em;
 
         img{
             width: 70%;
-            height: 17em;
+            height: auto;
             border-radius: 1em;
         }
     }
@@ -59,4 +59,39 @@ padding: 1em;
             cursor: pointer;
         }
     }
+
 }
+
+
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+    .services{
+        text-align: center;
+        margin: auto;
+        padding: $page-padding;
+        box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: large;
+    line-height: 1.5em;
+
+    div{
+        padding: 0.2em;
+        border-radius: 1.5em;
+        background-color: $div-background;
+        margin: 0.03em;
+        text-align: start;
+
+
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 1em;
+        }
+    }
+    .sidebar{
+        border: 0.2em solid gray;
+        height: 28em;
+      
+}
+    }}

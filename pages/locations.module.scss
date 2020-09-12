@@ -25,3 +25,19 @@ min-height: 25em;
         }
     }
 }
+
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+ 
+    .locations{
+       
+        display: block;
+
+        div{
+            padding: 0.4em;
+            border-radius: 0.4em;
+        
+            margin: 0.3em;
+    }
+}
+}

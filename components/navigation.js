@@ -1,11 +1,40 @@
 import css from './navigation.module.scss';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
+import {useEffect} from 'react';
 
  const Navigation = () =>{
-     const router = useRouter();
+
+ useEffect(()=>{
+       let list, i;
+     list = document.querySelectorAll("i.icon");
+     console.log(list);
+      for (i = 0; i < list.length; i++) {
+        list[i].classList.add('fa');
+        list[i].classList.add('fa-bar');
+      }
+     },[]);
+
+  const router = useRouter();
+
+    
+     function togleNav() {
+      let elem = document.getElementsByClassName("togle_nav")[0];
+      elem.style.display === "block"?elem.style.display = "none":elem.style.display = "block";
+      }
+
+      function myFunction(x) {
+        togleNav();
+        x.target.classList.toggle(css.change);
+      }
     return(
-        <nav className={css.nav}>
+      <div className={css.nav_container}>
+<div class={css.container} onClick={myFunction}>
+  <div class={css.bar1}></div>
+  <div class={css.bar2}></div>
+  <div class={css.bar3}></div>
+</div>
+        <nav className={`${css.nav} togle_nav`} >
         <ul >
             <li className={router.pathname == "/"? css.active:""}>
             <Link href="/" >Home</Link>
@@ -35,6 +64,7 @@ import {useRouter} from 'next/router';
             </ul>
 
         </nav>
+        </div>
     )
 }
 

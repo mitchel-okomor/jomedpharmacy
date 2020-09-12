@@ -30,4 +30,44 @@ padding: 1em;
             font-size: 1.3em;
         }
     }
+
+
+
+}
+
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+    
+    .footer{
+        box-sizing: border-box;
+        min-height: 10em;
+        padding-left: 0.5em;
+        color: white;
+        background-color: $primary-color;
+     display: block;
+    
+        div{
+    margin: 1em;
+    padding: 1em;
+            background-color: transparent;
+            display: block;
+            width: 100%;
+    
+            a{
+                color:white;
+                margin-top:4em;
+                font-size: larger;
+            }
+        }
+        .stayintouch{
+            i{
+                width: 2em;
+                height: 2em;
+                font-size: 1.3em;
+            }
+        }
+    
+    
+    
+    }
 }

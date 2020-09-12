@@ -63,7 +63,7 @@ addToCart = async (product) => {
     console.log("found product");
       let productHolder = "";
    for(let i=0; i<this.state.cart.length; i++){
-       if(this.state.cart[i].id == product.id ){
+       if(this.state.cart[i].product_id === product.product_id ){
 
          //copy the product from cart in the state
                productHolder = this.state.cart[i];
@@ -97,6 +97,7 @@ localStorage.setItem('cart', JSON.stringify(this.state.cart));
 }
 
 calculateTotal = async (price) => {
+  console.log(price)
   await this.setState({
     carttotal: this.state.carttotal + price
   });
@@ -105,10 +106,10 @@ calculateTotal = async (price) => {
 
 removeFromTotal = async (product) => {
   let producdToRemove = this.state.cart.filter(item => item.id === product.id);
-
+console.log(product.quantity);
   if(this.state.carttotal >= 1 && producdToRemove ){
   await  this.setState({
-    carttotal: this.state.carttotal - product.price
+    carttotal: this.state.carttotal - (product.price * product.quantity)
   });
   localStorage.setItem('total', JSON.stringify(this.state.carttotal));
   }
@@ -116,13 +117,16 @@ removeFromTotal = async (product) => {
 }
 
 removeFromCart = async (product)=>{
-  console.log("product: "+product.id);
-  let newCart = this.state.cart.filter(item => item.id !== product.id);
+  console.log("product: "+product.product_id);
+  let newCart = this.state.cart.filter(item => item.product_id !== product.product_id);
+  
  await this.setState({
     cart:newCart
 });
+product.quantity = 0;
+
 //save to local storage
-console.log(newCart.length);
+console.log(this.state.cart.length);
 localStorage.setItem('cart', JSON.stringify(this.state.cart));
 }
 
