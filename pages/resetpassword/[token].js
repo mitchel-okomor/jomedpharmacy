@@ -1,16 +1,22 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import axios from "axios";
 import css from "./reset.module.scss";
 import { useRouter } from 'next/router';
 
-const ResetPassword = ({ valid, token }) => {
+const ResetPassword = () => {
   
   const router = useRouter();
   
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
   const [message, setMessage] = useState();
+  const [token, setToken] = useState();
+  const [valid, setValid] = useState()
 
+
+useEffect(()=>{
+  checkToken();
+})
 
   const  handleSubmit = async (event) =>{
     event.preventDefault();
@@ -37,6 +43,27 @@ setMessage("Password did not match, please check again");
   
   }
 
+
+
+  const checkToken = async ()=>{
+    const  token  = router.query.token;
+    try{
+   const res = await fetch(
+      `http://localhost:4000/verifytoken/${token}`,
+      { method: 'GET' }
+    )
+    console.log(res);
+    if(res.status === 200){
+      setToken(token);
+      setValid(true);
+         
+    }else{
+      setValid(false);
+    }
+    }catch(err){
+console.log(err);
+    }
+  }
 
     return (
     <div className={css.reset}>
@@ -82,23 +109,23 @@ setMessage("Password did not match, please check again");
     "text-align":"center"
   }
   
-  ResetPassword.getInitialProps = async ctx => {
-    const { token } = ctx.query;
-    try{
-   const res = await fetch(
-      `http://localhost:4000/verifytoken/${token}`,
-      { method: 'GET' }
-    )
-    console.log(res);
-    if(res.status === 200){
-          return { token, valid:true};
-    }else{
-      return{valid:false}
-    }
-    }catch(err){
-console.log(err);
-    }
+//   ResetPassword.getInitialProps = async ctx => {
+//     const { token } = ctx.query;
+//     try{
+//    const res = await fetch(
+//       `http://localhost:4000/verifytoken/${token}`,
+//       { method: 'GET' }
+//     )
+//     console.log(res);
+//     if(res.status === 200){
+//           return { token, valid:true};
+//     }else{
+//       return{valid:false}
+//     }
+//     }catch(err){
+// console.log(err);
+//     }
  
-  };
+//   };
   
   export default ResetPassword;

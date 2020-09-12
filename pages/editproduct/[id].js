@@ -1,8 +1,7 @@
-import React, { useState, useReducer } from "react";
+import React, { useState, useReducer,useEffect } from "react";
 import css from './editproduct.module.scss';
 import axios from "axios";
 import Loading from '../../components/loading';
-import {useEffect} from 'react';
 import Link from "next/link";
 import { useRouter } from 'next/router'
 
@@ -23,9 +22,9 @@ const reducer = (state, { field, value }) => {
 return { ...state, [field]: value  };
 };
 
-const EditProduct = ({product}) => {
+const EditProduct = () => {
     const router = useRouter()
-
+const [product, setProduct] = useState("");
     //use reducer hook to dispatch change action
   const [state, dispatch] = useReducer(reducer, initialState);
   const handleChange = (e) => {
@@ -34,13 +33,10 @@ const EditProduct = ({product}) => {
 
   //during component mounting
   useEffect(()=>{
-      
+    fetchData();   
 const customerId = localStorage.getItem("customerId");
 dispatch({field:"customerId", value:customerId}); 
-dispatch({field:"name", value:product.name}); 
-dispatch({field:"category", value:product.category}); 
-dispatch({field:"price", value:product.price}); 
-dispatch({field:"description", value:product.description}); 
+ 
   },[])
 
   //submit form data to backend server
@@ -69,7 +65,20 @@ router.push("/admin");
   };
 
 
+const fetchData = async ()=>{
+  const id = router.query.id;
+  const res = await fetch(`http://localhost:4000/product/${id}`);
+  const result = await res.json();
+  const product = result.data;
+  setProduct(product);
 
+  dispatch({field:"name", value:product.name}); 
+dispatch({field:"category", value:product.category}); 
+dispatch({field:"price", value:product.price}); 
+dispatch({field:"description", value:product.description});
+  console.log(product);
+
+}
 
 
 
@@ -139,14 +148,14 @@ return(
   );
 };
 
-EditProduct.getInitialProps = async function(context) {
-    const { id } = context.query;
-    const res = await fetch(`http://localhost:4000/product/${id}`);
-    const result = await res.json();
-    console.log(result.data);
-    const product = result.data;
-    return {product};
+// EditProduct.getInitialProps = async function(context) {
+//     const { id } = context.query;
+//     const res = await fetch(`http://localhost:4000/product/${id}`);
+//     const result = await res.json();
+//     console.log(result.data);
+//     const product = result.data;
+//     return {product};
   
-}
+// }
 
 export default EditProduct;
