@@ -1,41 +1,37 @@
 import css from './navigation.module.scss';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 
  const Navigation = () =>{
 
- useEffect(()=>{
-       let list, i;
-     list = document.querySelectorAll("i.icon");
-     console.log(list);
-      for (i = 0; i < list.length; i++) {
-        list[i].classList.add('fa');
-        list[i].classList.add('fa-bar');
-      }
-     },[]);
 
   const router = useRouter();
+const[iconText, setIconText] = useState("");
+const[iconClass, setIconClass] = useState("fa fa-bars");
 
     
      function togleNav() {
       let elem = document.getElementsByClassName("togle_nav")[0];
       elem.style.display === "block"?elem.style.display = "none":elem.style.display = "block";
-      }
 
-      function myFunction(x) {
-        togleNav();
-        x.target.classList.toggle(css.change);
-      }
+if(iconClass === "fa fa-bars")      {
+  setIconClass("");
+  setIconText("X");
+} else{
+  setIconClass("fa fa-bars");
+  setIconText("");
+}   
+
+}
+
+   
     return(
       <div className={css.nav_container}>
-<div class={css.container} onClick={myFunction}>
-  <div class={css.bar1}></div>
-  <div class={css.bar2}></div>
-  <div class={css.bar3}></div>
-</div>
-        <nav className={`${css.nav} togle_nav`} >
-        <ul >
+        <nav className={css.nav}>
+    <button className={css.icon_button} onClick={togleNav}><i class={iconClass} aria-hidden="true"></i>{iconText}</button>
+     
+        <ul className="togle_nav">
             <li className={router.pathname == "/"? css.active:""}>
             <Link href="/" >Home</Link>
             </li>

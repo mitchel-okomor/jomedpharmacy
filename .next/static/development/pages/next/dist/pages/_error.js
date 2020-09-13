@@ -838,7 +838,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 /***/ }),
 
-/***/ 23:
+/***/ 7:
 /*!*********************************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5CUser%20PC%5Cworkspace%5Cjomed%5Cjomed-pharmacy%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js&hotRouterUpdates=true ***!
   \*********************************************************************************************************************************************************************************************************************************/
@@ -861,5 +861,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[23,"static/runtime/webpack.js"]]]);
+},[[7,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

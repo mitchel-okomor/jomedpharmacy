@@ -822,26 +822,27 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 var Navigation = function Navigation() {
   var _jsx, _jsx2;
 
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    var list, i;
-    list = document.querySelectorAll("i.icon");
-    console.log(list);
-
-    for (i = 0; i < list.length; i++) {
-      list[i].classList.add('fa');
-      list[i].classList.add('fa-bar');
-    }
-  }, []);
   var router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      iconText = _useState[0],
+      setIconText = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])("fa fa-bars"),
+      iconClass = _useState2[0],
+      setIconClass = _useState2[1];
 
   function togleNav() {
     var elem = document.getElementsByClassName("togle_nav")[0];
     elem.style.display === "block" ? elem.style.display = "none" : elem.style.display = "block";
-  }
 
-  function myFunction(x) {
-    togleNav();
-    x.target.classList.toggle(_navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.change);
+    if (iconClass === "fa fa-bars") {
+      setIconClass("");
+      setIconText("X");
+    } else {
+      setIconClass("fa fa-bars");
+      setIconText("");
+    }
   }
 
   return __jsx("div", {
@@ -849,55 +850,41 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 30,
       columnNumber: 7
     }
-  }, __jsx("div", {
-    "class": _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.container,
-    onClick: myFunction,
+  }, __jsx("nav", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.nav,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
+  }, __jsx("button", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.icon_button,
+    onClick: togleNav,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32,
-      columnNumber: 1
+      columnNumber: 5
     }
-  }, __jsx("div", {
-    "class": _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.bar1,
+  }, __jsx("i", {
+    "class": iconClass,
+    "aria-hidden": "true",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 3
+      lineNumber: 32,
+      columnNumber: 60
     }
-  }), __jsx("div", {
-    "class": _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.bar2,
+  }), iconText), __jsx("ul", {
+    className: "togle_nav",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34,
-      columnNumber: 3
-    }
-  }), __jsx("div", {
-    "class": _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.bar3,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 3
-    }
-  })), __jsx("nav", {
-    className: "".concat(_navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.nav, " togle_nav"),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  }, __jsx("ul", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
       columnNumber: 9
     }
   }, __jsx("li", {
@@ -905,7 +892,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 35,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -913,14 +900,14 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 36,
       columnNumber: 13
     }
   }, "Home")), __jsx("li", (_jsx = {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropdown
   }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "className", router.pathname == "/products" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.active : ""), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "__self", _this), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx, "__source", {
     fileName: _jsxFileName,
-    lineNumber: 42,
+    lineNumber: 38,
     columnNumber: 13
   }), _jsx), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/products",
@@ -928,7 +915,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 39,
       columnNumber: 13
     }
   }, " Products  "), __jsx("div", {
@@ -936,7 +923,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 40,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -944,7 +931,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 41,
       columnNumber: 7
     }
   }, "Antibiotics"), __jsx("a", {
@@ -952,7 +939,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 42,
       columnNumber: 7
     }
   }, "Haematinics"), __jsx("a", {
@@ -960,14 +947,14 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 43,
       columnNumber: 7
     }
   }, "Suppliments"))), __jsx("li", (_jsx2 = {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.dropdown
   }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "className", router.pathname == "/services" ? _navigation_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.active : ""), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "__self", _this), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_jsx2, "__source", {
     fileName: _jsxFileName,
-    lineNumber: 50,
+    lineNumber: 46,
     columnNumber: 13
   }), _jsx2), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/services",
@@ -975,7 +962,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 47,
       columnNumber: 13
     }
   }, " Services  "), __jsx("div", {
@@ -983,7 +970,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 48,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -991,7 +978,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 49,
       columnNumber: 7
     }
   }, "Blood Pressure Check"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -999,7 +986,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 50,
       columnNumber: 7
     }
   }, "Blood Glucose Test"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1007,7 +994,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 51,
       columnNumber: 7
     }
   }, "Weigth Management Care"))), __jsx("li", {
@@ -1015,7 +1002,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 54,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1023,7 +1010,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 55,
       columnNumber: 17
     }
   }, " Locations")), __jsx("li", {
@@ -1031,7 +1018,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 57,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -1039,7 +1026,7 @@ var Navigation = function Navigation() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 58,
       columnNumber: 17
     }
   }, "  About")))));
