@@ -7376,9 +7376,9 @@ module.exports = {
 	"invisible": "invisible___28YlM",
 	"pagelink": "pagelink____jdru",
 	"nav_container": "nav_container___AArvw",
+	"icon_button": "icon_button___1Dx2y",
 	"dropbtn": "dropbtn___yJU84",
 	"dropdown_content": "dropdown_content___1VBhe",
-	"icon_button": "icon_button___1Dx2y",
 	"togle_nav": "togle_nav___3Kd6k"
 };
 

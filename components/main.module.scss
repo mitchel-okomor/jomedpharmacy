@@ -1,9 +1,11 @@
 @import '../pages/styles.scss';
+$breakpoint-tablet: 800px;
+
 
 .main{
     box-sizing: border-box;
     width: 100%;
-    margin-top: 2em;
+    margin-top: 0.2em;
     min-height: 100em;
     background: url('/background.jpg');
     background-repeat: no-repeat;
@@ -37,16 +39,12 @@ border-bottom: medium solid rgba(219, 59, 59, 0.424);
 
 }
 //main page
-$breakpoint-tablet: 800px;
 @media only screen and (max-width: $breakpoint-tablet) {
  
-.main{
-    margin-top: 10em;
-}
+
 }
 
 //Intro media query
-$breakpoint-tablet: 800px;
 @media only screen and (max-width: $breakpoint-tablet) {
  
 
@@ -103,7 +101,6 @@ border-radius: 0.5rem;
 
 
 //card media screen
-$breakpoint-tablet: 800px;
 @media only screen and (max-width: $breakpoint-tablet) {
     .cards{
         margin: 0.2em;
@@ -155,7 +152,6 @@ border-radius: 0.5rem;
 }
 
 //third media query
-$breakpoint-tablet: 800px;
 @media only screen and (max-width: $breakpoint-tablet) {
     .third{
         display: block;
@@ -189,7 +185,6 @@ $breakpoint-tablet: 800px;
     }   
 }
 //main
-$breakpoint-tablet: 800px;
 @media only screen and (max-width: $breakpoint-tablet) {
   
   .main{

@@ -40,7 +40,7 @@ $breakpoint-tablet: 800px;
     
     .footer{
         box-sizing: border-box;
-        min-height: 10em;
+        height: 35em;
         padding-left: 0.5em;
         color: white;
         background-color: $primary-color;
@@ -50,8 +50,7 @@ $breakpoint-tablet: 800px;
     margin: 1em;
     padding: 1em;
             background-color: transparent;
-            display: block;
-            width: 100%;
+            width: 90%;
     
             a{
                 color:white;

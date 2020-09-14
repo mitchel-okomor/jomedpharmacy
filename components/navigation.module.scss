@@ -10,6 +10,10 @@ $nav-font-size:1.5em;
 
  
 
+  .icon_button{
+display: none;
+  }
+ 
 
 .nav{
     box-sizing: border-box;
@@ -152,13 +156,15 @@ $breakpoint-tablet: 800px;
  
 
  .icon_button{
-   width: 2em;
-   height: 2em;
+   width: 1.3em;
+   height: 1.3em;
+   margin-right:0.2em ;
    float: right;
    border: none;
    font-size: x-large;
    font-weight: bold;
    background-color: transparent;
+   display: block;
  }
 
 

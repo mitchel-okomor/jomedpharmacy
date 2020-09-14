@@ -73,3 +73,17 @@ button:hover{
   height: 52px;
   width: 210px;
 }
+
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+ 
+*{
+  box-sizing: border-box;
+margin: 0;
+padding:0;
+}
+div{
+  margin: 0;
+  padding:0; 
+}
+}
