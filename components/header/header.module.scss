@@ -120,11 +120,84 @@ font-weight:600;
 
 
   
-$breakpoint-tablet: 800px;
 @media only screen and (max-width: $breakpoint-tablet) {
  
     .header{
+        height: 3em; 
+        width: 100%;
+        padding: 0.3em;
+        margin: 0;
+        box-sizing: border-boxyy;
+        img{
+            width: 2.5em;
+        }
+        
+        .logo{
+            display: none;
+        }
+        .activity{
+            display: none;
+        }
+    }
+
+    
+    .mobile{
+        display: flex;
+width: 100%;
+justify-content: space-between;
+
+        
+        .activity{
+            display: flex;
+            justify-content: space-between;
+            margin: 2em;  
+           height: 3em; 
+           border-radius: 6px;
+               padding: 10px;
+               font-size: larger;
+               background-color: $primary-color;
+     
+    
+        .cart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            a{
+                padding-left: 10px;
+                color: white;
+    
+            }
+    
+    
+        }
+        .user{
+            display: flex;
+            align-items: center; 
+            margin-right: 2em;
+            position: relative;
+          width: fit-content;
+
+            a{
+                padding-left: 10px;
+                color: white;
+            }
+    
+          
+              }
+                   
+        }
+      
+    
+    
+        
+        }
+    }
+
+ 
+@media only screen and (min-width: $breakpoint-tablet) {
+ 
+    .mobile{
         display: none;
     }
 }
- 

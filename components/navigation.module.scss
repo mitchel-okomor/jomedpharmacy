@@ -157,7 +157,7 @@ $breakpoint-tablet: 800px;
 
  .icon_button{
    width: 1.3em;
-   height: 1.3em;
+   height: 1.6em;
    margin-right:0.2em ;
    float: right;
    border: none;
@@ -185,10 +185,11 @@ $breakpoint-tablet: 800px;
 
     }
     ul{
+
       width: 100%;
         text-decoration: none;
         list-style: none;
-        display: block;    
+        display: none;    
         background-color: $primary-color;
         color: #f1f1f1;
 margin: 0;

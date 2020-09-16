@@ -38,3 +38,12 @@
         }
     }
 }
+
+  
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+ 
+    .search{
+        display: none;
+    }
+}
