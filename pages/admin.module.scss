@@ -84,7 +84,8 @@ form{
         text-transform: uppercase;
         background-color: black;
         color: white;
-    
+        font-size: 0.8em;
+
       }
       
       tr:nth-child(even) {
@@ -95,6 +96,7 @@ form{
 
 tr{
   height: 3em;
+  font-size: 0.8em;
 }
    
 }
@@ -111,4 +113,84 @@ table {
     border-collapse: collapse;
   
   }
+}
+
+
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+  .table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+    tbody{
+      font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+ 
+    button{
+      width: fit-content;
+      height: 2em;
+      font-size: 0.9em;
+      margin-top: 0.2em !important;
+}
+
+  
+  td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    width: fit-content;
+  }
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    width: 100%;
+
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  
+
+tr{
+height: 1em;
+font-size: 0.7em;
+width: fit-content;
+
+}
+
+}
+
+table {
+counter-reset: rowNumber;
+}
+
+
+table tr::before {
+display: table-cell;
+counter-increment: rowNumber;
+content: counter(rowNumber) ".";
+text-align: right;
+border-collapse: collapse;
+
+}
+
+.admin{
+  min-height: 25em;
+  margin: 0.2em;
+}
+
+
+.add_product{
+  margin-top: 0 !important;
+}
 }
