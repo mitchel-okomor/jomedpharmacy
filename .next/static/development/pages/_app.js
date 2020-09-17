@@ -1524,7 +1524,7 @@ var prescription = function prescription(props) {
     }
   }), __jsx("button", {
     type: "submit",
-    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.btn,
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.submit_btn,
     onClick: handleSubmit,
     __self: _this,
     __source: {

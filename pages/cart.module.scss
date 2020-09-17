@@ -48,3 +48,56 @@
   }
 }
 
+
+$breakpoint-tablet: 800px;
+@media only screen and (max-width: $breakpoint-tablet) {
+  .cart{
+    margin: 0.3em;
+    margin-top: 4em;
+min-height: 25em;
+    .table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 90%;
+      tbody{
+        font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      }
+    }
+    
+    td {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+      font-size: larger;
+    }
+    th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+      text-transform: uppercase;
+      background-color: black;
+      color: white;
+  
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  
+    .checkout{
+    border-radius: 0.3em;
+     padding: 0.3em;
+     font-size: 1.5em;
+      color:white;
+      font-weight: 600;
+      background-color: $primary-color;
+    }
+    .total{
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+}
+
+}

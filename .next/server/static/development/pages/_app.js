@@ -7856,7 +7856,7 @@ const prescription = props => {
     }
   }), __jsx("button", {
     type: "submit",
-    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.btn,
+    className: _prescription_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.submit_btn,
     onClick: handleSubmit,
     __self: undefined,
     __source: {
@@ -9448,6 +9448,7 @@ module.exports = {
 	"chatopen": "chatopen___yNv89",
 	"formcontainer": "formcontainer___244JH",
 	"heading": "heading___3qTZh",
+	"submit_btn": "submit_btn___1VuyI",
 	"cancel": "cancel___20Iow"
 };
 

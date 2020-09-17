@@ -134,7 +134,7 @@ return(
               onChange={handleChange}
             />
             <br />
-            <button type="submit" className={css.btn}  onClick={handleSubmit}>Submit</button>
+            <button type="submit" className={css.submit_btn}  onClick={handleSubmit}>Submit</button>
             <br />
             <button  className={css.cancel} onClick={toggleChat}>close</button>
           </fieldset>

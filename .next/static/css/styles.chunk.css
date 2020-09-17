@@ -29191,9 +29191,10 @@ button:hover {
         margin: 0 !important;
         padding: 0 !important; }
       .nav_container___AArvw .mobile___2C8OZ .mobile_cart___2SuDE span {
-        font-size: 0.3em !important; }
+        font-size: 0.3em !important;
+        margin-left: 0.2em; }
       .nav_container___AArvw .mobile___2C8OZ .mobile_cart___2SuDE img {
-        width: 0.7em !important;
+        width: 0.65em !important;
         height: 0.5em; }
     .nav_container___AArvw .mobile___2C8OZ img {
       width: 1.5em;
@@ -43827,6 +43828,9 @@ button:hover {
   /* Add some hover effects to buttons */ }
   .formcontainer___244JH fieldset {
     border: none; }
+  .formcontainer___244JH label {
+    margin: 0;
+    padding: 0; }
   .formcontainer___244JH .heading___3qTZh {
     background-color: #0084ff;
     margin: 0;
@@ -43856,14 +43860,14 @@ button:hover {
   .formcontainer___244JH textarea:focus {
     background-color: #ddd;
     outline: none; }
-  .formcontainer___244JH .btn___31ijb {
+  .formcontainer___244JH .submit_btn___1VuyI {
     background-color: #12A63E;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em !important;
     margin-left: 0; }
   .formcontainer___244JH .cancel___20Iow {
     background-color: red;
@@ -43876,6 +43880,25 @@ button:hover {
     margin-left: 0; }
   .formcontainer___244JH .btn___31ijb:hover, .formcontainer___244JH .openbutton___1JJgq:hover {
     opacity: 1; }
+
+@media only screen and (max-width: 800px) {
+  input {
+    width: 100%;
+    padding: 5px;
+    margin: 2px 0 5px 0;
+    border-radius: 0.2em;
+    border: none;
+    resize: none;
+    height: 1.5em;
+    background: #f1f1f1ed; }
+  textarea {
+    width: 100%;
+    margin: 5px 0 22px 0;
+    border-radius: 0.2em;
+    border: none;
+    background: #f1f1f1ed;
+    resize: none;
+    min-height: 6em !important; } }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
@@ -58388,6 +58411,44 @@ button:hover {
   .cart___2L3IN .total___1pZqN {
     font-size: 1.5em;
     font-weight: 600; }
+
+@media only screen and (max-width: 800px) {
+  .cart___2L3IN {
+    margin: 0.3em;
+    margin-top: 4em;
+    min-height: 25em; }
+    .cart___2L3IN .table___3GttJ {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 90%; }
+      .cart___2L3IN .table___3GttJ tbody {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%; }
+    .cart___2L3IN td {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+      font-size: larger; }
+    .cart___2L3IN th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+      text-transform: uppercase;
+      background-color: black;
+      color: white; }
+    .cart___2L3IN tr:nth-child(even) {
+      background-color: #dddddd; }
+    .cart___2L3IN .checkout___zJ0Aj {
+      border-radius: 0.3em;
+      padding: 0.3em;
+      font-size: 1.5em;
+      color: white;
+      font-weight: 600;
+      background-color: #12A63E; }
+    .cart___2L3IN .total___1pZqN {
+      font-size: 1.5em;
+      font-weight: 600; } }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
