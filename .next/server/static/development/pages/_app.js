@@ -2063,91 +2063,12 @@ const Header = () => {
       lineNumber: 19,
       columnNumber: 13
     }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/account",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 4
-    }
-  }, __jsx("img", {
-    src: "/user.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 26
-    }
-  })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/account",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 5
-    }
-  }, __jsx("a", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 27
-    }
-  }, customer ? customer.name : "")), //check if user is admin
-  !customer || !Boolean(Number(customer.is_admin)) ? __jsx("div", {
-    className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cart,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 9
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/cart",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 28
-    }
-  }, __jsx("img", {
-    src: "/cart.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 31
-    }
-  }), " ")), cart.length) : __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/account",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 17
-    }
-  }, __jsx("a", {
-    className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.admin_link,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 39
-    }
-  }, "Admin Panel"))), __jsx("div", {
+  }), __jsx("div", {
     className: _header_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.logo,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 26,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -2155,7 +2076,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 27,
       columnNumber: 11
     }
   }, __jsx("img", {
@@ -2163,14 +2084,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 27,
       columnNumber: 23
     }
   }), " ")), __jsx(_search__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 29,
       columnNumber: 1
     }
   }), __jsx("div", {
@@ -2178,7 +2099,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 31,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -2187,7 +2108,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 32,
       columnNumber: 5
     }
   }, __jsx("img", {
@@ -2195,7 +2116,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 33,
       columnNumber: 5
     }
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2203,14 +2124,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 33,
       columnNumber: 28
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 33,
       columnNumber: 50
     }
   }, customer ? customer.name : "Login/Signup")), customer && !Boolean(Number(customer.is_admin)) ? __jsx("div", {
@@ -2218,21 +2139,21 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 38,
       columnNumber: 60
     }
   }, __jsx("ul", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 39,
       columnNumber: 3
     }
   }, __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 40,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2240,14 +2161,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 40,
       columnNumber: 9
     }
   }, "My account"), " "), __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 41,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2255,14 +2176,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 41,
       columnNumber: 9
     }
   }, "Personal information"), " "), __jsx("li", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 42,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2270,7 +2191,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 42,
       columnNumber: 9
     }
   }, "Order history"), " "), __jsx("li", {
@@ -2278,7 +2199,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 43,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2286,7 +2207,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 43,
       columnNumber: 32
     }
   }, "Log Out"), " "))) : customer && Boolean(Number(customer.is_admin)) ? __jsx("div", {
@@ -2294,14 +2215,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 45,
       columnNumber: 58
     }
   }, " ", __jsx("ul", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 45,
       columnNumber: 93
     }
   }, " ", __jsx("li", {
@@ -2309,7 +2230,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 45,
       columnNumber: 98
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2317,7 +2238,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 45,
       columnNumber: 125
     }
   }, "Log Out"), " "))) : ""), //check if user is admin
@@ -2326,7 +2247,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 53,
       columnNumber: 9
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2334,14 +2255,14 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 54,
       columnNumber: 9
     }
   }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 54,
       columnNumber: 28
     }
   }, __jsx("img", {
@@ -2349,7 +2270,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 54,
       columnNumber: 31
     }
   }), " ")), cart.length) : __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2357,7 +2278,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 55,
       columnNumber: 17
     }
   }, __jsx("a", {
@@ -2365,7 +2286,7 @@ const Header = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 55,
       columnNumber: 39
     }
   }, "Admin Panel"))));
@@ -5679,6 +5600,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _appcontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./appcontext */ "./components/appcontext.js");
+/* harmony import */ var _helper_logout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helper/logout */ "./components/helper/logout.js");
 var _jsxFileName = "C:\\Users\\User PC\\workspace\\jomed\\jomed-pharmacy\\components\\navigation.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -5687,7 +5610,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
 const Navigation = () => {
+  const {
+    cart,
+    customer
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_appcontext__WEBPACK_IMPORTED_MODULE_4__["default"]);
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_3__["useRouter"])();
   const {
     0: iconText,
@@ -5716,7 +5645,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 37,
       columnNumber: 7
     }
   }, __jsx("nav", {
@@ -5724,16 +5653,111 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 38,
       columnNumber: 9
     }
-  }, __jsx("button", {
+  }, __jsx("div", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.mobile,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 7
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/account",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 7
+    }
+  }, __jsx("img", {
+    src: "/user.png",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 29
+    }
+  })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/account",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 5
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 27
+    }
+  }, customer ? customer.name : "")), //check if user is admin
+  !customer || !Boolean(Number(customer.is_admin)) ? __jsx("div", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.mobile_cart,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 9
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/cart",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 9
+    }
+  }, __jsx("img", {
+    src: "/cart.png",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 28
+    }
+  })), __jsx("span", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 57
+    }
+  }, cart.length)) : __jsx("div", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.mobile_cart,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 16
+    }
+  }, " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/account",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 50
+    }
+  }, __jsx("a", {
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.admin_link,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 72
+    }
+  }, "Admin Panel")), " "), __jsx("button", {
     className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.icon_button,
     onClick: togleNav,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 51,
       columnNumber: 5
     }
   }, __jsx("i", {
@@ -5742,15 +5766,15 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 51,
       columnNumber: 60
     }
-  }), iconText), __jsx("ul", {
+  }), iconText)), __jsx("ul", {
     className: "togle_nav",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 53,
       columnNumber: 9
     }
   }, __jsx("li", {
@@ -5758,7 +5782,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 54,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -5766,7 +5790,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 55,
       columnNumber: 13
     }
   }, "Home")), __jsx("li", {
@@ -5775,7 +5799,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 57,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -5784,7 +5808,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 58,
       columnNumber: 13
     }
   }, " Products  "), __jsx("div", {
@@ -5792,7 +5816,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 59,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -5800,7 +5824,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 60,
       columnNumber: 7
     }
   }, "Antibiotics"), __jsx("a", {
@@ -5808,7 +5832,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 61,
       columnNumber: 7
     }
   }, "Haematinics"), __jsx("a", {
@@ -5816,7 +5840,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 62,
       columnNumber: 7
     }
   }, "Suppliments"))), __jsx("li", {
@@ -5825,7 +5849,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 65,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -5834,7 +5858,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 66,
       columnNumber: 13
     }
   }, " Services  "), __jsx("div", {
@@ -5842,7 +5866,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 67,
       columnNumber: 13
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -5850,7 +5874,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 68,
       columnNumber: 7
     }
   }, "Blood Pressure Check"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -5858,7 +5882,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 69,
       columnNumber: 7
     }
   }, "Blood Glucose Test"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -5866,7 +5890,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 70,
       columnNumber: 7
     }
   }, "Weigth Management Care"))), __jsx("li", {
@@ -5874,7 +5898,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 73,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -5882,7 +5906,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 74,
       columnNumber: 17
     }
   }, " Locations")), __jsx("li", {
@@ -5890,7 +5914,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 76,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -5898,7 +5922,7 @@ const Navigation = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 77,
       columnNumber: 17
     }
   }, "  About")))));
@@ -7467,6 +7491,9 @@ module.exports = {
 	"icon_button": "icon_button___1Dx2y",
 	"dropbtn": "dropbtn___yJU84",
 	"dropdown_content": "dropdown_content___1VBhe",
+	"mobile": "mobile___2C8OZ",
+	"mobile_cart": "mobile_cart___2SuDE",
+	"mobile_cart_img": "mobile_cart_img___3_tRF",
 	"togle_nav": "togle_nav___3Kd6k"
 };
 

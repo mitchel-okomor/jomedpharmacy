@@ -153,19 +153,68 @@ background-color: $primary-color;
 
 $breakpoint-tablet: 800px;
 @media only screen and (max-width: $breakpoint-tablet) {
- 
 
- .icon_button{
+  .mobile{
+background-color: $primary-color;
+box-sizing: border-box;
+width: 100%;
+height: 1.8em;
+margin: 0 !important;
+   padding: 0.2em;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 0.5em;
+
+.mobile_cart{
+  width: 2em;
+  display: flex;
+  height: 0.8em;
+  margin-top: 0;
+box-sizing: border-box;
+padding-top: 0.2em !important;
+
+  #mobile_cart_img{
+    height: 100% !important;
+    margin:  0 !important;
+  }
+  Link{
+    height: 0.8em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  
+span{
+  font-size: 0.3em !important;
+}
+    color: white;
+    img{
+      width: 0.7em !important;
+      height: 0.5em;
+  }
+    
+}
+   img{
+    width: 1.5em ;
+    height: 1.4em;
+}
+   
+
+     .icon_button{
    width: 1.3em;
    height: 1.6em;
-   margin-right:0.2em ;
+   margin-right:1em ;
    float: right;
    border: none;
    font-size: x-large;
    font-weight: bold;
    background-color: transparent;
    display: block;
+   color: white;
  }
+
+  }
+
 
 
 
@@ -175,6 +224,8 @@ $breakpoint-tablet: 800px;
     padding:0;
     height: fit-content;
     position: fixed;
+    top:0em;
+    right: 0.1em;
     z-index: 9;
 
  
@@ -193,7 +244,7 @@ $breakpoint-tablet: 800px;
         background-color: $primary-color;
         color: #f1f1f1;
 margin: 0;
-padding:0;
+padding-left:2.2em;
 transition: 0.4s;
     
         li{ 
@@ -276,4 +327,10 @@ transition: 0.4s;
     
 }
  
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+.mobile{
+  display: none;
+}
 }

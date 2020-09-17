@@ -1,10 +1,17 @@
 import css from './navigation.module.scss';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-import {useEffect, useState} from 'react';
+import {useContext, useState} from 'react';
+import appContext from './appcontext';
+import logout from './helper/logout';
+
+
+ 
+
 
  const Navigation = () =>{
 
+  const { cart, customer } = useContext(appContext);
 
   const router = useRouter();
 const[iconText, setIconText] = useState("");
@@ -29,8 +36,20 @@ if(iconClass === "fa fa-bars")      {
     return(
       <div className={css.nav_container}>
         <nav className={css.nav}>
+      <div className={css.mobile}>
+      <Link href="/account"><img src="/user.png" /></Link> 
+    <Link href="/account"><a>{customer ? customer.name:""}</a>
+      </Link> 
+      {
+        //check if user is admin
+        !customer || !(Boolean(Number(customer.is_admin)))?
+        <div className={css.mobile_cart}>
+        <Link href="/cart"><img src="/cart.png"/></Link><span>{cart.length}</span>
+        </div>:<div className={css.mobile_cart}> <Link href="/account"><a className={css.admin_link}>Admin Panel</a></Link> </div>
+
+      }  
     <button className={css.icon_button} onClick={togleNav}><i class={iconClass} aria-hidden="true"></i>{iconText}</button>
-     
+     </div>
         <ul className="togle_nav">
             <li className={router.pathname == "/"? css.active:""}>
             <Link href="/" >Home</Link>

@@ -106,14 +106,13 @@ margin: 3em;
   
 }
 .form{
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
+display: grid;
+grid-template-columns: 50% 50%;
 width: 100%;
 }
 form{
     font-size: large;
-    margin: 4em;
+    margin: 2em 1em 1em 1em;
   fieldset{
       padding-top: 40px;
       border: medium solid $primary-color;
@@ -121,11 +120,11 @@ form{
 
 legend{
         border-radius: 5px;
-        
+        width: fit-content;
     }
     input{
         height: 40px;
-        width: 25em;
+        width: 23em;
         margin-bottom: 20px;
         margin-left: 30px;
         border: 2px solid $layout-color;

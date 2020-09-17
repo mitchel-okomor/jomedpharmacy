@@ -128,9 +128,8 @@ font-weight:600;
         padding: 0.3em;
         margin: 0;
         box-sizing: border-boxyy;
-        img{
-            width: 2.5em;
-        }
+        display: none;
+      
         
         .logo{
             display: none;
@@ -142,13 +141,13 @@ font-weight:600;
 
     
     .mobile{
-        display: flex;
+        display: none;
 width: 100%;
 justify-content: space-between;
 
         
         .activity{
-            display: flex;
+            display: none;
             justify-content: space-between;
             margin: 2em;  
            height: 3em; 

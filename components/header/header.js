@@ -17,17 +17,7 @@ const Header = () => {
 
           {/**Mobile Begin */}
             <div className={css.mobile}>
-   <Link href="/account"><img src="/user.png" /></Link> 
-    <Link href="/account"><a>{customer ? customer.name:""}</a>
-      </Link> 
-      {
-        //check if user is admin
-        !customer || !(Boolean(Number(customer.is_admin)))?
-        <div className={css.cart}>
-        <Link href="/cart"><a><img src="/cart.png"/> </a></Link>{cart.length}
-        </div>: <Link href="/account"><a className={css.admin_link}>Admin Panel</a></Link> 
-
-      }               
+               
   
                 </div> 
 
