@@ -1,9 +1,16 @@
 import css from "./main.module.scss";
 import Link from "next/link";
+import {useContext, useState, useEffect} from 'react';
+import appContext from './appcontext';
 
-const Main = () => {
+const Main = (props) => {
+
+  const {closeNav } = useContext(appContext);
+
+
+
   return (
-    <main className={css.main}>
+    <main className={css.main} onClick={closeNav}>
       <div className={css.intro}>
         <div>
           <h2>A place where your health needs are met</h2>

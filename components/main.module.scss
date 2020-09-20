@@ -55,10 +55,10 @@ text-align: center;
 justify-content: center;
 margin: auto;
 width: 100%;
-
+padding-top: 1em;
 h2{
-    padding-top: 0;
-font-size: 1.3em !important;
+    padding-top: 1.5em;
+font-size: 1.6em !important;
 }
 div{
     box-sizing: border-box;
@@ -154,6 +154,8 @@ border-radius: 0.5rem;
 
 //third media query
 @media only screen and (max-width: $breakpoint-tablet) {
+
+  
     .third{
         display: block;
       min-height: 400px;

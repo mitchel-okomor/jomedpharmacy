@@ -1,7 +1,7 @@
 import css from './navigation.module.scss';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-import {useContext, useState} from 'react';
+import {useContext, useState, useEffect} from 'react';
 import appContext from './appcontext';
 import logout from './helper/logout';
 
@@ -9,34 +9,36 @@ import logout from './helper/logout';
  
 
 
- const Navigation = () =>{
+ const Navigation = (props) =>{
 
-  const { cart, customer } = useContext(appContext);
+  const { cart, customer, icon, togleNav } = useContext(appContext);
 
   const router = useRouter();
-const[iconText, setIconText] = useState("");
-const[iconClass, setIconClass] = useState("fa fa-bars");
+// const[iconText, setIconText] = useState("");
+// const[iconClass, setIconClass] = useState("fa fa-bars");
 
     
-     function togleNav() {
-      let elem = document.getElementsByClassName("togle_nav")[0];
-      elem.style.display === "block"?elem.style.display = "none":elem.style.display = "block";
+//      function togleNav() {
+//       // let elem = document.getElementsByClassName("togle_nav")[0];
+//       // if(elem){
+//       //         elem.style.display === "block"?elem.style.display = "none":elem.style.display = "block";
 
-if(iconClass === "fa fa-bars")      {
-  setIconClass("");
-  setIconText("X");
-} else{
-  setIconClass("fa fa-bars");
-  setIconText("");
-}   
-
-}
+//       // }
+//   // if(iconClass === "fa fa-bars")      {
+//   // setIconClass("");
+//   // setIconText("X");
+//   // } else{
+//   // setIconClass("fa fa-bars");
+//   // setIconText("");
+//   // } 
+// }
 
    
     return(
-      <div className={css.nav_container}>
+      <div className={css.nav_container} >
         <nav className={css.nav}>
       <div className={css.mobile}>
+      
       <Link href="/account"><img src="/user.png" /></Link> 
     <Link href="/account"><a>{customer ? customer.name:""}</a>
       </Link> 
@@ -48,7 +50,7 @@ if(iconClass === "fa fa-bars")      {
         </div>:<div className={css.mobile_cart}> <Link href="/account"><a className={css.admin_link}>Admin Panel</a></Link> </div>
 
       }  
-    <button className={css.icon_button} onClick={togleNav}><i class={iconClass} aria-hidden="true"></i>{iconText}</button>
+    <button className={css.icon_button} onClick={togleNav}><i class={icon.class} aria-hidden="true"></i>{icon.text}</button>
      </div>
         <ul className="togle_nav">
             <li className={router.pathname == "/"? css.active:""}>

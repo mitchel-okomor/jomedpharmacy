@@ -186,6 +186,7 @@ padding-top: 0.2em !important;
   
 span{
   font-size: 0.3em !important;
+  font-weight: 300;
   margin-left: 0.2em;
 }
     color: white;
@@ -226,7 +227,7 @@ span{
     height: fit-content;
     position: fixed;
     top:0em;
-    right: 0.1em;
+    right: 0.02em;
     z-index: 9;
 
  
@@ -236,8 +237,12 @@ span{
       cursor: pointer;
 
     }
-    ul{
 
+.remove_nav{
+  display: none;
+}
+
+    ul{
       width: 100%;
         text-decoration: none;
         list-style: none;
@@ -246,8 +251,8 @@ span{
         color: #f1f1f1;
 margin: 0;
 padding-left:2.2em;
-transition: 0.4s;
-    
+  transition: 0.3s;   
+   
         li{ 
            width: fit-content;
            border-radius: 4px;  

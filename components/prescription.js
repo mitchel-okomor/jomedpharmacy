@@ -92,7 +92,7 @@ return(
       return "";
     }
   return (
-    <div className={css.prescription}>
+    <div className={css.prescription} onClick={props.closeNav}>
     <button className={button} onClick={toggleChat}>prescription</button>
     <div className={chat} id={css.myForm}>
       <br />

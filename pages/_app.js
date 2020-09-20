@@ -13,7 +13,9 @@ class MyApp extends App{
   state = {
     customer:'',
     cart : [],
-    carttotal : 0
+    carttotal : 0,
+    navValues: {class:"fa fa-bars", text:""}
+    
 }
 
 
@@ -32,7 +34,8 @@ console.log(customer);
     this.setState({
       customer:customer,
        cart:cart,
-       carttotal:carttotal
+       carttotal:carttotal,
+       navValues: {class:"fa fa-bars", text:""}
     });
   }
   })();
@@ -152,13 +155,40 @@ chat = ()=>{
   s0.parentNode.insertBefore(s1,s0);
   })();
 }
+ closeNav=()=>{
+  let elem = document.getElementsByClassName("togle_nav")[0];
+  elem.style.display = "none";
+
+  if(this.state.navValues.class === "fa fa-bars" && elem.style.display ==="block")      {
+    this.setState({navValues:{class:"", text:"X"}});
+    } else{
+    this.setState({navValues:{class:"fa fa-bars", text:""}
+       }   );
+  
+    } 
+}
+
+togleNav=()=> {
+  let elem = document.getElementsByClassName("togle_nav")[0];
+  console.log(elem);
+  elem.style.display === "block"?elem.style.display = "none":elem.style.display = "block";
+
+if(this.state.navValues.class === "fa fa-bars")      {
+  this.setState({navValues:{class:"", text:"X"}});
+  } else{
+  this.setState({navValues:{class:"fa fa-bars", text:""}}
+  );
+
+  } 
+}
+
 
 
 render(){ const { Component, pageProps } = this.props
       return(
- <appContext.Provider value={{cart: this.state.cart, customer:this.state.customer, setCustomer:this.setCustomer, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal}}>
+ <appContext.Provider value={{cart: this.state.cart, customer:this.state.customer, setCustomer:this.setCustomer, addToCart: this.addToCart, total: this.calculateTotal, removeFromCart: this.removeFromCart, removeFromTotal: this.removeFromTotal, carttotal: this.state.carttotal, closeNav:this.closeNav, togleNav:this.togleNav, icon:this.state.navValues}}>
 <Layout>
-   <Component {...pageProps} /> 
+   <Component {...pageProps}  /> 
 
    <style jsx global>{`
       *,
