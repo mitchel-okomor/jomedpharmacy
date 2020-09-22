@@ -2,9 +2,14 @@ import {useState, useEffect} from 'react';
 import axios from "axios";
 import css from "./reset.module.scss";
 import { useRouter } from 'next/router';
+import {useContext, useState, useEffect} from 'react';
+import appContext from './appcontext';
+
+
 
 const ResetPassword = () => {
-  
+    const {closeNav } = useContext(appContext);
+
   const router = useRouter();
   
   const [password, setPassword] = useState();
@@ -66,7 +71,7 @@ console.log(err);
   }
 
     return (
-    <div className={css.reset}>
+    <div className={css.reset} onClick={closeNav}>
       <br />
       <br />
         <h2 style={style}>Forget password</h2>

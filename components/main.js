@@ -10,7 +10,7 @@ const Main = (props) => {
 
 
   return (
-    <main className={css.main} onClick={closeNav}>
+    <main className={css.main} onClick={closeNav} >
       <div className={css.intro}>
         <div>
           <h2>A place where your health needs are met</h2>

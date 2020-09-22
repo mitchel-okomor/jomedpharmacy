@@ -1,8 +1,13 @@
 import css from './services.module.scss';
+import {useContext, useState, useEffect} from 'react';
+import appContext from './appcontext';
+
+
 const Services = (props)=>{
+  const {closeNav } = useContext(appContext);
 
     return(
-        <div className={css.services}>
+        <div className={css.services} onClick={closeNav}>
 
 
 <div className={css.sidebar}>

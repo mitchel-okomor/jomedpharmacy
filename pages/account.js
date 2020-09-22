@@ -10,20 +10,19 @@ import StandingOrder from "../components/standingorder";
 import StandingPrescription from "../components/standingprescription";
 import PrescriptionHistory from "../components/prescriptionhistory";
 import OrderHistory from "../components/orderhistory";
-import Admin from "./admin";
 import { useRouter } from 'next/router'
 
 
 
 
 const Account = (props) => {
-  const {customer } = useContext(appContext);
+  const {customer, closeNav } = useContext(appContext);
   const router = useRouter()
 
   //check if user is not admin
   if(customer && !(Boolean(customer.is_admin))){
    return(
-    <div className={css.container}>
+    <div className={css.container} onClick={closeNav}>
     <div className={css.account}>
 <div className={css.myaccount}>
   
@@ -69,7 +68,7 @@ const Account = (props) => {
  router.push("/admin");
  }
   return (
-<div className={css.container}>
+<div className={css.container} onClick={closeNav}>
   <br />
   <br />
   <h1 className={css.heading}>Account</h1>

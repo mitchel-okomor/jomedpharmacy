@@ -5,9 +5,9 @@ import Link from "next/link";
 
 
 const Cart = () => {
-  const { cart, carttotal } = useContext(appContext);
+  const { cart, carttotal, closeNav } = useContext(appContext);
   return (
-    <div className={css.cart}>
+    <div className={css.cart} onClick={closeNav}>
       <h3>Cart Items</h3>
       <table className={css.table}>
         <thead>

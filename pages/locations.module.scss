@@ -9,7 +9,6 @@
 width: 100%;
     div{
         padding: 1em;
-        border: 1px solid $primary-color;
         border-radius: 1.5em;
         background-color: $div-background;
         margin: 3em;
@@ -38,6 +37,10 @@ $breakpoint-tablet: 800px;
             border-radius: 0.4em;
         
             margin: 0.3em;
+
+            h1{
+               font-size: xx-large;
+            }
     }
 }
 }

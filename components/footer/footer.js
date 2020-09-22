@@ -1,10 +1,17 @@
 import css from  './footer.module.scss';
 import Link from 'next/link';
+import {useContext, useState, useEffect} from 'react';
+import appContext from './../appcontext';
+
+
+
 
 
 const Footer = () =>{
+    const {closeNav } = useContext(appContext);
+
     return(
-        <footer>
+        <footer onClick={closeNav}>
           <div className={css.footer}>
             <div>
              <h3>

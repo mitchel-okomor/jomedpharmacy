@@ -7,7 +7,7 @@ import axios from 'axios';
 
 
 const Checkout = () =>{
-    const {customer, cart } = useContext(appContext);
+    const {customer, cart, closeNav } = useContext(appContext);
     const [message, setMessage] = useState("");
     const router = useRouter()
 
@@ -40,7 +40,7 @@ if(!customer){
     <div className={css.checkout}> {message}</div>
     }
     return(
-        <div className={css.checkout}>
+        <div className={css.checkout} onClick={closeNav}>
       <h2>Web payment coming soon</h2>
       <button onClick={handleSubmit}>Submit order</button>
         </div>

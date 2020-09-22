@@ -1,9 +1,17 @@
 import css from './about.module.scss';
+import {useContext, useState, useEffect} from 'react';
+import appContext from './appcontext';
+
+
+
 
 const About = (props)=>{
 
+    const {closeNav } = useContext(appContext);
+
+
     return(
-        <div className={css.about}>
+        <div className={css.about} onClick={closeNav}>
           <div className={css.img}><img src="/aboutimage.png"/></div>
 <div>
   <h1>Mission</h1> 

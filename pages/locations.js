@@ -1,11 +1,16 @@
 import css from './locations.module.scss';
 import Map from '../components/map';
+import {useContext, useState, useEffect} from 'react';
+import appContext from '../components/appcontext';
+
+
+ 
 
 
 const Locations = (props)=>{
-
+ const {closeNav } = useContext(appContext);
     return(
-        <div className={css.locations}>
+        <div className={css.locations} onClick={closeNav}>
 
 <div>
     <h1>Address 1</h1>

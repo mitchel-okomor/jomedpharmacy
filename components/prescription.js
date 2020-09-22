@@ -24,7 +24,7 @@ return { ...state, [field]: value  };
 };
 
 const prescription = (props) => {
-  const {customer} = useContext(appContext);
+  const {customer, closeNav} = useContext(appContext);
     //use reducer hook to dispatch change action
   const [state, dispatch] = useReducer(reducer, initialState);
   const handleChange = (e) => {
@@ -92,7 +92,7 @@ return(
       return "";
     }
   return (
-    <div className={css.prescription} onClick={props.closeNav}>
+    <div className={css.prescription} onClick={closeNav}>
     <button className={button} onClick={toggleChat}>prescription</button>
     <div className={chat} id={css.myForm}>
       <br />

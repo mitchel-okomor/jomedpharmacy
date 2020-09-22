@@ -4,7 +4,7 @@ import CartContext from './appcontext';
 
 
 const ProductItem = (props) => {
-  const {cart, addToCart, removeFromCart, removeFromTotal, total } = useContext(CartContext);
+  const {cart, addToCart, removeFromCart, removeFromTotal, total, closeNav} = useContext(CartContext);
 let qtyInCart = "";
 let presentInCart = false;
 for(let i=0; i<=cart.length; i++){
@@ -19,7 +19,7 @@ console.log(presentInCart);
 
 
     return (
-       <div className={css.productItem}>
+       <div className={css.productItem} onClick={closeNav}>
          <div className={css.image}>
              <div className="card">
                <img src={props.product.image_url || "/product.png"} className="card-img-top" alt=""/>
