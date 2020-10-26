@@ -1,9 +1,8 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import axios from "axios";
 import css from "./reset.module.scss";
 import { useRouter } from 'next/router';
-import {useContext, useState, useEffect} from 'react';
-import appContext from './appcontext';
+import appContext from '../../components/appcontext';
 
 
 

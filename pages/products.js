@@ -11,7 +11,6 @@ const Products = (props)=>{
 if(props.products.length <1 ) {
   return(<div className={css.products}>
 
-   <Loading />
   </div>)
   
 }
