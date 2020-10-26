@@ -1,6 +1,6 @@
 import css from './about.module.scss';
 import {useContext, useState, useEffect} from 'react';
-import appContext from './appcontext';
+import appContext from '../components/appcontext';
 
 
 

@@ -1,6 +1,6 @@
 import css from './services.module.scss';
 import {useContext, useState, useEffect} from 'react';
-import appContext from './appcontext';
+import appContext from '../components/appcontext';
 
 
 const Services = (props)=>{
