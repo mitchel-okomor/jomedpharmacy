@@ -20,13 +20,13 @@ const Main = (props) => {
   </ol>
   <div class="carousel-inner bg-transparent">
     <div class="carousel-item pt-0 bg-transparent active  ">
-      <img class="d-block  rounded" src="/slide1.jpg" alt="First slide" />
+      <img class="d-block  rounded" src="/slide1_30.jpg" alt="First slide" />
     </div>
     <div class="carousel-item pt-0 bg-transparent">
-      <img class="d-block  rounded" src="/slide2.jpg" alt="Second slide" />
+      <img class="d-block  rounded" src="/slide2_30.jpg" alt="Second slide" />
     </div>
     <div class="carousel-item pt-0 bg-transparent">
-      <img class="d-block  rounded" src="/slide3.jpg" alt="Third slide" />
+      <img class="d-block  rounded" src="/slide3_30.jpg" alt="Third slide" />
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
