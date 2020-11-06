@@ -92,7 +92,7 @@ const Login = () => {
             <br/>           
   <div className={css.message}>{message}</div>
 
-  <div className={css.password}><Link href="/resetpassword"><a>forgot Password</a></Link> </div>
+  <div className={css.password}><Link href="/resetpassword"><a>Forgot Password</a></Link> </div>
           </fieldset>
         </form>
       </div>

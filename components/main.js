@@ -12,15 +12,33 @@ const Main = (props) => {
   return (
     <main className={css.main} onClick={closeNav} >
       <div className={css.intro}>
-        <div>
-          <h2>A place where your health needs are met</h2>
-          <p>
-            your caring and helpful pharmaceutical outlet<br />
-            Our most concern is to make sure 
-            our customers get quality <br />and
-            affordable health care.
-          </p>
-        </div>
+      <div id="carouselExampleIndicators" class="carousel pt-0 slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner bg-transparent">
+    <div class="carousel-item pt-0 bg-transparent active  ">
+      <img class="d-block  rounded" src="/slide1.jpg" alt="First slide" />
+    </div>
+    <div class="carousel-item pt-0 bg-transparent">
+      <img class="d-block  rounded" src="/slide2.jpg" alt="Second slide" />
+    </div>
+    <div class="carousel-item pt-0 bg-transparent">
+      <img class="d-block  rounded" src="/slide3.jpg" alt="Third slide" />
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+       
       </div> 
       <div className={css.cards}>
           

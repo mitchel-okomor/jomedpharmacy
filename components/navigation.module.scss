@@ -29,6 +29,7 @@ border-radius: 4px;
 a:visited {color: $primary-color;} 
 a:hover {color: white;
 background-color: $primary-color;
+transition: 0.6s;
 }   
 
 .active{

@@ -155,6 +155,8 @@ chat = ()=>{
   s0.parentNode.insertBefore(s1,s0);
   })();
 }
+
+//close the nav bar
  closeNav=()=>{
   let elem = document.getElementsByClassName("togle_nav")[0];
   elem.style.display = "none";
@@ -168,6 +170,7 @@ chat = ()=>{
     } 
 }
 
+//togle navigation
 togleNav=()=> {
   let elem = document.getElementsByClassName("togle_nav")[0];
   console.log(elem);

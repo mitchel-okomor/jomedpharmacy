@@ -37,6 +37,8 @@
 
 .container{
    width: 100%;
+min-height: 70em;
+
 .heading{
     margin: auto;
     text-align: center;
@@ -107,12 +109,17 @@ margin: 3em;
 }
 .form{
 display: grid;
-grid-template-columns: 50% 50%;
+grid-template-columns: 40% 40%;
+grid-gap: 7%;
 width: 100%;
+padding: 2em;
+margin: auto
 }
 form{
     font-size: large;
-    margin: 2em 1em 1em 1em;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 2rem;
   fieldset{
       padding-top: 40px;
       border: medium solid $primary-color;
@@ -124,7 +131,7 @@ legend{
     }
     input{
         height: 40px;
-        width: 23em;
+        width: 90%;
         margin-bottom: 20px;
         margin-left: 30px;
         border: 2px solid $layout-color;
@@ -152,7 +159,7 @@ legend{
 }
 }
 
-$breakpoint-tablet: 800px;
+$breakpoint-tablet: 860px;
 @media only screen and (max-width: $breakpoint-tablet) {
 
 
@@ -167,7 +174,11 @@ $breakpoint-tablet: 800px;
          min-height: 20em;
          display: flex;
          flex-direction: row;
-     
+         margin: 0;
+  .form{
+      padding-left:0.6em;
+      padding-right: 0.6em;
+  }
      .myaccount{
          width: 25%;
          min-height: 20em;
