@@ -67,7 +67,6 @@ const Login = () => {
         }
   return (
 
-      <div className={css.form}>
         <form className={css.login}>
           <fieldset>
             <legend>Login:</legend>
@@ -80,7 +79,7 @@ const Login = () => {
               onChange={handleChange}
             />
             <br />
-            <label for="password">password:</label> <br />
+            <label for="password">Password:</label> <br />
             <input
               type="password"
               id="password"
@@ -95,7 +94,7 @@ const Login = () => {
   <div className={css.password}><Link href="/resetpassword"><a>Forgot Password</a></Link> </div>
           </fieldset>
         </form>
-      </div>
+      
     
   );
 };

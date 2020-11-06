@@ -92,7 +92,7 @@ return <Loading />
               onChange={handleChange}
             />
             <br />
-            <label for="number">phone number:</label> <br />
+            <label for="number">Phone number:</label> <br />
             <input
               type="number"
               id="number"
@@ -103,7 +103,7 @@ return <Loading />
               onChange={handleChange}
             />
             <br />
-            <label for="address">address:</label> <br />
+            <label for="address">Address:</label> <br />
             <input
               type="text"
               id="address"
@@ -114,7 +114,7 @@ return <Loading />
               onChange={handleChange}
             />
             <br />
-            <label for="password">password:</label> <br />
+            <label for="password">Password:</label> <br />
             <input
               type="password"
               id="password"
