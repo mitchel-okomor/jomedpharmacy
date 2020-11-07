@@ -46,7 +46,6 @@ min-height: 70em;
     }
 .account{
     min-height: 20em;
-    display: flex;
     flex-direction: row;
 margin: 3em;
 
@@ -107,14 +106,7 @@ margin: 3em;
 
   
 }
-.form{
-display: grid;
-grid-template-columns: 40% 40%;
-grid-gap: 7%;
-width: 100%;
-padding: 2em;
-margin: auto
-}
+
 form{
     font-size: large;
     margin: auto;
@@ -175,11 +167,7 @@ $breakpoint-tablet: 860px;
          display: flex;
          flex-direction: row;
          margin: 0;
-  .form{
-      display:block;
-      padding-left:0.6em;
-      padding-right: 0.6em;
-  }
+
      .myaccount{
          width: 25%;
          min-height: 20em;
@@ -237,11 +225,7 @@ $breakpoint-tablet: 860px;
      
        
      }
-     .form{
-     display: block;
-     
-     width: 100%;
-     }
+  
      form{
          font-size: large;
          margin: 0;

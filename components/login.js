@@ -1,4 +1,4 @@
-import React, {useContext, useReducer } from "react";
+import {useContext, useReducer } from "react";
 import css from './login.module.scss';
 import axios from "axios";
 import Loading from './loading';

@@ -73,9 +73,15 @@ const Account = (props) => {
   <br />
   <h1 className={css.heading}>Account</h1>
   <div className={css.account}>
-      <div className={css.form}>
-      <Signup />  
-      <Login />
+      <div className="row">
+        <div className="col-sm-12 col-md-6 col-lg-6">    
+        <div className="m-3"><Signup />  </div>   
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6"> 
+          <div className="m-3"> <Login /></div>
+         
+          </div>
+      
       </div>
     </div> 
 </div>

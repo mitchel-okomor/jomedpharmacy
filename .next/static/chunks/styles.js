@@ -30,7 +30,7 @@ module.exports = {"pagelink":"pagelink___3YSse","footer":"footer___1nBGW","stayi
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680317157");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739775302");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"pagelink":"pagelink___MtiHc","header":"header___207u5","logo"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680316118");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739771664");
           });
       }
     }
@@ -106,7 +106,7 @@ module.exports = {"pagelink":"pagelink___2-f9Q","loader":"loader___303lL","spin"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680316205");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739771931");
           });
       }
     }
@@ -144,45 +144,7 @@ module.exports = {"pagelink":"pagelink___NwE0e","password":"password___33wZe","m
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680389508");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/main.module.scss":
-/*!*************************************!*\
-  !*** ./components/main.module.scss ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___3_nJX","main":"main___2CXzs","intro":"intro___1q6R9","cards":"cards___1MJLF","third":"third___xubTV"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680369549");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604741572571");
           });
       }
     }
@@ -220,7 +182,7 @@ module.exports = {"pagelink":"pagelink____jdru","nav_container":"nav_container__
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680315989");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739771046");
           });
       }
     }
@@ -258,7 +220,7 @@ module.exports = {"order_history":"order_history___1OuGm"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680389539");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739861775");
           });
       }
     }
@@ -296,7 +258,7 @@ module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680315688");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739770699");
           });
       }
     }
@@ -334,7 +296,7 @@ module.exports = {"prescription_history":"prescription_history___-_vwO"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680389534");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739861710");
           });
       }
     }
@@ -372,7 +334,7 @@ module.exports = {"pagelink":"pagelink___3KTKa","search":"search___3MHpT"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680316282");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739772245");
           });
       }
     }
@@ -410,7 +372,7 @@ module.exports = {"pagelink":"pagelink___116ck"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680389523");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739861640");
           });
       }
     }
@@ -448,7 +410,7 @@ module.exports = {"standingorder":"standingorder___3hHRV","orderdate":"orderdate
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680389503");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739861203");
           });
       }
     }
@@ -486,7 +448,7 @@ module.exports = {"standing_prescription":"standing_prescription___1aBW1","presc
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680389515");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739861539");
           });
       }
     }
@@ -502,7 +464,7 @@ module.exports = {"standing_prescription":"standing_prescription___1aBW1","presc
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___23IcN","profile":"profile___2baMk","buttons":"buttons___35h7a","container":"container___3mFX3","heading":"heading___V7y3g","account":"account___3xtWf","myaccount":"myaccount___14c-i","logout_link":"logout_link___1z2LU","overview":"overview___1u136","overviewdiv":"overviewdiv___BnCNs","form":"form___14s8b"};;
+module.exports = {"pagelink":"pagelink___23IcN","profile":"profile___2baMk","buttons":"buttons___35h7a","container":"container___3mFX3","heading":"heading___V7y3g","account":"account___3xtWf","myaccount":"myaccount___14c-i","logout_link":"logout_link___1z2LU","overview":"overview___1u136","overviewdiv":"overviewdiv___BnCNs"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -524,7 +486,7 @@ module.exports = {"pagelink":"pagelink___23IcN","profile":"profile___2baMk","but
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680452673");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604742474485");
           });
       }
     }
@@ -562,7 +524,7 @@ module.exports = {"pagelink":"pagelink___35WRW"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604680315187");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604739770391");
           });
       }
     }
