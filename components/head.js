@@ -1,6 +1,5 @@
 import React from 'react'
 import NextHead from 'next/head'
-import chat from './helper/chat';
 
 
  const Head = () => (

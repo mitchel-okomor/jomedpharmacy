@@ -10,7 +10,9 @@ const initialState = {
   number: "",
   address: "",
   password: "",
-loading: false
+loading: false,
+buttonLoading: <i class="fa fa-spinner fa-spin"></i>,
+
 };
 
 //handle state changes with reducer
@@ -51,10 +53,8 @@ dispatch({field:"loading", value:false});
 
 
 
-  const { fName, lName, email, number, address, password, loading} = state;
-  if(loading){
-return <Loading />
-    }
+  const { fName, lName, email, number, address, password, loading, buttonLoading} = state;
+
   return (
     <div className={css.signup}> 
          <form >
@@ -125,7 +125,7 @@ return <Loading />
               onChange={handleChange}
             />
             <br />
-            <button onClick={handleSubmit}>Submit</button>
+  <button onClick={handleSubmit}>{loading? buttonLoading : "Submit"}</button>
           </fieldset>
         </form>
     </div>

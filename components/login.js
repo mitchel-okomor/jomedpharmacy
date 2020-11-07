@@ -9,7 +9,8 @@ const initialState = {
   email: "",
   password: "",
   loading: false,
-  message: ""
+  message: "",
+  buttonLoading: <i class="fa fa-spinner fa-spin"></i>,
 };
 
 
@@ -61,10 +62,8 @@ const Login = () => {
   };
 
 
-  const {email, password, loading, message } = state;
-  if(loading){
-    return <Loading />
-        }
+  const {email, password, loading, message, buttonLoading } = state;
+
   return (
 
     <div className={css.login}>
@@ -88,7 +87,7 @@ const Login = () => {
               value={password}
               onChange={handleChange}
             /> <br />
-            <button onClick={handleSubmit}>Submit</button>
+            <button onClick={handleSubmit}>{loading? buttonLoading : "Submit"}</button>
             <br/>           
   <div className={css.message}>{message}</div>
 
