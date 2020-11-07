@@ -12,7 +12,6 @@
     right: -85px;
     width: 200px;
     transform: rotate(-90deg);
-
   }
 
   .closebutton {
@@ -34,6 +33,7 @@
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 1em;
+    transition: 5s;
 
   }
   /* Add styles to the form container */
@@ -148,7 +148,10 @@ $breakpoint-tablet: 800px;
     resize: none;
     min-height: 6em !important;
   }
-
+  .openbutton {
+    bottom: 300px;
+    right: -85px;
+  }
 }
  
 
