@@ -360,7 +360,7 @@ button:hover {
       background-color: whitesmoke; }
     .search___3MHpT form button {
       margin: 0;
-      height: 2.9em;
+      height: 2.86em;
       width: 3em;
       border-radius: 0px 10px 10px 0px;
       border-left: 0px;
@@ -368,6 +368,8 @@ button:hover {
       color: #12A63E;
       padding: 6px 10px;
       font-size: 1em; }
+    .search___3MHpT form button:hover {
+      background-color: white !important; }
 
 @media only screen and (max-width: 800px) {
   .search___3MHpT {
