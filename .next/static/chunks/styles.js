@@ -30,7 +30,7 @@ module.exports = {"pagelink":"pagelink___3YSse","footer":"footer___1nBGW","stayi
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747968059");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753381256");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"pagelink":"pagelink___MtiHc","header":"header___207u5","logo"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747967676");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753380359");
           });
       }
     }
@@ -106,7 +106,7 @@ module.exports = {"pagelink":"pagelink___2-f9Q","loader":"loader___303lL","spin"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747968344");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753380406");
           });
       }
     }
@@ -144,7 +144,7 @@ module.exports = {"pagelink":"pagelink___NwE0e","login":"login___3QfdB","passwor
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747968858");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753387666");
           });
       }
     }
@@ -182,7 +182,7 @@ module.exports = {"pagelink":"pagelink____jdru","nav_container":"nav_container__
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747967982");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753380257");
           });
       }
     }
@@ -220,7 +220,7 @@ module.exports = {"order_history":"order_history___1OuGm"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604745998324");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753387906");
           });
       }
     }
@@ -258,7 +258,7 @@ module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604748308050");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753380079");
           });
       }
     }
@@ -296,7 +296,7 @@ module.exports = {"prescription_history":"prescription_history___-_vwO"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604745998295");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753387698");
           });
       }
     }
@@ -334,7 +334,7 @@ module.exports = {"pagelink":"pagelink___3KTKa","search":"search___3MHpT"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747968146");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753380779");
           });
       }
     }
@@ -372,7 +372,7 @@ module.exports = {"pagelink":"pagelink___116ck","signup":"signup___3yBvh","conta
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747968985");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753387870");
           });
       }
     }
@@ -410,7 +410,7 @@ module.exports = {"standingorder":"standingorder___3hHRV","orderdate":"orderdate
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604745997991");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753387962");
           });
       }
     }
@@ -448,7 +448,7 @@ module.exports = {"standing_prescription":"standing_prescription___1aBW1","presc
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604745998277");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753387201");
           });
       }
     }
@@ -486,7 +486,7 @@ module.exports = {"pagelink":"pagelink___23IcN","profile":"profile___2baMk","but
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747968732");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753386647");
           });
       }
     }
@@ -524,7 +524,7 @@ module.exports = {"pagelink":"pagelink___35WRW"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604747969029");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604753379716");
           });
       }
     }
