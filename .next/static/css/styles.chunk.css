@@ -1072,14 +1072,12 @@ button:hover {
     flex-direction: row; }
 
 .container___3mFX3 {
-  width: 100%;
-  min-height: 70em; }
+  width: 100%; }
   .container___3mFX3 .heading___V7y3g {
     margin: auto;
     text-align: center;
     width: 100%; }
   .container___3mFX3 .account___3xtWf {
-    min-height: 20em;
     flex-direction: row;
     margin: 3em; }
     .container___3mFX3 .account___3xtWf .myaccount___14c-i {
