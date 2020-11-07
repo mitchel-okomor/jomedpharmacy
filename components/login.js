@@ -1,8 +1,8 @@
 import {useContext, useReducer } from "react";
 import css from './login.module.scss';
 import axios from "axios";
-import Loading from './loading';
-import appContext from './appcontext';
+import Loading from '../components/loading';
+import appContext from '../components/appcontext';
 import Link from 'next/link';
 
 const initialState = {
@@ -67,7 +67,8 @@ const Login = () => {
         }
   return (
 
-        <form className={css.login}>
+    <div className={css.login}>
+<form >
           <fieldset>
             <legend>Login:</legend>
             <label for="email">Email:</label> <br />
@@ -94,6 +95,9 @@ const Login = () => {
   <div className={css.password}><Link href="/resetpassword"><a>Forgot Password</a></Link> </div>
           </fieldset>
         </form>
+    </div>
+
+        
       
     
   );

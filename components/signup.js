@@ -56,7 +56,8 @@ dispatch({field:"loading", value:false});
 return <Loading />
     }
   return (
-        <form className={css.signup}>
+    <div className={css.signup}> 
+         <form >
           <fieldset>
             <legend>Create Account:</legend>
             <label for="fname">First name:</label> <br />
@@ -127,6 +128,8 @@ return <Loading />
             <button onClick={handleSubmit}>Submit</button>
           </fieldset>
         </form>
+    </div>
+      
   );
 };
 
