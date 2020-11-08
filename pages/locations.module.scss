@@ -23,6 +23,15 @@ min-height: 25em;
     padding: 1em;
         }
     }
+
+    p{
+        font-size: x-large;
+    }
+
+    i{
+        margin-right: 1rem;
+        color: red;
+    }
 }
 
 $breakpoint-tablet: 800px;

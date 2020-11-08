@@ -1,25 +1,26 @@
 @import "../pages/styles.scss"; 
 
-  .loader {
-  text-align: center;
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid $primary-color;
+  border-radius: 50%;
+  border-bottom: 16px solid $primary-color;
   margin: auto;
-    border: 5px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 5px solid $primary-color;
-    width: 2.8em;
-    height: 2.8em;
-    -webkit-animation: spin 1s linear infinite; /* Safari */
-    animation: spin 1s linear infinite;
-  
-  }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+  text-align: center;
+  width: 20px !important;
+  height: 20px !important;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

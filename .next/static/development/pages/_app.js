@@ -159,7 +159,7 @@ var Footer = function Footer() {
       lineNumber: 34,
       columnNumber: 17
     }
-  }, " Tel: (+234) 80"), __jsx("br", {
+  }, " Tel: (+234) 703 545 2461"), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -319,8 +319,10 @@ var Head = function Head() {
       columnNumber: 5
     }
   }), __jsx("link", {
-    rel: "stylesheet",
-    href: "path/to/font-awesome/css/font-awesome.min.css",
+    rel: "icon",
+    href: "/favicon.jpg",
+    sizes: "16x16",
+    type: "image/png",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -328,10 +330,8 @@ var Head = function Head() {
       columnNumber: 5
     }
   }), __jsx("link", {
-    rel: "icon",
-    href: "/favicon.jpg",
-    sizes: "16x16",
-    type: "image/png",
+    href: "https://fonts.googleapis.com/css2?family=Rubik&display=swap",
+    rel: "stylesheet",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -804,22 +804,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Loading = function Loading(props) {
   return __jsx("div", {
-    className: _loading_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.loading_container,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
     className: _loading_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.loader,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
-      columnNumber: 44
+      columnNumber: 3
     }
-  }));
+  });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Loading);

@@ -8,7 +8,8 @@ const Loading = (props) => {
  
 
   return(
-    <div className={css.loading_container}><div className={css.loader}></div></div>
+  <div className={css.loader}></div>
+  
   )
    
 }

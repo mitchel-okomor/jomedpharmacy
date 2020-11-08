@@ -12,9 +12,7 @@ font-size:1.5em;
 color:rgb(122, 71, 29);
     }
 
-    div{
-        min-height: 10em;
-    }
+
 
     .featured_products{
         height: 2em;
@@ -35,4 +33,10 @@ color:rgb(122, 71, 29);
    .featured_products{
        font-size:1.5rem  !important;
    }
+}
+
+.products_loading{
+    background-color: black;
+    height: 100vh;
+    width: 100vh;
 }

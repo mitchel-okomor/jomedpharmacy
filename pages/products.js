@@ -7,9 +7,11 @@ import Loading from '../components/loading';
 
 
 const Products = (props)=>{
-
+console.log(props.products.length );
 if(props.products.length <1 ) {
-  return <Loading />
+  return(<div className={css.products}>
+<Loading />
+  </div>)
   
 }
 return(
@@ -48,7 +50,7 @@ const res = await fetch('http://localhost:4000/products');
     return {
       products: data.data
     };
-  }catch{
+  }catch(err){
 console.log("Unable to load Products");
 return {
   products:[]

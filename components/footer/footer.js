@@ -31,7 +31,7 @@ const Footer = () =>{
                 <br />
                 <Link href=""> Store survey</Link>
                 <br />
-                <Link href=""> Tel: (+234) 80</Link>
+                <Link href=""> Tel: (+234) 703 545 2461</Link>
                 <br/>
                 <Link href="">Email: info@jomedpharmacy.com.ng</Link>
 
