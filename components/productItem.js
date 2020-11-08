@@ -21,7 +21,7 @@ console.log(presentInCart);
     return (
        <div className={css.productItem} onClick={closeNav}>
          <div className={css.image}>
-             <div className="card">
+             <div className="item_card">
                <img src={props.product.image_url || "/product.png"} className="card-img-top" alt=""/>
                <h5>{props.product.name}</h5>
                  <h6>₦ {props.product.price}</h6>

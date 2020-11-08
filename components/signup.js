@@ -57,7 +57,7 @@ dispatch({field:"loading", value:false});
 
   return (
     <div className={css.signup}> 
-         <form >
+         <form onSubmit={handleSubmit}>
           <fieldset>
             <legend>Create Account:</legend>
             <label for="fname">First name:</label> <br />
@@ -125,7 +125,7 @@ dispatch({field:"loading", value:false});
               onChange={handleChange}
             />
             <br />
-  <button onClick={handleSubmit}>{loading? buttonLoading : "Submit"}</button>
+  <button type="submit" >{loading? buttonLoading : "Submit"}</button>
           </fieldset>
         </form>
     </div>

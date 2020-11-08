@@ -12,32 +12,20 @@ const Main = (props) => {
   return (
     <main className={css.main} onClick={closeNav} >
       <div className={css.intro}>
-      <div id="carouselExampleIndicators" class="carousel pt-0 slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner bg-transparent">
-    <div class="carousel-item pt-0 bg-transparent active  ">
-      <img class="d-block  rounded" src="/slide1_30.jpg" alt="First slide" />
-    </div>
-    <div class="carousel-item pt-0 bg-transparent">
-      <img class="d-block  rounded" src="/slide2_30.jpg" alt="Second slide" />
-    </div>
-    <div class="carousel-item pt-0 bg-transparent">
-      <img class="d-block  rounded" src="/slide3_30.jpg" alt="Third slide" />
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+        <div className="container-fluid bg-transparent">
+               <div className="row bg-transparent text-left">
+<div className="col-sm-12 col-md-6 col-lg-6 bg-transparent">
+<div className="m-5 p-5 bg-transparent">
+ <h1>Jomed Pharmacy</h1>
+<p>- Your Family Number 1 Pharmacy</p>
+<p>Phasellus varius diam arcu, vel laoreet lorem molestie faucibus. Morbi vestibulum tempus quam vitae.</p>
+<button>View More &gt;</button> 
 </div>
+
+</div>
+      </div>
+        </div>
+ 
        
       </div> 
       <div className={css.cards}>

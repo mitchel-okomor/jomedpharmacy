@@ -67,7 +67,7 @@ const Login = () => {
   return (
 
     <div className={css.login}>
-<form >
+<form onSubmit={handleSubmit}>
           <fieldset>
             <legend>Login:</legend>
             <label for="email">Email:</label> <br />
@@ -77,6 +77,7 @@ const Login = () => {
               name="email"
               value={email}
               onChange={handleChange}
+              required
             />
             <br />
             <label for="password">Password:</label> <br />
@@ -86,8 +87,9 @@ const Login = () => {
               name="password"
               value={password}
               onChange={handleChange}
+              required
             /> <br />
-            <button onClick={handleSubmit}>{loading? buttonLoading : "Submit"}</button>
+            <button type="submit" >{loading? buttonLoading : "Submit"}</button>
             <br/>           
   <div className={css.message}>{message}</div>
 

@@ -10,7 +10,14 @@ class ProductList extends Component {
   render() {
       return (
         <div className={css.productlist}>
+          <div className="container-fluid">
+<div className="row">
+  <div className="d-flex flex-wrap">
        {this.props.products.map(item => <Product key={item.product_id} product={item}/>)}
+
+  </div>
+</div>
+          </div>
         </div>
       )
   }

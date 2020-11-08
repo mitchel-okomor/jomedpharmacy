@@ -45,9 +45,9 @@ import logout from './helper/logout';
       {
         //check if user is admin
         !customer || !(Boolean(Number(customer.is_admin)))?
-        <div className={css.mobile_cart}>
+        <div className={css.mobile_cart} id="mobile_cart">
         <Link href="/cart"><img src="/cart.png"/></Link><span>{cart.length}</span>
-        </div>:<div className={css.mobile_cart}> <Link href="/account"><a className={css.admin_link}>Admin Panel</a></Link> </div>
+        </div>:<div className={css.mobile_cart} > <Link href="/account"><a className={css.admin_link}>Admin Panel</a></Link> </div>
 
       }  
     <button className={css.icon_button} onClick={togleNav}><i class={icon.class} aria-hidden="true"></i>{icon.text}</button>

@@ -25,3 +25,14 @@ color:rgb(122, 71, 29);
         margin: auto;
     }
 }
+
+@media screen and (max-width: 860px){
+   .products{
+       margin-top: 4rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+   }
+   .featured_products{
+       font-size:1.5rem  !important;
+   }
+}

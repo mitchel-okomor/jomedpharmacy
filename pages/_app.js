@@ -173,8 +173,10 @@ chat = ()=>{
 //togle navigation
 togleNav=()=> {
   let elem = document.getElementsByClassName("togle_nav")[0];
-  console.log(elem);
+  let cartElem = document.getElementById("mobile_cart");
+
   elem.style.display === "block"?elem.style.display = "none":elem.style.display = "block";
+  cartElem.style.display === "flex"?cartElem.style.display = "none":cartElem.style.display = "flex";
 
 if(this.state.navValues.class === "fa fa-bars")      {
   this.setState({navValues:{class:"", text:"X"}});

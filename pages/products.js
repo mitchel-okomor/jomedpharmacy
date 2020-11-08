@@ -9,9 +9,7 @@ import Loading from '../components/loading';
 const Products = (props)=>{
 
 if(props.products.length <1 ) {
-  return(<div className={css.products}>
-
-  </div>)
+  return <Loading />
   
 }
 return(

@@ -20,7 +20,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
@@ -90,7 +90,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
@@ -292,7 +292,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
@@ -397,7 +397,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
@@ -557,7 +557,7 @@ button:hover {
     padding-left: 0.5em; }
     .nav_container___AArvw .mobile___2C8OZ .mobile_cart___2SuDE {
       width: 2em;
-      display: flex;
+      display: none;
       height: 0.8em;
       margin-top: 0;
       box-sizing: border-box;
@@ -694,7 +694,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
@@ -808,7 +808,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
@@ -997,16 +997,16 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
 
-.pagelink___23IcN {
+.pagelink___3eZvl {
   color: #A61412 !important;
   font-size: 2em; }
 
-.pagelink___23IcN:hover {
+.pagelink___3eZvl:hover {
   background-color: red !important;
   color: white !important;
   font-size: 2em; }
@@ -1045,126 +1045,29 @@ button:hover {
     margin: 0;
     padding: 0; } }
 
-.profile___2baMk {
-  margin: 2em;
-  min-height: 30em;
-  margin-left: 35%;
-  margin-right: 35%; }
-  .profile___2baMk h2 {
-    background-color: red;
-    color: white;
-    text-align: center;
-    margin-bottom: 2em;
-    font-weight: bolder;
-    font-size: 2em;
-    padding: 0.3em;
-    height: 2em;
-    border-radius: 0.2em;
-    border: solid red 1px; }
-  .profile___2baMk table {
-    width: 100%;
-    font-size: larger; }
-    .profile___2baMk table td {
-      width: 10em; }
-  .profile___2baMk .buttons___35h7a {
-    display: flex;
-    flex-direction: row; }
-
-.container___3mFX3 {
-  width: 100%; }
-  .container___3mFX3 .heading___V7y3g {
+.product___1d0UC {
+  width: 22%;
+  border-radius: 0.6em;
+  margin: 0.5em; }
+  .product___1d0UC .card___22W0I {
+    padding-top: 1em;
     margin: auto;
     text-align: center;
-    width: 100%; }
-  .container___3mFX3 .account___3xtWf {
-    flex-direction: row;
-    margin: 3em;
-    min-height: 50em; }
-    .container___3mFX3 .account___3xtWf .myaccount___14c-i {
-      width: 25%;
-      min-height: 20em;
-      background-color: white;
-      margin: 2em;
-      border-radius: 0.5em; }
-      .container___3mFX3 .account___3xtWf .myaccount___14c-i h2 {
-        margin: 0em 0em 1em 0em;
-        padding: 0.3em 0.3em 0.3em 1.2em;
-        background-color: rgba(160, 157, 157, 0.267);
-        color: rgba(0, 0, 0, 0.746); }
-      .container___3mFX3 .account___3xtWf .myaccount___14c-i ul {
-        list-style-type: none; }
-        .container___3mFX3 .account___3xtWf .myaccount___14c-i ul li {
-          margin-top: 1.5em; }
-      .container___3mFX3 .account___3xtWf .myaccount___14c-i .logout_link___1z2LU {
-        margin: 0em 0em 1em 4em; }
-    .container___3mFX3 .account___3xtWf .overview___1u136 {
-      width: 70%;
-      min-height: 30em;
-      background-color: white;
-      margin: 2em;
-      border-radius: 0.5em; }
-      .container___3mFX3 .account___3xtWf .overview___1u136 h2 {
-        margin: 0em 0em 1em 0em;
-        padding: 0.3em 0.3em 0.3em 1.2em;
-        background-color: rgba(160, 157, 157, 0.267);
-        color: rgba(0, 0, 0, 0.746); }
-      .container___3mFX3 .account___3xtWf .overview___1u136 .overviewdiv___BnCNs {
-        width: 100%;
-        min-height: 30em;
-        display: grid;
-        grid-gap: 2em;
-        padding: 1em;
-        justify-content: space-evenly;
-        grid-template-columns: auto auto; }
-
-@media only screen and (max-width: 860px) {
-  .container___3mFX3 {
-    width: 100%; }
-    .container___3mFX3 .heading___V7y3g {
-      margin: auto;
+    height: 15em;
+    color: crimson; }
+    .product___1d0UC .card___22W0I .image___2HFbq {
       text-align: center;
-      width: 100%; }
-    .container___3mFX3 .account___3xtWf {
-      min-height: 100em;
-      display: flex;
-      flex-direction: row;
-      margin: 0; }
-      .container___3mFX3 .account___3xtWf .myaccount___14c-i {
-        width: 25%;
-        min-height: 20em;
-        background-color: white;
-        margin: 2em;
-        border-radius: 0.5em; }
-        .container___3mFX3 .account___3xtWf .myaccount___14c-i h2 {
-          margin: 0em 0em 1em 0em;
-          padding: 0.3em 0.3em 0.3em 1.2em;
-          background-color: rgba(160, 157, 157, 0.267);
-          color: rgba(0, 0, 0, 0.746); }
-        .container___3mFX3 .account___3xtWf .myaccount___14c-i ul {
-          list-style-type: none; }
-          .container___3mFX3 .account___3xtWf .myaccount___14c-i ul li {
-            margin-top: 1.5em; }
-        .container___3mFX3 .account___3xtWf .myaccount___14c-i .logout_link___1z2LU {
-          margin: 0em 0em 1em 4em; }
-      .container___3mFX3 .account___3xtWf .overview___1u136 {
-        width: 70%;
-        min-height: 30em;
-        background-color: white;
-        margin: 2em;
-        border-radius: 0.5em; }
-        .container___3mFX3 .account___3xtWf .overview___1u136 h2 {
-          margin: 0em 0em 1em 0em;
-          padding: 0.3em 0.3em 0.3em 1.2em;
-          background-color: rgba(160, 157, 157, 0.267);
-          color: rgba(0, 0, 0, 0.746); }
-        .container___3mFX3 .account___3xtWf .overview___1u136 .overviewdiv___BnCNs {
-          width: 100%;
-          min-height: 30em;
-          display: grid;
-          grid-gap: 2em;
-          padding: 1em;
-          justify-content: space-evenly;
-          grid-template-columns: auto auto; } }
+      margin: auto; }
+    .product___1d0UC .card___22W0I .title___17Zi2 {
+      font-size: large; }
+    .product___1d0UC .card___22W0I img {
+      width: 30%; }
+  .product___1d0UC a:hover {
+    color: #12A63E; }
+
+@media screen and (max-width: 860px) {
+  .product___1d0UC {
+    width: 95%; } }
 
 * {
   box-sizing: border-box;
@@ -1188,161 +1091,7 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
-
-p {
-  font-size: larger; }
-
-.pagelink___NwE0e {
-  color: #A61412 !important;
-  font-size: 2em; }
-
-.pagelink___NwE0e:hover {
-  background-color: red !important;
-  color: white !important;
-  font-size: 2em; }
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield; }
-
-button {
-  height: 2em;
-  width: 8em;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  font-size: x-large;
-  color: #12A63E;
-  background-color: white;
-  border: 2px solid #12A63E;
-  border-radius: 7px;
-  cursor: pointer; }
-
-button:hover {
-  background-color: blue !important; }
-
-@media only screen and (max-width: 800px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; }
-  div {
-    margin: 0;
-    padding: 0; } }
-
-.login___3QfdB .password___33wZe {
-  margin: auto;
-  text-align: center;
-  padding-bottom: 2rem; }
-
-.login___3QfdB .message___JFUtd {
-  color: red;
-  margin-left: 2em;
-  margin-bottom: 1em; }
-
-.login___3QfdB form {
-  font-size: large;
-  margin: auto;
-  width: 100%;
-  margin-bottom: 2rem; }
-  .login___3QfdB form fieldset {
-    padding-top: 40px;
-    border: medium solid #12A63E;
-    border-radius: 15px; }
-    .login___3QfdB form fieldset legend {
-      border-radius: 5px;
-      width: fit-content; }
-    .login___3QfdB form fieldset input {
-      height: 40px;
-      width: 90%;
-      margin-bottom: 20px;
-      margin-left: 30px;
-      border: 2px solid #f5f5f5;
-      border-radius: 7px; }
-    .login___3QfdB form fieldset label {
-      margin-left: 30px; }
-    .login___3QfdB form fieldset button {
-      height: 40px;
-      margin-bottom: 20px;
-      margin-left: 30px;
-      color: white;
-      background-color: #12A63E;
-      border: 2px solid #f5f5f5;
-      border-radius: 7px; }
-
-@media only screen and (max-width: 860px) {
-  .container___18_Pe {
-    width: 100%; }
-    .container___18_Pe .heading___2tT0C {
-      margin: auto;
-      text-align: center;
-      width: 100%; }
-    .container___18_Pe .account___1OJ5J {
-      min-height: 20em;
-      display: flex;
-      flex-direction: row;
-      margin: 0; }
-      .container___18_Pe .account___1OJ5J .myaccount___2AfR8 form {
-        font-size: large;
-        margin: 0;
-        margin-bottom: 0.7em;
-        width: 100%; }
-        .container___18_Pe .account___1OJ5J .myaccount___2AfR8 form fieldset {
-          padding-top: 40px;
-          border: medium solid #12A63E;
-          border-radius: 15px;
-          width: 100%; }
-          .container___18_Pe .account___1OJ5J .myaccount___2AfR8 form fieldset legend {
-            border-radius: 0.2em;
-            width: fit-content; }
-          .container___18_Pe .account___1OJ5J .myaccount___2AfR8 form fieldset input {
-            height: 40px;
-            width: 90%;
-            margin-bottom: 20px;
-            margin-left: 0.2em;
-            margin-right: 0.2em;
-            border: 2px solid #f5f5f5;
-            border-radius: 7px; }
-          .container___18_Pe .account___1OJ5J .myaccount___2AfR8 form fieldset label {
-            margin-left: 0.2em; }
-          .container___18_Pe .account___1OJ5J .myaccount___2AfR8 form fieldset button {
-            height: 40px;
-            margin-bottom: 0.6em;
-            margin-left: 30px;
-            color: white;
-            background-color: #12A63E;
-            border: 2px solid #f5f5f5;
-            border-radius: 7px; } }
-
-* {
-  box-sizing: border-box;
-  line-height: 1.5em;
-  font-size: 1em; }
-
-html, body {
-  font-family: "Helvetica Neue",Arial,sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5; }
-
-a {
-  text-decoration: none;
-  color: #12A63E; }
-
-a:visited {
-  color: #12A63E; }
-
-a:hover {
-  color: white;
-  background-color: #12A63E;
-  border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
@@ -1415,6 +1164,36 @@ button:hover {
   100% {
     transform: rotate(360deg); } }
 
+.productlist___3549g {
+  width: 97%; }
+
+.products___Cd1n8 {
+  margin: 2em;
+  min-height: 30em; }
+  .products___Cd1n8 h2 {
+    background-color: rgba(160, 157, 157, 0.267);
+    height: 2em;
+    padding: 0.4em 0.4em 0.4em 2em;
+    font-size: 1.5em;
+    color: #7a471d; }
+  .products___Cd1n8 div {
+    min-height: 10em; }
+  .products___Cd1n8 .featured_products___di6HZ {
+    height: 2em;
+    padding: 0.4em 0.4em 0.4em 2em;
+    font-size: 2.2em;
+    color: #7a1d2c;
+    text-align: center;
+    margin: auto; }
+
+@media screen and (max-width: 860px) {
+  .products___Cd1n8 {
+    margin-top: 4rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem; }
+  .featured_products___di6HZ {
+    font-size: 1.5rem  !important; } }
+
 * {
   box-sizing: border-box;
   line-height: 1.5em;
@@ -1437,16 +1216,16 @@ a:hover {
   color: white;
   background-color: #12A63E;
   border-radius: 0.3em;
-  padding: 0.5em; }
+  padding: 0.1em; }
 
 p {
   font-size: larger; }
 
-.pagelink___116ck {
+.pagelink___1l65_ {
   color: #A61412 !important;
   font-size: 2em; }
 
-.pagelink___116ck:hover {
+.pagelink___1l65_:hover {
   background-color: red !important;
   color: white !important;
   font-size: 2em; }
@@ -1485,120 +1264,73 @@ button:hover {
     margin: 0;
     padding: 0; } }
 
-.signup___3yBvh form {
-  font-size: large;
-  margin: auto;
-  width: 100%;
-  margin-bottom: 2rem; }
-  .signup___3yBvh form fieldset {
-    padding-top: 40px;
-    border: medium solid #12A63E;
-    border-radius: 15px; }
-    .signup___3yBvh form fieldset legend {
-      border-radius: 5px;
-      width: fit-content; }
-    .signup___3yBvh form fieldset input {
-      height: 40px;
-      width: 90%;
-      margin-bottom: 20px;
-      margin-left: 30px;
-      border: 2px solid #f5f5f5;
-      border-radius: 7px; }
-    .signup___3yBvh form fieldset label {
-      margin-left: 30px; }
-    .signup___3yBvh form fieldset button {
-      height: 40px;
-      margin-bottom: 20px;
-      margin-left: 30px;
-      color: white;
-      background-color: #12A63E;
-      border: 2px solid #f5f5f5;
-      border-radius: 7px; }
-
-@media only screen and (max-width: 860px) {
-  .container___1MPH9 {
-    width: 100%; }
-    .container___1MPH9 .heading___8vH-r {
-      margin: auto;
-      text-align: center;
-      width: 100%; }
-    .container___1MPH9 .account___2MuoX {
-      min-height: 20em;
-      display: flex;
-      flex-direction: row;
-      margin: 0; }
-      .container___1MPH9 .account___2MuoX .myaccount___1B-CL form {
-        font-size: large;
-        margin: 0;
-        margin-bottom: 0.7em;
-        width: 100%; }
-        .container___1MPH9 .account___2MuoX .myaccount___1B-CL form fieldset {
-          padding-top: 40px;
-          border: medium solid #12A63E;
-          border-radius: 15px;
-          width: 100%; }
-          .container___1MPH9 .account___2MuoX .myaccount___1B-CL form fieldset legend {
-            border-radius: 0.2em;
-            width: fit-content; }
-          .container___1MPH9 .account___2MuoX .myaccount___1B-CL form fieldset input {
-            height: 40px;
-            width: 90%;
-            margin-bottom: 20px;
-            margin-left: 0.2em;
-            border: 2px solid #f5f5f5;
-            border-radius: 7px; }
-          .container___1MPH9 .account___2MuoX .myaccount___1B-CL form fieldset label {
-            margin-left: 0.2em; }
-          .container___1MPH9 .account___2MuoX .myaccount___1B-CL form fieldset button {
-            height: 40px;
-            margin-bottom: 0.6em;
-            margin-left: 30px;
-            color: white;
-            background-color: #12A63E;
-            border: 2px solid #f5f5f5;
-            border-radius: 7px; } }
-
-.standingorder___3hHRV {
-  width: 100%;
-  height: 100%;
-  list-style-type: none !important;
-  margin: 0em;
-  padding-left: 0.5em; }
-  .standingorder___3hHRV .orderdate___3byfj {
-    margin-right: 1em; }
-
-.standing_prescription___1aBW1 {
-  width: 100%;
-  height: 100%;
-  list-style-type: none !important;
-  margin: 0em;
-  padding-left: 0.5em; }
-  .standing_prescription___1aBW1 li {
+.productItem___3zsw_ {
+  margin: 2em;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  min-height: 20em;
+  width: 80%;
+  border-radius: 0.3em;
+  padding: 4em 2em 2em 2em; }
+  .productItem___3zsw_ img {
+    width: 6em; }
+  .productItem___3zsw_ .image___A6YxT {
+    padding: 0.9em;
+    border-radius: 0.3em;
+    text-align: center;
+    margin: auto; }
+  .productItem___3zsw_ .item_card___14uGR {
+    background-color: none !important;
+    border: none; }
+  .productItem___3zsw_ .item___2lEaX {
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between; }
-    .standing_prescription___1aBW1 li .prescription_date___30KHy {
-      margin-right: 0.5em; }
-    .standing_prescription___1aBW1 li .prescription___2tq0C {
-      margin-right: 0em; }
+    grid-template-columns: 35% 45% 20%;
+    padding: 0.9em;
+    border-radius: 0.3em; }
+  .productItem___3zsw_ h5 {
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    color: crimson; }
+  .productItem___3zsw_ h6 {
+    margin: 0;
+    padding: 0;
+    color: crimson; }
+  .productItem___3zsw_ h2 {
+    margin: 0;
+    padding: 0;
+    font-size: x-large; }
+  .productItem___3zsw_ button {
+    height: 2em;
+    font-size: medium;
+    width: fit-content;
+    border: none;
+    padding: 0.3rem;
+    background-color: #00a2ff !important;
+    color: white; }
+  .productItem___3zsw_ .remove___2T0y-:hover {
+    color: red;
+    border: 2px solid red;
+    width: fit-content;
+    height: 2em; }
+  .productItem___3zsw_ .add___1GbcU:hover {
+    color: blue;
+    border: 2px solid blue;
+    width: fit-content;
+    height: 2em; }
 
-.prescription_history___-_vwO {
-  width: 100%;
-  height: 100%;
-  list-style-type: none !important;
-  margin: 0em;
-  padding-left: 0.5em; }
-  .prescription_history___-_vwO li {
-    margin: 0em, 0em, 0em, 2em; }
-
-.order_history___1OuGm {
-  width: 100%;
-  height: 100%;
-  list-style-type: none !important;
-  margin: 0em;
-  padding-left: 0.5em; }
-  .order_history___1OuGm li {
-    margin: 0em, 0em, 0em, 2em; }
+@media screen and (max-width: 860px) {
+  .productItem___3zsw_ {
+    display: block; }
+    .productItem___3zsw_ .image___A6YxT {
+      display: block;
+      width: 100%;
+      text-align: left; }
+    .productItem___3zsw_ .item___2lEaX {
+      display: block;
+      width: 95%; }
+    .productItem___3zsw_ button {
+      margin-left: 0; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

@@ -19,7 +19,6 @@ const Product = ({product}) => {
               <b className={css.title}>{product.name}</b><br />
               <b className={css.title}>$ {product.price}</b>
               <br />
-              <button>View item</button>
             </div>
          
       </div>
