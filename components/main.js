@@ -15,8 +15,8 @@ const Main = (props) => {
         <div className="container-fluid bg-transparent">
                <div className="row bg-transparent text-left">
 <div className="col-sm-12 col-md-6 col-lg-6 bg-transparent">
-<div className="m-5 p-5 bg-transparent">
- <h1>Jomed Pharmacy</h1>
+<div className=" bg-transparent ">
+ <h1 >Jomed Pharmacy</h1>
 <p>- Your Family Number 1 Pharmacy</p>
 <p>Phasellus varius diam arcu, vel laoreet lorem molestie faucibus. Morbi vestibulum tempus quam vitae.</p>
 <button>View More &gt;</button> 
@@ -25,60 +25,115 @@ const Main = (props) => {
 </div>
       </div>
         </div>
- 
-       
+
       </div> 
-      <div className={css.cards}>
+      <div className={css.middle_cards}>
+      <div className="row mt-5 h-100">
+        <div className="col-sm-12 col-lg-4 col-md-4 h-100" >
+  <div className="bg-primary p-5 h-100 text-white "><div>
+ <h1 className="font-weight-bolder mt-3 mb-ms-5"><i class="fa fa-envelope mr-3" aria-hidden="true"></i>NEWS LETTER</h1> 
+</div>
+<div>
+  <input placeholder="EMAIL" /> <button>SUBMIT</button>
+</div></div>
+
+        </div>
+        <div className="col-sm-12 col-lg-4 col-md-4 h-100">
+          <div className="p-5 mt-3 h-100">
+            <h1 className="font-weight-bolder">WHY BUY FROM US</h1>
+<ul>
+  <li className="pb-4"> We are a registered health service providers</li>
+  <li className="pb-4">Our team is always ready to serve you</li>
+  <li className="pb-4">We licenced by the ACPN</li>
+</ul>
+          </div>
+
+</div>
+<div className="col-sm-12 col-lg-4 col-md-4 h-100">
+<div className="bg-primary p-5 h-100 text-white">
+  <h1 className="font-weight-bolder mt-3"><i class="fa fa-medkit mr-3" aria-hidden="true"></i>
+WHO WE ARE </h1>
+  <ul>
+    <li className="pb-4">Prompt and efficient customer service</li>
+    <li className="pb-4">Free Prescription</li>
+    <li className="pb-4">Fully Regulated Services</li>
+  </ul>
+</div>
+</div>
+      </div>
+
+          </div>
           
-         <div>
-        <h3>Welcome to</h3> 
-        
-<h1>Jomed Pharmacy</h1> 
-<b>Your goto health care provider</b> <br /> <br />
-<p>You and your loved ones’ health come first. With high-quality medications and supplies provided by skilled and experienced pharmacists, you can guarantee to live a healthy life within your budget. We look out for everyone in the community as if they are part of our family too.</p>
- <br /> 
- <Link href="/services"><a className={css.pagelink}>Find care...</a></Link>         
-</div> 
-             <div>
-             <h2>Get Your Refill</h2> 
-<img src="/refill.png" />
-<p>Do you need a refill? 
-  <br />
-  We got you covered. All you have to do is reach out to us.
-  </p>
-  <br />
-  <br />
-  <Link href="/services"><a className={css.pagelink}>prescription...</a></Link>         
-
-                 </div>
-                 <div>
-                 <h2>Get Your Re</h2> 
-                 <img src="/refill.png" />
-                 <br />
-                    <p>  We got you covered. All you have to do is reach out to us.
-                    We got you covered. All you have to do is reach out to us.
-
-</p>
-<br />
-  <br />
-                    <Link href="/services"><a className={css.pagelink}>Find out More...</a></Link>         
-                 </div>
-         </div>
          <div className={css.third}>
-<div>
- <h2>What makes our services the best?</h2>
- <p>We lend you a hand in choosing the the better and best options for your health needs. we also make ourselves well recognised throug our:</p>
- <ul>
-   <li>Friendly and courteous staffs</li>
-   <li>Prompt and efficient customer service</li>
-   <li>Experienced and knowlegdeable pharmacist</li>
- </ul>
+        <div className="row mt-5">
+<div className="col-sm-12 col-md-8 col-lg-8">
+<div className="text-center bg-white m-5 .about">
+ <h1 className="font-weight-bold">ABout Jomed Health Services</h1>
+ <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+   in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+   </p>
+   <button className="mt-4 btn-primary" >Read More</button>
 </div>
-<div>
-  second
 </div>
-
+<div className="col-sm-12 col-md-4 col-lg-4 mt-5">
+<div className="row text-white ">
+  <div className="col-sm-12 col-md-6 col-lg-6 ">
+  <Link href=""><a className="text-white">
+  <div className="m-2 p-3 bg-primary ">  <i class="fa fa-plus-square mr-2" aria-hidden="true"></i>
+ Ulcer Treatment </div>
+</a></Link>
+  </div>
+  <div className="col-sm-12 col-md-6 col-lg-6 ">
+  <Link href=""><a className="text-white">
+  <div className="m-2 p-3 bg-primary ">
+  <i class="fa fa-plus-square mr-2" aria-hidden="true"></i>Diabetes
+  </div> </a></Link>
+  </div>
+  <div className="col-sm-12 col-md-6 col-lg-6 ">
+  <Link href=""><a className="text-white">
+  <div className="m-2 p-3 bg-primary ">
+  <i class="fa fa-plus-square mr-2" aria-hidden="true"></i> Nutrition
+  </div></a></Link>
+  </div>
+  <div className="col-sm-12 col-md-6 col-lg-6 ">
+  <Link href=""><a className="text-white">
+  <div className="m-2 p-3 bg-primary ">
+  <i class="fa fa-plus-square mr-2" aria-hidden="true"></i> Skin Treatment
+  </div> 
+  </a></Link>
+  </div>
+  <div className="col-sm-12 col-md-6 col-lg-6 ">
+  <Link href=""><a className="text-white">
+  <div className="m-2 p-3 bg-primary ">  <i class="fa fa-plus-square mr-2" aria-hidden="true"></i>
+ Ulcer Treatment </div>
+</a></Link>
+  </div>
+  <div className="col-sm-12 col-md-6 col-lg-6 ">
+  <Link href=""><a className="text-white">
+  <div className="m-2 p-3 bg-primary ">
+  <i class="fa fa-plus-square mr-2" aria-hidden="true"></i>Diabetes
+  </div> 
+  </a></Link>
+  </div>
+  <div className="col-sm-12 col-md-6 col-lg-6 ">
+  <Link href=""><a className="text-white">
+  <div className="m-2 p-3 bg-primary ">
+  <i class="fa fa-plus-square mr-2" aria-hidden="true"></i> Nutrition
+  </div>
+  </a></Link>
+  </div>
+  <div className="col-sm-12 col-md-6 col-lg-6 ">
+  <Link href=""><a className="text-white">
+  <div className="m-2 p-3 bg-primary ">
+  <i class="fa fa-plus-square mr-2" aria-hidden="true"></i> Skin Treatment
+  </div> 
+  </a></Link>
+  </div>
+</div>
+</div>
+        </div>
          </div>
+       
     </main>
   );
 };

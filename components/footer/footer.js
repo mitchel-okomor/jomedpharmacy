@@ -41,11 +41,16 @@ const Footer = () =>{
             <h3>
                 Stay in Touch
                 </h3>
-                <i className="fa fa-twitter-square" aria-hidden="true"></i>
-                <i className="fa fa-facebook-square" aria-hidden="true"></i>
-                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                <i className="fa fa-whatsapp" aria-hidden="true"></i>
-                <i className="fa fa-instagram" aria-hidden="true"></i>
+                <Link href=""><a>
+                <i className="fa fa-twitter-square" aria-hidden="true"></i></a></Link>
+                <Link href=""><a>
+                <i className="fa fa-facebook-square" aria-hidden="true"></i></a></Link>
+                <Link href=""><a>
+                <i className="fa fa-linkedin-square" aria-hidden="true"></i></a></Link>
+                <Link href=""><a>
+                <i className="fa fa-whatsapp" aria-hidden="true"></i></a></Link>
+                <Link href=""><a>
+                <i className="fa fa-instagram" aria-hidden="true"></i></a></Link>
              <div></div> 
               </div>
 

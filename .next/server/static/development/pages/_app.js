@@ -302,17 +302,23 @@ const Footer = () => {
       lineNumber: 41,
       columnNumber: 13
     }
-  }, "Stay in Touch"), __jsx("i", {
-    className: "fa fa-twitter-square",
-    "aria-hidden": "true",
+  }, "Stay in Touch"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44,
       columnNumber: 17
     }
-  }), __jsx("i", {
-    className: "fa fa-facebook-square",
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 31
+    }
+  }, __jsx("i", {
+    className: "fa fa-twitter-square",
     "aria-hidden": "true",
     __self: undefined,
     __source: {
@@ -320,17 +326,23 @@ const Footer = () => {
       lineNumber: 45,
       columnNumber: 17
     }
-  }), __jsx("i", {
-    className: "fa fa-linkedin-square",
-    "aria-hidden": "true",
+  }))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46,
       columnNumber: 17
     }
-  }), __jsx("i", {
-    className: "fa fa-whatsapp",
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 31
+    }
+  }, __jsx("i", {
+    className: "fa fa-facebook-square",
     "aria-hidden": "true",
     __self: undefined,
     __source: {
@@ -338,20 +350,83 @@ const Footer = () => {
       lineNumber: 47,
       columnNumber: 17
     }
-  }), __jsx("i", {
-    className: "fa fa-instagram",
-    "aria-hidden": "true",
+  }))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48,
       columnNumber: 17
     }
-  }), __jsx("div", {
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 31
+    }
+  }, __jsx("i", {
+    className: "fa fa-linkedin-square",
+    "aria-hidden": "true",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49,
+      columnNumber: 17
+    }
+  }))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 31
+    }
+  }, __jsx("i", {
+    className: "fa fa-whatsapp",
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 17
+    }
+  }))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 31
+    }
+  }, __jsx("i", {
+    className: "fa fa-instagram",
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 17
+    }
+  }))), __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
       columnNumber: 14
     }
   }))));

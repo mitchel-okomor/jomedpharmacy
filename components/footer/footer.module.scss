@@ -23,7 +23,7 @@ padding: 1em 0em 1em 0em;
             padding: 0.5rem;
         }
       a:hover{
-          color: white;
+          color: white !important;
       }
     }
     .stayintouch{
@@ -45,8 +45,7 @@ $breakpoint-tablet: 800px;
         box-sizing: border-box;
         height: 37em;
         padding-left: 0.5em;
-        color: white;
-        background-color: $primary-color;
+        color: $primary-color !important;
      display: block;
     
         div{
@@ -56,7 +55,7 @@ $breakpoint-tablet: 800px;
             width: 90%;
     
             a{
-                color:white;
+                color:$primary-color;
                 margin-top:4em;
                 font-size: larger;
             }

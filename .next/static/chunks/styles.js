@@ -30,7 +30,7 @@ module.exports = {"pagelink":"pagelink___3YSse","footer":"footer___1nBGW","stayi
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604825248198");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604867446869");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"pagelink":"pagelink___MtiHc","header":"header___207u5","logo"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604821191420");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604865646311");
           });
       }
     }
@@ -106,7 +106,7 @@ module.exports = {"pagelink":"pagelink___2-f9Q","loader":"loader___303lL","spin"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604821192034");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604865646785");
           });
       }
     }
@@ -122,7 +122,7 @@ module.exports = {"pagelink":"pagelink___2-f9Q","loader":"loader___303lL","spin"
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___3_nJX","main":"main___2CXzs","intro":"intro___1q6R9","cards":"cards___1MJLF","third":"third___xubTV"};;
+module.exports = {"pagelink":"pagelink___3_nJX","main":"main___2CXzs","intro":"intro___1q6R9","middle_cards":"middle_cards___3fiK5","third":"third___xubTV"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -144,7 +144,7 @@ module.exports = {"pagelink":"pagelink___3_nJX","main":"main___2CXzs","intro":"i
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604821192202");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604866995874");
           });
       }
     }
@@ -182,7 +182,7 @@ module.exports = {"pagelink":"pagelink____jdru","nav_container":"nav_container__
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604821548057");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604865646546");
           });
       }
     }
@@ -220,7 +220,83 @@ module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604821191708");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604865646727");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./components/product.module.scss":
+/*!****************************************!*\
+  !*** ./components/product.module.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"pagelink":"pagelink___3eZvl","product":"product___1d0UC","card":"card___22W0I","image":"image___2HFbq","title":"title___17Zi2"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1604867719528");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./components/productList.module.scss":
+/*!********************************************!*\
+  !*** ./components/productList.module.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"productlist":"productlist___3549g"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1604867719387");
           });
       }
     }
@@ -258,7 +334,7 @@ module.exports = {"pagelink":"pagelink___3KTKa","search":"search___3MHpT"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604821613458");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604865646758");
           });
       }
     }
@@ -266,15 +342,15 @@ module.exports = {"pagelink":"pagelink___3KTKa","search":"search___3MHpT"};;
 
 /***/ }),
 
-/***/ "./pages/locations.module.scss":
-/*!*************************************!*\
-  !*** ./pages/locations.module.scss ***!
-  \*************************************/
+/***/ "./pages/products.module.scss":
+/*!************************************!*\
+  !*** ./pages/products.module.scss ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink___34jRF","locations":"locations___1MZ9V"};;
+module.exports = {"products":"products___Cd1n8","featured_products":"featured_products___di6HZ","products_loading":"products_loading___wODWo"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -296,7 +372,7 @@ module.exports = {"pagelink":"pagelink___34jRF","locations":"locations___1MZ9V"}
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604825269267");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604867719381");
           });
       }
     }
@@ -334,7 +410,7 @@ module.exports = {"pagelink":"pagelink___35WRW"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604821191119");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604865646803");
           });
       }
     }
