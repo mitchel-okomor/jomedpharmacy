@@ -39,14 +39,16 @@ import logout from './helper/logout';
         <nav className={css.nav}>
       <div className={css.mobile}>
       
-      <Link href="/account"><img src="/user.png" /></Link> 
+      <Link href="/account"><i class="fa fa-user-circle-o pt-3" aria-hidden="true"></i>
+</Link> 
     <Link href="/account"><a>{customer ? customer.name:""}</a>
       </Link> 
       {
         //check if user is admin
         !customer || !(Boolean(Number(customer.is_admin)))?
         <div className={css.mobile_cart} id="mobile_cart">
-        <Link href="/cart"><img src="/cart.png"/></Link><span>{cart.length}</span>
+        <Link href="/cart"><i class="fa fa-cart-arrow-down pt-2" aria-hidden="true"></i>
+</Link><span className="pt-2">{cart.length}</span>
         </div>:<div className={css.mobile_cart} > <Link href="/account"><a className={css.admin_link}>Admin Panel</a></Link> </div>
 
       }  

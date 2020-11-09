@@ -10,7 +10,10 @@ const Products = (props)=>{
 console.log(props.products.length );
 if(props.products.length <1 ) {
   return(<div className={css.products}>
-<Loading />
+    <div className="p-5">
+     <Loading /> 
+    </div>
+
   </div>)
   
 }

@@ -30,7 +30,7 @@ module.exports = {"pagelink":"pagelink___3YSse","footer":"footer___1nBGW","stayi
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604867446869");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898752962");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"pagelink":"pagelink___MtiHc","header":"header___207u5","logo"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604865646311");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898751473");
           });
       }
     }
@@ -106,7 +106,7 @@ module.exports = {"pagelink":"pagelink___2-f9Q","loader":"loader___303lL","spin"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604865646785");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898751529");
           });
       }
     }
@@ -144,7 +144,7 @@ module.exports = {"pagelink":"pagelink___3_nJX","main":"main___2CXzs","intro":"i
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604866995874");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898789458");
           });
       }
     }
@@ -160,7 +160,7 @@ module.exports = {"pagelink":"pagelink___3_nJX","main":"main___2CXzs","intro":"i
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"pagelink":"pagelink____jdru","nav_container":"nav_container___AArvw","icon_button":"icon_button___1Dx2y","nav":"nav___1kSwy","active":"active___amG3s","dropbtn":"dropbtn___yJU84","dropdown":"dropdown___2r2lA","dropdown_content":"dropdown_content___1VBhe","mobile":"mobile___2C8OZ","mobile_cart":"mobile_cart___2SuDE","mobile_cart_img":"mobile_cart_img___3_tRF","togle_nav":"togle_nav___3Kd6k","remove_nav":"remove_nav___3Xela"};;
+module.exports = {"pagelink":"pagelink____jdru","nav_container":"nav_container___AArvw","icon_button":"icon_button___1Dx2y","nav":"nav___1kSwy","active":"active___amG3s","dropbtn":"dropbtn___yJU84","dropdown":"dropdown___2r2lA","dropdown_content":"dropdown_content___1VBhe","mobile":"mobile___2C8OZ","mobile_cart":"mobile_cart___2SuDE","togle_nav":"togle_nav___3Kd6k","remove_nav":"remove_nav___3Xela"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -182,7 +182,7 @@ module.exports = {"pagelink":"pagelink____jdru","nav_container":"nav_container__
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604865646546");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604900848329");
           });
       }
     }
@@ -220,7 +220,7 @@ module.exports = {"pagelink":"pagelink___1xFXa","openbutton":"openbutton___1JJgq
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604865646727");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898750919");
           });
       }
     }
@@ -258,7 +258,7 @@ module.exports = {"pagelink":"pagelink___3eZvl","product":"product___1d0UC","car
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604867719528");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898805975");
           });
       }
     }
@@ -296,7 +296,7 @@ module.exports = {"productlist":"productlist___3549g"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604867719387");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898805727");
           });
       }
     }
@@ -334,7 +334,7 @@ module.exports = {"pagelink":"pagelink___3KTKa","search":"search___3MHpT"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604865646758");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898751644");
           });
       }
     }
@@ -372,7 +372,7 @@ module.exports = {"products":"products___Cd1n8","featured_products":"featured_pr
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604867719381");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898805658");
           });
       }
     }
@@ -410,7 +410,7 @@ module.exports = {"pagelink":"pagelink___35WRW"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1604865646803");
+            injectCss(link, link.href.split("?")[0] + "?unix=1604898750012");
           });
       }
     }
